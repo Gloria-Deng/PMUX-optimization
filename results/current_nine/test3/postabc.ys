@@ -1,0 +1,1 @@
+read_verilog -sv "../../../../cases/test3.v"; hierarchy -check -top test3; proc; setundef -undriven -zero; setundef -init -zero; synth_intel -family cycloneiv -top test3 -run begin:map_cells; write_rtlil postabc.il; write_verilog -noattr postabc.v

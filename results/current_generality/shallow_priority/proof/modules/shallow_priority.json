@@ -1,0 +1,95 @@
+{
+  "partition": {
+    "index": 1,
+    "name": "shallow_priority",
+    "inbits": {
+      "a": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "b": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "c": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "d": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "q": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "s": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "outbits": {
+      "y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.shallow_priority",
+    "internal": {},
+    "unused": {},
+    "cellcount": 20,
+    "bitcount": 143
+  },
+  "gate_module": {
+    "name": "gold.shallow_priority",
+    "internal": {},
+    "unused": {},
+    "cellcount": 26,
+    "bitcount": 149
+  }
+}

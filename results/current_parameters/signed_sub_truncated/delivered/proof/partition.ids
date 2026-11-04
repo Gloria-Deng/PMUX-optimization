@@ -1,0 +1,11 @@
+group signed_sub_truncated a0 a1 a2 a3 b0 b1 b2 b3 s y
+bind signed_sub_truncated a0
+bind signed_sub_truncated a1
+bind signed_sub_truncated a2
+bind signed_sub_truncated a3
+bind signed_sub_truncated b0
+bind signed_sub_truncated b1
+bind signed_sub_truncated b2
+bind signed_sub_truncated b3
+bind signed_sub_truncated s
+bind signed_sub_truncated y

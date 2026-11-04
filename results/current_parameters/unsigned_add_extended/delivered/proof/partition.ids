@@ -1,0 +1,11 @@
+group unsigned_add_extended a0 a1 a2 a3 b0 b1 b2 b3 s y
+bind unsigned_add_extended a0
+bind unsigned_add_extended a1
+bind unsigned_add_extended a2
+bind unsigned_add_extended a3
+bind unsigned_add_extended b0
+bind unsigned_add_extended b1
+bind unsigned_add_extended b2
+bind unsigned_add_extended b3
+bind unsigned_add_extended s
+bind unsigned_add_extended y

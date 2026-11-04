@@ -1,0 +1,7 @@
+# [*] gold-match *
+variant_lanes2 clk clk
+variant_lanes2 ctrl_in ctrl_in
+variant_lanes2 data_in data_in
+variant_lanes2 data_out data_out
+variant_lanes2 en en
+variant_lanes2 rst rst

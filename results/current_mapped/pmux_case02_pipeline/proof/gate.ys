@@ -1,0 +1,15 @@
+read_rtlil "../../current_nine/pmux_case02_pipeline/delivered/final.il"
+read_verilog -overwrite "../cycloneiv_comb.v"
+read_verilog -overwrite "../../../plugin/dffeas_formal.v"
+prep -top pmux_case02_pipeline -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top pmux_case02_pipeline
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil proof/gate.il

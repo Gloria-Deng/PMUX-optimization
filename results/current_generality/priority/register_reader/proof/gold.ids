@@ -1,0 +1,13 @@
+audit . A:top=1
+audit m3 c=$mux
+audit m2 c=$mux
+audit m1 c=$mux
+audit ff c=$dff
+audit y w=7:0 P=O
+audit s w=2:0 P=I
+audit q w=7:0 A:init=0 P=O
+audit d3 w=7:0 P=I
+audit d2 w=7:0 P=I
+audit d1 w=7:0 P=I
+audit d0 w=7:0 P=I
+audit clk w=0:0 P=I

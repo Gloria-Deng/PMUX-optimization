@@ -1,0 +1,6 @@
+  eqy  -> E:\Yosys\oss-cad-suite\oss-cad-suite\bin\eqy.exe
+  yosys-> E:\Yosys\oss-cad-suite\oss-cad-suite\bin\yosys.exe
+preflight OK: eqy/make/bash/sh/grep all reachable
+permuted_inner: PROVEN, rewritten=False, expected_result=True
+register_reader: PROVEN, rewritten=False, expected_result=True
+plain_chain: PROVEN, rewritten=True, expected_result=True

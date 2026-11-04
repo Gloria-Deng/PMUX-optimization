@@ -1,0 +1,37 @@
+[options]
+
+[gold]
+read_verilog -sv "../../../cases/test2.v"
+hierarchy -check -top test2
+proc
+setundef -undriven -zero
+setundef -init -zero
+prep -top test2 -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top test2
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[gate]
+read_rtlil "../../current_nine/test2/delivered/final.il"
+read_verilog -overwrite "../cycloneiv_comb.v"
+read_verilog -overwrite "../../../plugin/dffeas_formal.v"
+prep -top test2 -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top test2
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[collect test2]
+group *
+bind *
+
+[strategy whole]
+use sat
+depth 12

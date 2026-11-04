@@ -1,0 +1,194 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.audit / gate.audit.
+
+3.1.1. Processing matched IDs for module audit.
+
+3.1.2. Create fragment partitions for module audit.
+
+Final list of fragment partitions:
+
+3.1.3. Execute partitioning commands for module audit.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+
+Assigning partition names:
+
+Partition Summary:
+  Fragments:
+  Partitions:
+  Fragment-Partition-Matrix:
+          
+          
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module audit.
+Adding output bit \y [7] to partition 0.
+Adding output bit \y [6] to partition 0.
+Adding output bit \y [5] to partition 0.
+Adding output bit \y [4] to partition 0.
+Adding output bit \y [3] to partition 0.
+Adding output bit \y [2] to partition 0.
+Adding output bit \y [1] to partition 0.
+Adding output bit \y [0] to partition 0.
+Adding non-output bit \s [2] to partition 0.
+Adding non-output bit \s [1] to partition 0.
+Adding non-output bit \s [0] to partition 0.
+Adding output bit \q [7] to partition 0.
+Adding output bit \q [6] to partition 0.
+Adding output bit \q [5] to partition 0.
+Adding output bit \q [4] to partition 0.
+Adding output bit \q [3] to partition 0.
+Adding output bit \q [2] to partition 0.
+Adding output bit \q [1] to partition 0.
+Adding output bit \q [0] to partition 0.
+Adding non-output bit \d3 [7] to partition 0.
+Adding non-output bit \d3 [6] to partition 0.
+Adding non-output bit \d3 [5] to partition 0.
+Adding non-output bit \d3 [4] to partition 0.
+Adding non-output bit \d3 [3] to partition 0.
+Adding non-output bit \d3 [2] to partition 0.
+Adding non-output bit \d3 [1] to partition 0.
+Adding non-output bit \d3 [0] to partition 0.
+Adding non-output bit \d2 [7] to partition 0.
+Adding non-output bit \d2 [6] to partition 0.
+Adding non-output bit \d2 [5] to partition 0.
+Adding non-output bit \d2 [4] to partition 0.
+Adding non-output bit \d2 [3] to partition 0.
+Adding non-output bit \d2 [2] to partition 0.
+Adding non-output bit \d2 [1] to partition 0.
+Adding non-output bit \d2 [0] to partition 0.
+Adding non-output bit \d1 [7] to partition 0.
+Adding non-output bit \d1 [6] to partition 0.
+Adding non-output bit \d1 [5] to partition 0.
+Adding non-output bit \d1 [4] to partition 0.
+Adding non-output bit \d1 [3] to partition 0.
+Adding non-output bit \d1 [2] to partition 0.
+Adding non-output bit \d1 [1] to partition 0.
+Adding non-output bit \d1 [0] to partition 0.
+Adding non-output bit \d0 [7] to partition 0.
+Adding non-output bit \d0 [6] to partition 0.
+Adding non-output bit \d0 [5] to partition 0.
+Adding non-output bit \d0 [4] to partition 0.
+Adding non-output bit \d0 [3] to partition 0.
+Adding non-output bit \d0 [2] to partition 0.
+Adding non-output bit \d0 [1] to partition 0.
+Adding non-output bit \d0 [0] to partition 0.
+Adding non-output bit \clk to partition 0.
+Adding non-output bit $n2 [7] to partition 0.
+Adding non-output bit $n2 [6] to partition 0.
+Adding non-output bit $n2 [5] to partition 0.
+Adding non-output bit $n2 [4] to partition 0.
+Adding non-output bit $n2 [3] to partition 0.
+Adding non-output bit $n2 [2] to partition 0.
+Adding non-output bit $n2 [1] to partition 0.
+Adding non-output bit $n2 [0] to partition 0.
+Adding non-output bit $n1 [7] to partition 0.
+Adding non-output bit $n1 [6] to partition 0.
+Adding non-output bit $n1 [5] to partition 0.
+Adding non-output bit $n1 [4] to partition 0.
+Adding non-output bit $n1 [3] to partition 0.
+Adding non-output bit $n1 [2] to partition 0.
+Adding non-output bit $n1 [1] to partition 0.
+Adding non-output bit $n1 [0] to partition 0.
+Writing partition 0 as audit.
+  partition pi bit 0: \clk <-> \clk
+  partition pi bit 1: \s [2] <-> \s [2]
+  partition pi bit 2: \d3 [7] <-> \d3 [7]
+  partition pi bit 3: \d3 [6] <-> \d3 [6]
+  partition pi bit 4: \d3 [5] <-> \d3 [5]
+  partition pi bit 5: \d3 [4] <-> \d3 [4]
+  partition pi bit 6: \d3 [3] <-> \d3 [3]
+  partition pi bit 7: \d3 [2] <-> \d3 [2]
+  partition pi bit 8: \d3 [1] <-> \d3 [1]
+  partition pi bit 9: \d3 [0] <-> \d3 [0]
+  partition pi bit 10: \s [1] <-> \s [1]
+  partition pi bit 11: \d2 [7] <-> \d2 [7]
+  partition pi bit 12: \d2 [6] <-> \d2 [6]
+  partition pi bit 13: \d2 [5] <-> \d2 [5]
+  partition pi bit 14: \d2 [4] <-> \d2 [4]
+  partition pi bit 15: \d2 [3] <-> \d2 [3]
+  partition pi bit 16: \d2 [2] <-> \d2 [2]
+  partition pi bit 17: \d2 [1] <-> \d2 [1]
+  partition pi bit 18: \d2 [0] <-> \d2 [0]
+  partition pi bit 19: \s [0] <-> \s [0]
+  partition pi bit 20: \d1 [7] <-> \d1 [7]
+  partition pi bit 21: \d1 [6] <-> \d1 [6]
+  partition pi bit 22: \d1 [5] <-> \d1 [5]
+  partition pi bit 23: \d1 [4] <-> \d1 [4]
+  partition pi bit 24: \d1 [3] <-> \d1 [3]
+  partition pi bit 25: \d1 [2] <-> \d1 [2]
+  partition pi bit 26: \d1 [1] <-> \d1 [1]
+  partition pi bit 27: \d1 [0] <-> \d1 [0]
+  partition pi bit 28: \d0 [7] <-> \d0 [7]
+  partition pi bit 29: \d0 [6] <-> \d0 [6]
+  partition pi bit 30: \d0 [5] <-> \d0 [5]
+  partition pi bit 31: \d0 [4] <-> \d0 [4]
+  partition pi bit 32: \d0 [3] <-> \d0 [3]
+  partition pi bit 33: \d0 [2] <-> \d0 [2]
+  partition pi bit 34: \d0 [1] <-> \d0 [1]
+  partition pi bit 35: \d0 [0] <-> \d0 [0]
+  partition mp bit 0: $n2 [7] <-> $n2 [7]
+  partition mp bit 1: $n2 [6] <-> $n2 [6]
+  partition mp bit 2: $n2 [5] <-> $n2 [5]
+  partition mp bit 3: $n2 [4] <-> $n2 [4]
+  partition mp bit 4: $n2 [3] <-> $n2 [3]
+  partition mp bit 5: $n2 [2] <-> $n2 [2]
+  partition mp bit 6: $n2 [1] <-> $n2 [1]
+  partition mp bit 7: $n1 [7] <-> $n1 [7]
+  partition mp bit 8: $n1 [6] <-> $n1 [6]
+  partition mp bit 9: $n1 [5] <-> $n1 [5]
+  partition mp bit 10: $n1 [4] <-> $n1 [4]
+  partition mp bit 11: $n1 [3] <-> $n1 [3]
+  partition mp bit 12: $n1 [2] <-> $n1 [2]
+  partition mp bit 13: $n1 [1] <-> $n1 [1]
+  partition mp bit 14: $n1 [0] <-> $n1 [0]
+  partition mp bit 15: $n2 [0] <-> $n2 [0]
+  partition po bit 0: \q [0] <-> \q [0]
+  partition po bit 1: \q [1] <-> \q [1]
+  partition po bit 2: \q [2] <-> \q [2]
+  partition po bit 3: \q [3] <-> \q [3]
+  partition po bit 4: \q [4] <-> \q [4]
+  partition po bit 5: \q [5] <-> \q [5]
+  partition po bit 6: \q [6] <-> \q [6]
+  partition po bit 7: \q [7] <-> \q [7]
+  partition po bit 8: \y [0] <-> \y [0]
+  partition po bit 9: \y [1] <-> \y [1]
+  partition po bit 10: \y [2] <-> \y [2]
+  partition po bit 11: \y [3] <-> \y [3]
+  partition po bit 12: \y [4] <-> \y [4]
+  partition po bit 13: \y [5] <-> \y [5]
+  partition po bit 14: \y [6] <-> \y [6]
+  partition po bit 15: \y [7] <-> \y [7]
+
+3.1.5. Executing RTLIL backend.
+Output filename: modules/audit.il
+<suppressed ~735 debug messages>
+
+End of script. Logfile hash: f57107047d
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 16% 2x read_rtlil (0 sec), 16% 1x write_rtlil (0 sec), ...

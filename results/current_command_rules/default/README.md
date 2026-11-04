@@ -1,0 +1,21 @@
+# results/current_command_rules/default
+
+本文件列出当前文件夹内的全部文件和子目录位置。
+
+## 文件位置索引（2026-11-04）
+
+相对工程位置：`results/current_command_rules/default/`。下表列出本层全部文件和子目录。
+
+[返回上一层](../README.md)
+
+| 名称与位置 | 类型及内容 |
+|---|---|
+| [proof/](proof/README.md) | 子目录；点击查看其全部文件位置 |
+| [after.il](after.il) | RTLIL 设计文件 |
+| [check.eqy](check.eqy) | EQY 比较配置 |
+| [proof_output.txt](proof_output.txt) | 说明或执行输出 |
+| [README.md](README.md) | 本目录文件索引 |
+| [stderr.txt](stderr.txt) | 说明或执行输出 |
+| [stdout.txt](stdout.txt) | 说明或执行输出 |
+| [synthesis.txt](synthesis.txt) | 说明或执行输出 |
+| [synthesis.ys](synthesis.ys) | Yosys 命令文件 |

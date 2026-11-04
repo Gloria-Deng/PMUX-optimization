@@ -1,0 +1,8 @@
+shallow_constants . A:src="../../../scripts/generality_cases/shallow_constants.v:1.1-21.10" A:top=1
+shallow_constants y w=7:0 A:src="../../../scripts/generality_cases/shallow_constants.v:1.81-1.82" P=O
+shallow_constants s w=5:0 A:src="../../../scripts/generality_cases/shallow_constants.v:1.61-1.62" P=I
+shallow_constants q w=7:0 A:src="../../../scripts/generality_cases/shallow_constants.v:1.46-1.47" P=I
+shallow_constants d w=7:0 A:src="../../../scripts/generality_cases/shallow_constants.v:1.44-1.45" P=I
+shallow_constants c w=7:0 A:src="../../../scripts/generality_cases/shallow_constants.v:1.42-1.43" P=I
+shallow_constants b w=7:0 A:src="../../../scripts/generality_cases/shallow_constants.v:1.40-1.41" P=I
+shallow_constants a w=7:0 A:src="../../../scripts/generality_cases/shallow_constants.v:1.38-1.39" P=I

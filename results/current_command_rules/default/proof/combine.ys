@@ -1,0 +1,11 @@
+plugin -i "D:/Desktop/PMUX_20261028/binary/formal/bin/../share/yosys/plugins/eqy_combine.so"
+read_rtlil proof/gold.il
+uniquify
+hierarchy
+design -stash gold
+read_rtlil proof/gate_recoded.il
+uniquify
+hierarchy
+design -stash gate
+eqy_combine -gold_ids proof/gold.ids -gate_ids proof/gate_recoded.ids
+write_rtlil proof/combined.il

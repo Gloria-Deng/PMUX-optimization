@@ -1,0 +1,398 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `proof/gate.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: ../../current_nine/test2/delivered/final.il
+
+2. Executing Verilog-2005 frontend: ../cycloneiv_comb.v
+Parsing Verilog input from `../cycloneiv_comb.v' to AST representation.
+Replacing existing blackbox module `\cycloneiv_lcell_comb' at ../cycloneiv_comb.v:1.1-27.10.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ../../../plugin/dffeas_formal.v
+Parsing Verilog input from `../../../plugin/dffeas_formal.v' to AST representation.
+Replacing existing blackbox module `\dffeas' at ../../../plugin/dffeas_formal.v:3.1-19.10.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \test2
+Used module:     \cycloneiv_lcell_comb
+Parameter \lut_mask = 16'0000000000000010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111101111110011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.3. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111101111110011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111101111110011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.4. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.5. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111101111110011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111101111110011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111101111110011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb'.
+
+4.1.6. Analyzing design hierarchy..
+Top module:  \test2
+Used module:     $paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb
+Used module:     $paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb
+Used module:     $paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb
+Used module:     $paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb
+
+4.1.7. Analyzing design hierarchy..
+Top module:  \test2
+Used module:     $paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb
+Used module:     $paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb
+Used module:     $paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb
+Used module:     $paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb
+Removing unused module `\dffeas'.
+Removing unused module `\cycloneiv_lcell_comb'.
+Removed 2 unused modules.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 68 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$481'.
+Creating decoders for process `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$466'.
+Creating decoders for process `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$450'.
+Creating decoders for process `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$435'.
+Creating decoders for process `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$543'.
+Creating decoders for process `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$528'.
+Creating decoders for process `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$512'.
+Creating decoders for process `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$497'.
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$463.$result' from process `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$481'.
+No latch inferred for signal `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$462.$result' from process `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$466'.
+No latch inferred for signal `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$432.$result' from process `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$450'.
+No latch inferred for signal `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$431.$result' from process `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$435'.
+No latch inferred for signal `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$525.$result' from process `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$543'.
+No latch inferred for signal `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$524.$result' from process `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$528'.
+No latch inferred for signal `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$494.$result' from process `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$512'.
+No latch inferred for signal `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$493.$result' from process `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$497'.
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$481'.
+Removing empty process `$paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$466'.
+Removing empty process `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$450'.
+Removing empty process `$paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$435'.
+Removing empty process `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$543'.
+Removing empty process `$paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$528'.
+Removing empty process `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$512'.
+Removing empty process `$paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$497'.
+Cleaned up 0 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module test2.
+
+4.3. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb...
+Checking module $paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb...
+Checking module $paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb...
+Checking module $paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb...
+Checking module test2...
+Found and reported 0 problems.
+
+4.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$e050dc7384573f7fd46a5d3a298d3481b38722e8\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$b4da3b25bd285cda4ed3d9cd4811623b30d6eb6b\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$0fa4bdefea2943bc868545914b1b39107d2a38e1\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$c153d52eb4662643680e0564ac46c6d61bcdb61c\cycloneiv_lcell_comb.
+<suppressed ~16 debug messages>
+
+4.5. Executing FUTURE pass.
+
+4.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module test2...
+Warning: Wire test2.\out_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_4_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_4.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_3_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_3.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_2_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_2.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_1_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y_1.cin is used but has no driver.
+Warning: Wire test2.\out_$lut_Y.cin is used but has no driver.
+Warning: Wire test2.\d_$lut_A.cin is used but has no driver.
+Found and reported 16 problems.
+
+4.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+Removed 48 unused cells and 438 unused wires.
+<suppressed ~81 debug messages>
+
+4.9. Executing OPT pass (performing simple optimizations).
+
+4.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+4.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 80 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Removed a total of 0 cells.
+
+4.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~480 debug messages>
+
+4.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test2.
+Performed a total of 0 changes.
+
+4.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 80 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Computing hashes of 68 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Computing hashes of 60 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Computing hashes of 56 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+<suppressed ~72 debug messages>
+Removed a total of 24 cells.
+
+4.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+Removed 0 unused cells and 24 unused wires.
+<suppressed ~1 debug messages>
+
+4.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+4.9.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.9.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~392 debug messages>
+
+4.9.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test2.
+Performed a total of 0 changes.
+
+4.9.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 56 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Removed a total of 0 cells.
+
+4.9.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+4.9.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+4.9.14. Finished fast OPT passes. (There is nothing left to do.)
+
+4.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 8) from mux cell test2.$flatten\out_$lut_Y_3_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$539 ($mux).
+Removed top 4 bits (of 8) from mux cell test2.$flatten\out_$lut_Y_2_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$508 ($mux).
+Removed top 4 bits (of 8) from mux cell test2.$flatten\out_$lut_Y_2.$ternary$../cycloneiv_comb.v:17$477 ($mux).
+Removed top 6 bits (of 8) from mux cell test2.$flatten\d_$lut_A.$ternary$../cycloneiv_comb.v:17$446 ($mux).
+Removed top 4 bits (of 8) from wire test2.$flatten\out_$lut_Y_1_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$495.s3[7:0]$504.
+Removed top 1 bits (of 8) from wire test2.$flatten\out_$lut_Y_1_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$526.s3[7:0]$535.
+Removed top 4 bits (of 8) from wire test2.$flatten\out_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$464.s3[7:0]$473.
+Removed top 6 bits (of 8) from wire test2.$flatten\d_$lut_A.$0\lut_data$func$../cycloneiv_comb.v:25$433.s3[7:0]$442.
+
+4.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+4.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.13. Executing OPT pass (performing simple optimizations).
+
+4.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test2.
+
+4.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test2'.
+Computing hashes of 56 cells of `\test2'.
+Finding duplicate cells in `\test2'.
+Removed a total of 0 cells.
+
+4.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+4.13.4. Finished fast OPT passes.
+
+4.14. Executing SORT pass.
+
+4.15. Printing statistics.
+
+=== test2 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      359 wires
+      795 wire bits
+      335 public wires
+      707 public wire bits
+       10 ports
+       30 port bits
+       56 cells
+       40   $mux
+       16   $scopeinfo
+
+4.16. Executing CHECK pass (checking for obvious problems).
+Checking module test2...
+Found and reported 0 problems.
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing SETUNDEF pass (replace undef values with defined constants).
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \test2
+
+7.2. Analyzing design hierarchy..
+Top module:  \test2
+Removing unused module `$__ABC9_DELAY'.
+Removing unused module `$__ABC9_SCC_BREAKER'.
+Removing unused module `$__DFF_N__$abc9_flop'.
+Removing unused module `$__DFF_P__$abc9_flop'.
+Removing unused module `\GND'.
+Removing unused module `\VCC'.
+Removing unused module `\altsyncram'.
+Removing unused module `\cycloneiv_io_ibuf'.
+Removing unused module `\cycloneiv_io_obuf'.
+Removing unused module `\cycloneiv_pll'.
+Removed 10 unused modules.
+
+8. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+9. Executing ASYNC2SYNC pass.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing SETUNDEF pass (replace undef values with defined constants).
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test2..
+
+13. Executing CHECK pass (checking for obvious problems).
+Checking module test2...
+Found and reported 0 problems.
+
+14. Executing SETUNDEF pass (replace undef values with defined constants).
+
+15. Executing RTLIL backend.
+Output filename: proof/gate.il
+
+Warnings: 16 unique messages, 16 total
+End of script. Logfile hash: abc317e634
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 3% 6x opt_expr (0 sec), 3% 6x opt_clean (0 sec), ...

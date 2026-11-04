@@ -1,0 +1,13 @@
+shared_upstream_cones . A:src="../source.v:1.1-14.14" A:top=1
+shared_upstream_cones y w=7:0 A:src="../source.v:3.22-3.23" P=O
+shared_upstream_cones wide w=127:0 A:src="../source.v:2.36-2.40" P=I
+shared_upstream_cones v w=7:0 A:src="../source.v:5.16-5.17"
+shared_upstream_cones untouched w=127:0 A:src="../source.v:2.57-2.66" P=O
+shared_upstream_cones u w=7:0 A:src="../source.v:4.16-4.17"
+shared_upstream_cones t w=1:0 A:src="../source.v:2.19-2.20" P=I
+shared_upstream_cones s w=1:0 A:src="../source.v:2.17-2.18" P=I
+shared_upstream_cones p w=7:0 A:src="../source.v:6.16-6.17"
+shared_upstream_cones d w=7:0 A:src="../source.v:1.48-1.49" P=I
+shared_upstream_cones c w=7:0 A:src="../source.v:1.46-1.47" P=I
+shared_upstream_cones b w=7:0 A:src="../source.v:1.44-1.45" P=I
+shared_upstream_cones a w=7:0 A:src="../source.v:1.42-1.43" P=I

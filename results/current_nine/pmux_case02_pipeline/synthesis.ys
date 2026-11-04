@@ -1,0 +1,1 @@
+read_verilog -sv "../../../../cases/pmux_case02_pipeline.v"; hierarchy -check -top pmux_case02_pipeline; proc; setundef -undriven -zero; setundef -init -zero; synth_intel -family cycloneiv -top pmux_case02_pipeline; write_verilog -noattr final.v; write_rtlil final.il; stat

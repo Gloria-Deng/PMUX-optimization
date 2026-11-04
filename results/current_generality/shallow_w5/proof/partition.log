@@ -1,0 +1,207 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.shallow_w5 / gate.shallow_w5.
+
+3.1.1. Processing matched IDs for module shallow_w5.
+
+3.1.2. Create fragment partitions for module shallow_w5.
+Adding output bit \data_out [4] to partition 0.
+Adding output bit \data_out [3] to partition 0.
+Adding output bit \data_out [0] to partition 0.
+Adding output bit \data_out [1] to partition 0.
+Adding output bit \data_out [2] to partition 0.
+
+Final list of fragment partitions:
+  0 \data_out [2] \data_out [1] \data_out [0] \data_out [3] \data_out [4] <= \rst \en \ctrl_in [9] \ctrl_in [7] \ctrl_in [6] \ctrl_in [5] \ctrl_in [4] \ctrl_in [8] \ctrl_in [3] \ctrl_in [2] \ctrl_in [1] \data_in [19] \data_in [18] \data_in [17] \data_in [16] \data_in [15] \data_in [14] \data_in [13] \data_in [12] \data_in [11] \data_in [10] \ctrl_in [0] \data_in [9] \data_in [8] \data_in [7] \data_in [6] \data_in [5] \data_in [4] \data_in [3] \data_in [2] \data_in [1] \data_in [0] \clk
+
+3.1.3. Execute partitioning commands for module shallow_w5.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'data_out' using a PO name: data_out
+
+Partition Summary:
+  Fragments:
+       0: \data_out
+  Partitions:
+       0: data_out
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  data_out
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module shallow_w5.
+Adding non-output bit \rst to partition 1.
+Adding non-output bit \en to partition 1.
+Adding output bit \data_out [4] to partition 1.
+Adding output bit \data_out [3] to partition 1.
+Adding output bit \data_out [2] to partition 1.
+Adding output bit \data_out [1] to partition 1.
+Adding output bit \data_out [0] to partition 1.
+Adding non-output bit \data_in [19] to partition 1.
+Adding non-output bit \data_in [18] to partition 1.
+Adding non-output bit \data_in [17] to partition 1.
+Adding non-output bit \data_in [16] to partition 1.
+Adding non-output bit \data_in [15] to partition 1.
+Adding non-output bit \data_in [14] to partition 1.
+Adding non-output bit \data_in [13] to partition 1.
+Adding non-output bit \data_in [12] to partition 1.
+Adding non-output bit \data_in [11] to partition 1.
+Adding non-output bit \data_in [10] to partition 1.
+Adding non-output bit \data_in [9] to partition 1.
+Adding non-output bit \data_in [8] to partition 1.
+Adding non-output bit \data_in [7] to partition 1.
+Adding non-output bit \data_in [6] to partition 1.
+Adding non-output bit \data_in [5] to partition 1.
+Adding non-output bit \data_in [4] to partition 1.
+Adding non-output bit \data_in [3] to partition 1.
+Adding non-output bit \data_in [2] to partition 1.
+Adding non-output bit \data_in [1] to partition 1.
+Adding non-output bit \data_in [0] to partition 1.
+Adding non-output bit \ctrl_in [15] to partition 1.
+Adding non-output bit \ctrl_in [14] to partition 1.
+Adding non-output bit \ctrl_in [13] to partition 1.
+Adding non-output bit \ctrl_in [12] to partition 1.
+Adding non-output bit \ctrl_in [11] to partition 1.
+Adding non-output bit \ctrl_in [10] to partition 1.
+Adding non-output bit \ctrl_in [9] to partition 1.
+Adding non-output bit \ctrl_in [8] to partition 1.
+Adding non-output bit \ctrl_in [7] to partition 1.
+Adding non-output bit \ctrl_in [6] to partition 1.
+Adding non-output bit \ctrl_in [5] to partition 1.
+Adding non-output bit \ctrl_in [4] to partition 1.
+Adding non-output bit \ctrl_in [3] to partition 1.
+Adding non-output bit \ctrl_in [2] to partition 1.
+Adding non-output bit \ctrl_in [1] to partition 1.
+Adding non-output bit \ctrl_in [0] to partition 1.
+Adding non-output bit \clk to partition 1.
+Writing partition 0 as shallow_w5.data_out.
+  partition pi bit 0: \rst <-> \rst
+  partition pi bit 1: \en <-> \en
+  partition pi bit 2: \ctrl_in [9] <-> \ctrl_in [9]
+  partition pi bit 3: \ctrl_in [7] <-> \ctrl_in [7]
+  partition pi bit 4: \ctrl_in [6] <-> \ctrl_in [6]
+  partition pi bit 5: \ctrl_in [5] <-> \ctrl_in [5]
+  partition pi bit 6: \ctrl_in [4] <-> \ctrl_in [4]
+  partition pi bit 7: \ctrl_in [8] <-> \ctrl_in [8]
+  partition pi bit 8: \ctrl_in [3] <-> \ctrl_in [3]
+  partition pi bit 9: \ctrl_in [2] <-> \ctrl_in [2]
+  partition pi bit 10: \ctrl_in [1] <-> \ctrl_in [1]
+  partition pi bit 11: \data_in [19] <-> \data_in [19]
+  partition pi bit 12: \data_in [18] <-> \data_in [18]
+  partition pi bit 13: \data_in [17] <-> \data_in [17]
+  partition pi bit 14: \data_in [16] <-> \data_in [16]
+  partition pi bit 15: \data_in [15] <-> \data_in [15]
+  partition pi bit 16: \data_in [14] <-> \data_in [14]
+  partition pi bit 17: \data_in [13] <-> \data_in [13]
+  partition pi bit 18: \data_in [12] <-> \data_in [12]
+  partition pi bit 19: \data_in [11] <-> \data_in [11]
+  partition pi bit 20: \data_in [10] <-> \data_in [10]
+  partition pi bit 21: \ctrl_in [0] <-> \ctrl_in [0]
+  partition pi bit 22: \data_in [9] <-> \data_in [9]
+  partition pi bit 23: \data_in [8] <-> \data_in [8]
+  partition pi bit 24: \data_in [7] <-> \data_in [7]
+  partition pi bit 25: \data_in [6] <-> \data_in [6]
+  partition pi bit 26: \data_in [5] <-> \data_in [5]
+  partition pi bit 27: \data_in [4] <-> \data_in [4]
+  partition pi bit 28: \data_in [3] <-> \data_in [3]
+  partition pi bit 29: \data_in [2] <-> \data_in [2]
+  partition pi bit 30: \data_in [1] <-> \data_in [1]
+  partition pi bit 31: \data_in [0] <-> \data_in [0]
+  partition pi bit 32: \clk <-> \clk
+  partition po bit 0: \data_out [2] <-> \data_out [2]
+  partition po bit 1: \data_out [1] <-> \data_out [1]
+  partition po bit 2: \data_out [0] <-> \data_out [0]
+  partition po bit 3: \data_out [3] <-> \data_out [3]
+  partition po bit 4: \data_out [4] <-> \data_out [4]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/shallow_w5.data_out.il
+<suppressed ~2577 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.shallow_w5.data_out...
+Checking module gold.shallow_w5.data_out...
+Found and reported 0 problems.
+
+Writing partition 1 as shallow_w5.
+  partition pi bit 0: \ctrl_in [10] <-> \ctrl_in [10]
+  partition pi bit 1: \ctrl_in [11] <-> \ctrl_in [11]
+  partition pi bit 2: \ctrl_in [12] <-> \ctrl_in [12]
+  partition pi bit 3: \ctrl_in [13] <-> \ctrl_in [13]
+  partition pi bit 4: \ctrl_in [14] <-> \ctrl_in [14]
+  partition pi bit 5: \ctrl_in [15] <-> \ctrl_in [15]
+  partition pi bit 6: \ctrl_in [9] <-> \ctrl_in [9]
+  partition pi bit 7: \ctrl_in [7] <-> \ctrl_in [7]
+  partition pi bit 8: \ctrl_in [6] <-> \ctrl_in [6]
+  partition pi bit 9: \ctrl_in [5] <-> \ctrl_in [5]
+  partition pi bit 10: \ctrl_in [4] <-> \ctrl_in [4]
+  partition pi bit 11: \ctrl_in [8] <-> \ctrl_in [8]
+  partition pi bit 12: \ctrl_in [3] <-> \ctrl_in [3]
+  partition pi bit 13: \ctrl_in [2] <-> \ctrl_in [2]
+  partition pi bit 14: \ctrl_in [1] <-> \ctrl_in [1]
+  partition pi bit 15: \data_in [19] <-> \data_in [19]
+  partition pi bit 16: \data_in [18] <-> \data_in [18]
+  partition pi bit 17: \data_in [17] <-> \data_in [17]
+  partition pi bit 18: \data_in [16] <-> \data_in [16]
+  partition pi bit 19: \data_in [15] <-> \data_in [15]
+  partition pi bit 20: \data_in [14] <-> \data_in [14]
+  partition pi bit 21: \data_in [13] <-> \data_in [13]
+  partition pi bit 22: \data_in [12] <-> \data_in [12]
+  partition pi bit 23: \data_in [11] <-> \data_in [11]
+  partition pi bit 24: \data_in [10] <-> \data_in [10]
+  partition pi bit 25: \ctrl_in [0] <-> \ctrl_in [0]
+  partition pi bit 26: \data_in [9] <-> \data_in [9]
+  partition pi bit 27: \data_in [8] <-> \data_in [8]
+  partition pi bit 28: \data_in [7] <-> \data_in [7]
+  partition pi bit 29: \data_in [6] <-> \data_in [6]
+  partition pi bit 30: \data_in [5] <-> \data_in [5]
+  partition pi bit 31: \data_in [4] <-> \data_in [4]
+  partition pi bit 32: \data_in [3] <-> \data_in [3]
+  partition pi bit 33: \data_in [2] <-> \data_in [2]
+  partition pi bit 34: \data_in [1] <-> \data_in [1]
+  partition pi bit 35: \data_in [0] <-> \data_in [0]
+  partition pi bit 36: \clk <-> \clk
+  partition pi bit 37: \en <-> \en
+  partition pi bit 38: \rst <-> \rst
+  partition po bit 0: \data_out [0] <-> \data_out [0]
+  partition po bit 1: \data_out [1] <-> \data_out [1]
+  partition po bit 2: \data_out [2] <-> \data_out [2]
+  partition po bit 3: \data_out [3] <-> \data_out [3]
+  partition po bit 4: \data_out [4] <-> \data_out [4]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/shallow_w5.il
+<suppressed ~677 debug messages>
+
+End of script. Logfile hash: c81636be5f
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

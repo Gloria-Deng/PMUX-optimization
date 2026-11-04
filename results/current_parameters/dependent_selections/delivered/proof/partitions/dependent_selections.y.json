@@ -1,0 +1,424 @@
+{
+  "partition": {
+    "index": 0,
+    "name": "dependent_selections.y",
+    "inbits": {
+      "a": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "b": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "c": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "s": [
+        0,
+        1
+      ],
+      "t": [
+        0,
+        1
+      ]
+    },
+    "outbits": {
+      "y": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.dependent_selections.y",
+    "internal": {
+      "u": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "unused": {},
+    "cellcount": 16,
+    "bitcount": 186
+  },
+  "gate_module": {
+    "name": "gold.dependent_selections.y",
+    "internal": {
+      "y_$lut_Y_2_A": [
+        0
+      ],
+      "y_$lut_Y_2_A_$lut_A_Y": [
+        0
+      ],
+      "y_$lut_Y_2_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_2_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_2_A_1": [
+        0
+      ],
+      "y_$lut_Y_2_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_2_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_2_A_2": [
+        0
+      ],
+      "y_$lut_Y_2_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_2_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_A_Y": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_2_$lut_A_Y": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_1_$lut_A_Y": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_4_A": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_1_$lut_A_Y": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_4_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_7_A": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_7_A_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_7_A_1": [
+        0
+      ],
+      "y_$lut_Y_7_A_2": [
+        0
+      ],
+      "y_$lut_Y_7_A_3": [
+        0
+      ],
+      "y_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_3": [
+        0
+      ]
+    },
+    "unused": {},
+    "cellcount": 97,
+    "bitcount": 197
+  }
+}

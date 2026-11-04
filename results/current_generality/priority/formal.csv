@@ -1,0 +1,4 @@
+﻿case,verdict,rewritten,expected_fail,passed,reason
+permuted_inner,PROVEN,False,False,True,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+register_reader,PROVEN,False,False,True,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+plain_chain,PROVEN,True,False,True,exit=0 whole_design_sentence=True partition_failure=False done_fail=False

@@ -1,0 +1,7 @@
+group pmux_case05_nested clk ctrl_in data_in data_out en rst
+bind pmux_case05_nested clk
+bind pmux_case05_nested ctrl_in
+bind pmux_case05_nested data_in
+bind pmux_case05_nested data_out
+bind pmux_case05_nested en
+bind pmux_case05_nested rst

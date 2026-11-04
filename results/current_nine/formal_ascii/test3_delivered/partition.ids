@@ -1,0 +1,8 @@
+group test3 clk cs gpioout rw sr sr_in sr_out
+bind test3 clk
+bind test3 cs
+bind test3 gpioout
+bind test3 rw
+bind test3 sr
+bind test3 sr_in
+bind test3 sr_out

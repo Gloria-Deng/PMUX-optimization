@@ -1,0 +1,8 @@
+group variant_external_arithmetic clk ctrl_in data_in data_out en rst shared_out
+bind variant_external_arithmetic clk
+bind variant_external_arithmetic ctrl_in
+bind variant_external_arithmetic data_in
+bind variant_external_arithmetic data_out
+bind variant_external_arithmetic en
+bind variant_external_arithmetic rst
+bind variant_external_arithmetic shared_out

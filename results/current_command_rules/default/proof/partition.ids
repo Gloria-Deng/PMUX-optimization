@@ -1,0 +1,12 @@
+group test2 a b c clk d dataa datab datac datad out temp
+bind test2 a
+bind test2 b
+bind test2 c
+bind test2 clk
+bind test2 d
+bind test2 dataa
+bind test2 datab
+bind test2 datac
+bind test2 datad
+bind test2 out
+bind test2 temp

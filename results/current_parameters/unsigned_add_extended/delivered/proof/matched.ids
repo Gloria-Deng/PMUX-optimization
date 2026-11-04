@@ -1,0 +1,11 @@
+# [*] gold-match *
+unsigned_add_extended a0 a0
+unsigned_add_extended a1 a1
+unsigned_add_extended a2 a2
+unsigned_add_extended a3 a3
+unsigned_add_extended b0 b0
+unsigned_add_extended b1 b1
+unsigned_add_extended b2 b2
+unsigned_add_extended b3 b3
+unsigned_add_extended s s
+unsigned_add_extended y y

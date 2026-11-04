@@ -1,0 +1,22 @@
+EQY 19:01:33 [proof] read_gold: starting process "yosys -ql proof/gold.log proof/gold.ys"
+EQY 19:01:33 [proof] read_gold: finished (returncode=0)
+EQY 19:01:33 [proof] read_gate: starting process "yosys -ql proof/gate.log proof/gate.ys"
+EQY 19:01:34 [proof] read_gate: finished (returncode=0)
+EQY 19:01:34 [proof] combine: starting process "yosys -ql proof/combine.log proof/combine.ys"
+EQY 19:01:34 [proof] combine: finished (returncode=0)
+EQY 19:01:34 [proof] partition: starting process "cd proof& yosys -ql partition.log partition.ys"
+EQY 19:01:34 [proof] partition: finished (returncode=0)
+EQY 19:01:34 [proof] run: starting process "make -C proof -f strategies.mk"
+EQY 19:01:34 [proof] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/current_parameters/pmux_case02_pipeline_w5_l1/stock/proof'
+EQY 19:01:34 [proof] run: Running strategy 'whole' on 'pmux_case02_pipeline.data_out'..
+EQY 19:01:35 [proof] run: Proved equivalence of partition 'pmux_case02_pipeline.data_out' using strategy 'whole'
+EQY 19:01:35 [proof] run: make -f strategies.mk summary
+EQY 19:01:35 [proof] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/current_parameters/pmux_case02_pipeline_w5_l1/stock/proof'
+EQY 19:01:35 [proof] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/current_parameters/pmux_case02_pipeline_w5_l1/stock/proof'
+EQY 19:01:35 [proof] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/current_parameters/pmux_case02_pipeline_w5_l1/stock/proof'
+EQY 19:01:35 [proof] run: finished (returncode=0)
+EQY 19:01:35 [proof] Successfully proved equivalence of partition pmux_case02_pipeline.data_out
+EQY 19:01:35 [proof] Successfully proved designs equivalent
+EQY 19:01:35 [proof] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 19:01:35 [proof] summary: Elapsed process time unvailable on Windows
+EQY 19:01:35 [proof] DONE (PASS, rc=0)

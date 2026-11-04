@@ -1,0 +1,22 @@
+EQY 19:02:23 [changed_output] read_gold: starting process "yosys -ql changed_output/gold.log changed_output/gold.ys"
+EQY 19:02:23 [changed_output] read_gold: finished (returncode=0)
+EQY 19:02:23 [changed_output] read_gate: starting process "yosys -ql changed_output/gate.log changed_output/gate.ys"
+EQY 19:02:23 [changed_output] read_gate: finished (returncode=0)
+EQY 19:02:23 [changed_output] combine: starting process "yosys -ql changed_output/combine.log changed_output/combine.ys"
+EQY 19:02:24 [changed_output] combine: finished (returncode=0)
+EQY 19:02:24 [changed_output] partition: starting process "cd changed_output& yosys -ql partition.log partition.ys"
+EQY 19:02:24 [changed_output] partition: finished (returncode=0)
+EQY 19:02:24 [changed_output] run: starting process "make -C changed_output -f strategies.mk"
+EQY 19:02:24 [changed_output] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/current_generality/shallow_w6/changed_output'
+EQY 19:02:24 [changed_output] run: Running strategy 'whole' on 'shallow_w6.data_out'..
+EQY 19:02:24 [changed_output] run: Could not prove equivalence of partition 'shallow_w6.data_out' using strategy 'whole': partitions not equivalent
+EQY 19:02:24 [changed_output] run: make -f strategies.mk summary
+EQY 19:02:24 [changed_output] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/current_generality/shallow_w6/changed_output'
+EQY 19:02:24 [changed_output] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/current_generality/shallow_w6/changed_output'
+EQY 19:02:24 [changed_output] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/current_generality/shallow_w6/changed_output'
+EQY 19:02:24 [changed_output] run: finished (returncode=0)
+EQY 19:02:24 [changed_output] Warning: Failed to prove equivalence for 1/1 partitions:
+EQY 19:02:24 [changed_output] Failed to prove equivalence of partition shallow_w6.data_out
+EQY 19:02:24 [changed_output] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 19:02:24 [changed_output] summary: Elapsed process time unvailable on Windows
+EQY 19:02:24 [changed_output] DONE (FAIL, rc=2)

@@ -1,0 +1,9 @@
+shallow_external . A:src="../../../scripts/generality_cases/shallow_external.v:1.1-23.10" A:top=1
+shallow_external y w=7:0 A:src="../../../scripts/generality_cases/shallow_external.v:1.80-1.81" P=O
+shallow_external s w=5:0 A:src="../../../scripts/generality_cases/shallow_external.v:1.60-1.61" P=I
+shallow_external q w=7:0 A:src="../../../scripts/generality_cases/shallow_external.v:1.45-1.46" P=I
+shallow_external exposed w=7:0 A:src="../../../scripts/generality_cases/shallow_external.v:1.96-1.103" P=O
+shallow_external d w=7:0 A:src="../../../scripts/generality_cases/shallow_external.v:1.43-1.44" P=I
+shallow_external c w=7:0 A:src="../../../scripts/generality_cases/shallow_external.v:1.41-1.42" P=I
+shallow_external b w=7:0 A:src="../../../scripts/generality_cases/shallow_external.v:1.39-1.40" P=I
+shallow_external a w=7:0 A:src="../../../scripts/generality_cases/shallow_external.v:1.37-1.38" P=I

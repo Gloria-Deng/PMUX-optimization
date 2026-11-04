@@ -1,0 +1,7 @@
+group variant_partial_result a b c s x y
+bind variant_partial_result a
+bind variant_partial_result b
+bind variant_partial_result c
+bind variant_partial_result s
+bind variant_partial_result x
+bind variant_partial_result y

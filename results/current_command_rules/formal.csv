@@ -1,0 +1,5 @@
+﻿case,synthesis_exit,abc_calls,abc9_calls,pmux_calls,after_exists,exit,verdict,same_output_as_default,passed,reason
+default,0,0,0,1,True,0,PROVEN,,True,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+explicit_no_probe,0,0,0,1,True,0,PROVEN,True,True,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+reject_probe_all,1,0,0,1,False,1,REJECTED_AS_EXPECTED,,True,expected_message=True; rejected_before_rewrite=True
+reject_counter,1,0,0,1,False,1,REJECTED_AS_EXPECTED,,True,expected_message=True; rejected_before_rewrite=True

@@ -1,0 +1,9 @@
+group pmux_case04_feedback clk ctrl_in data_in data_out en lane[0].next_q lane[1].next_q rst
+bind pmux_case04_feedback clk
+bind pmux_case04_feedback ctrl_in
+bind pmux_case04_feedback data_in
+bind pmux_case04_feedback data_out
+bind pmux_case04_feedback en
+bind pmux_case04_feedback lane[0].next_q
+bind pmux_case04_feedback lane[1].next_q
+bind pmux_case04_feedback rst

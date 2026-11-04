@@ -1,0 +1,174 @@
+{
+  "partition": {
+    "index": 0,
+    "name": "unsigned_sub_truncated.y",
+    "inbits": {
+      "a0": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "a1": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "a2": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "a3": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "b0": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "b1": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "b2": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "b3": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "s": [
+        0,
+        1
+      ]
+    },
+    "outbits": {
+      "y": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.unsigned_sub_truncated.y",
+    "internal": {},
+    "unused": {},
+    "cellcount": 8,
+    "bitcount": 57
+  },
+  "gate_module": {
+    "name": "gold.unsigned_sub_truncated.y",
+    "internal": {
+      "y_$lut_Y_1_A": [
+        0
+      ],
+      "y_$lut_Y_1_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_1_A_1": [
+        0
+      ],
+      "y_$lut_Y_1_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_1_A_2": [
+        0
+      ],
+      "y_$lut_Y_1_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_1_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_1_A_2_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_2_A": [
+        0
+      ],
+      "y_$lut_Y_2_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_2_A_1": [
+        0
+      ],
+      "y_$lut_Y_2_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_2_A_2": [
+        0
+      ],
+      "y_$lut_Y_2_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_2_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_3_A_1": [
+        0
+      ],
+      "y_$lut_Y_3_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_1_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_2": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A": [
+        0
+      ],
+      "y_$lut_Y_A_2_$lut_Y_A_1": [
+        0
+      ],
+      "y_$lut_Y_A_3": [
+        0
+      ],
+      "y_$lut_Y_A_3_$lut_Y_A": [
+        0
+      ]
+    },
+    "unused": {},
+    "cellcount": 34,
+    "bitcount": 68
+  }
+}

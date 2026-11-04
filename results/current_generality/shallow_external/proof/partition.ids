@@ -1,0 +1,9 @@
+group shallow_external a b c d exposed q s y
+bind shallow_external a
+bind shallow_external b
+bind shallow_external c
+bind shallow_external d
+bind shallow_external exposed
+bind shallow_external q
+bind shallow_external s
+bind shallow_external y

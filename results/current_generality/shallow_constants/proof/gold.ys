@@ -1,0 +1,18 @@
+read_verilog -sv "../../../scripts/generality_cases/shallow_constants.v"
+hierarchy -check -top shallow_constants
+proc
+setundef -undriven -zero
+setundef -init -zero
+rename -hide
+prep -top shallow_constants -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top shallow_constants
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil proof/gold.il

@@ -1,0 +1,7 @@
+# [*] gold-match *
+pmux_case03_crossbar clk clk
+pmux_case03_crossbar ctrl_in ctrl_in
+pmux_case03_crossbar data_in data_in
+pmux_case03_crossbar data_out data_out
+pmux_case03_crossbar en en
+pmux_case03_crossbar rst rst

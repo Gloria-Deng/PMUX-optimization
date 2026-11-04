@@ -1,0 +1,2251 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `proof/gate.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: ../../current_nine/test1/delivered/final.il
+
+2. Executing Verilog-2005 frontend: ../cycloneiv_comb.v
+Parsing Verilog input from `../cycloneiv_comb.v' to AST representation.
+Replacing existing blackbox module `\cycloneiv_lcell_comb' at ../cycloneiv_comb.v:1.1-27.10.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ../../../plugin/dffeas_formal.v
+Parsing Verilog input from `../../../plugin/dffeas_formal.v' to AST representation.
+Replacing existing blackbox module `\dffeas' at ../../../plugin/dffeas_formal.v:3.1-19.10.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \test1
+Used module:     \dffeas
+Used module:     \cycloneiv_lcell_comb
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+
+4.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Generating RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \lut_mask = 16'0100010001000100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.3. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0100010001000100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000100010001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.4. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000100010001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.5. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.6. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.7. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.8. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010001000100010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.9. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010001000100010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.10. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000100010001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0100010001000100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.11. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.12. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.13. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011010100111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.14. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011010100111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011010100111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.15. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.16. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100011101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.17. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100011101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100011101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0100010001000100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011010100111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011100100111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011101110111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.18. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010011101110111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1101100000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1110010000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000111100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.19. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000111100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001010110111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.20. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001010110111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001101100011011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101001101011111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000000000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1011001100000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011111100110101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100101000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010110000000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001000100010001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.21. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001000100010001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \lut_mask = 16'0000111000001111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.22. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000111000001111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001000100010001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Found cached RTLIL representation for module `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.23. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110011001100110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110101010101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.24. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110101010101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110101001101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.25. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110101001101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb'.
+
+4.1.26. Analyzing design hierarchy..
+Top module:  \test1
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Used module:     $paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb
+Used module:     $paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb
+Used module:     $paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb
+Used module:     $paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb
+Used module:     $paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb
+Used module:     $paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb
+Used module:     $paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb
+Used module:     $paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb
+Used module:     $paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb
+Used module:     $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb
+Used module:     $paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb
+Used module:     $paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb
+Used module:     $paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb
+Used module:     $paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb
+Used module:     $paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb
+Used module:     $paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb
+Used module:     $paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb
+Used module:     $paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb
+Used module:     $paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb
+Used module:     $paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb
+Used module:     $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb
+Used module:     $paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb
+Used module:     $paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb
+
+4.1.27. Analyzing design hierarchy..
+Top module:  \test1
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Used module:     $paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb
+Used module:     $paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb
+Used module:     $paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb
+Used module:     $paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb
+Used module:     $paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb
+Used module:     $paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb
+Used module:     $paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb
+Used module:     $paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb
+Used module:     $paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb
+Used module:     $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb
+Used module:     $paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb
+Used module:     $paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb
+Used module:     $paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb
+Used module:     $paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb
+Used module:     $paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb
+Used module:     $paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb
+Used module:     $paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb
+Used module:     $paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb
+Used module:     $paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb
+Used module:     $paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb
+Used module:     $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb
+Used module:     $paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb
+Used module:     $paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb
+Removing unused module `\dffeas'.
+Removing unused module `\cycloneiv_lcell_comb'.
+Removed 2 unused modules.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$5727'.
+Cleaned up 1 empty switch.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$../../../plugin/dffeas_formal.v:11$5725 in module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 393 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$5727'.
+  Set init value: \q = 1'0
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \clrn in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$5725'.
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~3 debug messages>
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6367'.
+Creating decoders for process `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6352'.
+Creating decoders for process `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6336'.
+Creating decoders for process `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6321'.
+Creating decoders for process `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6305'.
+Creating decoders for process `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6290'.
+Creating decoders for process `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6274'.
+Creating decoders for process `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6259'.
+Creating decoders for process `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6243'.
+Creating decoders for process `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6228'.
+Creating decoders for process `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6212'.
+Creating decoders for process `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6197'.
+Creating decoders for process `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6181'.
+Creating decoders for process `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6166'.
+Creating decoders for process `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6150'.
+Creating decoders for process `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6135'.
+Creating decoders for process `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6119'.
+Creating decoders for process `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6104'.
+Creating decoders for process `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6088'.
+Creating decoders for process `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6073'.
+Creating decoders for process `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6057'.
+Creating decoders for process `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6042'.
+Creating decoders for process `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6026'.
+Creating decoders for process `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6011'.
+Creating decoders for process `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5995'.
+Creating decoders for process `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5980'.
+Creating decoders for process `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5964'.
+Creating decoders for process `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5949'.
+Creating decoders for process `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5933'.
+Creating decoders for process `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5918'.
+Creating decoders for process `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5902'.
+Creating decoders for process `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5887'.
+Creating decoders for process `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5871'.
+Creating decoders for process `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5856'.
+Creating decoders for process `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5840'.
+Creating decoders for process `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5825'.
+Creating decoders for process `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5809'.
+Creating decoders for process `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5794'.
+Creating decoders for process `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5778'.
+Creating decoders for process `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5763'.
+Creating decoders for process `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5747'.
+Creating decoders for process `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5732'.
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$5727'.
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$5725'.
+     1/1: $0\q[0:0]
+Creating decoders for process `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6429'.
+Creating decoders for process `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6414'.
+Creating decoders for process `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6398'.
+Creating decoders for process `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6383'.
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6349.$result' from process `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6367'.
+No latch inferred for signal `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6348.$result' from process `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6352'.
+No latch inferred for signal `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6318.$result' from process `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6336'.
+No latch inferred for signal `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6317.$result' from process `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6321'.
+No latch inferred for signal `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6287.$result' from process `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6305'.
+No latch inferred for signal `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6286.$result' from process `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6290'.
+No latch inferred for signal `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6256.$result' from process `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6274'.
+No latch inferred for signal `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6255.$result' from process `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6259'.
+No latch inferred for signal `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6225.$result' from process `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6243'.
+No latch inferred for signal `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6224.$result' from process `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6228'.
+No latch inferred for signal `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6194.$result' from process `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6212'.
+No latch inferred for signal `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6193.$result' from process `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6197'.
+No latch inferred for signal `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6163.$result' from process `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6181'.
+No latch inferred for signal `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6162.$result' from process `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6166'.
+No latch inferred for signal `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6132.$result' from process `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6150'.
+No latch inferred for signal `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6131.$result' from process `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6135'.
+No latch inferred for signal `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6101.$result' from process `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6119'.
+No latch inferred for signal `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6100.$result' from process `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6104'.
+No latch inferred for signal `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6070.$result' from process `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6088'.
+No latch inferred for signal `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6069.$result' from process `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6073'.
+No latch inferred for signal `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6039.$result' from process `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6057'.
+No latch inferred for signal `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6038.$result' from process `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6042'.
+No latch inferred for signal `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6008.$result' from process `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6026'.
+No latch inferred for signal `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6007.$result' from process `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6011'.
+No latch inferred for signal `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5977.$result' from process `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5995'.
+No latch inferred for signal `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5976.$result' from process `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5980'.
+No latch inferred for signal `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5946.$result' from process `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5964'.
+No latch inferred for signal `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5945.$result' from process `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5949'.
+No latch inferred for signal `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5915.$result' from process `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5933'.
+No latch inferred for signal `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5914.$result' from process `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5918'.
+No latch inferred for signal `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5884.$result' from process `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5902'.
+No latch inferred for signal `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5883.$result' from process `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5887'.
+No latch inferred for signal `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5853.$result' from process `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5871'.
+No latch inferred for signal `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5852.$result' from process `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5856'.
+No latch inferred for signal `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5822.$result' from process `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5840'.
+No latch inferred for signal `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5821.$result' from process `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5825'.
+No latch inferred for signal `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5791.$result' from process `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5809'.
+No latch inferred for signal `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5790.$result' from process `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5794'.
+No latch inferred for signal `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5760.$result' from process `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5778'.
+No latch inferred for signal `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5759.$result' from process `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5763'.
+No latch inferred for signal `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$5729.$result' from process `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5747'.
+No latch inferred for signal `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$5728.$result' from process `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5732'.
+No latch inferred for signal `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6411.$result' from process `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6429'.
+No latch inferred for signal `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6410.$result' from process `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6414'.
+No latch inferred for signal `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$6380.$result' from process `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6398'.
+No latch inferred for signal `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$6379.$result' from process `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6383'.
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.\q' using process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$5725'.
+  created $adff cell `$procdff$6453' with positive edge clock and positive level reset.
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6367'.
+Removing empty process `$paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6352'.
+Removing empty process `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6336'.
+Removing empty process `$paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6321'.
+Removing empty process `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6305'.
+Removing empty process `$paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6290'.
+Removing empty process `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6274'.
+Removing empty process `$paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6259'.
+Removing empty process `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6243'.
+Removing empty process `$paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6228'.
+Removing empty process `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6212'.
+Removing empty process `$paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6197'.
+Removing empty process `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6181'.
+Removing empty process `$paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6166'.
+Removing empty process `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6150'.
+Removing empty process `$paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6135'.
+Removing empty process `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6119'.
+Removing empty process `$paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6104'.
+Removing empty process `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6088'.
+Removing empty process `$paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6073'.
+Removing empty process `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6057'.
+Removing empty process `$paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6042'.
+Removing empty process `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6026'.
+Removing empty process `$paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6011'.
+Removing empty process `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5995'.
+Removing empty process `$paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5980'.
+Removing empty process `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5964'.
+Removing empty process `$paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5949'.
+Removing empty process `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5933'.
+Removing empty process `$paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5918'.
+Removing empty process `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5902'.
+Removing empty process `$paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5887'.
+Removing empty process `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5871'.
+Removing empty process `$paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5856'.
+Removing empty process `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5840'.
+Removing empty process `$paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5825'.
+Removing empty process `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5809'.
+Removing empty process `$paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5794'.
+Removing empty process `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5778'.
+Removing empty process `$paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5763'.
+Removing empty process `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$5747'.
+Removing empty process `$paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$5732'.
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$5727'.
+Found and cleaned up 3 empty switches in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$5725'.
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$5725'.
+Removing empty process `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6429'.
+Removing empty process `$paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6414'.
+Removing empty process `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$6398'.
+Removing empty process `$paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$6383'.
+Cleaned up 3 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.
+<suppressed ~4 debug messages>
+Optimizing module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.
+<suppressed ~3 debug messages>
+Optimizing module test1.
+
+4.3. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb...
+Checking module $paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb...
+Checking module $paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb...
+Checking module $paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb...
+Checking module $paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb...
+Checking module $paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb...
+Checking module $paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb...
+Checking module $paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb...
+Checking module $paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb...
+Checking module $paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb...
+Checking module $paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb...
+Checking module $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb...
+Checking module $paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb...
+Checking module $paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb...
+Checking module $paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb...
+Checking module $paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb...
+Checking module $paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb...
+Checking module $paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb...
+Checking module $paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb...
+Checking module $paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb...
+Checking module $paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb...
+Checking module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas...
+Checking module $paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb...
+Checking module $paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb...
+Checking module test1...
+Found and reported 0 problems.
+
+4.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$fe14ccbeda88a31fc1e3e40b601cc844d9df8203\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$1ecfca1729f0aeb38e8d703e843853f285be1ee0\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$ae2d2367753a0ba5a80c88222dde0357913490e3\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$4f61c7b909e5c123308d871f98e9a6c4137527b0\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$1cd13f303268ae7acc721f792980d2e11cd317d8\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$9173ede83841d86b8b1ef66aa94a57642e8e585c\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$0722c693d34785a99698ed19c1886511dccd6509\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$e122ccbab6c05661a5d44d248b4ba40385b13224\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$bf0aae9c571d9eee996138c1532a244c026d6920\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$632a57744393d92a6b0a0e538ffedcd3c4b8792c\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$d08e4bc7f224c713f463b12b08dec6d1d9d33138\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$ffa4238e785f70f49e47bd5abb3d14ea27b67fe6\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$dce9a706105f694f180af276a255f0b96bf4f3fb\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$e5c6ccb9e6b0dfea8f952c0b681ab6f10e1b79d7\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$d5babc3012ac2859310f13e6e70f078f5ea72610\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$56c3ae652b26aa6b4924d14f992dcd7c8c0d25f7\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$a9c84c6919dcc54263bd080d5ce91aa2740e76af\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$19820e0d281ec16abbe1771b20fbeb0bfe9fd9a9\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$1ef1a71e4e29dd55a3d59c61d4076cafcc612897\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$650108b51605e6a14905dd298ebe46eb7ee30477\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$395806bfca5813f5244a8607c7a609eb9aea9d3a\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Deleting now unused module $paramod$7942f2c4039457568791cd778b6a78b7bc0fa750\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$a709f5163786c2898a58c365842294d00af7ff2f\cycloneiv_lcell_comb.
+<suppressed ~402 debug messages>
+
+4.5. Executing FUTURE pass.
+
+4.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+<suppressed ~923 debug messages>
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Warning: Wire test1.\valid_$lut_A_Y_$lut_Y_2.cin is used but has no driver.
+Warning: Wire test1.\valid_$lut_A.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9_A_1_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8_A_1_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8_A_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_6.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_5.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_4.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2_A_$lut_Y_A_1_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10_A_1_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_1.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_9.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_8.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_7.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_3.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_2.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_$lut_Y_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_10.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A.cin is used but has no driver.
+Warning: Wire test1.\reset_$lut_A_A_$lut_Y_A_$lut_A_A_$lut_Y.cin is used but has no driver.
+Found and reported 73 problems.
+
+4.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 241 unused cells and 7398 unused wires.
+<suppressed ~537 debug messages>
+
+4.9. Executing OPT pass (performing simple optimizations).
+
+4.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+4.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1519 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+4.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5194 debug messages>
+
+4.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+4.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1519 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1419 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Computing hashes of 1327 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+<suppressed ~576 debug messages>
+Removed a total of 192 cells.
+
+4.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 192 unused wires.
+<suppressed ~1 debug messages>
+
+4.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+4.9.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.9.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test1..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4626 debug messages>
+
+4.9.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test1.
+Performed a total of 0 changes.
+
+4.9.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1327 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+4.9.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+4.9.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+4.9.14. Finished fast OPT passes. (There is nothing left to do.)
+
+4.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from mux cell test1.$flatten\valid_$lut_A_A_$lut_Y.$ternary$../cycloneiv_comb.v:19$6303 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\valid_$lut_A.$ternary$../cycloneiv_comb.v:17$6332 ($mux).
+Removed top 1 bits (of 2) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:19$6303 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 1 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$6208 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_6.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_5.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_4.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_1.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 2) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_A_$lut_Y_A_3_$lut_Y_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:19$5745 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_9.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_8.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_7.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 2 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$6177 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 4 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$6084 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_3.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_2.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 4 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_$lut_Y_A_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$6053 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_10.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 4) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1.$ternary$../cycloneiv_comb.v:18$6023 ($mux).
+Removed top 1 bits (of 2) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_A_2_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:19$5745 ($mux).
+Removed top 7 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A.$ternary$../cycloneiv_comb.v:17$5867 ($mux).
+Removed top 4 bits (of 8) from mux cell test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$5836 ($mux).
+Removed top 1 bits (of 2) from mux cell test1.$flatten\reset_$lut_A.$ternary$../cycloneiv_comb.v:19$5745 ($mux).
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 2 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$6164.s3[7:0]$6173.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_6_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 4 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_$lut_Y_A_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$6040.s3[7:0]$6049.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_7.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_8.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_9.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_1_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_10.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 1 bits (of 2) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_A_$lut_Y_A_3_$lut_Y_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5730.s1[1:0]$5741.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_1.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_10_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_2.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_3.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_2_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 4 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5823.s3[7:0]$5832.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 1 bits (of 2) from wire test1.$flatten\reset_$lut_A.$0\lut_data$func$../cycloneiv_comb.v:25$5730.s1[1:0]$5741.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_3_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 1 bits (of 2) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_A_2_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5730.s1[1:0]$5741.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_4.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_5.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_6.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_4_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 1 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$6195.s3[7:0]$6204.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_7_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_8_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 1 bits (of 4) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1.$0\lut_data$func$../cycloneiv_comb.v:25$6009.s2[3:0]$6019.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_Y_$lut_Y_9_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 7 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A.$0\lut_data$func$../cycloneiv_comb.v:25$5854.s3[7:0]$5863.
+Removed top 1 bits (of 2) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$6288.s1[1:0]$6299.
+Removed top 7 bits (of 8) from wire test1.$flatten\valid_$lut_A.$0\lut_data$func$../cycloneiv_comb.v:25$6319.s3[7:0]$6328.
+Removed top 1 bits (of 2) from wire test1.$flatten\valid_$lut_A_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$6288.s1[1:0]$6299.
+Removed top 4 bits (of 8) from wire test1.$flatten\reset_$lut_A_A_$lut_Y_A_$lut_A_Y_$lut_A_Y_$lut_A_1_Y_$lut_Y_5_A_$lut_Y_A_3_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$6071.s3[7:0]$6080.
+
+4.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+Removed 0 unused cells and 47 unused wires.
+<suppressed ~1 debug messages>
+
+4.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.13. Executing OPT pass (performing simple optimizations).
+
+4.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test1.
+
+4.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test1'.
+Computing hashes of 1327 cells of `\test1'.
+Finding duplicate cells in `\test1'.
+Removed a total of 0 cells.
+
+4.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+4.13.4. Finished fast OPT passes.
+
+4.14. Executing SORT pass.
+
+4.15. Printing statistics.
+
+=== test1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     6491 wires
+    11656 wire bits
+     5969 public wires
+    10395 public wire bits
+       23 ports
+      285 port bits
+     1327 cells
+      222   $adff
+      702   $mux
+        1   $not
+      402   $scopeinfo
+
+4.16. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing SETUNDEF pass (replace undef values with defined constants).
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \test1
+
+7.2. Analyzing design hierarchy..
+Top module:  \test1
+Removing unused module `$__ABC9_DELAY'.
+Removing unused module `$__ABC9_SCC_BREAKER'.
+Removing unused module `$__DFF_N__$abc9_flop'.
+Removing unused module `$__DFF_P__$abc9_flop'.
+Removing unused module `\GND'.
+Removing unused module `\VCC'.
+Removing unused module `\altsyncram'.
+Removing unused module `\cycloneiv_io_ibuf'.
+Removing unused module `\cycloneiv_io_obuf'.
+Removing unused module `\cycloneiv_pll'.
+Removed 10 unused modules.
+
+8. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+9. Executing ASYNC2SYNC pass.
+Replacing test1.$flatten\i0_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q.$0\q[0:0], Q=\i0_dffeas_q.q
+Replacing test1.$flatten\i0_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_1.$0\q[0:0], Q=\i0_dffeas_q_1.q
+Replacing test1.$flatten\i0_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_10.$0\q[0:0], Q=\i0_dffeas_q_10.q
+Replacing test1.$flatten\i0_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_11.$0\q[0:0], Q=\i0_dffeas_q_11.q
+Replacing test1.$flatten\i0_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_2.$0\q[0:0], Q=\i0_dffeas_q_2.q
+Replacing test1.$flatten\i0_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_3.$0\q[0:0], Q=\i0_dffeas_q_3.q
+Replacing test1.$flatten\i0_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_4.$0\q[0:0], Q=\i0_dffeas_q_4.q
+Replacing test1.$flatten\i0_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_5.$0\q[0:0], Q=\i0_dffeas_q_5.q
+Replacing test1.$flatten\i0_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_6.$0\q[0:0], Q=\i0_dffeas_q_6.q
+Replacing test1.$flatten\i0_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_7.$0\q[0:0], Q=\i0_dffeas_q_7.q
+Replacing test1.$flatten\i0_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_8.$0\q[0:0], Q=\i0_dffeas_q_8.q
+Replacing test1.$flatten\i0_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i0_dffeas_q_9.$0\q[0:0], Q=\i0_dffeas_q_9.q
+Replacing test1.$flatten\i1_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q.$0\q[0:0], Q=\i1_dffeas_q.q
+Replacing test1.$flatten\i1_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_1.$0\q[0:0], Q=\i1_dffeas_q_1.q
+Replacing test1.$flatten\i1_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_10.$0\q[0:0], Q=\i1_dffeas_q_10.q
+Replacing test1.$flatten\i1_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_11.$0\q[0:0], Q=\i1_dffeas_q_11.q
+Replacing test1.$flatten\i1_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_2.$0\q[0:0], Q=\i1_dffeas_q_2.q
+Replacing test1.$flatten\i1_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_3.$0\q[0:0], Q=\i1_dffeas_q_3.q
+Replacing test1.$flatten\i1_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_4.$0\q[0:0], Q=\i1_dffeas_q_4.q
+Replacing test1.$flatten\i1_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_5.$0\q[0:0], Q=\i1_dffeas_q_5.q
+Replacing test1.$flatten\i1_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_6.$0\q[0:0], Q=\i1_dffeas_q_6.q
+Replacing test1.$flatten\i1_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_7.$0\q[0:0], Q=\i1_dffeas_q_7.q
+Replacing test1.$flatten\i1_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_8.$0\q[0:0], Q=\i1_dffeas_q_8.q
+Replacing test1.$flatten\i1_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i1_dffeas_q_9.$0\q[0:0], Q=\i1_dffeas_q_9.q
+Replacing test1.$flatten\i2_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q.$0\q[0:0], Q=\i2_dffeas_q.q
+Replacing test1.$flatten\i2_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_1.$0\q[0:0], Q=\i2_dffeas_q_1.q
+Replacing test1.$flatten\i2_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_10.$0\q[0:0], Q=\i2_dffeas_q_10.q
+Replacing test1.$flatten\i2_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_11.$0\q[0:0], Q=\i2_dffeas_q_11.q
+Replacing test1.$flatten\i2_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_2.$0\q[0:0], Q=\i2_dffeas_q_2.q
+Replacing test1.$flatten\i2_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_3.$0\q[0:0], Q=\i2_dffeas_q_3.q
+Replacing test1.$flatten\i2_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_4.$0\q[0:0], Q=\i2_dffeas_q_4.q
+Replacing test1.$flatten\i2_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_5.$0\q[0:0], Q=\i2_dffeas_q_5.q
+Replacing test1.$flatten\i2_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_6.$0\q[0:0], Q=\i2_dffeas_q_6.q
+Replacing test1.$flatten\i2_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_7.$0\q[0:0], Q=\i2_dffeas_q_7.q
+Replacing test1.$flatten\i2_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_8.$0\q[0:0], Q=\i2_dffeas_q_8.q
+Replacing test1.$flatten\i2_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i2_dffeas_q_9.$0\q[0:0], Q=\i2_dffeas_q_9.q
+Replacing test1.$flatten\i3_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q.$0\q[0:0], Q=\i3_dffeas_q.q
+Replacing test1.$flatten\i3_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_1.$0\q[0:0], Q=\i3_dffeas_q_1.q
+Replacing test1.$flatten\i3_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_10.$0\q[0:0], Q=\i3_dffeas_q_10.q
+Replacing test1.$flatten\i3_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_11.$0\q[0:0], Q=\i3_dffeas_q_11.q
+Replacing test1.$flatten\i3_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_2.$0\q[0:0], Q=\i3_dffeas_q_2.q
+Replacing test1.$flatten\i3_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_3.$0\q[0:0], Q=\i3_dffeas_q_3.q
+Replacing test1.$flatten\i3_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_4.$0\q[0:0], Q=\i3_dffeas_q_4.q
+Replacing test1.$flatten\i3_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_5.$0\q[0:0], Q=\i3_dffeas_q_5.q
+Replacing test1.$flatten\i3_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_6.$0\q[0:0], Q=\i3_dffeas_q_6.q
+Replacing test1.$flatten\i3_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_7.$0\q[0:0], Q=\i3_dffeas_q_7.q
+Replacing test1.$flatten\i3_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_8.$0\q[0:0], Q=\i3_dffeas_q_8.q
+Replacing test1.$flatten\i3_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i3_dffeas_q_9.$0\q[0:0], Q=\i3_dffeas_q_9.q
+Replacing test1.$flatten\i4_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q.$0\q[0:0], Q=\i4_dffeas_q.q
+Replacing test1.$flatten\i4_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_1.$0\q[0:0], Q=\i4_dffeas_q_1.q
+Replacing test1.$flatten\i4_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_10.$0\q[0:0], Q=\i4_dffeas_q_10.q
+Replacing test1.$flatten\i4_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_11.$0\q[0:0], Q=\i4_dffeas_q_11.q
+Replacing test1.$flatten\i4_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_2.$0\q[0:0], Q=\i4_dffeas_q_2.q
+Replacing test1.$flatten\i4_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_3.$0\q[0:0], Q=\i4_dffeas_q_3.q
+Replacing test1.$flatten\i4_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_4.$0\q[0:0], Q=\i4_dffeas_q_4.q
+Replacing test1.$flatten\i4_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_5.$0\q[0:0], Q=\i4_dffeas_q_5.q
+Replacing test1.$flatten\i4_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_6.$0\q[0:0], Q=\i4_dffeas_q_6.q
+Replacing test1.$flatten\i4_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_7.$0\q[0:0], Q=\i4_dffeas_q_7.q
+Replacing test1.$flatten\i4_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_8.$0\q[0:0], Q=\i4_dffeas_q_8.q
+Replacing test1.$flatten\i4_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i4_dffeas_q_9.$0\q[0:0], Q=\i4_dffeas_q_9.q
+Replacing test1.$flatten\i5_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q.$0\q[0:0], Q=\i5_dffeas_q.q
+Replacing test1.$flatten\i5_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_1.$0\q[0:0], Q=\i5_dffeas_q_1.q
+Replacing test1.$flatten\i5_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_10.$0\q[0:0], Q=\i5_dffeas_q_10.q
+Replacing test1.$flatten\i5_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_11.$0\q[0:0], Q=\i5_dffeas_q_11.q
+Replacing test1.$flatten\i5_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_2.$0\q[0:0], Q=\i5_dffeas_q_2.q
+Replacing test1.$flatten\i5_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_3.$0\q[0:0], Q=\i5_dffeas_q_3.q
+Replacing test1.$flatten\i5_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_4.$0\q[0:0], Q=\i5_dffeas_q_4.q
+Replacing test1.$flatten\i5_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_5.$0\q[0:0], Q=\i5_dffeas_q_5.q
+Replacing test1.$flatten\i5_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_6.$0\q[0:0], Q=\i5_dffeas_q_6.q
+Replacing test1.$flatten\i5_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_7.$0\q[0:0], Q=\i5_dffeas_q_7.q
+Replacing test1.$flatten\i5_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_8.$0\q[0:0], Q=\i5_dffeas_q_8.q
+Replacing test1.$flatten\i5_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i5_dffeas_q_9.$0\q[0:0], Q=\i5_dffeas_q_9.q
+Replacing test1.$flatten\i6_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q.$0\q[0:0], Q=\i6_dffeas_q.q
+Replacing test1.$flatten\i6_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_1.$0\q[0:0], Q=\i6_dffeas_q_1.q
+Replacing test1.$flatten\i6_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_10.$0\q[0:0], Q=\i6_dffeas_q_10.q
+Replacing test1.$flatten\i6_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_11.$0\q[0:0], Q=\i6_dffeas_q_11.q
+Replacing test1.$flatten\i6_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_2.$0\q[0:0], Q=\i6_dffeas_q_2.q
+Replacing test1.$flatten\i6_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_3.$0\q[0:0], Q=\i6_dffeas_q_3.q
+Replacing test1.$flatten\i6_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_4.$0\q[0:0], Q=\i6_dffeas_q_4.q
+Replacing test1.$flatten\i6_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_5.$0\q[0:0], Q=\i6_dffeas_q_5.q
+Replacing test1.$flatten\i6_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_6.$0\q[0:0], Q=\i6_dffeas_q_6.q
+Replacing test1.$flatten\i6_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_7.$0\q[0:0], Q=\i6_dffeas_q_7.q
+Replacing test1.$flatten\i6_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_8.$0\q[0:0], Q=\i6_dffeas_q_8.q
+Replacing test1.$flatten\i6_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i6_dffeas_q_9.$0\q[0:0], Q=\i6_dffeas_q_9.q
+Replacing test1.$flatten\i7_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q.$0\q[0:0], Q=\i7_dffeas_q.q
+Replacing test1.$flatten\i7_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_1.$0\q[0:0], Q=\i7_dffeas_q_1.q
+Replacing test1.$flatten\i7_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_10.$0\q[0:0], Q=\i7_dffeas_q_10.q
+Replacing test1.$flatten\i7_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_11.$0\q[0:0], Q=\i7_dffeas_q_11.q
+Replacing test1.$flatten\i7_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_2.$0\q[0:0], Q=\i7_dffeas_q_2.q
+Replacing test1.$flatten\i7_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_3.$0\q[0:0], Q=\i7_dffeas_q_3.q
+Replacing test1.$flatten\i7_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_4.$0\q[0:0], Q=\i7_dffeas_q_4.q
+Replacing test1.$flatten\i7_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_5.$0\q[0:0], Q=\i7_dffeas_q_5.q
+Replacing test1.$flatten\i7_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_6.$0\q[0:0], Q=\i7_dffeas_q_6.q
+Replacing test1.$flatten\i7_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_7.$0\q[0:0], Q=\i7_dffeas_q_7.q
+Replacing test1.$flatten\i7_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_8.$0\q[0:0], Q=\i7_dffeas_q_8.q
+Replacing test1.$flatten\i7_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\i7_dffeas_q_9.$0\q[0:0], Q=\i7_dffeas_q_9.q
+Replacing test1.$flatten\inter0007_out_$lut_Y_A_dffeas_q.$procdff$6453 ($adff): ARST=\reset, D=\state_dffeas_q.q, Q=\inter0007_out_$lut_Y_A_dffeas_q.q
+Replacing test1.$flatten\inter0008_out_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q.$0\q[0:0], Q=\inter0008_out_dffeas_q.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_1.$0\q[0:0], Q=\inter0008_out_dffeas_q_1.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_10.$0\q[0:0], Q=\inter0008_out_dffeas_q_10.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_11.$0\q[0:0], Q=\inter0008_out_dffeas_q_11.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_2.$0\q[0:0], Q=\inter0008_out_dffeas_q_2.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_3.$0\q[0:0], Q=\inter0008_out_dffeas_q_3.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_4.$0\q[0:0], Q=\inter0008_out_dffeas_q_4.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_5.$0\q[0:0], Q=\inter0008_out_dffeas_q_5.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_6.$0\q[0:0], Q=\inter0008_out_dffeas_q_6.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_7.$0\q[0:0], Q=\inter0008_out_dffeas_q_7.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_8.$0\q[0:0], Q=\inter0008_out_dffeas_q_8.q
+Replacing test1.$flatten\inter0008_out_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0008_out_dffeas_q_9.$0\q[0:0], Q=\inter0008_out_dffeas_q_9.q
+Replacing test1.$flatten\inter0009_out_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q.$0\q[0:0], Q=\inter0009_out_dffeas_q.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_1.$0\q[0:0], Q=\inter0009_out_dffeas_q_1.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_10.$0\q[0:0], Q=\inter0009_out_dffeas_q_10.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_11.$0\q[0:0], Q=\inter0009_out_dffeas_q_11.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_2.$0\q[0:0], Q=\inter0009_out_dffeas_q_2.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_3.$0\q[0:0], Q=\inter0009_out_dffeas_q_3.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_4.$0\q[0:0], Q=\inter0009_out_dffeas_q_4.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_5.$0\q[0:0], Q=\inter0009_out_dffeas_q_5.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_6.$0\q[0:0], Q=\inter0009_out_dffeas_q_6.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_7.$0\q[0:0], Q=\inter0009_out_dffeas_q_7.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_8.$0\q[0:0], Q=\inter0009_out_dffeas_q_8.q
+Replacing test1.$flatten\inter0009_out_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\inter0009_out_dffeas_q_9.$0\q[0:0], Q=\inter0009_out_dffeas_q_9.q
+Replacing test1.$flatten\por6_out_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\por6_out_dffeas_q.$0\q[0:0], Q=\por6_out_dffeas_q.q
+Replacing test1.$flatten\q0_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q.$0\q[0:0], Q=\q0_dffeas_q.q
+Replacing test1.$flatten\q0_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_1.$0\q[0:0], Q=\q0_dffeas_q_1.q
+Replacing test1.$flatten\q0_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_10.$0\q[0:0], Q=\q0_dffeas_q_10.q
+Replacing test1.$flatten\q0_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_11.$0\q[0:0], Q=\q0_dffeas_q_11.q
+Replacing test1.$flatten\q0_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_2.$0\q[0:0], Q=\q0_dffeas_q_2.q
+Replacing test1.$flatten\q0_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_3.$0\q[0:0], Q=\q0_dffeas_q_3.q
+Replacing test1.$flatten\q0_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_4.$0\q[0:0], Q=\q0_dffeas_q_4.q
+Replacing test1.$flatten\q0_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_5.$0\q[0:0], Q=\q0_dffeas_q_5.q
+Replacing test1.$flatten\q0_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_6.$0\q[0:0], Q=\q0_dffeas_q_6.q
+Replacing test1.$flatten\q0_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_7.$0\q[0:0], Q=\q0_dffeas_q_7.q
+Replacing test1.$flatten\q0_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_8.$0\q[0:0], Q=\q0_dffeas_q_8.q
+Replacing test1.$flatten\q0_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q0_dffeas_q_9.$0\q[0:0], Q=\q0_dffeas_q_9.q
+Replacing test1.$flatten\q1_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q.$0\q[0:0], Q=\q1_dffeas_q.q
+Replacing test1.$flatten\q1_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_1.$0\q[0:0], Q=\q1_dffeas_q_1.q
+Replacing test1.$flatten\q1_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_10.$0\q[0:0], Q=\q1_dffeas_q_10.q
+Replacing test1.$flatten\q1_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_11.$0\q[0:0], Q=\q1_dffeas_q_11.q
+Replacing test1.$flatten\q1_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_2.$0\q[0:0], Q=\q1_dffeas_q_2.q
+Replacing test1.$flatten\q1_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_3.$0\q[0:0], Q=\q1_dffeas_q_3.q
+Replacing test1.$flatten\q1_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_4.$0\q[0:0], Q=\q1_dffeas_q_4.q
+Replacing test1.$flatten\q1_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_5.$0\q[0:0], Q=\q1_dffeas_q_5.q
+Replacing test1.$flatten\q1_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_6.$0\q[0:0], Q=\q1_dffeas_q_6.q
+Replacing test1.$flatten\q1_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_7.$0\q[0:0], Q=\q1_dffeas_q_7.q
+Replacing test1.$flatten\q1_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_8.$0\q[0:0], Q=\q1_dffeas_q_8.q
+Replacing test1.$flatten\q1_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q1_dffeas_q_9.$0\q[0:0], Q=\q1_dffeas_q_9.q
+Replacing test1.$flatten\q2_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q.$0\q[0:0], Q=\q2_dffeas_q.q
+Replacing test1.$flatten\q2_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_1.$0\q[0:0], Q=\q2_dffeas_q_1.q
+Replacing test1.$flatten\q2_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_10.$0\q[0:0], Q=\q2_dffeas_q_10.q
+Replacing test1.$flatten\q2_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_11.$0\q[0:0], Q=\q2_dffeas_q_11.q
+Replacing test1.$flatten\q2_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_2.$0\q[0:0], Q=\q2_dffeas_q_2.q
+Replacing test1.$flatten\q2_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_3.$0\q[0:0], Q=\q2_dffeas_q_3.q
+Replacing test1.$flatten\q2_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_4.$0\q[0:0], Q=\q2_dffeas_q_4.q
+Replacing test1.$flatten\q2_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_5.$0\q[0:0], Q=\q2_dffeas_q_5.q
+Replacing test1.$flatten\q2_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_6.$0\q[0:0], Q=\q2_dffeas_q_6.q
+Replacing test1.$flatten\q2_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_7.$0\q[0:0], Q=\q2_dffeas_q_7.q
+Replacing test1.$flatten\q2_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_8.$0\q[0:0], Q=\q2_dffeas_q_8.q
+Replacing test1.$flatten\q2_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q2_dffeas_q_9.$0\q[0:0], Q=\q2_dffeas_q_9.q
+Replacing test1.$flatten\q3_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q.$0\q[0:0], Q=\q3_dffeas_q.q
+Replacing test1.$flatten\q3_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_1.$0\q[0:0], Q=\q3_dffeas_q_1.q
+Replacing test1.$flatten\q3_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_10.$0\q[0:0], Q=\q3_dffeas_q_10.q
+Replacing test1.$flatten\q3_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_11.$0\q[0:0], Q=\q3_dffeas_q_11.q
+Replacing test1.$flatten\q3_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_2.$0\q[0:0], Q=\q3_dffeas_q_2.q
+Replacing test1.$flatten\q3_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_3.$0\q[0:0], Q=\q3_dffeas_q_3.q
+Replacing test1.$flatten\q3_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_4.$0\q[0:0], Q=\q3_dffeas_q_4.q
+Replacing test1.$flatten\q3_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_5.$0\q[0:0], Q=\q3_dffeas_q_5.q
+Replacing test1.$flatten\q3_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_6.$0\q[0:0], Q=\q3_dffeas_q_6.q
+Replacing test1.$flatten\q3_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_7.$0\q[0:0], Q=\q3_dffeas_q_7.q
+Replacing test1.$flatten\q3_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_8.$0\q[0:0], Q=\q3_dffeas_q_8.q
+Replacing test1.$flatten\q3_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q3_dffeas_q_9.$0\q[0:0], Q=\q3_dffeas_q_9.q
+Replacing test1.$flatten\q4_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q.$0\q[0:0], Q=\q4_dffeas_q.q
+Replacing test1.$flatten\q4_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_1.$0\q[0:0], Q=\q4_dffeas_q_1.q
+Replacing test1.$flatten\q4_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_10.$0\q[0:0], Q=\q4_dffeas_q_10.q
+Replacing test1.$flatten\q4_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_11.$0\q[0:0], Q=\q4_dffeas_q_11.q
+Replacing test1.$flatten\q4_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_2.$0\q[0:0], Q=\q4_dffeas_q_2.q
+Replacing test1.$flatten\q4_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_3.$0\q[0:0], Q=\q4_dffeas_q_3.q
+Replacing test1.$flatten\q4_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_4.$0\q[0:0], Q=\q4_dffeas_q_4.q
+Replacing test1.$flatten\q4_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_5.$0\q[0:0], Q=\q4_dffeas_q_5.q
+Replacing test1.$flatten\q4_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_6.$0\q[0:0], Q=\q4_dffeas_q_6.q
+Replacing test1.$flatten\q4_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_7.$0\q[0:0], Q=\q4_dffeas_q_7.q
+Replacing test1.$flatten\q4_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_8.$0\q[0:0], Q=\q4_dffeas_q_8.q
+Replacing test1.$flatten\q4_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q4_dffeas_q_9.$0\q[0:0], Q=\q4_dffeas_q_9.q
+Replacing test1.$flatten\q5_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q.$0\q[0:0], Q=\q5_dffeas_q.q
+Replacing test1.$flatten\q5_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_1.$0\q[0:0], Q=\q5_dffeas_q_1.q
+Replacing test1.$flatten\q5_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_10.$0\q[0:0], Q=\q5_dffeas_q_10.q
+Replacing test1.$flatten\q5_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_11.$0\q[0:0], Q=\q5_dffeas_q_11.q
+Replacing test1.$flatten\q5_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_2.$0\q[0:0], Q=\q5_dffeas_q_2.q
+Replacing test1.$flatten\q5_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_3.$0\q[0:0], Q=\q5_dffeas_q_3.q
+Replacing test1.$flatten\q5_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_4.$0\q[0:0], Q=\q5_dffeas_q_4.q
+Replacing test1.$flatten\q5_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_5.$0\q[0:0], Q=\q5_dffeas_q_5.q
+Replacing test1.$flatten\q5_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_6.$0\q[0:0], Q=\q5_dffeas_q_6.q
+Replacing test1.$flatten\q5_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_7.$0\q[0:0], Q=\q5_dffeas_q_7.q
+Replacing test1.$flatten\q5_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_8.$0\q[0:0], Q=\q5_dffeas_q_8.q
+Replacing test1.$flatten\q5_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q5_dffeas_q_9.$0\q[0:0], Q=\q5_dffeas_q_9.q
+Replacing test1.$flatten\q6_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q.$0\q[0:0], Q=\q6_dffeas_q.q
+Replacing test1.$flatten\q6_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_1.$0\q[0:0], Q=\q6_dffeas_q_1.q
+Replacing test1.$flatten\q6_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_10.$0\q[0:0], Q=\q6_dffeas_q_10.q
+Replacing test1.$flatten\q6_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_11.$0\q[0:0], Q=\q6_dffeas_q_11.q
+Replacing test1.$flatten\q6_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_2.$0\q[0:0], Q=\q6_dffeas_q_2.q
+Replacing test1.$flatten\q6_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_3.$0\q[0:0], Q=\q6_dffeas_q_3.q
+Replacing test1.$flatten\q6_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_4.$0\q[0:0], Q=\q6_dffeas_q_4.q
+Replacing test1.$flatten\q6_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_5.$0\q[0:0], Q=\q6_dffeas_q_5.q
+Replacing test1.$flatten\q6_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_6.$0\q[0:0], Q=\q6_dffeas_q_6.q
+Replacing test1.$flatten\q6_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_7.$0\q[0:0], Q=\q6_dffeas_q_7.q
+Replacing test1.$flatten\q6_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_8.$0\q[0:0], Q=\q6_dffeas_q_8.q
+Replacing test1.$flatten\q6_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q6_dffeas_q_9.$0\q[0:0], Q=\q6_dffeas_q_9.q
+Replacing test1.$flatten\q7_dffeas_q.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q.$0\q[0:0], Q=\q7_dffeas_q.q
+Replacing test1.$flatten\q7_dffeas_q_1.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_1.$0\q[0:0], Q=\q7_dffeas_q_1.q
+Replacing test1.$flatten\q7_dffeas_q_10.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_10.$0\q[0:0], Q=\q7_dffeas_q_10.q
+Replacing test1.$flatten\q7_dffeas_q_11.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_11.$0\q[0:0], Q=\q7_dffeas_q_11.q
+Replacing test1.$flatten\q7_dffeas_q_2.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_2.$0\q[0:0], Q=\q7_dffeas_q_2.q
+Replacing test1.$flatten\q7_dffeas_q_3.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_3.$0\q[0:0], Q=\q7_dffeas_q_3.q
+Replacing test1.$flatten\q7_dffeas_q_4.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_4.$0\q[0:0], Q=\q7_dffeas_q_4.q
+Replacing test1.$flatten\q7_dffeas_q_5.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_5.$0\q[0:0], Q=\q7_dffeas_q_5.q
+Replacing test1.$flatten\q7_dffeas_q_6.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_6.$0\q[0:0], Q=\q7_dffeas_q_6.q
+Replacing test1.$flatten\q7_dffeas_q_7.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_7.$0\q[0:0], Q=\q7_dffeas_q_7.q
+Replacing test1.$flatten\q7_dffeas_q_8.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_8.$0\q[0:0], Q=\q7_dffeas_q_8.q
+Replacing test1.$flatten\q7_dffeas_q_9.$procdff$6453 ($adff): ARST=1'1, D=$flatten\q7_dffeas_q_9.$0\q[0:0], Q=\q7_dffeas_q_9.q
+Replacing test1.$flatten\state_dffeas_q.$procdff$6453 ($adff): ARST=\reset, D=\valid_$lut_A.lut_data$func$../cycloneiv_comb.v:25$6317.$result, Q=\state_dffeas_q.q
+Replacing test1.$flatten\state_dffeas_q_1.$procdff$6453 ($adff): ARST=\reset, D=\valid_$lut_A_Y_$lut_Y_2.lut_data$func$../cycloneiv_comb.v:25$6410.$result, Q=\state_dffeas_q_1.q
+Replacing test1.$flatten\state_dffeas_q_2.$procdff$6453 ($adff): ARST=\reset, D=\valid_$lut_A_Y_$lut_Y_1.lut_data$func$../cycloneiv_comb.v:25$6379.$result, Q=\state_dffeas_q_2.q
+Replacing test1.$flatten\state_dffeas_q_3.$procdff$6453 ($adff): ARST=\reset, D=\valid_$lut_A_Y_$lut_Y.lut_data$func$../cycloneiv_comb.v:25$6348.$result, Q=\state_dffeas_q_3.q
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing SETUNDEF pass (replace undef values with defined constants).
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test1..
+
+13. Executing CHECK pass (checking for obvious problems).
+Checking module test1...
+Found and reported 0 problems.
+
+14. Executing SETUNDEF pass (replace undef values with defined constants).
+
+15. Executing RTLIL backend.
+Output filename: proof/gate.il
+
+Warnings: 73 unique messages, 73 total
+End of script. Logfile hash: 0e24e6481d
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 3% 6x opt_expr (0 sec), 3% 6x opt_clean (0 sec), ...

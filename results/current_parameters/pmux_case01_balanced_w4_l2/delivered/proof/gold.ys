@@ -1,0 +1,18 @@
+read_verilog -sv "../../../../cases/pmux_case01_balanced.v"
+chparam -set WIDTH 4 -set LANES 2 pmux_case01_balanced;
+hierarchy -check -top pmux_case01_balanced
+proc
+setundef -undriven -zero
+setundef -init -zero
+prep -top pmux_case01_balanced -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top pmux_case01_balanced
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil proof/gold.il

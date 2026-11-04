@@ -1,0 +1,115 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+<suppressed ~1 debug messages>
+
+-- Executing script file `synthesis.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../scripts/generality_cases/shallow_external.v
+Parsing SystemVerilog input from `../../../scripts/generality_cases/shallow_external.v' to AST representation.
+Generating RTLIL representation for module `\shallow_external'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \shallow_external
+
+2.2. Analyzing design hierarchy..
+Top module:  \shallow_external
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$../../../scripts/generality_cases/shallow_external.v:17$9 in module shallow_external.
+Marked 1 switch rules as full_case in process $proc$../../../scripts/generality_cases/shallow_external.v:11$5 in module shallow_external.
+Marked 1 switch rules as full_case in process $proc$../../../scripts/generality_cases/shallow_external.v:5$2 in module shallow_external.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 3 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~3 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:17$9'.
+     1/1: $1\y[7:0]
+Creating decoders for process `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:11$5'.
+     1/1: $1\x1[7:0]
+Creating decoders for process `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:5$2'.
+     1/1: $1\x0[7:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\shallow_external.\y' from process `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:17$9'.
+No latch inferred for signal `\shallow_external.\x1' from process `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:11$5'.
+No latch inferred for signal `\shallow_external.\x0' from process `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:5$2'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:17$9'.
+Removing empty process `shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:17$9'.
+Found and cleaned up 1 empty switch in `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:11$5'.
+Removing empty process `shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:11$5'.
+Found and cleaned up 1 empty switch in `\shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:5$2'.
+Removing empty process `shallow_external.$proc$../../../scripts/generality_cases/shallow_external.v:5$2'.
+Cleaned up 3 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module shallow_external.
+<suppressed ~3 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing PMUX_OPT_RTLIL pass.
+  general-mux: legacy patterns excluded structurally; clone skipped.
+  general-mux: deep independent selection, 0 arithmetic group(s) shared in shallow_external.
+
+7. Executing OPT_SHARE pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \shallow_external..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \shallow_external..
+Removed 9 unused cells and 12 unused wires.
+<suppressed ~10 debug messages>
+  general-mux: binary data selection applied in shallow_external.
+PMUX_OPT_RTLIL: 9 mux cells, 0 with duplicate arms, 1 rewritten (0 paired, 0 priority, 0 arm-folded, 0 counter-compressed, 0 prio-or, 0 decode-shared, 0 hold-extracted, 0 pin-promoted, 1 general-mux), 1 gate-skipped, 0 commit-path rejection event(s), 0 probe-path rejection event(s), 9 new cells.
+PMUX_OPT_RTLIL benefit gate: 0 whole-design synthesis(es) paid (0 base + 0 plans), 0 candidate plan(s) skipped as netlist-identical to one already paid for.
+Run `opt_clean` afterwards to drop the now-dead decoder cells.
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \shallow_external..
+
+11. Executing RTLIL backend.
+Output filename: after.il
+
+12. Executing CHECK pass (checking for obvious problems).
+Checking module shallow_external...
+Found and reported 0 problems.
+
+End of script. Logfile hash: f7d71fcdc8
+Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+Time spent: 4% 3x opt_clean (0 sec), 4% 2x write_rtlil (0 sec), ...

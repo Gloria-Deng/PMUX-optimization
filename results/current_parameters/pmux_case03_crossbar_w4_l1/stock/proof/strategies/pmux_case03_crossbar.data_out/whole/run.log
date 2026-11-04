@@ -1,0 +1,612 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../partitions/pmux_case03_crossbar.data_out.sv
+Parsing SystemVerilog input from `../../../partitions/pmux_case03_crossbar.data_out.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.pmux_case03_crossbar.data_out'.
+Generating RTLIL representation for module `\gate.pmux_case03_crossbar.data_out'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../partitions/pmux_case03_crossbar.data_out.il
+Replacing existing blackbox module \gold.pmux_case03_crossbar.data_out.
+Replacing existing blackbox module \gate.pmux_case03_crossbar.data_out.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.pmux_case03_crossbar.data_out
+Used module:     \gold.pmux_case03_crossbar.data_out
+Parameter 1 (\WIDTH) = 4
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 4
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop'.
+
+3.3. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop
+Used module:     \gate.pmux_case03_crossbar.data_out
+Used module:     \gold.pmux_case03_crossbar.data_out
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop
+Used module:     \gate.pmux_case03_crossbar.data_out
+Used module:     \gold.pmux_case03_crossbar.data_out
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_data_out__assert ($paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 3 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.$proc$../../../partitions/pmux_case03_crossbar.data_out.sv:74$3968'.
+Creating decoders for process `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.$proc$../../../partitions/pmux_case03_crossbar.data_out.sv:68$3951'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.\i' from process `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.$proc$../../../partitions/pmux_case03_crossbar.data_out.sv:68$3951'.
+No latch inferred for signal `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.\okay' from process `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.$proc$../../../partitions/pmux_case03_crossbar.data_out.sv:68$3951'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.$proc$../../../partitions/pmux_case03_crossbar.data_out.sv:74$3968'.
+Removing empty process `$paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.$proc$../../../partitions/pmux_case03_crossbar.data_out.sv:68$3951'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gold.pmux_case03_crossbar.data_out.
+Optimizing module $paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module gate.pmux_case03_crossbar.data_out.
+<suppressed ~4 debug messages>
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gold.pmux_case03_crossbar.data_out.
+Deleting now unused module $paramod$19c0b7c74cf8722d90d17ae38b2b1b33272cd25a\miter_cmp_prop.
+Deleting now unused module gate.pmux_case03_crossbar.data_out.
+<suppressed ~3 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~5 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 1 unused cells and 15 unused wires.
+<suppressed ~45 debug messages>
+
+12. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_en
+Import def constraint for this timestep: \__pi_rst
+Import def constraint for this timestep: \__pi_ctrl_in__10_0
+Import def constraint for this timestep: \__pi_data_in
+Imported 222 cells to SAT database.
+Import proof for assert: \__po_data_out__assert.okay when 1'1.
+
+** Trying induction with length 1 **
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_en
+Import def constraint for this timestep: \__pi_rst
+Import def constraint for this timestep: \__pi_ctrl_in__10_0
+Import def constraint for this timestep: \__pi_data_in
+Imported 222 cells to SAT database.
+Import set-constraint from init attribute: \gate.data_out_dffeas_q_1.q = 1'0
+Import set-constraint from init attribute: \gate.data_out_dffeas_q_3.q = 1'0
+Import set-constraint from init attribute: \gate.data_out_dffeas_q.q = 1'0
+Import set-constraint from init attribute: \gate.data_out_dffeas_q_2.q = 1'0
+Import set-constraint from init attribute: \gold.lane[0].q = 4'0000
+Final init constraint equation: { \gold.lane[0].q \gate.data_out_dffeas_q_2.q \gate.data_out_dffeas_q.q \gate.data_out_dffeas_q_3.q \gate.data_out_dffeas_q_1.q } = 8'00000000
+Import proof for assert: \__po_data_out__assert.okay when 1'1.
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_in
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.clk
+Import show expression: \gate.data_out_dffeas_q.clk
+Import show expression: \gate.data_out_dffeas_q_1.clk
+Import show expression: \gate.data_out_dffeas_q_2.clk
+Import show expression: \gate.data_out_dffeas_q_3.clk
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.ctrl_in
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d
+Import show expression: \gate.data_out_dffeas_q_1.d
+Import show expression: \gate.data_out_dffeas_q_1.q
+Import show expression: \gate.data_out
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d
+Import show expression: \gate.data_out_dffeas_q_3.d
+Import show expression: \gate.data_out_dffeas_q_3.q
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d
+Import show expression: \gate.data_out_dffeas_q.d
+Import show expression: \gate.data_out_dffeas_q.q
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A
+Import show expression: \gate.rst
+Import show expression: \gate.en
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d
+Import show expression: \gate.data_out_dffeas_q_2.d
+Import show expression: \gate.data_out_dffeas_q_2.q
+Import show expression: \gate.__pi_clk
+Import show expression: \gate.__pi_ctrl_in__10_0
+Import show expression: \gate.__pi_data_in
+Import show expression: \gate.__pi_en
+Import show expression: \gate.__pi_rst
+Import show expression: \gate.__po_data_out
+Import show expression: \__po_data_out__assert.i
+Import show expression: \__po_data_out__assert.okay
+Import show expression: \__po_data_out__assert.in_gate
+Import show expression: \__po_data_out__assert.in_gold
+Import show expression: \gold.lane[0].next_q
+Import show expression: \gold.lane[0].s
+Import show expression: \gold.lane[0].x0
+Import show expression: \gold.lane[0].x1
+Import show expression: \gold.lane[0].x2
+Import show expression: \gold.lane[0].x3
+Import show expression: \gold.lane[0].a
+Import show expression: \gold.lane[0].b
+Import show expression: \gold.lane[0].c
+Import show expression: \gold.lane[0].d
+Import show expression: \gold.lane[0].q
+Import show expression: \gold.data_out
+Import show expression: \gold.data_in
+Import show expression: \gold.clk
+Import show expression: \gold.ctrl_in
+Import show expression: \gold.rst
+Import show expression: \gold.en
+Import show expression: \gold.__pi_clk
+Import show expression: \gold.__pi_ctrl_in__10_0
+Import show expression: \gold.__pi_data_in
+Import show expression: \gold.__pi_en
+Import show expression: \gold.__pi_rst
+Import show expression: \gold.__po_data_out
+Import show expression: \__po_data_out__gate
+Import show expression: \__po_data_out__gold
+Import show expression: \__pi_rst
+Import show expression: \__pi_en
+Import show expression: \__pi_data_in
+Import show expression: \__pi_ctrl_in__10_0
+Import show expression: \__pi_clk
+
+[base case 1] Solving problem with 11900 variables and 34158 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_clk
+Import def constraint for this timestep: \__pi_en
+Import def constraint for this timestep: \__pi_rst
+Import def constraint for this timestep: \__pi_ctrl_in__10_0
+Import def constraint for this timestep: \__pi_data_in
+Imported 222 cells to SAT database.
+Import proof for assert: \__po_data_out__assert.okay when 1'1.
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_in
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.clk
+Import show expression: \gate.data_out_dffeas_q.clk
+Import show expression: \gate.data_out_dffeas_q_1.clk
+Import show expression: \gate.data_out_dffeas_q_2.clk
+Import show expression: \gate.data_out_dffeas_q_3.clk
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.ctrl_in
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_3_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_1_d
+Import show expression: \gate.data_out_dffeas_q_1.d
+Import show expression: \gate.data_out_dffeas_q_1.q
+Import show expression: \gate.data_out
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_3_d
+Import show expression: \gate.data_out_dffeas_q_3.d
+Import show expression: \gate.data_out_dffeas_q_3.q
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_3
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_d
+Import show expression: \gate.data_out_dffeas_q.d
+Import show expression: \gate.data_out_dffeas_q.q
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2
+Import show expression: \gate.data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A
+Import show expression: \gate.rst
+Import show expression: \gate.en
+Import show expression: \gate.data_out_dffeas_q_2_d_$lut_Y_A_1
+Import show expression: \gate.data_out_dffeas_q_2_d
+Import show expression: \gate.data_out_dffeas_q_2.d
+Import show expression: \gate.data_out_dffeas_q_2.q
+Import show expression: \gate.__pi_clk
+Import show expression: \gate.__pi_ctrl_in__10_0
+Import show expression: \gate.__pi_data_in
+Import show expression: \gate.__pi_en
+Import show expression: \gate.__pi_rst
+Import show expression: \gate.__po_data_out
+Import show expression: \__po_data_out__assert.i
+Import show expression: \__po_data_out__assert.okay
+Import show expression: \__po_data_out__assert.in_gate
+Import show expression: \__po_data_out__assert.in_gold
+Import show expression: \gold.lane[0].next_q
+Import show expression: \gold.lane[0].s
+Import show expression: \gold.lane[0].x0
+Import show expression: \gold.lane[0].x1
+Import show expression: \gold.lane[0].x2
+Import show expression: \gold.lane[0].x3
+Import show expression: \gold.lane[0].a
+Import show expression: \gold.lane[0].b
+Import show expression: \gold.lane[0].c
+Import show expression: \gold.lane[0].d
+Import show expression: \gold.lane[0].q
+Import show expression: \gold.data_out
+Import show expression: \gold.data_in
+Import show expression: \gold.clk
+Import show expression: \gold.ctrl_in
+Import show expression: \gold.rst
+Import show expression: \gold.en
+Import show expression: \gold.__pi_clk
+Import show expression: \gold.__pi_ctrl_in__10_0
+Import show expression: \gold.__pi_data_in
+Import show expression: \gold.__pi_en
+Import show expression: \gold.__pi_rst
+Import show expression: \gold.__po_data_out
+Import show expression: \__po_data_out__gate
+Import show expression: \__po_data_out__gold
+Import show expression: \__pi_rst
+Import show expression: \__pi_en
+Import show expression: \__pi_data_in
+Import show expression: \__pi_ctrl_in__10_0
+Import show expression: \__pi_clk
+
+[induction step 1] Solving problem with 23802 variables and 68307 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: 053d5eb05e
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 4% 2x read_verilog (0 sec), 4% 2x read_rtlil (0 sec), ...

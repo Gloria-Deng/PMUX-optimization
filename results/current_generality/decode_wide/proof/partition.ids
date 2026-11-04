@@ -1,0 +1,4 @@
+group decode_wide_counterexample a b x
+bind decode_wide_counterexample a
+bind decode_wide_counterexample b
+bind decode_wide_counterexample x

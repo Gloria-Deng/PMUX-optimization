@@ -1,0 +1,10 @@
+group shared_upstream_cones a b c d s t untouched wide y
+bind shared_upstream_cones a
+bind shared_upstream_cones b
+bind shared_upstream_cones c
+bind shared_upstream_cones d
+bind shared_upstream_cones s
+bind shared_upstream_cones t
+bind shared_upstream_cones untouched
+bind shared_upstream_cones wide
+bind shared_upstream_cones y

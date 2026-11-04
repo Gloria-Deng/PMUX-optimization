@@ -1,0 +1,7 @@
+# [*] gold-match *
+variant_partial_result a a
+variant_partial_result b b
+variant_partial_result c c
+variant_partial_result s s
+variant_partial_result x x
+variant_partial_result y y

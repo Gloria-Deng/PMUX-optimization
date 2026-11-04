@@ -1,0 +1,14 @@
+variant_signed . A:src="../../../scripts/algorithm_cases/variant_signed.v:2.1-66.10" A:top=1 A:dynports=1
+variant_signed rst w=0:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:7.16-7.19" P=I
+variant_signed lane[0].s w=15:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:20.21-20.22"
+variant_signed lane[0].q w=11:0 A:init=0 A:src="../../../scripts/algorithm_cases/variant_signed.v:21.32-21.33"
+variant_signed lane[0].next_q w=11:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:23.32-23.38"
+variant_signed lane[0].d w=11:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:19.33-19.34"
+variant_signed lane[0].c w=11:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:18.33-18.34"
+variant_signed lane[0].b w=11:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:17.33-17.34"
+variant_signed lane[0].a w=11:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:16.33-16.34"
+variant_signed en w=0:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:8.16-8.18" P=I
+variant_signed data_out w=11:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:11.35-11.43" P=O
+variant_signed data_in w=47:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:9.36-9.43" P=I
+variant_signed ctrl_in w=15:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:10.31-10.38" P=I
+variant_signed clk w=0:0 A:src="../../../scripts/algorithm_cases/variant_signed.v:6.16-6.19" P=I

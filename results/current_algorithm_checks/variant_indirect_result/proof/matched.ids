@@ -1,0 +1,7 @@
+# [*] gold-match *
+variant_indirect_result a a
+variant_indirect_result b b
+variant_indirect_result c c
+variant_indirect_result s s
+variant_indirect_result x x
+variant_indirect_result y y

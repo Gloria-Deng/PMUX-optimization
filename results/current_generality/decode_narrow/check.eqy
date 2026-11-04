@@ -1,0 +1,38 @@
+[options]
+
+[gold]
+read_verilog -sv "../../../scripts/generality_cases/decode_counterexample.v"
+hierarchy -check -top decode_counterexample
+proc
+setundef -undriven -zero
+setundef -init -zero
+rename -hide
+prep -top decode_counterexample -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top decode_counterexample
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[gate]
+read_rtlil "after.il"
+read_verilog -overwrite "../../../plugin/dffeas_formal.v"
+rename -hide
+prep -top decode_counterexample -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top decode_counterexample
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[collect decode_counterexample]
+group *
+bind *
+
+[strategy whole]
+use sat
+depth 12

@@ -1,0 +1,708 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6897: \data_out_dffeas_q_4.q -> \data_out [0]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6898: \data_out_dffeas_q.q -> \data_out [1]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6899: \data_out_dffeas_q_6.q -> \data_out [2]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6900: \data_out_dffeas_q_2.q -> \data_out [3]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6901: \data_out_dffeas_q_9.q -> \data_out [4]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6902: \data_out_dffeas_q_8.q -> \data_out [5]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6903: \data_out_dffeas_q_7.q -> \data_out [6]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6904: \data_out_dffeas_q_5.q -> \data_out [7]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6905: \data_out_dffeas_q_3.q -> \data_out [8]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6906: \data_out_dffeas_q_1.q -> \data_out [9]
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6907: 1'0 -> \data_out_dffeas_q.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6908: 1'0 -> \data_out_dffeas_q.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6909: \clk -> \data_out_dffeas_q.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6910: 1'1 -> \data_out_dffeas_q.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6911: \data_out_dffeas_q_d -> \data_out_dffeas_q.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6912: 1'1 -> \data_out_dffeas_q.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6913: 1'1 -> \data_out_dffeas_q.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6914: 1'0 -> \data_out_dffeas_q.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6915: 1'0 -> \data_out_dffeas_q.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6916: 1'0 -> \data_out_dffeas_q_1.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6917: 1'0 -> \data_out_dffeas_q_1.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6918: \data_out_dffeas_q.clk -> \data_out_dffeas_q_1.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6919: 1'1 -> \data_out_dffeas_q_1.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6920: \data_out_dffeas_q_1_d -> \data_out_dffeas_q_1.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6921: 1'1 -> \data_out_dffeas_q_1.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6922: 1'1 -> \data_out_dffeas_q_1.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6923: 1'0 -> \data_out_dffeas_q_1.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6924: 1'0 -> \data_out_dffeas_q_1.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6925: 1'0 -> \data_out_dffeas_q_2.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6926: 1'0 -> \data_out_dffeas_q_2.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6927: \data_out_dffeas_q_1.clk -> \data_out_dffeas_q_2.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6928: 1'1 -> \data_out_dffeas_q_2.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6929: \data_out_dffeas_q_2_d -> \data_out_dffeas_q_2.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6930: 1'1 -> \data_out_dffeas_q_2.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6931: 1'1 -> \data_out_dffeas_q_2.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6932: 1'0 -> \data_out_dffeas_q_2.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6933: 1'0 -> \data_out_dffeas_q_2.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6934: 1'0 -> \data_out_dffeas_q_3.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6935: 1'0 -> \data_out_dffeas_q_3.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6936: \data_out_dffeas_q_2.clk -> \data_out_dffeas_q_3.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6937: 1'1 -> \data_out_dffeas_q_3.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6938: \data_out_dffeas_q_3_d -> \data_out_dffeas_q_3.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6939: 1'1 -> \data_out_dffeas_q_3.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6940: 1'1 -> \data_out_dffeas_q_3.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6941: 1'0 -> \data_out_dffeas_q_3.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6942: 1'0 -> \data_out_dffeas_q_3.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6943: 1'0 -> \data_out_dffeas_q_4.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6944: 1'0 -> \data_out_dffeas_q_4.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6945: \data_out_dffeas_q_3.clk -> \data_out_dffeas_q_4.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6946: 1'1 -> \data_out_dffeas_q_4.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6947: \data_out_dffeas_q_4_d -> \data_out_dffeas_q_4.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6948: 1'1 -> \data_out_dffeas_q_4.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6949: 1'1 -> \data_out_dffeas_q_4.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6950: 1'0 -> \data_out_dffeas_q_4.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6951: 1'0 -> \data_out_dffeas_q_4.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6952: 1'0 -> \data_out_dffeas_q_5.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6953: 1'0 -> \data_out_dffeas_q_5.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6954: \data_out_dffeas_q_4.clk -> \data_out_dffeas_q_5.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6955: 1'1 -> \data_out_dffeas_q_5.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6956: \data_out_dffeas_q_5_d -> \data_out_dffeas_q_5.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6957: 1'1 -> \data_out_dffeas_q_5.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6958: 1'1 -> \data_out_dffeas_q_5.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6959: 1'0 -> \data_out_dffeas_q_5.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6960: 1'0 -> \data_out_dffeas_q_5.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6961: 1'0 -> \data_out_dffeas_q_6.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6962: 1'0 -> \data_out_dffeas_q_6.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6963: \data_out_dffeas_q_5.clk -> \data_out_dffeas_q_6.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6964: 1'1 -> \data_out_dffeas_q_6.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6965: \data_out_dffeas_q_6_d -> \data_out_dffeas_q_6.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6966: 1'1 -> \data_out_dffeas_q_6.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6967: 1'1 -> \data_out_dffeas_q_6.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6968: 1'0 -> \data_out_dffeas_q_6.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6969: 1'0 -> \data_out_dffeas_q_6.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6970: 1'0 -> \data_out_dffeas_q_7.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6971: 1'0 -> \data_out_dffeas_q_7.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6972: \data_out_dffeas_q_6.clk -> \data_out_dffeas_q_7.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6973: 1'1 -> \data_out_dffeas_q_7.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6974: \data_out_dffeas_q_7_d -> \data_out_dffeas_q_7.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6975: 1'1 -> \data_out_dffeas_q_7.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6976: 1'1 -> \data_out_dffeas_q_7.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6977: 1'0 -> \data_out_dffeas_q_7.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6978: 1'0 -> \data_out_dffeas_q_7.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6979: 1'0 -> \data_out_dffeas_q_8.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6980: 1'0 -> \data_out_dffeas_q_8.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6981: \data_out_dffeas_q_7.clk -> \data_out_dffeas_q_8.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6982: 1'1 -> \data_out_dffeas_q_8.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6983: \data_out_dffeas_q_8_d -> \data_out_dffeas_q_8.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6984: 1'1 -> \data_out_dffeas_q_8.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6985: 1'1 -> \data_out_dffeas_q_8.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6986: 1'0 -> \data_out_dffeas_q_8.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6987: 1'0 -> \data_out_dffeas_q_8.sload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6988: 1'0 -> \data_out_dffeas_q_9.aload
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6989: 1'0 -> \data_out_dffeas_q_9.asdata
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6990: \data_out_dffeas_q_8.clk -> \data_out_dffeas_q_9.clk
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6991: 1'1 -> \data_out_dffeas_q_9.clrn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6992: \data_out_dffeas_q_9_d -> \data_out_dffeas_q_9.d
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6993: 1'1 -> \data_out_dffeas_q_9.ena
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6994: 1'1 -> \data_out_dffeas_q_9.prn
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6995: 1'0 -> \data_out_dffeas_q_9.sclr
+Add gate.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6996: 1'0 -> \data_out_dffeas_q_9.sload
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_9.$procdff$6847/D: \data_out_dffeas_q_9_d -> \data_out_dffeas_q_9.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_9.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_8.$procdff$6847/D: \data_out_dffeas_q_8_d -> \data_out_dffeas_q_8.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_8.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_7.$procdff$6847/D: \data_out_dffeas_q_7_d -> \data_out_dffeas_q_7.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_7.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_6.$procdff$6847/D: \data_out_dffeas_q_6_d -> \data_out_dffeas_q_6.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_6.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_5.$procdff$6847/D: \data_out_dffeas_q_5_d -> \data_out_dffeas_q_5.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_5.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_4.$procdff$6847/D: \data_out_dffeas_q_4_d -> \data_out_dffeas_q_4.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_4.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_3.$procdff$6847/D: \data_out_dffeas_q_3_d -> \data_out_dffeas_q_3.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_3.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_2.$procdff$6847/D: \data_out_dffeas_q_2_d -> \data_out_dffeas_q_2.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_2.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_1.$procdff$6847/D: \data_out_dffeas_q_1_d -> \data_out_dffeas_q_1.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q_1.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q.$procdff$6847/D: \data_out_dffeas_q_d -> \data_out_dffeas_q.d
+Rewrite gate.pmux_case03_crossbar/$flatten\data_out_dffeas_q.$procdff$6847/CLK: \clk -> \data_out_dffeas_q_9.clk
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A \rst \en \data_out_dffeas_q_1.q } -> { \data_out_dffeas_q_1_d_$lut_Y_A \rst \en \data_out [9] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [24] \data_in [29] \ctrl_in [24] \data_out_dffeas_q_1.q } -> { \data_in [24] \data_in [29] \ctrl_in [24] \data_out [9] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [39] \data_out_dffeas_q_1.q } -> { \data_in [39] \data_out [9] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_in [38] \data_out_dffeas_q_3.q } -> { \data_in [38] \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_in [37] \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_in [37] \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_in [38] \data_out_dffeas_q_3.q } -> { \data_in [38] \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [34] \data_out_dffeas_q_1.q } -> { \data_in [34] \data_out [9] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [32] \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [32] \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [33] \data_out_dffeas_q_3.q } -> { \data_in [33] \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_2_$lut_Y/A: { \data_in [33] \data_out_dffeas_q_3.q } -> { \data_in [33] \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \ctrl_in [24] \data_out_dffeas_q_1.q } -> { \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \ctrl_in [24] \data_out [9] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1 \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \ctrl_in [3] \data_out_dffeas_q_2.q } -> { \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1 \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \ctrl_in [3] \data_out [3] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_2_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [3] \data_in [8] \ctrl_in [8] \data_out_dffeas_q_2.q } -> { \data_in [3] \data_in [8] \ctrl_in [8] \data_out [3] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_2_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_2_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [18] \ctrl_in [8] \data_out_dffeas_q_2.q } -> { \data_out_dffeas_q_2_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [18] \ctrl_in [8] \data_out [3] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_2_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [17] \data_out_dffeas_q_6.q } -> { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [17] \data_out [2] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_2_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_in [13] \ctrl_in [8] \data_out_dffeas_q_2.q } -> { \data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_in [13] \ctrl_in [8] \data_out [3] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_2_d_$lut_Y_A_2_$lut_Y/A: { \rst \en \data_out_dffeas_q_2.q } -> { \rst \en \data_out [3] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_3_d_$lut_Y/A: { \data_out_dffeas_q_3_d_$lut_Y_A \rst \en \data_out_dffeas_q_3.q } -> { \data_out_dffeas_q_3_d_$lut_Y_A \rst \en \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1 \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \ctrl_in [19] \data_out_dffeas_q_3.q } -> { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1 \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \ctrl_in [19] \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [23] \data_in [28] \ctrl_in [24] \data_out_dffeas_q_3.q } -> { \data_in [23] \data_in [28] \ctrl_in [24] \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [33] \ctrl_in [24] \data_out_dffeas_q_3.q } -> { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [33] \ctrl_in [24] \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [32] \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [32] \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [38] \ctrl_in [24] \data_out_dffeas_q_3.q } -> { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [38] \ctrl_in [24] \data_out [8] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [37] \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [37] \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_4_d_$lut_Y/A: { \data_out_dffeas_q_4_d_$lut_Y_A \rst \en \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_4_d_$lut_Y_A \rst \en \data_out [0] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_in [0] \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_in [0] \data_out [0] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [5] \ctrl_in [8] \ctrl_in [9] \data_out_dffeas_q_4.q } -> { \data_in [5] \ctrl_in [8] \ctrl_in [9] \data_out [0] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \ctrl_in [9] \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \ctrl_in [9] \data_out [0] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A \ctrl_in [3] \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A \ctrl_in [3] \data_out [0] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_5_d_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A \rst \en \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A \rst \en \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1 \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \ctrl_in [19] \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1 \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \ctrl_in [19] \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [22] \data_in [27] \ctrl_in [24] \data_out_dffeas_q_5.q } -> { \data_in [22] \data_in [27] \ctrl_in [24] \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [32] \ctrl_in [24] \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [32] \ctrl_in [24] \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [30] \data_in [31] \data_out_dffeas_q_8.q \data_out_dffeas_q_7.q } -> { \data_in [30] \data_in [31] \data_out [5] \data_out [6] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [37] \ctrl_in [24] \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [37] \ctrl_in [24] \data_out [7] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [35] \data_in [36] \data_out_dffeas_q_8.q \data_out_dffeas_q_7.q } -> { \data_in [35] \data_in [36] \data_out [5] \data_out [6] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_6_d_$lut_Y/A: { \data_out_dffeas_q_6_d_$lut_Y_A \rst \en \data_out_dffeas_q_6.q } -> { \data_out_dffeas_q_6_d_$lut_Y_A \rst \en \data_out [2] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1 \ctrl_in [8] \data_out_dffeas_q_6.q } -> { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1 \ctrl_in [8] \data_out [2] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [2] \data_in [7] \ctrl_in [8] \data_out_dffeas_q_6.q } -> { \data_in [2] \data_in [7] \ctrl_in [8] \data_out [2] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [12] \data_out_dffeas_q_6.q } -> { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [12] \data_out [2] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [10] \data_in [11] \data_out_dffeas_q_4.q \data_out_dffeas_q.q } -> { \data_in [10] \data_in [11] \data_out [0] \data_out [1] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [17] \ctrl_in [8] \data_out_dffeas_q_6.q } -> { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [17] \ctrl_in [8] \data_out [2] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [15] \data_in [16] \data_out_dffeas_q_4.q \data_out_dffeas_q.q } -> { \data_in [15] \data_in [16] \data_out [0] \data_out [1] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_7_d_$lut_Y/A: { \data_out_dffeas_q_7_d_$lut_Y_A \rst \en \data_out_dffeas_q_7.q } -> { \data_out_dffeas_q_7_d_$lut_Y_A \rst \en \data_out [6] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [21] \data_in [26] \ctrl_in [24] \data_out_dffeas_q_7.q } -> { \data_in [21] \data_in [26] \ctrl_in [24] \data_out [6] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [30] \data_in [31] \data_out_dffeas_q_8.q \data_out_dffeas_q_7.q } -> { \data_in [30] \data_in [31] \data_out [5] \data_out [6] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [35] \ctrl_in [24] \data_out_dffeas_q_8.q } -> { \data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [35] \ctrl_in [24] \data_out [5] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [36] \data_out_dffeas_q_7.q } -> { \data_in [36] \data_out [6] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1 \data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \ctrl_in [19] \data_out_dffeas_q_7.q } -> { \data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1 \data_out_dffeas_q_7_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \ctrl_in [19] \data_out [6] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_8_d_$lut_Y/A: { \data_out_dffeas_q_8_d_$lut_Y_A \rst \en \data_out_dffeas_q_8.q } -> { \data_out_dffeas_q_8_d_$lut_Y_A \rst \en \data_out [5] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_8_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_8_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \ctrl_in [25] \data_out_dffeas_q_8.q } -> { \data_out_dffeas_q_8_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \ctrl_in [25] \data_out [5] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_8_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [30] \data_in [35] \ctrl_in [24] \data_out_dffeas_q_8.q } -> { \data_in [30] \data_in [35] \ctrl_in [24] \data_out [5] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_8_d_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_8_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_in [20] \ctrl_in [24] \data_out_dffeas_q_8.q } -> { \data_out_dffeas_q_8_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_in [20] \ctrl_in [24] \data_out [5] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [4] \data_in [9] \ctrl_in [8] \data_out_dffeas_q_9.q } -> { \data_in [4] \data_in [9] \ctrl_in [8] \data_out [4] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [14] \data_out_dffeas_q_9.q } -> { \data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [14] \data_out [4] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_in [13] \data_out_dffeas_q_2.q } -> { \data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_in [13] \data_out [3] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [12] \data_out_dffeas_q_6.q } -> { \data_out_dffeas_q_6_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [12] \data_out [2] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [19] \ctrl_in [8] \data_out_dffeas_q_9.q } -> { \data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [19] \ctrl_in [8] \data_out [4] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_9_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_2_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [18] \data_out_dffeas_q_2.q } -> { \data_out_dffeas_q_2_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_in [18] \data_out [3] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_9_d_$lut_Y_A_1_$lut_Y/A: { \rst \en \data_out_dffeas_q_9.q } -> { \rst \en \data_out [4] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_9_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_9_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_9_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1 \ctrl_in [3] \data_out_dffeas_q_9.q } -> { \data_out_dffeas_q_9_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_9_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1 \ctrl_in [3] \data_out [4] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_d_$lut_Y/A: { \data_out_dffeas_q_d_$lut_Y_A \rst \en \data_out_dffeas_q.q } -> { \data_out_dffeas_q_d_$lut_Y_A \rst \en \data_out [1] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1 \ctrl_in [3] \data_out_dffeas_q.q } -> { \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1 \ctrl_in [3] \data_out [1] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [1] \data_in [6] \ctrl_in [8] \data_out_dffeas_q.q } -> { \data_in [1] \data_in [6] \ctrl_in [8] \data_out [1] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [10] \data_in [11] \data_out_dffeas_q_4.q \data_out_dffeas_q.q } -> { \data_in [10] \data_in [11] \data_out [0] \data_out [1] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [15] \ctrl_in [8] \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_in [15] \ctrl_in [8] \data_out [0] }
+Rewrite gate.pmux_case03_crossbar/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [16] \data_out_dffeas_q.q } -> { \data_in [16] \data_out [1] }
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6997: \lane[0].q [0] -> \data_out [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6998: \lane[0].q [1] -> \data_out [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$6999: \lane[0].q [2] -> \data_out [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7000: \lane[0].q [3] -> \data_out [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7001: \lane[0].q [4] -> \data_out [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7002: \lane[1].q [0] -> \data_out [5]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7003: \lane[1].q [1] -> \data_out [6]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7004: \lane[1].q [2] -> \data_out [7]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7005: \lane[1].q [3] -> \data_out [8]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7006: \lane[1].q [4] -> \data_out [9]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7007: \data_in [0] -> \lane[0].a [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7008: \data_in [1] -> \lane[0].a [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7009: \data_in [2] -> \lane[0].a [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7010: \data_in [3] -> \lane[0].a [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7011: \data_in [4] -> \lane[0].a [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7012: \data_in [5] -> \lane[0].b [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7013: \data_in [6] -> \lane[0].b [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7014: \data_in [7] -> \lane[0].b [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7015: \data_in [8] -> \lane[0].b [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7016: \data_in [9] -> \lane[0].b [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7017: \data_in [10] -> \lane[0].c [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7018: \data_in [11] -> \lane[0].c [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7019: \data_in [12] -> \lane[0].c [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7020: \data_in [13] -> \lane[0].c [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7021: \data_in [14] -> \lane[0].c [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7022: \data_in [15] -> \lane[0].d [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7023: \data_in [16] -> \lane[0].d [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7024: \data_in [17] -> \lane[0].d [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7025: \data_in [18] -> \lane[0].d [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7026: \data_in [19] -> \lane[0].d [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7027: \ctrl_in [0] -> \lane[0].s [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7028: \ctrl_in [1] -> \lane[0].s [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7029: \ctrl_in [2] -> \lane[0].s [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7030: \ctrl_in [3] -> \lane[0].s [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7031: \ctrl_in [4] -> \lane[0].s [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7032: \ctrl_in [5] -> \lane[0].s [5]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7033: \ctrl_in [6] -> \lane[0].s [6]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7034: \ctrl_in [7] -> \lane[0].s [7]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7035: \ctrl_in [8] -> \lane[0].s [8]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7036: \ctrl_in [9] -> \lane[0].s [9]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7037: \ctrl_in [10] -> \lane[0].s [10]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7038: \ctrl_in [11] -> \lane[0].s [11]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7039: \ctrl_in [12] -> \lane[0].s [12]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7040: \ctrl_in [13] -> \lane[0].s [13]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7041: \ctrl_in [14] -> \lane[0].s [14]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7042: \ctrl_in [15] -> \lane[0].s [15]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7043: \data_in [20] -> \lane[1].a [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7044: \data_in [21] -> \lane[1].a [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7045: \data_in [22] -> \lane[1].a [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7046: \data_in [23] -> \lane[1].a [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7047: \data_in [24] -> \lane[1].a [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7048: \data_in [25] -> \lane[1].b [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7049: \data_in [26] -> \lane[1].b [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7050: \data_in [27] -> \lane[1].b [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7051: \data_in [28] -> \lane[1].b [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7052: \data_in [29] -> \lane[1].b [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7053: \data_in [30] -> \lane[1].c [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7054: \data_in [31] -> \lane[1].c [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7055: \data_in [32] -> \lane[1].c [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7056: \data_in [33] -> \lane[1].c [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7057: \data_in [34] -> \lane[1].c [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7058: \data_in [35] -> \lane[1].d [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7059: \data_in [36] -> \lane[1].d [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7060: \data_in [37] -> \lane[1].d [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7061: \data_in [38] -> \lane[1].d [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7062: \data_in [39] -> \lane[1].d [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7063: \ctrl_in [16] -> \lane[1].s [0]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7064: \ctrl_in [17] -> \lane[1].s [1]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7065: \ctrl_in [18] -> \lane[1].s [2]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7066: \ctrl_in [19] -> \lane[1].s [3]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7067: \ctrl_in [20] -> \lane[1].s [4]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7068: \ctrl_in [21] -> \lane[1].s [5]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7069: \ctrl_in [22] -> \lane[1].s [6]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7070: \ctrl_in [23] -> \lane[1].s [7]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7071: \ctrl_in [24] -> \lane[1].s [8]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7072: \ctrl_in [25] -> \lane[1].s [9]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7073: \ctrl_in [26] -> \lane[1].s [10]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7074: \ctrl_in [27] -> \lane[1].s [11]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7075: \ctrl_in [28] -> \lane[1].s [12]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7076: \ctrl_in [29] -> \lane[1].s [13]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7077: \ctrl_in [30] -> \lane[1].s [14]
+Add gold.pmux_case03_crossbar/$auto$insbuf.cc:97:execute$7078: \ctrl_in [31] -> \lane[1].s [15]
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:42$30/A: \data_in [24:20] -> \lane[1].a
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:42$30/B: \data_in [29:25] -> \lane[1].b
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:42$8/A: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:42$8/B: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:43$31/A: \data_in [29:25] -> \lane[1].b
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:43$31/B: \data_in [34:30] -> \lane[1].c
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:43$9/A: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:43$9/B: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:44$10/A: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:44$10/B: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:44$32/A: \data_in [34:30] -> \lane[1].c
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:44$32/B: \data_in [39:35] -> \lane[1].d
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:45$11/A: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:45$11/B: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:45$33/A: \data_in [39:35] -> \lane[1].d
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:45$33/B: \data_in [24:20] -> \lane[1].a
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:64$20/A: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:64$20/B: \lane[0].q -> \data_out [4:0]
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:64$42/A: \data_in [34:30] -> \lane[1].c
+Rewrite gold.pmux_case03_crossbar/$add$../../../cases/pmux_case03_crossbar.v:64$42/B: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$and$../../../cases/pmux_case03_crossbar.v:63$19/A: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case03_crossbar/$and$../../../cases/pmux_case03_crossbar.v:63$19/B: \lane[0].q -> \data_out [4:0]
+Rewrite gold.pmux_case03_crossbar/$and$../../../cases/pmux_case03_crossbar.v:63$41/A: \data_in [29:25] -> \lane[1].b
+Rewrite gold.pmux_case03_crossbar/$and$../../../cases/pmux_case03_crossbar.v:63$41/B: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$or$../../../cases/pmux_case03_crossbar.v:62$18/A: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case03_crossbar/$or$../../../cases/pmux_case03_crossbar.v:62$18/B: \lane[0].q -> \data_out [4:0]
+Rewrite gold.pmux_case03_crossbar/$or$../../../cases/pmux_case03_crossbar.v:62$40/A: \data_in [24:20] -> \lane[1].a
+Rewrite gold.pmux_case03_crossbar/$or$../../../cases/pmux_case03_crossbar.v:62$40/B: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$procmux$100_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.pmux_case03_crossbar/$procmux$101_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.pmux_case03_crossbar/$procmux$102_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.pmux_case03_crossbar/$procmux$105_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.pmux_case03_crossbar/$procmux$106_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.pmux_case03_crossbar/$procmux$107_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.pmux_case03_crossbar/$procmux$109/A: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case03_crossbar/$procmux$109/B: { \data_in [4:0] \data_in [9:5] \data_in [14:10] } -> { \lane[0].a \lane[0].b \lane[0].c }
+Rewrite gold.pmux_case03_crossbar/$procmux$110_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.pmux_case03_crossbar/$procmux$111_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.pmux_case03_crossbar/$procmux$112_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.pmux_case03_crossbar/$procmux$45/A: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$procmux$52_CMP0/A: \ctrl_in [26:24] -> \lane[1].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$53_CMP0/A: \ctrl_in [26:24] -> \lane[1].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$54_CMP0/A: \ctrl_in [26:24] -> \lane[1].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$55_CMP0/A: \ctrl_in [26:24] -> \lane[1].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$56_CMP0/A: \ctrl_in [26:24] -> \lane[1].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$57_CMP0/A: \ctrl_in [26:24] -> \lane[1].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$58_CMP0/A: \ctrl_in [26:24] -> \lane[1].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$61_CMP0/A: \ctrl_in [23:22] -> \lane[1].s [7:6]
+Rewrite gold.pmux_case03_crossbar/$procmux$62_CMP0/A: \ctrl_in [23:22] -> \lane[1].s [7:6]
+Rewrite gold.pmux_case03_crossbar/$procmux$63_CMP0/A: \ctrl_in [23:22] -> \lane[1].s [7:6]
+Rewrite gold.pmux_case03_crossbar/$procmux$66_CMP0/A: \ctrl_in [21:20] -> \lane[1].s [5:4]
+Rewrite gold.pmux_case03_crossbar/$procmux$67_CMP0/A: \ctrl_in [21:20] -> \lane[1].s [5:4]
+Rewrite gold.pmux_case03_crossbar/$procmux$68_CMP0/A: \ctrl_in [21:20] -> \lane[1].s [5:4]
+Rewrite gold.pmux_case03_crossbar/$procmux$71_CMP0/A: \ctrl_in [19:18] -> \lane[1].s [3:2]
+Rewrite gold.pmux_case03_crossbar/$procmux$72_CMP0/A: \ctrl_in [19:18] -> \lane[1].s [3:2]
+Rewrite gold.pmux_case03_crossbar/$procmux$73_CMP0/A: \ctrl_in [19:18] -> \lane[1].s [3:2]
+Rewrite gold.pmux_case03_crossbar/$procmux$75/A: \data_in [39:35] -> \lane[1].d
+Rewrite gold.pmux_case03_crossbar/$procmux$75/B: { \data_in [24:20] \data_in [29:25] \data_in [34:30] } -> { \lane[1].a \lane[1].b \lane[1].c }
+Rewrite gold.pmux_case03_crossbar/$procmux$76_CMP0/A: \ctrl_in [17:16] -> \lane[1].s [1:0]
+Rewrite gold.pmux_case03_crossbar/$procmux$77_CMP0/A: \ctrl_in [17:16] -> \lane[1].s [1:0]
+Rewrite gold.pmux_case03_crossbar/$procmux$78_CMP0/A: \ctrl_in [17:16] -> \lane[1].s [1:0]
+Rewrite gold.pmux_case03_crossbar/$procmux$79/A: \lane[0].q -> \data_out [4:0]
+Rewrite gold.pmux_case03_crossbar/$procmux$86_CMP0/A: \ctrl_in [10:8] -> \lane[0].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$87_CMP0/A: \ctrl_in [10:8] -> \lane[0].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$88_CMP0/A: \ctrl_in [10:8] -> \lane[0].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$89_CMP0/A: \ctrl_in [10:8] -> \lane[0].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$90_CMP0/A: \ctrl_in [10:8] -> \lane[0].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$91_CMP0/A: \ctrl_in [10:8] -> \lane[0].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$92_CMP0/A: \ctrl_in [10:8] -> \lane[0].s [10:8]
+Rewrite gold.pmux_case03_crossbar/$procmux$95_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.pmux_case03_crossbar/$procmux$96_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.pmux_case03_crossbar/$procmux$97_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:50$13/A: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:50$13/B: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:50$35/A: \data_in [24:20] -> \lane[1].a
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:50$35/B: \data_in [39:35] -> \lane[1].d
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:51$14/A: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:51$14/B: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:51$36/A: \data_in [29:25] -> \lane[1].b
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:51$36/B: \data_in [24:20] -> \lane[1].a
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:52$15/A: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:52$15/B: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:52$37/A: \data_in [34:30] -> \lane[1].c
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:52$37/B: \data_in [29:25] -> \lane[1].b
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:53$16/A: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:53$16/B: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:53$38/A: \data_in [39:35] -> \lane[1].d
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:53$38/B: \data_in [34:30] -> \lane[1].c
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:65$21/A: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:65$21/B: \lane[0].q -> \data_out [4:0]
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:65$43/A: \data_in [39:35] -> \lane[1].d
+Rewrite gold.pmux_case03_crossbar/$sub$../../../cases/pmux_case03_crossbar.v:65$43/B: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:34$25/A: \data_in [24:20] -> \lane[1].a
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:34$25/B: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:34$3/A: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:34$3/B: \lane[0].q -> \data_out [4:0]
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:35$26/A: \data_in [29:25] -> \lane[1].b
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:35$26/B: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:35$4/A: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:35$4/B: \lane[0].q -> \data_out [4:0]
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:36$27/A: \data_in [34:30] -> \lane[1].c
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:36$27/B: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:36$5/A: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:36$5/B: \lane[0].q -> \data_out [4:0]
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:37$28/A: \data_in [39:35] -> \lane[1].d
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:37$28/B: \lane[1].q -> \data_out [9:5]
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:37$6/A: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case03_crossbar/$xor$../../../cases/pmux_case03_crossbar.v:37$6/B: \lane[0].q -> \data_out [4:0]
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.pmux_case03_crossbar / gate.pmux_case03_crossbar.
+
+3.1.1. Processing matched IDs for module pmux_case03_crossbar.
+
+3.1.2. Create fragment partitions for module pmux_case03_crossbar.
+Adding output bit \data_out [9] to partition 0.
+Adding output bit \data_out [0] to partition 0.
+Adding output bit \data_out [5] to partition 0.
+Adding output bit \data_out [6] to partition 0.
+Adding output bit \data_out [7] to partition 0.
+Adding output bit \data_out [8] to partition 0.
+Adding output bit \data_out [4] to partition 0.
+Adding output bit \data_out [1] to partition 0.
+Adding output bit \data_out [2] to partition 0.
+Adding output bit \data_out [3] to partition 0.
+
+Final list of fragment partitions:
+  0 \data_out [3] \data_out [2] \data_out [1] \data_out [4] \data_out [8] \data_out [7] \data_out [6] \data_out [5] \data_out [0] \data_out [9] <= \data_in [4] \data_in [3] \data_in [2] \data_in [1] \data_in [9] \data_in [8] \data_in [7] \data_in [6] \data_in [14] \data_in [13] \data_in [12] \data_in [11] \data_in [19] \data_in [18] \data_in [17] \data_in [16] \ctrl_in [4] \ctrl_in [5] \ctrl_in [6] \ctrl_in [7] \ctrl_in [0] \ctrl_in [1] \ctrl_in [2] \ctrl_in [3] \data_in [10] \data_in [15] \data_in [5] \ctrl_in [8] \ctrl_in [9] \data_in [0] \ctrl_in [10] \data_in [36] \data_in [31] \clk \ctrl_in [22] \ctrl_in [23] \ctrl_in [20] \ctrl_in [21] \data_in [30] \data_in [35] \data_in [25] \data_in [20] \data_in [21] \data_in [26] \data_in [32] \data_in [37] \data_in [22] \data_in [27] \data_in [33] \data_in [38] \data_in [23] \data_in [28] \ctrl_in [18] \ctrl_in [19] \data_in [24] \data_in [29] \data_in [34] \data_in [39] \ctrl_in [16] \ctrl_in [17] \ctrl_in [24] \ctrl_in [25] \ctrl_in [26] \rst \en
+
+3.1.3. Execute partitioning commands for module pmux_case03_crossbar.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'data_out' using a PO name: data_out
+
+Partition Summary:
+  Fragments:
+       0: \data_out
+  Partitions:
+       0: data_out
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  data_out
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module pmux_case03_crossbar.
+Adding non-output bit \rst to partition 1.
+Adding non-output bit \en to partition 1.
+Adding output bit \data_out [9] to partition 1.
+Adding output bit \data_out [8] to partition 1.
+Adding output bit \data_out [7] to partition 1.
+Adding output bit \data_out [6] to partition 1.
+Adding output bit \data_out [5] to partition 1.
+Adding output bit \data_out [4] to partition 1.
+Adding output bit \data_out [3] to partition 1.
+Adding output bit \data_out [2] to partition 1.
+Adding output bit \data_out [1] to partition 1.
+Adding output bit \data_out [0] to partition 1.
+Adding non-output bit \data_in [39] to partition 1.
+Adding non-output bit \data_in [38] to partition 1.
+Adding non-output bit \data_in [37] to partition 1.
+Adding non-output bit \data_in [36] to partition 1.
+Adding non-output bit \data_in [35] to partition 1.
+Adding non-output bit \data_in [34] to partition 1.
+Adding non-output bit \data_in [33] to partition 1.
+Adding non-output bit \data_in [32] to partition 1.
+Adding non-output bit \data_in [31] to partition 1.
+Adding non-output bit \data_in [30] to partition 1.
+Adding non-output bit \data_in [29] to partition 1.
+Adding non-output bit \data_in [28] to partition 1.
+Adding non-output bit \data_in [27] to partition 1.
+Adding non-output bit \data_in [26] to partition 1.
+Adding non-output bit \data_in [25] to partition 1.
+Adding non-output bit \data_in [24] to partition 1.
+Adding non-output bit \data_in [23] to partition 1.
+Adding non-output bit \data_in [22] to partition 1.
+Adding non-output bit \data_in [21] to partition 1.
+Adding non-output bit \data_in [20] to partition 1.
+Adding non-output bit \data_in [19] to partition 1.
+Adding non-output bit \data_in [18] to partition 1.
+Adding non-output bit \data_in [17] to partition 1.
+Adding non-output bit \data_in [16] to partition 1.
+Adding non-output bit \data_in [15] to partition 1.
+Adding non-output bit \data_in [14] to partition 1.
+Adding non-output bit \data_in [13] to partition 1.
+Adding non-output bit \data_in [12] to partition 1.
+Adding non-output bit \data_in [11] to partition 1.
+Adding non-output bit \data_in [10] to partition 1.
+Adding non-output bit \data_in [9] to partition 1.
+Adding non-output bit \data_in [8] to partition 1.
+Adding non-output bit \data_in [7] to partition 1.
+Adding non-output bit \data_in [6] to partition 1.
+Adding non-output bit \data_in [5] to partition 1.
+Adding non-output bit \data_in [4] to partition 1.
+Adding non-output bit \data_in [3] to partition 1.
+Adding non-output bit \data_in [2] to partition 1.
+Adding non-output bit \data_in [1] to partition 1.
+Adding non-output bit \data_in [0] to partition 1.
+Adding non-output bit \ctrl_in [31] to partition 1.
+Adding non-output bit \ctrl_in [30] to partition 1.
+Adding non-output bit \ctrl_in [29] to partition 1.
+Adding non-output bit \ctrl_in [28] to partition 1.
+Adding non-output bit \ctrl_in [27] to partition 1.
+Adding non-output bit \ctrl_in [26] to partition 1.
+Adding non-output bit \ctrl_in [25] to partition 1.
+Adding non-output bit \ctrl_in [24] to partition 1.
+Adding non-output bit \ctrl_in [23] to partition 1.
+Adding non-output bit \ctrl_in [22] to partition 1.
+Adding non-output bit \ctrl_in [21] to partition 1.
+Adding non-output bit \ctrl_in [20] to partition 1.
+Adding non-output bit \ctrl_in [19] to partition 1.
+Adding non-output bit \ctrl_in [18] to partition 1.
+Adding non-output bit \ctrl_in [17] to partition 1.
+Adding non-output bit \ctrl_in [16] to partition 1.
+Adding non-output bit \ctrl_in [15] to partition 1.
+Adding non-output bit \ctrl_in [14] to partition 1.
+Adding non-output bit \ctrl_in [13] to partition 1.
+Adding non-output bit \ctrl_in [12] to partition 1.
+Adding non-output bit \ctrl_in [11] to partition 1.
+Adding non-output bit \ctrl_in [10] to partition 1.
+Adding non-output bit \ctrl_in [9] to partition 1.
+Adding non-output bit \ctrl_in [8] to partition 1.
+Adding non-output bit \ctrl_in [7] to partition 1.
+Adding non-output bit \ctrl_in [6] to partition 1.
+Adding non-output bit \ctrl_in [5] to partition 1.
+Adding non-output bit \ctrl_in [4] to partition 1.
+Adding non-output bit \ctrl_in [3] to partition 1.
+Adding non-output bit \ctrl_in [2] to partition 1.
+Adding non-output bit \ctrl_in [1] to partition 1.
+Adding non-output bit \ctrl_in [0] to partition 1.
+Adding non-output bit \clk to partition 1.
+Writing partition 0 as pmux_case03_crossbar.data_out.
+  partition pi bit 0: \data_in [4] <-> \data_in [4]
+  partition pi bit 1: \data_in [3] <-> \data_in [3]
+  partition pi bit 2: \data_in [2] <-> \data_in [2]
+  partition pi bit 3: \data_in [1] <-> \data_in [1]
+  partition pi bit 4: \data_in [9] <-> \data_in [9]
+  partition pi bit 5: \data_in [8] <-> \data_in [8]
+  partition pi bit 6: \data_in [7] <-> \data_in [7]
+  partition pi bit 7: \data_in [6] <-> \data_in [6]
+  partition pi bit 8: \data_in [14] <-> \data_in [14]
+  partition pi bit 9: \data_in [13] <-> \data_in [13]
+  partition pi bit 10: \data_in [12] <-> \data_in [12]
+  partition pi bit 11: \data_in [11] <-> \data_in [11]
+  partition pi bit 12: \data_in [19] <-> \data_in [19]
+  partition pi bit 13: \data_in [18] <-> \data_in [18]
+  partition pi bit 14: \data_in [17] <-> \data_in [17]
+  partition pi bit 15: \data_in [16] <-> \data_in [16]
+  partition pi bit 16: \ctrl_in [4] <-> \ctrl_in [4]
+  partition pi bit 17: \ctrl_in [5] <-> \ctrl_in [5]
+  partition pi bit 18: \ctrl_in [6] <-> \ctrl_in [6]
+  partition pi bit 19: \ctrl_in [7] <-> \ctrl_in [7]
+  partition pi bit 20: \ctrl_in [0] <-> \ctrl_in [0]
+  partition pi bit 21: \ctrl_in [1] <-> \ctrl_in [1]
+  partition pi bit 22: \ctrl_in [2] <-> \ctrl_in [2]
+  partition pi bit 23: \ctrl_in [3] <-> \ctrl_in [3]
+  partition pi bit 24: \data_in [10] <-> \data_in [10]
+  partition pi bit 25: \data_in [15] <-> \data_in [15]
+  partition pi bit 26: \data_in [5] <-> \data_in [5]
+  partition pi bit 27: \ctrl_in [8] <-> \ctrl_in [8]
+  partition pi bit 28: \ctrl_in [9] <-> \ctrl_in [9]
+  partition pi bit 29: \data_in [0] <-> \data_in [0]
+  partition pi bit 30: \ctrl_in [10] <-> \ctrl_in [10]
+  partition pi bit 31: \data_in [36] <-> \data_in [36]
+  partition pi bit 32: \data_in [31] <-> \data_in [31]
+  partition pi bit 33: \clk <-> \clk
+  partition pi bit 34: \ctrl_in [22] <-> \ctrl_in [22]
+  partition pi bit 35: \ctrl_in [23] <-> \ctrl_in [23]
+  partition pi bit 36: \ctrl_in [20] <-> \ctrl_in [20]
+  partition pi bit 37: \ctrl_in [21] <-> \ctrl_in [21]
+  partition pi bit 38: \data_in [30] <-> \data_in [30]
+  partition pi bit 39: \data_in [35] <-> \data_in [35]
+  partition pi bit 40: \data_in [25] <-> \data_in [25]
+  partition pi bit 41: \data_in [20] <-> \data_in [20]
+  partition pi bit 42: \data_in [21] <-> \data_in [21]
+  partition pi bit 43: \data_in [26] <-> \data_in [26]
+  partition pi bit 44: \data_in [32] <-> \data_in [32]
+  partition pi bit 45: \data_in [37] <-> \data_in [37]
+  partition pi bit 46: \data_in [22] <-> \data_in [22]
+  partition pi bit 47: \data_in [27] <-> \data_in [27]
+  partition pi bit 48: \data_in [33] <-> \data_in [33]
+  partition pi bit 49: \data_in [38] <-> \data_in [38]
+  partition pi bit 50: \data_in [23] <-> \data_in [23]
+  partition pi bit 51: \data_in [28] <-> \data_in [28]
+  partition pi bit 52: \ctrl_in [18] <-> \ctrl_in [18]
+  partition pi bit 53: \ctrl_in [19] <-> \ctrl_in [19]
+  partition pi bit 54: \data_in [24] <-> \data_in [24]
+  partition pi bit 55: \data_in [29] <-> \data_in [29]
+  partition pi bit 56: \data_in [34] <-> \data_in [34]
+  partition pi bit 57: \data_in [39] <-> \data_in [39]
+  partition pi bit 58: \ctrl_in [16] <-> \ctrl_in [16]
+  partition pi bit 59: \ctrl_in [17] <-> \ctrl_in [17]
+  partition pi bit 60: \ctrl_in [24] <-> \ctrl_in [24]
+  partition pi bit 61: \ctrl_in [25] <-> \ctrl_in [25]
+  partition pi bit 62: \ctrl_in [26] <-> \ctrl_in [26]
+  partition pi bit 63: \rst <-> \rst
+  partition pi bit 64: \en <-> \en
+  partition po bit 0: \data_out [3] <-> \data_out [3]
+  partition po bit 1: \data_out [2] <-> \data_out [2]
+  partition po bit 2: \data_out [1] <-> \data_out [1]
+  partition po bit 3: \data_out [4] <-> \data_out [4]
+  partition po bit 4: \data_out [8] <-> \data_out [8]
+  partition po bit 5: \data_out [7] <-> \data_out [7]
+  partition po bit 6: \data_out [6] <-> \data_out [6]
+  partition po bit 7: \data_out [5] <-> \data_out [5]
+  partition po bit 8: \data_out [0] <-> \data_out [0]
+  partition po bit 9: \data_out [9] <-> \data_out [9]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/pmux_case03_crossbar.data_out.il
+<suppressed ~8794 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.pmux_case03_crossbar.data_out...
+Checking module gold.pmux_case03_crossbar.data_out...
+Found and reported 0 problems.
+
+Writing partition 1 as pmux_case03_crossbar.
+  partition pi bit 0: \ctrl_in [11] <-> \ctrl_in [11]
+  partition pi bit 1: \ctrl_in [12] <-> \ctrl_in [12]
+  partition pi bit 2: \ctrl_in [13] <-> \ctrl_in [13]
+  partition pi bit 3: \ctrl_in [14] <-> \ctrl_in [14]
+  partition pi bit 4: \ctrl_in [15] <-> \ctrl_in [15]
+  partition pi bit 5: \ctrl_in [27] <-> \ctrl_in [27]
+  partition pi bit 6: \ctrl_in [28] <-> \ctrl_in [28]
+  partition pi bit 7: \ctrl_in [29] <-> \ctrl_in [29]
+  partition pi bit 8: \ctrl_in [30] <-> \ctrl_in [30]
+  partition pi bit 9: \ctrl_in [31] <-> \ctrl_in [31]
+  partition pi bit 10: \data_in [19] <-> \data_in [19]
+  partition pi bit 11: \data_in [13] <-> \data_in [13]
+  partition pi bit 12: \data_in [12] <-> \data_in [12]
+  partition pi bit 13: \data_in [16] <-> \data_in [16]
+  partition pi bit 14: \data_in [11] <-> \data_in [11]
+  partition pi bit 15: \ctrl_in [4] <-> \ctrl_in [4]
+  partition pi bit 16: \ctrl_in [5] <-> \ctrl_in [5]
+  partition pi bit 17: \ctrl_in [6] <-> \ctrl_in [6]
+  partition pi bit 18: \ctrl_in [7] <-> \ctrl_in [7]
+  partition pi bit 19: \ctrl_in [0] <-> \ctrl_in [0]
+  partition pi bit 20: \ctrl_in [1] <-> \ctrl_in [1]
+  partition pi bit 21: \ctrl_in [2] <-> \ctrl_in [2]
+  partition pi bit 22: \ctrl_in [3] <-> \ctrl_in [3]
+  partition pi bit 23: \data_in [10] <-> \data_in [10]
+  partition pi bit 24: \data_in [15] <-> \data_in [15]
+  partition pi bit 25: \data_in [5] <-> \data_in [5]
+  partition pi bit 26: \data_in [0] <-> \data_in [0]
+  partition pi bit 27: \data_in [1] <-> \data_in [1]
+  partition pi bit 28: \data_in [6] <-> \data_in [6]
+  partition pi bit 29: \data_in [17] <-> \data_in [17]
+  partition pi bit 30: \data_in [2] <-> \data_in [2]
+  partition pi bit 31: \data_in [7] <-> \data_in [7]
+  partition pi bit 32: \data_in [18] <-> \data_in [18]
+  partition pi bit 33: \data_in [3] <-> \data_in [3]
+  partition pi bit 34: \data_in [8] <-> \data_in [8]
+  partition pi bit 35: \data_in [14] <-> \data_in [14]
+  partition pi bit 36: \data_in [4] <-> \data_in [4]
+  partition pi bit 37: \data_in [9] <-> \data_in [9]
+  partition pi bit 38: \ctrl_in [8] <-> \ctrl_in [8]
+  partition pi bit 39: \ctrl_in [9] <-> \ctrl_in [9]
+  partition pi bit 40: \ctrl_in [10] <-> \ctrl_in [10]
+  partition pi bit 41: \data_in [36] <-> \data_in [36]
+  partition pi bit 42: \data_in [31] <-> \data_in [31]
+  partition pi bit 43: \clk <-> \clk
+  partition pi bit 44: \ctrl_in [22] <-> \ctrl_in [22]
+  partition pi bit 45: \ctrl_in [23] <-> \ctrl_in [23]
+  partition pi bit 46: \ctrl_in [20] <-> \ctrl_in [20]
+  partition pi bit 47: \ctrl_in [21] <-> \ctrl_in [21]
+  partition pi bit 48: \data_in [30] <-> \data_in [30]
+  partition pi bit 49: \data_in [35] <-> \data_in [35]
+  partition pi bit 50: \data_in [25] <-> \data_in [25]
+  partition pi bit 51: \data_in [20] <-> \data_in [20]
+  partition pi bit 52: \data_in [21] <-> \data_in [21]
+  partition pi bit 53: \data_in [26] <-> \data_in [26]
+  partition pi bit 54: \data_in [32] <-> \data_in [32]
+  partition pi bit 55: \data_in [37] <-> \data_in [37]
+  partition pi bit 56: \data_in [22] <-> \data_in [22]
+  partition pi bit 57: \data_in [27] <-> \data_in [27]
+  partition pi bit 58: \data_in [33] <-> \data_in [33]
+  partition pi bit 59: \data_in [38] <-> \data_in [38]
+  partition pi bit 60: \data_in [23] <-> \data_in [23]
+  partition pi bit 61: \data_in [28] <-> \data_in [28]
+  partition pi bit 62: \ctrl_in [18] <-> \ctrl_in [18]
+  partition pi bit 63: \ctrl_in [19] <-> \ctrl_in [19]
+  partition pi bit 64: \data_in [24] <-> \data_in [24]
+  partition pi bit 65: \data_in [29] <-> \data_in [29]
+  partition pi bit 66: \data_in [34] <-> \data_in [34]
+  partition pi bit 67: \data_in [39] <-> \data_in [39]
+  partition pi bit 68: \ctrl_in [16] <-> \ctrl_in [16]
+  partition pi bit 69: \ctrl_in [17] <-> \ctrl_in [17]
+  partition pi bit 70: \ctrl_in [24] <-> \ctrl_in [24]
+  partition pi bit 71: \ctrl_in [25] <-> \ctrl_in [25]
+  partition pi bit 72: \ctrl_in [26] <-> \ctrl_in [26]
+  partition pi bit 73: \en <-> \en
+  partition pi bit 74: \rst <-> \rst
+  partition po bit 0: \data_out [0] <-> \data_out [0]
+  partition po bit 1: \data_out [1] <-> \data_out [1]
+  partition po bit 2: \data_out [2] <-> \data_out [2]
+  partition po bit 3: \data_out [3] <-> \data_out [3]
+  partition po bit 4: \data_out [4] <-> \data_out [4]
+  partition po bit 5: \data_out [5] <-> \data_out [5]
+  partition po bit 6: \data_out [6] <-> \data_out [6]
+  partition po bit 7: \data_out [7] <-> \data_out [7]
+  partition po bit 8: \data_out [8] <-> \data_out [8]
+  partition po bit 9: \data_out [9] <-> \data_out [9]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/pmux_case03_crossbar.il
+<suppressed ~3017 debug messages>
+
+End of script. Logfile hash: 204568199d
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

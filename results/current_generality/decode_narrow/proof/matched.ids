@@ -1,0 +1,4 @@
+# [*] gold-match *
+decode_counterexample a a
+decode_counterexample b b
+decode_counterexample x x

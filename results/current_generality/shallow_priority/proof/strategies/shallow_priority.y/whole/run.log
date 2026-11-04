@@ -1,0 +1,262 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../partitions/shallow_priority.y.sv
+Parsing SystemVerilog input from `../../../partitions/shallow_priority.y.sv' to AST representation.
+Generating RTLIL representation for module `\miter'.
+Generating RTLIL representation for module `\miter_cmp_prop'.
+Generating RTLIL representation for module `\miter_def_prop'.
+Generating RTLIL representation for module `\gold.shallow_priority.y'.
+Generating RTLIL representation for module `\gate.shallow_priority.y'.
+Successfully finished Verilog frontend.
+
+2. Executing RTLIL frontend.
+Input filename: ../../../partitions/shallow_priority.y.il
+Replacing existing blackbox module \gold.shallow_priority.y.
+Replacing existing blackbox module \gate.shallow_priority.y.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     \miter_cmp_prop
+Used module:     \gate.shallow_priority.y
+Used module:     \gold.shallow_priority.y
+Parameter 1 (\WIDTH) = 8
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\miter_cmp_prop'.
+Parameter 1 (\WIDTH) = 8
+Parameter 2 (\TYPE) = 48'011000010111001101110011011001010111001001110100
+Generating RTLIL representation for module `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop'.
+
+3.3. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop
+Used module:     \gate.shallow_priority.y
+Used module:     \gold.shallow_priority.y
+
+3.4. Analyzing design hierarchy..
+Top module:  \miter
+Used module:     $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop
+Used module:     \gate.shallow_priority.y
+Used module:     \gold.shallow_priority.y
+Removing unused module `\miter_def_prop'.
+Removing unused module `\miter_cmp_prop'.
+Removed 2 unused modules.
+Module $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop directly or indirectly contains formal properties -> setting "keep" attribute.
+Module miter directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell miter.__po_y__assert ($paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop).
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 3 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+4.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/shallow_priority.y.sv:78$128'.
+Creating decoders for process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/shallow_priority.y.sv:72$95'.
+
+4.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.\i' from process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/shallow_priority.y.sv:72$95'.
+No latch inferred for signal `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.\okay' from process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/shallow_priority.y.sv:72$95'.
+
+4.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+4.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/shallow_priority.y.sv:78$128'.
+Removing empty process `$paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.$proc$../../../partitions/shallow_priority.y.sv:72$95'.
+Cleaned up 0 empty switches.
+
+4.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module gold.shallow_priority.y.
+Optimizing module $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.
+<suppressed ~1 debug messages>
+Optimizing module gate.shallow_priority.y.
+Optimizing module miter.
+
+5. Executing ASYNC2SYNC pass.
+
+6. Executing FORMALFF pass.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing FLATTEN pass (flatten design).
+Deleting now unused module gold.shallow_priority.y.
+Deleting now unused module $paramod$a769009af63a4a765f4b4241ea056b727873f867\miter_cmp_prop.
+Deleting now unused module gate.shallow_priority.y.
+<suppressed ~3 debug messages>
+
+9. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module miter.
+<suppressed ~1 debug messages>
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \miter..
+Removed 1 unused cells and 7 unused wires.
+<suppressed ~2 debug messages>
+
+12. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_a
+Import def constraint for this timestep: \__pi_b
+Import def constraint for this timestep: \__pi_c
+Import def constraint for this timestep: \__pi_d
+Import def constraint for this timestep: \__pi_q
+Import def constraint for this timestep: \__pi_s
+Imported 81 cells to SAT database.
+Import proof for assert: \__po_y__assert.okay when 1'1.
+
+** Trying induction with length 1 **
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_a
+Import def constraint for this timestep: \__pi_b
+Import def constraint for this timestep: \__pi_c
+Import def constraint for this timestep: \__pi_d
+Import def constraint for this timestep: \__pi_q
+Import def constraint for this timestep: \__pi_s
+Imported 81 cells to SAT database.
+No constraints for initial state found.
+
+Import proof for assert: \__po_y__assert.okay when 1'1.
+Import show expression: \__po_y__assert.i
+Import show expression: \__po_y__assert.okay
+Import show expression: \__po_y__assert.in_gate
+Import show expression: \__po_y__assert.in_gold
+Import show expression: \gate.y
+Import show expression: \gate.s
+Import show expression: \gate.q
+Import show expression: \gate.a
+Import show expression: \gate.b
+Import show expression: \gate.d
+Import show expression: \gate.c
+Import show expression: \gate.__pi_a
+Import show expression: \gate.__pi_b
+Import show expression: \gate.__pi_c
+Import show expression: \gate.__pi_d
+Import show expression: \gate.__pi_q
+Import show expression: \gate.__pi_s
+Import show expression: \gate.__po_y
+Import show expression: \gold.y
+Import show expression: \gold.s
+Import show expression: \gold.q
+Import show expression: \gold.a
+Import show expression: \gold.b
+Import show expression: \gold.d
+Import show expression: \gold.c
+Import show expression: \gold.__pi_a
+Import show expression: \gold.__pi_b
+Import show expression: \gold.__pi_c
+Import show expression: \gold.__pi_d
+Import show expression: \gold.__pi_q
+Import show expression: \gold.__pi_s
+Import show expression: \gold.__po_y
+Import show expression: \__po_y__gate
+Import show expression: \__po_y__gold
+Import show expression: \__pi_s
+Import show expression: \__pi_q
+Import show expression: \__pi_d
+Import show expression: \__pi_c
+Import show expression: \__pi_b
+Import show expression: \__pi_a
+
+[base case 1] Solving problem with 5179 variables and 13874 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \__pi_a
+Import def constraint for this timestep: \__pi_b
+Import def constraint for this timestep: \__pi_c
+Import def constraint for this timestep: \__pi_d
+Import def constraint for this timestep: \__pi_q
+Import def constraint for this timestep: \__pi_s
+Imported 81 cells to SAT database.
+Import proof for assert: \__po_y__assert.okay when 1'1.
+Import show expression: \__po_y__assert.i
+Import show expression: \__po_y__assert.okay
+Import show expression: \__po_y__assert.in_gate
+Import show expression: \__po_y__assert.in_gold
+Import show expression: \gate.y
+Import show expression: \gate.s
+Import show expression: \gate.q
+Import show expression: \gate.a
+Import show expression: \gate.b
+Import show expression: \gate.d
+Import show expression: \gate.c
+Import show expression: \gate.__pi_a
+Import show expression: \gate.__pi_b
+Import show expression: \gate.__pi_c
+Import show expression: \gate.__pi_d
+Import show expression: \gate.__pi_q
+Import show expression: \gate.__pi_s
+Import show expression: \gate.__po_y
+Import show expression: \gold.y
+Import show expression: \gold.s
+Import show expression: \gold.q
+Import show expression: \gold.a
+Import show expression: \gold.b
+Import show expression: \gold.d
+Import show expression: \gold.c
+Import show expression: \gold.__pi_a
+Import show expression: \gold.__pi_b
+Import show expression: \gold.__pi_c
+Import show expression: \gold.__pi_d
+Import show expression: \gold.__pi_q
+Import show expression: \gold.__pi_s
+Import show expression: \gold.__po_y
+Import show expression: \__po_y__gate
+Import show expression: \__po_y__gold
+Import show expression: \__pi_s
+Import show expression: \__pi_q
+Import show expression: \__pi_d
+Import show expression: \__pi_c
+Import show expression: \__pi_b
+Import show expression: \__pi_a
+
+[induction step 1] Solving problem with 10356 variables and 27748 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+
+End of script. Logfile hash: 7958e2059f
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 4% 2x read_verilog (0 sec), 4% 2x read_rtlil (0 sec), ...

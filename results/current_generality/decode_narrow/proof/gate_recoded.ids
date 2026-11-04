@@ -1,0 +1,4 @@
+decode_counterexample . A:src="../../../scripts/generality_cases/decode_counterexample.v:1.1-1.113" A:top=1
+decode_counterexample x w=3:0 A:src="../../../scripts/generality_cases/decode_counterexample.v:1.42-1.43" P=I
+decode_counterexample b w=0:0 A:src="../../../scripts/generality_cases/decode_counterexample.v:1.54-1.55" P=O
+decode_counterexample a w=0:0 A:src="../../../scripts/generality_cases/decode_counterexample.v:1.52-1.53" P=O

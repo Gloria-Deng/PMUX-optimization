@@ -1,0 +1,1 @@
+variant_indirect_result variant_indirect_result.y : y[5:0]

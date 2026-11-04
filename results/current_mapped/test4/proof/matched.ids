@@ -1,0 +1,10 @@
+# [*] gold-match *
+test4 clk clk
+test4 data_dn data_dn
+test4 data_dp data_dp
+test4 datain datain
+test4 datain_5bis7 datain_5bis7
+test4 dataout dataout
+test4 ena ena
+test4 only_5b only_5b
+test4 reset_n reset_n

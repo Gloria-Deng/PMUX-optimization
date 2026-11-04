@@ -1,0 +1,7 @@
+# [*] gold-match *
+variant_narrow_signed clk clk
+variant_narrow_signed ctrl_in ctrl_in
+variant_narrow_signed data_in data_in
+variant_narrow_signed data_out data_out
+variant_narrow_signed en en
+variant_narrow_signed rst rst

@@ -1,0 +1,4 @@
+﻿file,digest
+binary\yosys.exe,a760dbabbf662b00ea957cec51b8267a16149efc295d6d1aec9a294b416511fa
+cases\test2.v,e43c9b437071488551caf3121e227e86f4fe3190751f245beac3b7ecc3fdb146
+scripts\verify_command_rules.py,92294cdf6562ecfc15d51aee0b604bbd59bbbe5fb0ed6d5cc80c5c09d3499743

@@ -1,0 +1,47 @@
+--- upstream/eqy-script.py
++++ bin/eqy-script.py
+@@ -34,7 +34,7 @@
+ 
+ def root_path():
+     fn = getattr(sys.modules['__main__'], '__file__')
+-    root_path = os.path.abspath(os.path.dirname(fn))
++    root_path = os.path.abspath(os.path.dirname(fn)).replace("\\", "/")
+     return root_path
+ 
+ class DictAction(argparse.Action):
+@@ -325,7 +325,7 @@
+     if (not os.path.exists(plugin_path)):
+         plugin_path = root_path() # for development
+     with open(args.workdir + "/get_ids.ys", "w") as f:
+-        print("plugin -i {}/eqy_combine.so".format(plugin_path), file=f)
++        print("plugin -i \"{}/eqy_combine.so\"".format(plugin_path), file=f)
+         print("read_rtlil {}/gold.il".format(args.workdir), file=f)
+         print("uniquify", file=f)
+         print("hierarchy", file=f)
+@@ -373,7 +373,7 @@
+     if (not os.path.exists(plugin_path)):
+         plugin_path = root_path() # for development
+     with open(args.workdir + "/recode.ys", "w") as f:
+-        print("plugin -i {}/eqy_recode.so".format(plugin_path), file=f)
++        print("plugin -i \"{}/eqy_recode.so\"".format(plugin_path), file=f)
+         print("read_rtlil {}/gold.il".format(args.workdir), file=f)
+         print("design -stash gold", file=f)
+         print("read_rtlil {}/gate.il".format(args.workdir), file=f)
+@@ -395,7 +395,7 @@
+     if (not os.path.exists(plugin_path)):
+         plugin_path = root_path() # for development
+     with open(args.workdir + "/combine.ys", "w") as f:
+-        print("plugin -i {}/eqy_combine.so".format(plugin_path), file=f)
++        print("plugin -i \"{}/eqy_combine.so\"".format(plugin_path), file=f)
+         print("read_rtlil {}/gold.il".format(args.workdir), file=f)
+         print("uniquify", file=f)
+         print("hierarchy", file=f)
+@@ -741,7 +741,7 @@
+     if (not os.path.exists(plugin_path)):
+         plugin_path = root_path() # for development
+     with open(args.workdir + "/partition.ys", "w") as f:
+-        print("plugin -i {}/eqy_partition.so".format(plugin_path), file=f)
++        print("plugin -i \"{}/eqy_partition.so\"".format(plugin_path), file=f)
+         print("read_rtlil combined.il".format(args.workdir), file=f)
+         if cfg.options.insbuf:
+             print("insbuf -chain", file=f)

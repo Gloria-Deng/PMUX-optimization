@@ -1,0 +1,935 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `proof/gate.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: ../../current_nine/test4/delivered/final.il
+
+2. Executing Verilog-2005 frontend: ../cycloneiv_comb.v
+Parsing Verilog input from `../cycloneiv_comb.v' to AST representation.
+Replacing existing blackbox module `\cycloneiv_lcell_comb' at ../cycloneiv_comb.v:1.1-27.10.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: ../../../plugin/dffeas_formal.v
+Parsing Verilog input from `../../../plugin/dffeas_formal.v' to AST representation.
+Replacing existing blackbox module `\dffeas' at ../../../plugin/dffeas_formal.v:3.1-19.10.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+4. Executing PREP pass.
+
+4.1. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1.1. Analyzing design hierarchy..
+Top module:  \test4
+Used module:     \dffeas
+Used module:     \cycloneiv_lcell_comb
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+
+4.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Generating RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \lut_mask = 16'0101110101011101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.3. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101110101011101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101110101111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.4. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101110101111111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001011000010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.5. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001011000010110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0111111001111110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.6. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0111111001111110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101000101000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.7. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101000101000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0100000001000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.8. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0100000001000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000100000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.9. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000100000001
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100010011000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.10. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100010011000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0111111111111110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.11. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0111111111111110
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100110111001101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.12. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1100110111001101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001010100010101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.13. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001010100010101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010001000101111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.14. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010001000101111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001100110010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.15. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001100110010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001000110010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.16. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0011001000110010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010101000101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.17. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010101000101010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001000010010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.18. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1001000010010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010000000100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.19. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0010000000100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000110100001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.20. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000110100001000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0111111001110111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.21. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0111111001110111
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000011100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.22. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000011100000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111111100000010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.23. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1111111100000010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.24. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101011101011
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101010011110100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.25. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0101010011110100
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101010101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.26. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1010101010101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000000010000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.27. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'1000000010000000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000100010101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.28. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000000100010101
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001000000010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.29. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0001000000010000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000101000000010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.30. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0000101000000010
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100001101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+
+4.1.31. Executing AST frontend in derive mode using pre-parsed AST for module `\cycloneiv_lcell_comb'.
+Parameter \lut_mask = 16'0110100001101000
+Parameter \sum_lutc_input = 40'0110010001100001011101000110000101100011
+Generating RTLIL representation for module `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb'.
+Parameter \power_up = 1751738216
+Parameter \is_wysiwyg = 1414681925
+
+4.1.32. Executing AST frontend in derive mode using pre-parsed AST for module `\dffeas'.
+Parameter \power_up = 1751738216
+Parameter \is_wysiwyg = 1414681925
+Generating RTLIL representation for module `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas'.
+
+4.1.33. Analyzing design hierarchy..
+Top module:  \test4
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Used module:     $paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb
+Used module:     $paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb
+Used module:     $paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb
+Used module:     $paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb
+Used module:     $paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb
+Used module:     $paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb
+Used module:     $paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb
+Used module:     $paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb
+Used module:     $paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb
+Used module:     $paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb
+Used module:     $paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb
+Used module:     $paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb
+Used module:     $paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb
+Used module:     $paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb
+Used module:     $paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb
+Used module:     $paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb
+Used module:     $paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb
+Used module:     $paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb
+Used module:     $paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb
+Used module:     $paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb
+Used module:     $paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb
+Used module:     $paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb
+Used module:     $paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb
+Used module:     $paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb
+Used module:     $paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb
+Used module:     $paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb
+Used module:     $paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb
+Used module:     $paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb
+Used module:     $paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb
+Used module:     $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas
+
+4.1.34. Analyzing design hierarchy..
+Top module:  \test4
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Used module:     $paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb
+Used module:     $paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb
+Used module:     $paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb
+Used module:     $paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb
+Used module:     $paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb
+Used module:     $paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb
+Used module:     $paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb
+Used module:     $paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb
+Used module:     $paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb
+Used module:     $paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb
+Used module:     $paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb
+Used module:     $paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb
+Used module:     $paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb
+Used module:     $paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb
+Used module:     $paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb
+Used module:     $paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb
+Used module:     $paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb
+Used module:     $paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb
+Used module:     $paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb
+Used module:     $paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb
+Used module:     $paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb
+Used module:     $paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb
+Used module:     $paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb
+Used module:     $paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb
+Used module:     $paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb
+Used module:     $paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb
+Used module:     $paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb
+Used module:     $paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb
+Used module:     $paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb
+Used module:     $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas
+Removing unused module `\dffeas'.
+Removing unused module `\cycloneiv_lcell_comb'.
+Removed 2 unused modules.
+
+4.2. Executing PROC pass (convert processes to netlists).
+
+4.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1147'.
+Found and cleaned up 2 empty switches in `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:7$2049'.
+Cleaned up 3 empty switches.
+
+4.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$../../../plugin/dffeas_formal.v:11$1145 in module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Marked 3 switch rules as full_case in process $proc$../../../plugin/dffeas_formal.v:11$2047 in module $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.
+Removed a total of 0 dead cases.
+
+4.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 498 assignments to connections.
+
+4.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1147'.
+  Set init value: \q = 1'0
+Found init rule in `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:7$2049'.
+  Set init value: \q = 1'1
+
+4.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \clrn in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1145'.
+Found async reset \clrn in `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$2047'.
+
+4.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~6 debug messages>
+
+4.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$2004'.
+Creating decoders for process `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1989'.
+Creating decoders for process `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1973'.
+Creating decoders for process `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1958'.
+Creating decoders for process `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1942'.
+Creating decoders for process `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1927'.
+Creating decoders for process `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1911'.
+Creating decoders for process `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1896'.
+Creating decoders for process `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1880'.
+Creating decoders for process `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1865'.
+Creating decoders for process `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1849'.
+Creating decoders for process `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1834'.
+Creating decoders for process `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1818'.
+Creating decoders for process `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1803'.
+Creating decoders for process `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1787'.
+Creating decoders for process `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1772'.
+Creating decoders for process `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1756'.
+Creating decoders for process `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1741'.
+Creating decoders for process `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1725'.
+Creating decoders for process `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1710'.
+Creating decoders for process `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1694'.
+Creating decoders for process `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1679'.
+Creating decoders for process `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1663'.
+Creating decoders for process `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1648'.
+Creating decoders for process `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1632'.
+Creating decoders for process `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1617'.
+Creating decoders for process `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1601'.
+Creating decoders for process `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1586'.
+Creating decoders for process `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1570'.
+Creating decoders for process `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1555'.
+Creating decoders for process `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1539'.
+Creating decoders for process `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1524'.
+Creating decoders for process `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1508'.
+Creating decoders for process `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1493'.
+Creating decoders for process `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1477'.
+Creating decoders for process `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1462'.
+Creating decoders for process `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1446'.
+Creating decoders for process `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1431'.
+Creating decoders for process `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1415'.
+Creating decoders for process `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1400'.
+Creating decoders for process `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1384'.
+Creating decoders for process `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1369'.
+Creating decoders for process `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1353'.
+Creating decoders for process `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1338'.
+Creating decoders for process `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1322'.
+Creating decoders for process `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1307'.
+Creating decoders for process `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1291'.
+Creating decoders for process `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1276'.
+Creating decoders for process `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1260'.
+Creating decoders for process `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1245'.
+Creating decoders for process `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1229'.
+Creating decoders for process `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1214'.
+Creating decoders for process `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1198'.
+Creating decoders for process `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1183'.
+Creating decoders for process `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1167'.
+Creating decoders for process `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1152'.
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1147'.
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1145'.
+     1/1: $0\q[0:0]
+Creating decoders for process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:7$2049'.
+Creating decoders for process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$2047'.
+     1/1: $0\q[0:0]
+Creating decoders for process `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$2035'.
+Creating decoders for process `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$2020'.
+
+4.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1986.$result' from process `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$2004'.
+No latch inferred for signal `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1985.$result' from process `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1989'.
+No latch inferred for signal `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1955.$result' from process `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1973'.
+No latch inferred for signal `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1954.$result' from process `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1958'.
+No latch inferred for signal `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1924.$result' from process `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1942'.
+No latch inferred for signal `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1923.$result' from process `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1927'.
+No latch inferred for signal `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1893.$result' from process `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1911'.
+No latch inferred for signal `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1892.$result' from process `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1896'.
+No latch inferred for signal `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1862.$result' from process `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1880'.
+No latch inferred for signal `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1861.$result' from process `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1865'.
+No latch inferred for signal `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1831.$result' from process `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1849'.
+No latch inferred for signal `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1830.$result' from process `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1834'.
+No latch inferred for signal `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1800.$result' from process `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1818'.
+No latch inferred for signal `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1799.$result' from process `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1803'.
+No latch inferred for signal `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1769.$result' from process `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1787'.
+No latch inferred for signal `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1768.$result' from process `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1772'.
+No latch inferred for signal `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1738.$result' from process `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1756'.
+No latch inferred for signal `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1737.$result' from process `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1741'.
+No latch inferred for signal `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1707.$result' from process `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1725'.
+No latch inferred for signal `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1706.$result' from process `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1710'.
+No latch inferred for signal `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1676.$result' from process `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1694'.
+No latch inferred for signal `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1675.$result' from process `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1679'.
+No latch inferred for signal `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1645.$result' from process `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1663'.
+No latch inferred for signal `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1644.$result' from process `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1648'.
+No latch inferred for signal `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1614.$result' from process `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1632'.
+No latch inferred for signal `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1613.$result' from process `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1617'.
+No latch inferred for signal `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1583.$result' from process `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1601'.
+No latch inferred for signal `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1582.$result' from process `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1586'.
+No latch inferred for signal `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1552.$result' from process `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1570'.
+No latch inferred for signal `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1551.$result' from process `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1555'.
+No latch inferred for signal `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1521.$result' from process `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1539'.
+No latch inferred for signal `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1520.$result' from process `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1524'.
+No latch inferred for signal `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1490.$result' from process `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1508'.
+No latch inferred for signal `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1489.$result' from process `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1493'.
+No latch inferred for signal `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1459.$result' from process `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1477'.
+No latch inferred for signal `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1458.$result' from process `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1462'.
+No latch inferred for signal `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1428.$result' from process `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1446'.
+No latch inferred for signal `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1427.$result' from process `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1431'.
+No latch inferred for signal `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1397.$result' from process `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1415'.
+No latch inferred for signal `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1396.$result' from process `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1400'.
+No latch inferred for signal `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1366.$result' from process `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1384'.
+No latch inferred for signal `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1365.$result' from process `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1369'.
+No latch inferred for signal `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1335.$result' from process `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1353'.
+No latch inferred for signal `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1334.$result' from process `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1338'.
+No latch inferred for signal `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1304.$result' from process `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1322'.
+No latch inferred for signal `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1303.$result' from process `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1307'.
+No latch inferred for signal `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1273.$result' from process `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1291'.
+No latch inferred for signal `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1272.$result' from process `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1276'.
+No latch inferred for signal `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1242.$result' from process `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1260'.
+No latch inferred for signal `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1241.$result' from process `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1245'.
+No latch inferred for signal `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1211.$result' from process `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1229'.
+No latch inferred for signal `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1210.$result' from process `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1214'.
+No latch inferred for signal `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1180.$result' from process `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1198'.
+No latch inferred for signal `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1179.$result' from process `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1183'.
+No latch inferred for signal `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$1149.$result' from process `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1167'.
+No latch inferred for signal `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$1148.$result' from process `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1152'.
+No latch inferred for signal `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:26$2017.$result' from process `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$2035'.
+No latch inferred for signal `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.\lut_data$func$../cycloneiv_comb.v:25$2016.$result' from process `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$2020'.
+
+4.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.\q' using process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1145'.
+  created $adff cell `$procdff$2070' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.\q' using process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$2047'.
+  created $adff cell `$procdff$2075' with positive edge clock and positive level reset.
+
+4.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$2004'.
+Removing empty process `$paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1989'.
+Removing empty process `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1973'.
+Removing empty process `$paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1958'.
+Removing empty process `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1942'.
+Removing empty process `$paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1927'.
+Removing empty process `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1911'.
+Removing empty process `$paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1896'.
+Removing empty process `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1880'.
+Removing empty process `$paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1865'.
+Removing empty process `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1849'.
+Removing empty process `$paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1834'.
+Removing empty process `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1818'.
+Removing empty process `$paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1803'.
+Removing empty process `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1787'.
+Removing empty process `$paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1772'.
+Removing empty process `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1756'.
+Removing empty process `$paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1741'.
+Removing empty process `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1725'.
+Removing empty process `$paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1710'.
+Removing empty process `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1694'.
+Removing empty process `$paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1679'.
+Removing empty process `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1663'.
+Removing empty process `$paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1648'.
+Removing empty process `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1632'.
+Removing empty process `$paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1617'.
+Removing empty process `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1601'.
+Removing empty process `$paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1586'.
+Removing empty process `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1570'.
+Removing empty process `$paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1555'.
+Removing empty process `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1539'.
+Removing empty process `$paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1524'.
+Removing empty process `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1508'.
+Removing empty process `$paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1493'.
+Removing empty process `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1477'.
+Removing empty process `$paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1462'.
+Removing empty process `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1446'.
+Removing empty process `$paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1431'.
+Removing empty process `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1415'.
+Removing empty process `$paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1400'.
+Removing empty process `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1384'.
+Removing empty process `$paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1369'.
+Removing empty process `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1353'.
+Removing empty process `$paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1338'.
+Removing empty process `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1322'.
+Removing empty process `$paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1307'.
+Removing empty process `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1291'.
+Removing empty process `$paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1276'.
+Removing empty process `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1260'.
+Removing empty process `$paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1245'.
+Removing empty process `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1229'.
+Removing empty process `$paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1214'.
+Removing empty process `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1198'.
+Removing empty process `$paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1183'.
+Removing empty process `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$1167'.
+Removing empty process `$paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$1152'.
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1147'.
+Found and cleaned up 3 empty switches in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1145'.
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1145'.
+Removing empty process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:7$2049'.
+Found and cleaned up 3 empty switches in `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$2047'.
+Removing empty process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$2047'.
+Removing empty process `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:26$2035'.
+Removing empty process `$paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.$proc$../cycloneiv_comb.v:25$2020'.
+Cleaned up 6 empty switches.
+
+4.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.
+<suppressed ~2 debug messages>
+Optimizing module test4.
+
+4.3. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb...
+Checking module $paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb...
+Checking module $paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb...
+Checking module $paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb...
+Checking module $paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb...
+Checking module $paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb...
+Checking module $paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb...
+Checking module $paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb...
+Checking module $paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb...
+Checking module $paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb...
+Checking module $paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb...
+Checking module $paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb...
+Checking module $paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb...
+Checking module $paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb...
+Checking module $paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb...
+Checking module $paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb...
+Checking module $paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb...
+Checking module $paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb...
+Checking module $paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb...
+Checking module $paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb...
+Checking module $paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb...
+Checking module $paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb...
+Checking module $paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb...
+Checking module $paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb...
+Checking module $paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb...
+Checking module $paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb...
+Checking module $paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb...
+Checking module $paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb...
+Checking module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas...
+Checking module $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas...
+Checking module $paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb...
+Checking module test4...
+Found and reported 0 problems.
+
+4.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$ad2e6c9ea4bcb4fd251413a468a3ecec9d3b9f71\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$c70d709958122122ff6d88a62301f6a6fc73fb62\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$b2cbd53c3ac4555bb1cecdd2b94827b63f5260e5\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$6a1d7699d78e811a14b4d794b42fe338a9d3bced\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$be82da330442a7bee1f029477ba5f4a8e080f2f7\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$dd4c7a2eefe8fd812f2678c782782a66cc7ebb10\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$0381434647d24c61148011c4c33dcebd9191fb92\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$c93cad3b6b252353353f2abec227df65ed9c71cf\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$43b2636b4aea982ad87d7ed8004883594c3c1892\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$6cc8e6fdb9375c8b084f495c5927e08c037aadfe\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$6bc65d0a84f7beb37c15f1415174ff876335e897\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$7030488429485fcf92d146e6dfcc5d5a73679ee1\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$15e2ea200cdd51d21ddd7cacae588a4cfe95f366\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$346651aa408c196880b3c803a8f6ccc78b9f21d3\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$3be37c7eea7649430980c5d2ee29fed6a5135888\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$5811507c3d42ca2b1b4c63db98e6a5d239285f4f\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$b99284eef26fb4b223c4177888149efd071ca545\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$6dc5818042e33c80ceaff58212f8c4ad59915dfe\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$39288e23113b4f550684ecbf7b8df9adc86cb917\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$3e123b439581d1352d9165dc48844731cc70edbc\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$f2d9657218d65698977022782bb5cd2ab283ed2e\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$7720351db53210e586e7b7afdbec058d726c1c1d\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$ee1f550af898103b1ffc873df7619375a85c5de1\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$650291554b014b2fe590c032989b8a1b6d167389\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$6dcac860ae8f3fef2a9e6a4618f4a93a190b9457\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$228161da18fc9897ff7cbd3edbe506ccfc658eb8\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$4ad207702a4c1076d9d43195892b43db5e451666\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$918f7f061dbe4f4043cc4ea1d4764a65186b44a4\cycloneiv_lcell_comb.
+Deleting now unused module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Deleting now unused module $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.
+Deleting now unused module $paramod$2b4eacd5427893faed51e82da9dae53908a7ca63\cycloneiv_lcell_comb.
+<suppressed ~39 debug messages>
+
+4.5. Executing FUTURE pass.
+
+4.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+<suppressed ~31 debug messages>
+
+4.7. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_7.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_6_A_2_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_6_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_6_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_6.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_5.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_4_A_2_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_4_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_4.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_3.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2_A_2_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2_A_1_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1_A_2_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y_A_$lut_A.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_$lut_Y_A_1_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_$lut_Y_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A_A_$lut_Y.cin is used but has no driver.
+Warning: Wire test4.\ena_$lut_A.cin is used but has no driver.
+Found and reported 28 problems.
+
+4.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 105 unused cells and 932 unused wires.
+<suppressed ~174 debug messages>
+
+4.9. Executing OPT pass (performing simple optimizations).
+
+4.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+4.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 162 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+4.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~658 debug messages>
+
+4.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+4.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 162 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+4.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+4.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+4.9.8. Finished fast OPT passes. (There is nothing left to do.)
+
+4.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 4 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$2000 ($mux).
+Removed top 3 bits (of 4) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_7.$ternary$../cycloneiv_comb.v:18$1970 ($mux).
+Removed top 3 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_6_A_2_$lut_Y.$ternary$../cycloneiv_comb.v:17$1938 ($mux).
+Removed top 6 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_6_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$1876 ($mux).
+Removed top 1 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_5.$ternary$../cycloneiv_comb.v:17$1814 ($mux).
+Removed top 4 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_4_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$1721 ($mux).
+Removed top 5 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_4.$ternary$../cycloneiv_comb.v:17$1690 ($mux).
+Removed top 2 bits (of 4) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_3.$ternary$../cycloneiv_comb.v:18$1660 ($mux).
+Removed top 3 bits (of 4) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:18$1567 ($mux).
+Removed top 7 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$1535 ($mux).
+Removed top 4 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2.$ternary$../cycloneiv_comb.v:17$1504 ($mux).
+Removed top 1 bits (of 4) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1_A_2_$lut_Y.$ternary$../cycloneiv_comb.v:18$1474 ($mux).
+Removed top 3 bits (of 4) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:18$1443 ($mux).
+Removed top 5 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1.$ternary$../cycloneiv_comb.v:17$1380 ($mux).
+Removed top 3 bits (of 4) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y.$ternary$../cycloneiv_comb.v:18$1350 ($mux).
+Removed top 1 bits (of 4) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A.$ternary$../cycloneiv_comb.v:18$1319 ($mux).
+Removed top 3 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_1_$lut_Y.$ternary$../cycloneiv_comb.v:17$1287 ($mux).
+Removed top 1 bits (of 4) from mux cell test4.$flatten\ena_$lut_A_A_$lut_Y_A_$lut_Y.$ternary$../cycloneiv_comb.v:18$1226 ($mux).
+Removed top 2 bits (of 8) from mux cell test4.$flatten\ena_$lut_A_A_$lut_Y.$ternary$../cycloneiv_comb.v:17$1194 ($mux).
+Removed top 3 bits (of 4) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1336.s2[3:0]$1346.
+Removed top 2 bits (of 4) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_3.$0\lut_data$func$../cycloneiv_comb.v:25$1646.s2[3:0]$1656.
+Removed top 1 bits (of 4) from wire test4.$flatten\ena_$lut_A_A_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1212.s2[3:0]$1222.
+Removed top 1 bits (of 4) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1_A_2_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1460.s2[3:0]$1470.
+Removed top 5 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_4.$0\lut_data$func$../cycloneiv_comb.v:25$1677.s3[7:0]$1686.
+Removed top 4 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_4_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1708.s3[7:0]$1717.
+Removed top 2 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1181.s3[7:0]$1190.
+Removed top 4 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2.$0\lut_data$func$../cycloneiv_comb.v:25$1491.s3[7:0]$1500.
+Removed top 5 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1.$0\lut_data$func$../cycloneiv_comb.v:25$1367.s3[7:0]$1376.
+Removed top 1 bits (of 4) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A.$0\lut_data$func$../cycloneiv_comb.v:25$1305.s2[3:0]$1315.
+Removed top 1 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_5.$0\lut_data$func$../cycloneiv_comb.v:25$1801.s3[7:0]$1810.
+Removed top 6 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_6_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1863.s3[7:0]$1872.
+Removed top 7 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1522.s3[7:0]$1531.
+Removed top 3 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_6_A_2_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1925.s3[7:0]$1934.
+Removed top 3 bits (of 4) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_7.$0\lut_data$func$../cycloneiv_comb.v:25$1956.s2[3:0]$1966.
+Removed top 4 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_A_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1987.s3[7:0]$1996.
+Removed top 3 bits (of 4) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_2_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1553.s2[3:0]$1563.
+Removed top 3 bits (of 8) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1274.s3[7:0]$1283.
+Removed top 3 bits (of 4) from wire test4.$flatten\ena_$lut_A_A_1_$lut_Y_A_$lut_A_Y_$lut_Y_1_A_1_$lut_Y.$0\lut_data$func$../cycloneiv_comb.v:25$1429.s2[3:0]$1439.
+
+4.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 0 unused cells and 19 unused wires.
+<suppressed ~1 debug messages>
+
+4.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+4.13. Executing OPT pass (performing simple optimizations).
+
+4.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+4.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 162 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+4.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+4.13.4. Finished fast OPT passes.
+
+4.14. Executing SORT pass.
+
+4.15. Printing statistics.
+
+=== test4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      771 wires
+     1648 wire bits
+      688 public wires
+     1344 public wire bits
+        9 ports
+       18 port bits
+      162 cells
+       10   $adff
+      112   $mux
+        1   $not
+       39   $scopeinfo
+
+4.16. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing SETUNDEF pass (replace undef values with defined constants).
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \test4
+
+7.2. Analyzing design hierarchy..
+Top module:  \test4
+Removing unused module `$__ABC9_DELAY'.
+Removing unused module `$__ABC9_SCC_BREAKER'.
+Removing unused module `$__DFF_N__$abc9_flop'.
+Removing unused module `$__DFF_P__$abc9_flop'.
+Removing unused module `\GND'.
+Removing unused module `\VCC'.
+Removing unused module `\altsyncram'.
+Removing unused module `\cycloneiv_io_ibuf'.
+Removing unused module `\cycloneiv_io_obuf'.
+Removing unused module `\cycloneiv_pll'.
+Removed 10 unused modules.
+
+8. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+9. Executing ASYNC2SYNC pass.
+Replacing test4.$flatten\data_dn_dffeas_q.$procdff$2070 ($adff): ARST=\reset_n, D=$flatten\data_dn_dffeas_q.$0\q[0:0], Q=\data_dn_dffeas_q.q
+Replacing test4.$flatten\data_dp_dffeas_q.$procdff$2070 ($adff): ARST=\reset_n, D=$flatten\data_dp_dffeas_q.$0\q[0:0], Q=\data_dp_dffeas_q.q
+Replacing test4.$flatten\datain_5bis7_dffeas_q.$procdff$2070 ($adff): ARST=1'1, D=$flatten\datain_5bis7_dffeas_q.$0\q[0:0], Q=\datain_5bis7_dffeas_q.q
+Replacing test4.$flatten\dataout_dffeas_q.$procdff$2070 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q.$0\q[0:0], Q=\dataout_dffeas_q.q
+Replacing test4.$flatten\dataout_dffeas_q_1.$procdff$2070 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_1.$0\q[0:0], Q=\dataout_dffeas_q_1.q
+Replacing test4.$flatten\dataout_dffeas_q_2.$procdff$2070 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_2.$0\q[0:0], Q=\dataout_dffeas_q_2.q
+Replacing test4.$flatten\dataout_dffeas_q_3.$procdff$2070 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_3.$0\q[0:0], Q=\dataout_dffeas_q_3.q
+Replacing test4.$flatten\dataout_dffeas_q_4.$procdff$2070 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_4.$0\q[0:0], Q=\dataout_dffeas_q_4.q
+Replacing test4.$flatten\dataout_dffeas_q_5.$procdff$2070 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_5.$0\q[0:0], Q=\dataout_dffeas_q_5.q
+Replacing test4.$flatten\only_5b_$lut_Y_A_dffeas_q.$procdff$2075 ($adff): ARST=\reset_n, D=\ena_$lut_A.lut_data$func$../cycloneiv_comb.v:25$1148.$result, Q=\only_5b_$lut_Y_A_dffeas_q.q
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing SETUNDEF pass (replace undef values with defined constants).
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+13. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+14. Executing SETUNDEF pass (replace undef values with defined constants).
+
+15. Executing RTLIL backend.
+Output filename: proof/gate.il
+
+Warnings: 28 unique messages, 28 total
+End of script. Logfile hash: d979fbc994
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 3% 5x setundef (0 sec), 3% 5x opt_expr (0 sec), ...

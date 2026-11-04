@@ -1,0 +1,4 @@
+checks=4
+eqy_checks=2
+all_expected=True
+same_outputs=True

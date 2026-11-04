@@ -1,0 +1,25 @@
+EQY 19:02:16 [proof] read_gold: starting process "yosys -ql proof/gold.log proof/gold.ys"
+EQY 19:02:16 [proof] read_gold: finished (returncode=0)
+EQY 19:02:16 [proof] read_gate: starting process "yosys -ql proof/gate.log proof/gate.ys"
+EQY 19:02:16 [proof] read_gate: Warning: Wire test3.\cs_$lut_A_1.cin is used but has no driver.
+EQY 19:02:16 [proof] read_gate: Warning: Wire test3.\gpioout_dffeas_q_2_ena_$lut_Y.cin is used but has no driver.
+EQY 19:02:16 [proof] read_gate: Warning: Wire test3.\cs_$lut_A.cin is used but has no driver.
+EQY 19:02:17 [proof] read_gate: finished (returncode=0)
+EQY 19:02:17 [proof] combine: starting process "yosys -ql proof/combine.log proof/combine.ys"
+EQY 19:02:17 [proof] combine: finished (returncode=0)
+EQY 19:02:17 [proof] partition: starting process "cd proof& yosys -ql partition.log partition.ys"
+EQY 19:02:17 [proof] partition: finished (returncode=0)
+EQY 19:02:17 [proof] run: starting process "make -C proof -f strategies.mk"
+EQY 19:02:17 [proof] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/current_mapped/test3/proof'
+EQY 19:02:17 [proof] run: Running strategy 'whole' on 'test3.gpioout'..
+EQY 19:02:18 [proof] run: Proved equivalence of partition 'test3.gpioout' using strategy 'whole'
+EQY 19:02:18 [proof] run: make -f strategies.mk summary
+EQY 19:02:18 [proof] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/current_mapped/test3/proof'
+EQY 19:02:18 [proof] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/current_mapped/test3/proof'
+EQY 19:02:18 [proof] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/current_mapped/test3/proof'
+EQY 19:02:18 [proof] run: finished (returncode=0)
+EQY 19:02:18 [proof] Successfully proved equivalence of partition test3.gpioout
+EQY 19:02:18 [proof] Successfully proved designs equivalent
+EQY 19:02:18 [proof] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 19:02:18 [proof] summary: Elapsed process time unvailable on Windows
+EQY 19:02:18 [proof] DONE (PASS, rc=0)

@@ -1,0 +1,7 @@
+started=2026-11-03T19:01:10.206331
+cases=9
+common_dependency_files=41
+original_dependency_differences=['libffi-8.dll', 'libgcc_s_seh-1.dll', 'libreadline8.dll', 'libstdc++-6.dll', 'libtermcap-0.dll', 'libwinpthread-1.dll', 'share\\abc9_map.v', 'share\\abc9_model.v', 'share\\abc9_unmap.v', 'share\\adff2dff.v', 'share\\choices\\han-carlson.v', 'share\\choices\\kogge-stone.v', 'share\\choices\\sklansky.v', 'share\\cmp2lcu.v', 'share\\cmp2lut.v', 'share\\cmp2softlogic.v', 'share\\dff2ff.v', 'share\\gate2lut.v', 'share\\intel\\common\\altpll_bb.v', 'share\\intel\\common\\brams_m9k.txt', 'share\\intel\\common\\brams_map_m9k.v', 'share\\intel\\common\\ff_map.v', 'share\\intel\\common\\m9k_bb.v', 'share\\intel\\cyclone10lp\\cells_map.v', 'share\\intel\\cyclone10lp\\cells_sim.v', 'share\\intel\\cycloneiv\\cells_map.v', 'share\\intel\\cycloneiv\\cells_sim.v', 'share\\intel\\cycloneive\\cells_map.v', 'share\\intel\\cycloneive\\cells_sim.v', 'share\\intel\\max10\\cells_map.v', 'share\\intel\\max10\\cells_sim.v', 'share\\intel\\max10\\dsp_map.v', 'share\\mul2dsp.v', 'share\\pmux2mux.v', 'share\\simcells.v', 'share\\simlib.v', 'share\\smtmap.v', 'share\\techmap.v', 'tcl86.dll', 'yosys-abc.exe', 'zlib1.dll']
+versions_run_once_each=True
+initialization=original_rtl_zero_before_both_synthesis_flows
+source_files_unchanged=True

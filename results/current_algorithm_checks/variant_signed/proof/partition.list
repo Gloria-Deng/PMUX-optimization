@@ -1,0 +1,1 @@
+variant_signed variant_signed.data_out : data_out[11:0]

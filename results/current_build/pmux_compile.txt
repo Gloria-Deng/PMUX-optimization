@@ -1,0 +1,2 @@
+E:\msys64\ucrt64\bin\g++.exe -x c++ -D_YOSYS_ -ID:/yosys_build/pmux_20261103_source -ID:/yosys_build/pmux_20261103_stock -O3 -std=gnu++20 -Wall -Wextra -Werror=unused-variable -Werror=unused-parameter -Werror=unused-function -o D:\yosys_build\pmux_latest_answers_final_20261103\yosys.pmux.obj -c D:\Desktop\PMUX_20261028\plugin\pmux_opt_rtlil.cc
+

@@ -1,0 +1,22 @@
+diff --git a/backends/aiger2/aiger.cc b/backends/aiger2/aiger.cc
+index f75def2b..25beec1f 100644
+--- a/backends/aiger2/aiger.cc
++++ b/backends/aiger2/aiger.cc
+@@ -1450,7 +1450,7 @@ struct Aiger2Backend : Backend {
+ 			else
+ 				break;
+ 		}
+-		extra_args(f, filename, args, argidx);
++		extra_args(f, filename, args, argidx, true);
+ 
+ 		Module *top = design->top_module();
+ 
+@@ -1525,7 +1525,7 @@ struct XAiger2Backend : Backend {
+ 			else
+ 				break;
+ 		}
+-		extra_args(f, filename, args, argidx);
++		extra_args(f, filename, args, argidx, true);
+ 
+ 		Module *top = design->top_module();
+ 

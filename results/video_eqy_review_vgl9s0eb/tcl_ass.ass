@@ -1,0 +1,15 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,34,&H00FFFFFF,&H00FFFFFF,&H00121212,&H00000000,0,0,0,0,100,100,0,0,1,1,0,2,42,42,30,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:08.39,Default,,0,0,0,,通过 Tcl 脚本读取测试电路，并调用自定义命令。
+Dialogue: 0,0:00:08.39,0:00:18.83,Default,,0,0,0,,实际执行 Tcl 脚本，nested 的七个互斥加减运算被共享。
+Dialogue: 0,0:00:18.83,0:00:28.26,Default,,0,0,0,,nested：分别读取原版和优化版 ABC9 后的网表。

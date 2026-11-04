@@ -1,0 +1,11 @@
+plugin -i E:\Yosys\oss-cad-suite\oss-cad-suite\bin/../share/yosys/plugins/eqy_combine.so
+read_rtlil ports_only/gold.il
+uniquify
+hierarchy
+design -stash gold
+read_rtlil ports_only/gate_recoded.il
+uniquify
+hierarchy
+design -stash gate
+eqy_combine -gold_ids ports_only/gold.ids -gate_ids ports_only/gate_recoded.ids
+write_rtlil ports_only/combined.il

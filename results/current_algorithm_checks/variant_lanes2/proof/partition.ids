@@ -1,0 +1,7 @@
+group variant_lanes2 clk ctrl_in data_in data_out en rst
+bind variant_lanes2 clk
+bind variant_lanes2 ctrl_in
+bind variant_lanes2 data_in
+bind variant_lanes2 data_out
+bind variant_lanes2 en
+bind variant_lanes2 rst

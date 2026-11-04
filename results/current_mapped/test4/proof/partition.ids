@@ -1,0 +1,10 @@
+group test4 clk data_dn data_dp datain datain_5bis7 dataout ena only_5b reset_n
+bind test4 clk
+bind test4 data_dn
+bind test4 data_dp
+bind test4 datain
+bind test4 datain_5bis7
+bind test4 dataout
+bind test4 ena
+bind test4 only_5b
+bind test4 reset_n

@@ -1,0 +1,13 @@
+﻿case,exit,verdict,arithmetic_shared,comparison_shared,priority_rewritten,reason
+permuted_inner,0,PROVEN,,,False,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+register_reader,0,PROVEN,,,False,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+plain_chain,0,PROVEN,,,True,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+decode_narrow,0,PROVEN,False,True,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+decode_wide,0,PROVEN,False,True,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+decode_disabled,0,PROVEN,False,False,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+shallow_w6,0,PROVEN,True,False,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+shallow_w17_signed,0,PROVEN,True,False,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+shallow_w5,0,PROVEN,False,False,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+shallow_constants,0,PROVEN,True,False,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+shallow_external,0,PROVEN,False,False,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+shallow_priority,0,PROVEN,True,False,,exit=0 whole_design_sentence=True partition_failure=False done_fail=False

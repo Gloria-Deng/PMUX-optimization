@@ -1,0 +1,7 @@
+group pmux_case03_crossbar clk ctrl_in data_in data_out en rst
+bind pmux_case03_crossbar clk
+bind pmux_case03_crossbar ctrl_in
+bind pmux_case03_crossbar data_in
+bind pmux_case03_crossbar data_out
+bind pmux_case03_crossbar en
+bind pmux_case03_crossbar rst

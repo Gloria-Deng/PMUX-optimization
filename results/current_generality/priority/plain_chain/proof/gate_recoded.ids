@@ -1,0 +1,7 @@
+audit . A:top=1
+audit y w=7:0 P=O
+audit s w=2:0 P=I
+audit d3 w=7:0 P=I
+audit d2 w=7:0 P=I
+audit d1 w=7:0 P=I
+audit d0 w=7:0 P=I

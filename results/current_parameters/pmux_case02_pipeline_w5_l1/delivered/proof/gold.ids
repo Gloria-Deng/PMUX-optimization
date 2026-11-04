@@ -1,0 +1,23 @@
+pmux_case02_pipeline . A:dynports=1 A:top=1 A:src="../../../../cases/pmux_case02_pipeline.v:2.1-86.10"
+pmux_case02_pipeline rst w=0:0 A:src="../../../../cases/pmux_case02_pipeline.v:7.16-7.19" P=I
+pmux_case02_pipeline mid_bus w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:13.28-13.35"
+pmux_case02_pipeline lane[0].y1 w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:24.44-24.46"
+pmux_case02_pipeline lane[0].y0 w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:24.40-24.42"
+pmux_case02_pipeline lane[0].x1 w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:24.29-24.31"
+pmux_case02_pipeline lane[0].x0 w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:24.25-24.27"
+pmux_case02_pipeline lane[0].s w=15:0 A:src="../../../../cases/pmux_case02_pipeline.v:20.21-20.22"
+pmux_case02_pipeline lane[0].right_mid w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:26.26-26.35"
+pmux_case02_pipeline lane[0].q w=4:0 A:init=0 A:src="../../../../cases/pmux_case02_pipeline.v:21.25-21.26"
+pmux_case02_pipeline lane[0].next_q w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:24.48-24.54"
+pmux_case02_pipeline lane[0].mid w=4:0 A:init=0 A:src="../../../../cases/pmux_case02_pipeline.v:23.25-23.28"
+pmux_case02_pipeline lane[0].left_mid w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:25.26-25.34"
+pmux_case02_pipeline lane[0].first w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:24.33-24.38"
+pmux_case02_pipeline lane[0].d w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:19.26-19.27"
+pmux_case02_pipeline lane[0].c w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:18.26-18.27"
+pmux_case02_pipeline lane[0].b w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:17.26-17.27"
+pmux_case02_pipeline lane[0].a w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:16.26-16.27"
+pmux_case02_pipeline en w=0:0 A:src="../../../../cases/pmux_case02_pipeline.v:8.16-8.18" P=I
+pmux_case02_pipeline data_out w=4:0 A:src="../../../../cases/pmux_case02_pipeline.v:11.35-11.43" P=O
+pmux_case02_pipeline data_in w=19:0 A:src="../../../../cases/pmux_case02_pipeline.v:9.36-9.43" P=I
+pmux_case02_pipeline ctrl_in w=15:0 A:src="../../../../cases/pmux_case02_pipeline.v:10.31-10.38" P=I
+pmux_case02_pipeline clk w=0:0 A:src="../../../../cases/pmux_case02_pipeline.v:6.16-6.19" P=I

@@ -1,0 +1,14 @@
+read_rtlil "../pmux_case03_crossbar/stock/postabc.il"
+read_verilog -overwrite "../../../plugin/dffeas_formal.v"
+prep -top pmux_case03_crossbar -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top pmux_case03_crossbar
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil pmux_case03_crossbar_stock/gate.il

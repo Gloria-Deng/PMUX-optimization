@@ -1,0 +1,10 @@
+﻿case,category,logic_before,logic_after,reduction_pct,resource_increase,dff_before,dff_after,dff_growth_pct,dff_over_limit,io_bits_before,io_bits_after,io_growth_pct,io_over_limit
+test1,original,288,182,36.80555555555556,False,222,222,0.0,False,285,285,0.0,False
+test2,original,25,16,36.0,False,0,0,0.0,False,30,30,0.0,False
+test3,original,13,11,15.384615384615385,False,17,17,0.0,False,12,12,0.0,False
+test4,original,36,31,13.88888888888889,False,10,10,0.0,False,18,18,0.0,False
+pmux_case01_balanced,new,426,385,9.624413145539906,False,12,12,0.0,False,79,79,0.0,False
+pmux_case02_pipeline,new,447,385,13.870246085011185,False,24,24,0.0,False,127,127,0.0,False
+pmux_case03_crossbar,new,408,313,23.284313725490197,False,10,10,0.0,False,85,85,0.0,False
+pmux_case04_feedback,new,368,321,12.771739130434783,False,16,16,0.0,False,115,115,0.0,False
+pmux_case05_nested,new,413,278,32.68765133171913,False,12,12,0.0,False,79,79,0.0,False

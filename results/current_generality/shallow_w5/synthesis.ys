@@ -1,0 +1,1 @@
+read_verilog -sv "../../../scripts/generality_cases/shallow_w5.v"; hierarchy -check -top shallow_w5; proc; setundef -undriven -zero; setundef -init -zero; pmux_opt_rtlil -rewrite -sclr-promo-rom-only -no-probe ; opt_clean; write_rtlil after.il; check

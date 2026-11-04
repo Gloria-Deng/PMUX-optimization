@@ -1,0 +1,7 @@
+# [*] gold-match *
+shallow_w17_signed clk clk
+shallow_w17_signed ctrl_in ctrl_in
+shallow_w17_signed data_in data_in
+shallow_w17_signed data_out data_out
+shallow_w17_signed en en
+shallow_w17_signed rst rst

@@ -1,0 +1,1110 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.shared_upstream_cones / gate.shared_upstream_cones.
+
+3.1.1. Processing matched IDs for module shared_upstream_cones.
+
+3.1.2. Create fragment partitions for module shared_upstream_cones.
+Adding output bit \y [7] to partition 0.
+Adding output bit \untouched [0] to partition 0.
+Adding output bit \y [0] to partition 0.
+Adding output bit \y [1] to partition 0.
+Adding output bit \y [2] to partition 0.
+Adding output bit \y [3] to partition 0.
+Adding output bit \y [4] to partition 0.
+Adding output bit \y [5] to partition 0.
+Adding output bit \y [6] to partition 0.
+Adding output bit \untouched [127] to partition 0.
+Adding output bit \untouched [126] to partition 0.
+Adding output bit \untouched [125] to partition 0.
+Adding output bit \untouched [124] to partition 0.
+Adding output bit \untouched [123] to partition 0.
+Adding output bit \untouched [122] to partition 0.
+Adding output bit \untouched [121] to partition 0.
+Adding output bit \untouched [120] to partition 0.
+Adding output bit \untouched [119] to partition 0.
+Adding output bit \untouched [118] to partition 0.
+Adding output bit \untouched [117] to partition 0.
+Adding output bit \untouched [116] to partition 0.
+Adding output bit \untouched [115] to partition 0.
+Adding output bit \untouched [114] to partition 0.
+Adding output bit \untouched [113] to partition 0.
+Adding output bit \untouched [112] to partition 0.
+Adding output bit \untouched [111] to partition 0.
+Adding output bit \untouched [110] to partition 0.
+Adding output bit \untouched [109] to partition 0.
+Adding output bit \untouched [108] to partition 0.
+Adding output bit \untouched [107] to partition 0.
+Adding output bit \untouched [106] to partition 0.
+Adding output bit \untouched [105] to partition 0.
+Adding output bit \untouched [104] to partition 0.
+Adding output bit \untouched [103] to partition 0.
+Adding output bit \untouched [102] to partition 0.
+Adding output bit \untouched [101] to partition 0.
+Adding output bit \untouched [100] to partition 0.
+Adding output bit \untouched [99] to partition 0.
+Adding output bit \untouched [98] to partition 0.
+Adding output bit \untouched [97] to partition 0.
+Adding output bit \untouched [96] to partition 0.
+Adding output bit \untouched [95] to partition 0.
+Adding output bit \untouched [94] to partition 0.
+Adding output bit \untouched [93] to partition 0.
+Adding output bit \untouched [92] to partition 0.
+Adding output bit \untouched [91] to partition 0.
+Adding output bit \untouched [90] to partition 0.
+Adding output bit \untouched [89] to partition 0.
+Adding output bit \untouched [88] to partition 0.
+Adding output bit \untouched [87] to partition 0.
+Adding output bit \untouched [86] to partition 0.
+Adding output bit \untouched [85] to partition 0.
+Adding output bit \untouched [84] to partition 0.
+Adding output bit \untouched [83] to partition 0.
+Adding output bit \untouched [82] to partition 0.
+Adding output bit \untouched [81] to partition 0.
+Adding output bit \untouched [80] to partition 0.
+Adding output bit \untouched [79] to partition 0.
+Adding output bit \untouched [78] to partition 0.
+Adding output bit \untouched [77] to partition 0.
+Adding output bit \untouched [76] to partition 0.
+Adding output bit \untouched [75] to partition 0.
+Adding output bit \untouched [74] to partition 0.
+Adding output bit \untouched [73] to partition 0.
+Adding output bit \untouched [72] to partition 0.
+Adding output bit \untouched [71] to partition 0.
+Adding output bit \untouched [70] to partition 0.
+Adding output bit \untouched [69] to partition 0.
+Adding output bit \untouched [68] to partition 0.
+Adding output bit \untouched [67] to partition 0.
+Adding output bit \untouched [66] to partition 0.
+Adding output bit \untouched [65] to partition 0.
+Adding output bit \untouched [64] to partition 0.
+Adding output bit \untouched [63] to partition 0.
+Adding output bit \untouched [62] to partition 0.
+Adding output bit \untouched [61] to partition 0.
+Adding output bit \untouched [60] to partition 0.
+Adding output bit \untouched [59] to partition 0.
+Adding output bit \untouched [58] to partition 0.
+Adding output bit \untouched [57] to partition 0.
+Adding output bit \untouched [56] to partition 0.
+Adding output bit \untouched [55] to partition 0.
+Adding output bit \untouched [54] to partition 0.
+Adding output bit \untouched [53] to partition 0.
+Adding output bit \untouched [52] to partition 0.
+Adding output bit \untouched [51] to partition 0.
+Adding output bit \untouched [50] to partition 0.
+Adding output bit \untouched [49] to partition 0.
+Adding output bit \untouched [48] to partition 0.
+Adding output bit \untouched [47] to partition 0.
+Adding output bit \untouched [46] to partition 0.
+Adding output bit \untouched [45] to partition 0.
+Adding output bit \untouched [44] to partition 0.
+Adding output bit \untouched [43] to partition 0.
+Adding output bit \untouched [42] to partition 0.
+Adding output bit \untouched [41] to partition 0.
+Adding output bit \untouched [40] to partition 0.
+Adding output bit \untouched [39] to partition 0.
+Adding output bit \untouched [38] to partition 0.
+Adding output bit \untouched [37] to partition 0.
+Adding output bit \untouched [36] to partition 0.
+Adding output bit \untouched [35] to partition 0.
+Adding output bit \untouched [34] to partition 0.
+Adding output bit \untouched [33] to partition 0.
+Adding output bit \untouched [32] to partition 0.
+Adding output bit \untouched [31] to partition 0.
+Adding output bit \untouched [30] to partition 0.
+Adding output bit \untouched [29] to partition 0.
+Adding output bit \untouched [28] to partition 0.
+Adding output bit \untouched [27] to partition 0.
+Adding output bit \untouched [26] to partition 0.
+Adding output bit \untouched [25] to partition 0.
+Adding output bit \untouched [24] to partition 0.
+Adding output bit \untouched [23] to partition 0.
+Adding output bit \untouched [22] to partition 0.
+Adding output bit \untouched [21] to partition 0.
+Adding output bit \untouched [20] to partition 0.
+Adding output bit \untouched [19] to partition 0.
+Adding output bit \untouched [18] to partition 0.
+Adding output bit \untouched [17] to partition 0.
+Adding output bit \untouched [16] to partition 0.
+Adding output bit \untouched [15] to partition 0.
+Adding output bit \untouched [14] to partition 0.
+Adding output bit \untouched [13] to partition 0.
+Adding output bit \untouched [12] to partition 0.
+Adding output bit \untouched [11] to partition 0.
+Adding output bit \untouched [10] to partition 0.
+Adding output bit \untouched [9] to partition 0.
+Adding output bit \untouched [8] to partition 0.
+Adding output bit \untouched [7] to partition 0.
+Adding output bit \untouched [6] to partition 0.
+Adding output bit \untouched [5] to partition 0.
+Adding output bit \untouched [4] to partition 0.
+Adding output bit \untouched [3] to partition 0.
+Adding output bit \untouched [2] to partition 0.
+Adding output bit \untouched [1] to partition 0.
+
+Final list of fragment partitions:
+  0 \untouched [1] \untouched [2] \untouched [3] \untouched [4] \untouched [5] \untouched [6] \untouched [7] \untouched [8] \untouched [9] \untouched [10] \untouched [11] \untouched [12] \untouched [13] \untouched [14] \untouched [15] \untouched [16] \untouched [17] \untouched [18] \untouched [19] \untouched [20] \untouched [21] \untouched [22] \untouched [23] \untouched [24] \untouched [25] \untouched [26] \untouched [27] \untouched [28] \untouched [29] \untouched [30] \untouched [31] \untouched [32] \untouched [33] \untouched [34] \untouched [35] \untouched [36] \untouched [37] \untouched [38] \untouched [39] \untouched [40] \untouched [41] \untouched [42] \untouched [43] \untouched [44] \untouched [45] \untouched [46] \untouched [47] \untouched [48] \untouched [49] \untouched [50] \untouched [51] \untouched [52] \untouched [53] \untouched [54] \untouched [55] \untouched [56] \untouched [57] \untouched [58] \untouched [59] \untouched [60] \untouched [61] \untouched [62] \untouched [63] \untouched [64] \untouched [65] \untouched [66] \untouched [67] \untouched [68] \untouched [69] \untouched [70] \untouched [71] \untouched [72] \untouched [73] \untouched [74] \untouched [75] \untouched [76] \untouched [77] \untouched [78] \untouched [79] \untouched [80] \untouched [81] \untouched [82] \untouched [83] \untouched [84] \untouched [85] \untouched [86] \untouched [87] \untouched [88] \untouched [89] \untouched [90] \untouched [91] \untouched [92] \untouched [93] \untouched [94] \untouched [95] \untouched [96] \untouched [97] \untouched [98] \untouched [99] \untouched [100] \untouched [101] \untouched [102] \untouched [103] \untouched [104] \untouched [105] \untouched [106] \untouched [107] \untouched [108] \untouched [109] \untouched [110] \untouched [111] \untouched [112] \untouched [113] \untouched [114] \untouched [115] \untouched [116] \untouched [117] \untouched [118] \untouched [119] \untouched [120] \untouched [121] \untouched [122] \untouched [123] \untouched [124] \untouched [125] \untouched [126] \untouched [127] \y [6] \y [5] \y [4] \y [3] \y [2] \y [1] \y [0] \untouched [0] \y [7] <= \wide [127] \wide [126] \wide [125] \wide [124] \wide [123] \wide [122] \wide [121] \wide [120] \wide [119] \wide [118] \wide [117] \wide [116] \wide [115] \wide [114] \wide [113] \wide [112] \wide [111] \wide [110] \wide [109] \wide [108] \wide [107] \wide [106] \wide [105] \wide [104] \wide [103] \wide [102] \wide [101] \wide [100] \wide [99] \wide [98] \wide [97] \wide [96] \wide [95] \wide [94] \wide [93] \wide [92] \wide [91] \wide [90] \wide [89] \wide [88] \wide [87] \wide [86] \wide [85] \wide [84] \wide [83] \wide [82] \wide [81] \wide [80] \wide [79] \wide [78] \wide [77] \wide [76] \wide [75] \wide [74] \wide [73] \wide [72] \wide [71] \wide [70] \wide [69] \wide [68] \wide [67] \wide [66] \wide [65] \wide [64] \wide [63] \wide [62] \wide [61] \wide [60] \wide [59] \wide [58] \wide [57] \wide [56] \wide [55] \wide [54] \wide [53] \wide [52] \wide [51] \wide [50] \wide [49] \wide [48] \wide [47] \wide [46] \wide [45] \wide [44] \wide [43] \wide [42] \wide [41] \wide [40] \wide [39] \wide [38] \wide [37] \wide [36] \wide [35] \wide [34] \wide [33] \wide [32] \wide [31] \wide [30] \wide [29] \wide [28] \wide [27] \wide [26] \wide [25] \wide [24] \wide [23] \wide [22] \wide [21] \wide [20] \wide [19] \wide [18] \wide [17] \wide [16] \wide [15] \wide [14] \wide [13] \wide [12] \wide [11] \wide [10] \wide [9] \wide [8] \wide [7] \wide [6] \wide [5] \wide [4] \wide [3] \wide [2] \wide [1] \wide [0] \a [0] \b [0] \c [0] \d [0] \c [1] \d [1] \a [1] \b [1] \a [2] \b [2] \c [2] \d [2] \a [3] \b [3] \c [3] \d [3] \c [4] \d [4] \a [4] \b [4] \a [5] \b [5] \c [5] \d [5] \a [6] \b [6] \c [6] \d [6] \s [0] \s [1] \a [7] \b [7] \c [7] \d [7]
+
+3.1.3. Execute partitioning commands for module shared_upstream_cones.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'untouched' using a PO name: untouched
+
+Partition Summary:
+  Fragments:
+       0: \untouched, \y
+  Partitions:
+       0: untouched
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  untouched
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module shared_upstream_cones.
+Adding output bit \y [7] to partition 1.
+Adding output bit \y [6] to partition 1.
+Adding output bit \y [5] to partition 1.
+Adding output bit \y [4] to partition 1.
+Adding output bit \y [3] to partition 1.
+Adding output bit \y [2] to partition 1.
+Adding output bit \y [1] to partition 1.
+Adding output bit \y [0] to partition 1.
+Adding non-output bit \wide [127] to partition 1.
+Adding non-output bit \wide [126] to partition 1.
+Adding non-output bit \wide [125] to partition 1.
+Adding non-output bit \wide [124] to partition 1.
+Adding non-output bit \wide [123] to partition 1.
+Adding non-output bit \wide [122] to partition 1.
+Adding non-output bit \wide [121] to partition 1.
+Adding non-output bit \wide [120] to partition 1.
+Adding non-output bit \wide [119] to partition 1.
+Adding non-output bit \wide [118] to partition 1.
+Adding non-output bit \wide [117] to partition 1.
+Adding non-output bit \wide [116] to partition 1.
+Adding non-output bit \wide [115] to partition 1.
+Adding non-output bit \wide [114] to partition 1.
+Adding non-output bit \wide [113] to partition 1.
+Adding non-output bit \wide [112] to partition 1.
+Adding non-output bit \wide [111] to partition 1.
+Adding non-output bit \wide [110] to partition 1.
+Adding non-output bit \wide [109] to partition 1.
+Adding non-output bit \wide [108] to partition 1.
+Adding non-output bit \wide [107] to partition 1.
+Adding non-output bit \wide [106] to partition 1.
+Adding non-output bit \wide [105] to partition 1.
+Adding non-output bit \wide [104] to partition 1.
+Adding non-output bit \wide [103] to partition 1.
+Adding non-output bit \wide [102] to partition 1.
+Adding non-output bit \wide [101] to partition 1.
+Adding non-output bit \wide [100] to partition 1.
+Adding non-output bit \wide [99] to partition 1.
+Adding non-output bit \wide [98] to partition 1.
+Adding non-output bit \wide [97] to partition 1.
+Adding non-output bit \wide [96] to partition 1.
+Adding non-output bit \wide [95] to partition 1.
+Adding non-output bit \wide [94] to partition 1.
+Adding non-output bit \wide [93] to partition 1.
+Adding non-output bit \wide [92] to partition 1.
+Adding non-output bit \wide [91] to partition 1.
+Adding non-output bit \wide [90] to partition 1.
+Adding non-output bit \wide [89] to partition 1.
+Adding non-output bit \wide [88] to partition 1.
+Adding non-output bit \wide [87] to partition 1.
+Adding non-output bit \wide [86] to partition 1.
+Adding non-output bit \wide [85] to partition 1.
+Adding non-output bit \wide [84] to partition 1.
+Adding non-output bit \wide [83] to partition 1.
+Adding non-output bit \wide [82] to partition 1.
+Adding non-output bit \wide [81] to partition 1.
+Adding non-output bit \wide [80] to partition 1.
+Adding non-output bit \wide [79] to partition 1.
+Adding non-output bit \wide [78] to partition 1.
+Adding non-output bit \wide [77] to partition 1.
+Adding non-output bit \wide [76] to partition 1.
+Adding non-output bit \wide [75] to partition 1.
+Adding non-output bit \wide [74] to partition 1.
+Adding non-output bit \wide [73] to partition 1.
+Adding non-output bit \wide [72] to partition 1.
+Adding non-output bit \wide [71] to partition 1.
+Adding non-output bit \wide [70] to partition 1.
+Adding non-output bit \wide [69] to partition 1.
+Adding non-output bit \wide [68] to partition 1.
+Adding non-output bit \wide [67] to partition 1.
+Adding non-output bit \wide [66] to partition 1.
+Adding non-output bit \wide [65] to partition 1.
+Adding non-output bit \wide [64] to partition 1.
+Adding non-output bit \wide [63] to partition 1.
+Adding non-output bit \wide [62] to partition 1.
+Adding non-output bit \wide [61] to partition 1.
+Adding non-output bit \wide [60] to partition 1.
+Adding non-output bit \wide [59] to partition 1.
+Adding non-output bit \wide [58] to partition 1.
+Adding non-output bit \wide [57] to partition 1.
+Adding non-output bit \wide [56] to partition 1.
+Adding non-output bit \wide [55] to partition 1.
+Adding non-output bit \wide [54] to partition 1.
+Adding non-output bit \wide [53] to partition 1.
+Adding non-output bit \wide [52] to partition 1.
+Adding non-output bit \wide [51] to partition 1.
+Adding non-output bit \wide [50] to partition 1.
+Adding non-output bit \wide [49] to partition 1.
+Adding non-output bit \wide [48] to partition 1.
+Adding non-output bit \wide [47] to partition 1.
+Adding non-output bit \wide [46] to partition 1.
+Adding non-output bit \wide [45] to partition 1.
+Adding non-output bit \wide [44] to partition 1.
+Adding non-output bit \wide [43] to partition 1.
+Adding non-output bit \wide [42] to partition 1.
+Adding non-output bit \wide [41] to partition 1.
+Adding non-output bit \wide [40] to partition 1.
+Adding non-output bit \wide [39] to partition 1.
+Adding non-output bit \wide [38] to partition 1.
+Adding non-output bit \wide [37] to partition 1.
+Adding non-output bit \wide [36] to partition 1.
+Adding non-output bit \wide [35] to partition 1.
+Adding non-output bit \wide [34] to partition 1.
+Adding non-output bit \wide [33] to partition 1.
+Adding non-output bit \wide [32] to partition 1.
+Adding non-output bit \wide [31] to partition 1.
+Adding non-output bit \wide [30] to partition 1.
+Adding non-output bit \wide [29] to partition 1.
+Adding non-output bit \wide [28] to partition 1.
+Adding non-output bit \wide [27] to partition 1.
+Adding non-output bit \wide [26] to partition 1.
+Adding non-output bit \wide [25] to partition 1.
+Adding non-output bit \wide [24] to partition 1.
+Adding non-output bit \wide [23] to partition 1.
+Adding non-output bit \wide [22] to partition 1.
+Adding non-output bit \wide [21] to partition 1.
+Adding non-output bit \wide [20] to partition 1.
+Adding non-output bit \wide [19] to partition 1.
+Adding non-output bit \wide [18] to partition 1.
+Adding non-output bit \wide [17] to partition 1.
+Adding non-output bit \wide [16] to partition 1.
+Adding non-output bit \wide [15] to partition 1.
+Adding non-output bit \wide [14] to partition 1.
+Adding non-output bit \wide [13] to partition 1.
+Adding non-output bit \wide [12] to partition 1.
+Adding non-output bit \wide [11] to partition 1.
+Adding non-output bit \wide [10] to partition 1.
+Adding non-output bit \wide [9] to partition 1.
+Adding non-output bit \wide [8] to partition 1.
+Adding non-output bit \wide [7] to partition 1.
+Adding non-output bit \wide [6] to partition 1.
+Adding non-output bit \wide [5] to partition 1.
+Adding non-output bit \wide [4] to partition 1.
+Adding non-output bit \wide [3] to partition 1.
+Adding non-output bit \wide [2] to partition 1.
+Adding non-output bit \wide [1] to partition 1.
+Adding non-output bit \wide [0] to partition 1.
+Adding output bit \untouched [127] to partition 1.
+Adding output bit \untouched [126] to partition 1.
+Adding output bit \untouched [125] to partition 1.
+Adding output bit \untouched [124] to partition 1.
+Adding output bit \untouched [123] to partition 1.
+Adding output bit \untouched [122] to partition 1.
+Adding output bit \untouched [121] to partition 1.
+Adding output bit \untouched [120] to partition 1.
+Adding output bit \untouched [119] to partition 1.
+Adding output bit \untouched [118] to partition 1.
+Adding output bit \untouched [117] to partition 1.
+Adding output bit \untouched [116] to partition 1.
+Adding output bit \untouched [115] to partition 1.
+Adding output bit \untouched [114] to partition 1.
+Adding output bit \untouched [113] to partition 1.
+Adding output bit \untouched [112] to partition 1.
+Adding output bit \untouched [111] to partition 1.
+Adding output bit \untouched [110] to partition 1.
+Adding output bit \untouched [109] to partition 1.
+Adding output bit \untouched [108] to partition 1.
+Adding output bit \untouched [107] to partition 1.
+Adding output bit \untouched [106] to partition 1.
+Adding output bit \untouched [105] to partition 1.
+Adding output bit \untouched [104] to partition 1.
+Adding output bit \untouched [103] to partition 1.
+Adding output bit \untouched [102] to partition 1.
+Adding output bit \untouched [101] to partition 1.
+Adding output bit \untouched [100] to partition 1.
+Adding output bit \untouched [99] to partition 1.
+Adding output bit \untouched [98] to partition 1.
+Adding output bit \untouched [97] to partition 1.
+Adding output bit \untouched [96] to partition 1.
+Adding output bit \untouched [95] to partition 1.
+Adding output bit \untouched [94] to partition 1.
+Adding output bit \untouched [93] to partition 1.
+Adding output bit \untouched [92] to partition 1.
+Adding output bit \untouched [91] to partition 1.
+Adding output bit \untouched [90] to partition 1.
+Adding output bit \untouched [89] to partition 1.
+Adding output bit \untouched [88] to partition 1.
+Adding output bit \untouched [87] to partition 1.
+Adding output bit \untouched [86] to partition 1.
+Adding output bit \untouched [85] to partition 1.
+Adding output bit \untouched [84] to partition 1.
+Adding output bit \untouched [83] to partition 1.
+Adding output bit \untouched [82] to partition 1.
+Adding output bit \untouched [81] to partition 1.
+Adding output bit \untouched [80] to partition 1.
+Adding output bit \untouched [79] to partition 1.
+Adding output bit \untouched [78] to partition 1.
+Adding output bit \untouched [77] to partition 1.
+Adding output bit \untouched [76] to partition 1.
+Adding output bit \untouched [75] to partition 1.
+Adding output bit \untouched [74] to partition 1.
+Adding output bit \untouched [73] to partition 1.
+Adding output bit \untouched [72] to partition 1.
+Adding output bit \untouched [71] to partition 1.
+Adding output bit \untouched [70] to partition 1.
+Adding output bit \untouched [69] to partition 1.
+Adding output bit \untouched [68] to partition 1.
+Adding output bit \untouched [67] to partition 1.
+Adding output bit \untouched [66] to partition 1.
+Adding output bit \untouched [65] to partition 1.
+Adding output bit \untouched [64] to partition 1.
+Adding output bit \untouched [63] to partition 1.
+Adding output bit \untouched [62] to partition 1.
+Adding output bit \untouched [61] to partition 1.
+Adding output bit \untouched [60] to partition 1.
+Adding output bit \untouched [59] to partition 1.
+Adding output bit \untouched [58] to partition 1.
+Adding output bit \untouched [57] to partition 1.
+Adding output bit \untouched [56] to partition 1.
+Adding output bit \untouched [55] to partition 1.
+Adding output bit \untouched [54] to partition 1.
+Adding output bit \untouched [53] to partition 1.
+Adding output bit \untouched [52] to partition 1.
+Adding output bit \untouched [51] to partition 1.
+Adding output bit \untouched [50] to partition 1.
+Adding output bit \untouched [49] to partition 1.
+Adding output bit \untouched [48] to partition 1.
+Adding output bit \untouched [47] to partition 1.
+Adding output bit \untouched [46] to partition 1.
+Adding output bit \untouched [45] to partition 1.
+Adding output bit \untouched [44] to partition 1.
+Adding output bit \untouched [43] to partition 1.
+Adding output bit \untouched [42] to partition 1.
+Adding output bit \untouched [41] to partition 1.
+Adding output bit \untouched [40] to partition 1.
+Adding output bit \untouched [39] to partition 1.
+Adding output bit \untouched [38] to partition 1.
+Adding output bit \untouched [37] to partition 1.
+Adding output bit \untouched [36] to partition 1.
+Adding output bit \untouched [35] to partition 1.
+Adding output bit \untouched [34] to partition 1.
+Adding output bit \untouched [33] to partition 1.
+Adding output bit \untouched [32] to partition 1.
+Adding output bit \untouched [31] to partition 1.
+Adding output bit \untouched [30] to partition 1.
+Adding output bit \untouched [29] to partition 1.
+Adding output bit \untouched [28] to partition 1.
+Adding output bit \untouched [27] to partition 1.
+Adding output bit \untouched [26] to partition 1.
+Adding output bit \untouched [25] to partition 1.
+Adding output bit \untouched [24] to partition 1.
+Adding output bit \untouched [23] to partition 1.
+Adding output bit \untouched [22] to partition 1.
+Adding output bit \untouched [21] to partition 1.
+Adding output bit \untouched [20] to partition 1.
+Adding output bit \untouched [19] to partition 1.
+Adding output bit \untouched [18] to partition 1.
+Adding output bit \untouched [17] to partition 1.
+Adding output bit \untouched [16] to partition 1.
+Adding output bit \untouched [15] to partition 1.
+Adding output bit \untouched [14] to partition 1.
+Adding output bit \untouched [13] to partition 1.
+Adding output bit \untouched [12] to partition 1.
+Adding output bit \untouched [11] to partition 1.
+Adding output bit \untouched [10] to partition 1.
+Adding output bit \untouched [9] to partition 1.
+Adding output bit \untouched [8] to partition 1.
+Adding output bit \untouched [7] to partition 1.
+Adding output bit \untouched [6] to partition 1.
+Adding output bit \untouched [5] to partition 1.
+Adding output bit \untouched [4] to partition 1.
+Adding output bit \untouched [3] to partition 1.
+Adding output bit \untouched [2] to partition 1.
+Adding output bit \untouched [1] to partition 1.
+Adding output bit \untouched [0] to partition 1.
+Adding non-output bit \t [1] to partition 1.
+Adding non-output bit \t [0] to partition 1.
+Adding non-output bit \s [1] to partition 1.
+Adding non-output bit \s [0] to partition 1.
+Adding non-output bit \d [7] to partition 1.
+Adding non-output bit \d [6] to partition 1.
+Adding non-output bit \d [5] to partition 1.
+Adding non-output bit \d [4] to partition 1.
+Adding non-output bit \d [3] to partition 1.
+Adding non-output bit \d [2] to partition 1.
+Adding non-output bit \d [1] to partition 1.
+Adding non-output bit \d [0] to partition 1.
+Adding non-output bit \c [7] to partition 1.
+Adding non-output bit \c [6] to partition 1.
+Adding non-output bit \c [5] to partition 1.
+Adding non-output bit \c [4] to partition 1.
+Adding non-output bit \c [3] to partition 1.
+Adding non-output bit \c [2] to partition 1.
+Adding non-output bit \c [1] to partition 1.
+Adding non-output bit \c [0] to partition 1.
+Adding non-output bit \b [7] to partition 1.
+Adding non-output bit \b [6] to partition 1.
+Adding non-output bit \b [5] to partition 1.
+Adding non-output bit \b [4] to partition 1.
+Adding non-output bit \b [3] to partition 1.
+Adding non-output bit \b [2] to partition 1.
+Adding non-output bit \b [1] to partition 1.
+Adding non-output bit \b [0] to partition 1.
+Adding non-output bit \a [7] to partition 1.
+Adding non-output bit \a [6] to partition 1.
+Adding non-output bit \a [5] to partition 1.
+Adding non-output bit \a [4] to partition 1.
+Adding non-output bit \a [3] to partition 1.
+Adding non-output bit \a [2] to partition 1.
+Adding non-output bit \a [1] to partition 1.
+Adding non-output bit \a [0] to partition 1.
+Writing partition 0 as shared_upstream_cones.untouched.
+  partition pi bit 0: \wide [127] <-> \wide [127]
+  partition pi bit 1: \wide [126] <-> \wide [126]
+  partition pi bit 2: \wide [125] <-> \wide [125]
+  partition pi bit 3: \wide [124] <-> \wide [124]
+  partition pi bit 4: \wide [123] <-> \wide [123]
+  partition pi bit 5: \wide [122] <-> \wide [122]
+  partition pi bit 6: \wide [121] <-> \wide [121]
+  partition pi bit 7: \wide [120] <-> \wide [120]
+  partition pi bit 8: \wide [119] <-> \wide [119]
+  partition pi bit 9: \wide [118] <-> \wide [118]
+  partition pi bit 10: \wide [117] <-> \wide [117]
+  partition pi bit 11: \wide [116] <-> \wide [116]
+  partition pi bit 12: \wide [115] <-> \wide [115]
+  partition pi bit 13: \wide [114] <-> \wide [114]
+  partition pi bit 14: \wide [113] <-> \wide [113]
+  partition pi bit 15: \wide [112] <-> \wide [112]
+  partition pi bit 16: \wide [111] <-> \wide [111]
+  partition pi bit 17: \wide [110] <-> \wide [110]
+  partition pi bit 18: \wide [109] <-> \wide [109]
+  partition pi bit 19: \wide [108] <-> \wide [108]
+  partition pi bit 20: \wide [107] <-> \wide [107]
+  partition pi bit 21: \wide [106] <-> \wide [106]
+  partition pi bit 22: \wide [105] <-> \wide [105]
+  partition pi bit 23: \wide [104] <-> \wide [104]
+  partition pi bit 24: \wide [103] <-> \wide [103]
+  partition pi bit 25: \wide [102] <-> \wide [102]
+  partition pi bit 26: \wide [101] <-> \wide [101]
+  partition pi bit 27: \wide [100] <-> \wide [100]
+  partition pi bit 28: \wide [99] <-> \wide [99]
+  partition pi bit 29: \wide [98] <-> \wide [98]
+  partition pi bit 30: \wide [97] <-> \wide [97]
+  partition pi bit 31: \wide [96] <-> \wide [96]
+  partition pi bit 32: \wide [95] <-> \wide [95]
+  partition pi bit 33: \wide [94] <-> \wide [94]
+  partition pi bit 34: \wide [93] <-> \wide [93]
+  partition pi bit 35: \wide [92] <-> \wide [92]
+  partition pi bit 36: \wide [91] <-> \wide [91]
+  partition pi bit 37: \wide [90] <-> \wide [90]
+  partition pi bit 38: \wide [89] <-> \wide [89]
+  partition pi bit 39: \wide [88] <-> \wide [88]
+  partition pi bit 40: \wide [87] <-> \wide [87]
+  partition pi bit 41: \wide [86] <-> \wide [86]
+  partition pi bit 42: \wide [85] <-> \wide [85]
+  partition pi bit 43: \wide [84] <-> \wide [84]
+  partition pi bit 44: \wide [83] <-> \wide [83]
+  partition pi bit 45: \wide [82] <-> \wide [82]
+  partition pi bit 46: \wide [81] <-> \wide [81]
+  partition pi bit 47: \wide [80] <-> \wide [80]
+  partition pi bit 48: \wide [79] <-> \wide [79]
+  partition pi bit 49: \wide [78] <-> \wide [78]
+  partition pi bit 50: \wide [77] <-> \wide [77]
+  partition pi bit 51: \wide [76] <-> \wide [76]
+  partition pi bit 52: \wide [75] <-> \wide [75]
+  partition pi bit 53: \wide [74] <-> \wide [74]
+  partition pi bit 54: \wide [73] <-> \wide [73]
+  partition pi bit 55: \wide [72] <-> \wide [72]
+  partition pi bit 56: \wide [71] <-> \wide [71]
+  partition pi bit 57: \wide [70] <-> \wide [70]
+  partition pi bit 58: \wide [69] <-> \wide [69]
+  partition pi bit 59: \wide [68] <-> \wide [68]
+  partition pi bit 60: \wide [67] <-> \wide [67]
+  partition pi bit 61: \wide [66] <-> \wide [66]
+  partition pi bit 62: \wide [65] <-> \wide [65]
+  partition pi bit 63: \wide [64] <-> \wide [64]
+  partition pi bit 64: \wide [63] <-> \wide [63]
+  partition pi bit 65: \wide [62] <-> \wide [62]
+  partition pi bit 66: \wide [61] <-> \wide [61]
+  partition pi bit 67: \wide [60] <-> \wide [60]
+  partition pi bit 68: \wide [59] <-> \wide [59]
+  partition pi bit 69: \wide [58] <-> \wide [58]
+  partition pi bit 70: \wide [57] <-> \wide [57]
+  partition pi bit 71: \wide [56] <-> \wide [56]
+  partition pi bit 72: \wide [55] <-> \wide [55]
+  partition pi bit 73: \wide [54] <-> \wide [54]
+  partition pi bit 74: \wide [53] <-> \wide [53]
+  partition pi bit 75: \wide [52] <-> \wide [52]
+  partition pi bit 76: \wide [51] <-> \wide [51]
+  partition pi bit 77: \wide [50] <-> \wide [50]
+  partition pi bit 78: \wide [49] <-> \wide [49]
+  partition pi bit 79: \wide [48] <-> \wide [48]
+  partition pi bit 80: \wide [47] <-> \wide [47]
+  partition pi bit 81: \wide [46] <-> \wide [46]
+  partition pi bit 82: \wide [45] <-> \wide [45]
+  partition pi bit 83: \wide [44] <-> \wide [44]
+  partition pi bit 84: \wide [43] <-> \wide [43]
+  partition pi bit 85: \wide [42] <-> \wide [42]
+  partition pi bit 86: \wide [41] <-> \wide [41]
+  partition pi bit 87: \wide [40] <-> \wide [40]
+  partition pi bit 88: \wide [39] <-> \wide [39]
+  partition pi bit 89: \wide [38] <-> \wide [38]
+  partition pi bit 90: \wide [37] <-> \wide [37]
+  partition pi bit 91: \wide [36] <-> \wide [36]
+  partition pi bit 92: \wide [35] <-> \wide [35]
+  partition pi bit 93: \wide [34] <-> \wide [34]
+  partition pi bit 94: \wide [33] <-> \wide [33]
+  partition pi bit 95: \wide [32] <-> \wide [32]
+  partition pi bit 96: \wide [31] <-> \wide [31]
+  partition pi bit 97: \wide [30] <-> \wide [30]
+  partition pi bit 98: \wide [29] <-> \wide [29]
+  partition pi bit 99: \wide [28] <-> \wide [28]
+  partition pi bit 100: \wide [27] <-> \wide [27]
+  partition pi bit 101: \wide [26] <-> \wide [26]
+  partition pi bit 102: \wide [25] <-> \wide [25]
+  partition pi bit 103: \wide [24] <-> \wide [24]
+  partition pi bit 104: \wide [23] <-> \wide [23]
+  partition pi bit 105: \wide [22] <-> \wide [22]
+  partition pi bit 106: \wide [21] <-> \wide [21]
+  partition pi bit 107: \wide [20] <-> \wide [20]
+  partition pi bit 108: \wide [19] <-> \wide [19]
+  partition pi bit 109: \wide [18] <-> \wide [18]
+  partition pi bit 110: \wide [17] <-> \wide [17]
+  partition pi bit 111: \wide [16] <-> \wide [16]
+  partition pi bit 112: \wide [15] <-> \wide [15]
+  partition pi bit 113: \wide [14] <-> \wide [14]
+  partition pi bit 114: \wide [13] <-> \wide [13]
+  partition pi bit 115: \wide [12] <-> \wide [12]
+  partition pi bit 116: \wide [11] <-> \wide [11]
+  partition pi bit 117: \wide [10] <-> \wide [10]
+  partition pi bit 118: \wide [9] <-> \wide [9]
+  partition pi bit 119: \wide [8] <-> \wide [8]
+  partition pi bit 120: \wide [7] <-> \wide [7]
+  partition pi bit 121: \wide [6] <-> \wide [6]
+  partition pi bit 122: \wide [5] <-> \wide [5]
+  partition pi bit 123: \wide [4] <-> \wide [4]
+  partition pi bit 124: \wide [3] <-> \wide [3]
+  partition pi bit 125: \wide [2] <-> \wide [2]
+  partition pi bit 126: \wide [1] <-> \wide [1]
+  partition pi bit 127: \wide [0] <-> \wide [0]
+  partition pi bit 128: \a [0] <-> \a [0]
+  partition pi bit 129: \b [0] <-> \b [0]
+  partition pi bit 130: \c [0] <-> \c [0]
+  partition pi bit 131: \d [0] <-> \d [0]
+  partition pi bit 132: \c [1] <-> \c [1]
+  partition pi bit 133: \d [1] <-> \d [1]
+  partition pi bit 134: \a [1] <-> \a [1]
+  partition pi bit 135: \b [1] <-> \b [1]
+  partition pi bit 136: \a [2] <-> \a [2]
+  partition pi bit 137: \b [2] <-> \b [2]
+  partition pi bit 138: \c [2] <-> \c [2]
+  partition pi bit 139: \d [2] <-> \d [2]
+  partition pi bit 140: \a [3] <-> \a [3]
+  partition pi bit 141: \b [3] <-> \b [3]
+  partition pi bit 142: \c [3] <-> \c [3]
+  partition pi bit 143: \d [3] <-> \d [3]
+  partition pi bit 144: \c [4] <-> \c [4]
+  partition pi bit 145: \d [4] <-> \d [4]
+  partition pi bit 146: \a [4] <-> \a [4]
+  partition pi bit 147: \b [4] <-> \b [4]
+  partition pi bit 148: \a [5] <-> \a [5]
+  partition pi bit 149: \b [5] <-> \b [5]
+  partition pi bit 150: \c [5] <-> \c [5]
+  partition pi bit 151: \d [5] <-> \d [5]
+  partition pi bit 152: \a [6] <-> \a [6]
+  partition pi bit 153: \b [6] <-> \b [6]
+  partition pi bit 154: \c [6] <-> \c [6]
+  partition pi bit 155: \d [6] <-> \d [6]
+  partition pi bit 156: \s [0] <-> \s [0]
+  partition pi bit 157: \s [1] <-> \s [1]
+  partition pi bit 158: \a [7] <-> \a [7]
+  partition pi bit 159: \b [7] <-> \b [7]
+  partition pi bit 160: \c [7] <-> \c [7]
+  partition pi bit 161: \d [7] <-> \d [7]
+  partition po bit 0: \untouched [1] <-> \untouched [1]
+  partition po bit 1: \untouched [2] <-> \untouched [2]
+  partition po bit 2: \untouched [3] <-> \untouched [3]
+  partition po bit 3: \untouched [4] <-> \untouched [4]
+  partition po bit 4: \untouched [5] <-> \untouched [5]
+  partition po bit 5: \untouched [6] <-> \untouched [6]
+  partition po bit 6: \untouched [7] <-> \untouched [7]
+  partition po bit 7: \untouched [8] <-> \untouched [8]
+  partition po bit 8: \untouched [9] <-> \untouched [9]
+  partition po bit 9: \untouched [10] <-> \untouched [10]
+  partition po bit 10: \untouched [11] <-> \untouched [11]
+  partition po bit 11: \untouched [12] <-> \untouched [12]
+  partition po bit 12: \untouched [13] <-> \untouched [13]
+  partition po bit 13: \untouched [14] <-> \untouched [14]
+  partition po bit 14: \untouched [15] <-> \untouched [15]
+  partition po bit 15: \untouched [16] <-> \untouched [16]
+  partition po bit 16: \untouched [17] <-> \untouched [17]
+  partition po bit 17: \untouched [18] <-> \untouched [18]
+  partition po bit 18: \untouched [19] <-> \untouched [19]
+  partition po bit 19: \untouched [20] <-> \untouched [20]
+  partition po bit 20: \untouched [21] <-> \untouched [21]
+  partition po bit 21: \untouched [22] <-> \untouched [22]
+  partition po bit 22: \untouched [23] <-> \untouched [23]
+  partition po bit 23: \untouched [24] <-> \untouched [24]
+  partition po bit 24: \untouched [25] <-> \untouched [25]
+  partition po bit 25: \untouched [26] <-> \untouched [26]
+  partition po bit 26: \untouched [27] <-> \untouched [27]
+  partition po bit 27: \untouched [28] <-> \untouched [28]
+  partition po bit 28: \untouched [29] <-> \untouched [29]
+  partition po bit 29: \untouched [30] <-> \untouched [30]
+  partition po bit 30: \untouched [31] <-> \untouched [31]
+  partition po bit 31: \untouched [32] <-> \untouched [32]
+  partition po bit 32: \untouched [33] <-> \untouched [33]
+  partition po bit 33: \untouched [34] <-> \untouched [34]
+  partition po bit 34: \untouched [35] <-> \untouched [35]
+  partition po bit 35: \untouched [36] <-> \untouched [36]
+  partition po bit 36: \untouched [37] <-> \untouched [37]
+  partition po bit 37: \untouched [38] <-> \untouched [38]
+  partition po bit 38: \untouched [39] <-> \untouched [39]
+  partition po bit 39: \untouched [40] <-> \untouched [40]
+  partition po bit 40: \untouched [41] <-> \untouched [41]
+  partition po bit 41: \untouched [42] <-> \untouched [42]
+  partition po bit 42: \untouched [43] <-> \untouched [43]
+  partition po bit 43: \untouched [44] <-> \untouched [44]
+  partition po bit 44: \untouched [45] <-> \untouched [45]
+  partition po bit 45: \untouched [46] <-> \untouched [46]
+  partition po bit 46: \untouched [47] <-> \untouched [47]
+  partition po bit 47: \untouched [48] <-> \untouched [48]
+  partition po bit 48: \untouched [49] <-> \untouched [49]
+  partition po bit 49: \untouched [50] <-> \untouched [50]
+  partition po bit 50: \untouched [51] <-> \untouched [51]
+  partition po bit 51: \untouched [52] <-> \untouched [52]
+  partition po bit 52: \untouched [53] <-> \untouched [53]
+  partition po bit 53: \untouched [54] <-> \untouched [54]
+  partition po bit 54: \untouched [55] <-> \untouched [55]
+  partition po bit 55: \untouched [56] <-> \untouched [56]
+  partition po bit 56: \untouched [57] <-> \untouched [57]
+  partition po bit 57: \untouched [58] <-> \untouched [58]
+  partition po bit 58: \untouched [59] <-> \untouched [59]
+  partition po bit 59: \untouched [60] <-> \untouched [60]
+  partition po bit 60: \untouched [61] <-> \untouched [61]
+  partition po bit 61: \untouched [62] <-> \untouched [62]
+  partition po bit 62: \untouched [63] <-> \untouched [63]
+  partition po bit 63: \untouched [64] <-> \untouched [64]
+  partition po bit 64: \untouched [65] <-> \untouched [65]
+  partition po bit 65: \untouched [66] <-> \untouched [66]
+  partition po bit 66: \untouched [67] <-> \untouched [67]
+  partition po bit 67: \untouched [68] <-> \untouched [68]
+  partition po bit 68: \untouched [69] <-> \untouched [69]
+  partition po bit 69: \untouched [70] <-> \untouched [70]
+  partition po bit 70: \untouched [71] <-> \untouched [71]
+  partition po bit 71: \untouched [72] <-> \untouched [72]
+  partition po bit 72: \untouched [73] <-> \untouched [73]
+  partition po bit 73: \untouched [74] <-> \untouched [74]
+  partition po bit 74: \untouched [75] <-> \untouched [75]
+  partition po bit 75: \untouched [76] <-> \untouched [76]
+  partition po bit 76: \untouched [77] <-> \untouched [77]
+  partition po bit 77: \untouched [78] <-> \untouched [78]
+  partition po bit 78: \untouched [79] <-> \untouched [79]
+  partition po bit 79: \untouched [80] <-> \untouched [80]
+  partition po bit 80: \untouched [81] <-> \untouched [81]
+  partition po bit 81: \untouched [82] <-> \untouched [82]
+  partition po bit 82: \untouched [83] <-> \untouched [83]
+  partition po bit 83: \untouched [84] <-> \untouched [84]
+  partition po bit 84: \untouched [85] <-> \untouched [85]
+  partition po bit 85: \untouched [86] <-> \untouched [86]
+  partition po bit 86: \untouched [87] <-> \untouched [87]
+  partition po bit 87: \untouched [88] <-> \untouched [88]
+  partition po bit 88: \untouched [89] <-> \untouched [89]
+  partition po bit 89: \untouched [90] <-> \untouched [90]
+  partition po bit 90: \untouched [91] <-> \untouched [91]
+  partition po bit 91: \untouched [92] <-> \untouched [92]
+  partition po bit 92: \untouched [93] <-> \untouched [93]
+  partition po bit 93: \untouched [94] <-> \untouched [94]
+  partition po bit 94: \untouched [95] <-> \untouched [95]
+  partition po bit 95: \untouched [96] <-> \untouched [96]
+  partition po bit 96: \untouched [97] <-> \untouched [97]
+  partition po bit 97: \untouched [98] <-> \untouched [98]
+  partition po bit 98: \untouched [99] <-> \untouched [99]
+  partition po bit 99: \untouched [100] <-> \untouched [100]
+  partition po bit 100: \untouched [101] <-> \untouched [101]
+  partition po bit 101: \untouched [102] <-> \untouched [102]
+  partition po bit 102: \untouched [103] <-> \untouched [103]
+  partition po bit 103: \untouched [104] <-> \untouched [104]
+  partition po bit 104: \untouched [105] <-> \untouched [105]
+  partition po bit 105: \untouched [106] <-> \untouched [106]
+  partition po bit 106: \untouched [107] <-> \untouched [107]
+  partition po bit 107: \untouched [108] <-> \untouched [108]
+  partition po bit 108: \untouched [109] <-> \untouched [109]
+  partition po bit 109: \untouched [110] <-> \untouched [110]
+  partition po bit 110: \untouched [111] <-> \untouched [111]
+  partition po bit 111: \untouched [112] <-> \untouched [112]
+  partition po bit 112: \untouched [113] <-> \untouched [113]
+  partition po bit 113: \untouched [114] <-> \untouched [114]
+  partition po bit 114: \untouched [115] <-> \untouched [115]
+  partition po bit 115: \untouched [116] <-> \untouched [116]
+  partition po bit 116: \untouched [117] <-> \untouched [117]
+  partition po bit 117: \untouched [118] <-> \untouched [118]
+  partition po bit 118: \untouched [119] <-> \untouched [119]
+  partition po bit 119: \untouched [120] <-> \untouched [120]
+  partition po bit 120: \untouched [121] <-> \untouched [121]
+  partition po bit 121: \untouched [122] <-> \untouched [122]
+  partition po bit 122: \untouched [123] <-> \untouched [123]
+  partition po bit 123: \untouched [124] <-> \untouched [124]
+  partition po bit 124: \untouched [125] <-> \untouched [125]
+  partition po bit 125: \untouched [126] <-> \untouched [126]
+  partition po bit 126: \untouched [127] <-> \untouched [127]
+  partition po bit 127: \y [6] <-> \y [6]
+  partition po bit 128: \y [5] <-> \y [5]
+  partition po bit 129: \y [4] <-> \y [4]
+  partition po bit 130: \y [3] <-> \y [3]
+  partition po bit 131: \y [2] <-> \y [2]
+  partition po bit 132: \y [1] <-> \y [1]
+  partition po bit 133: \y [0] <-> \y [0]
+  partition po bit 134: \untouched [0] <-> \untouched [0]
+  partition po bit 135: \y [7] <-> \y [7]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/shared_upstream_cones.untouched.il
+<suppressed ~6902 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.shared_upstream_cones.untouched...
+Checking module gold.shared_upstream_cones.untouched...
+Found and reported 0 problems.
+
+Writing partition 1 as shared_upstream_cones.
+  partition pi bit 0: \t [0] <-> \t [0]
+  partition pi bit 1: \t [1] <-> \t [1]
+  partition pi bit 2: \wide [0] <-> \wide [0]
+  partition pi bit 3: \wide [1] <-> \wide [1]
+  partition pi bit 4: \wide [2] <-> \wide [2]
+  partition pi bit 5: \wide [3] <-> \wide [3]
+  partition pi bit 6: \wide [4] <-> \wide [4]
+  partition pi bit 7: \wide [5] <-> \wide [5]
+  partition pi bit 8: \wide [6] <-> \wide [6]
+  partition pi bit 9: \wide [7] <-> \wide [7]
+  partition pi bit 10: \wide [8] <-> \wide [8]
+  partition pi bit 11: \wide [9] <-> \wide [9]
+  partition pi bit 12: \wide [10] <-> \wide [10]
+  partition pi bit 13: \wide [11] <-> \wide [11]
+  partition pi bit 14: \wide [12] <-> \wide [12]
+  partition pi bit 15: \wide [13] <-> \wide [13]
+  partition pi bit 16: \wide [14] <-> \wide [14]
+  partition pi bit 17: \wide [15] <-> \wide [15]
+  partition pi bit 18: \wide [16] <-> \wide [16]
+  partition pi bit 19: \wide [17] <-> \wide [17]
+  partition pi bit 20: \wide [18] <-> \wide [18]
+  partition pi bit 21: \wide [19] <-> \wide [19]
+  partition pi bit 22: \wide [20] <-> \wide [20]
+  partition pi bit 23: \wide [21] <-> \wide [21]
+  partition pi bit 24: \wide [22] <-> \wide [22]
+  partition pi bit 25: \wide [23] <-> \wide [23]
+  partition pi bit 26: \wide [24] <-> \wide [24]
+  partition pi bit 27: \wide [25] <-> \wide [25]
+  partition pi bit 28: \wide [26] <-> \wide [26]
+  partition pi bit 29: \wide [27] <-> \wide [27]
+  partition pi bit 30: \wide [28] <-> \wide [28]
+  partition pi bit 31: \wide [29] <-> \wide [29]
+  partition pi bit 32: \wide [30] <-> \wide [30]
+  partition pi bit 33: \wide [31] <-> \wide [31]
+  partition pi bit 34: \wide [32] <-> \wide [32]
+  partition pi bit 35: \wide [33] <-> \wide [33]
+  partition pi bit 36: \wide [34] <-> \wide [34]
+  partition pi bit 37: \wide [35] <-> \wide [35]
+  partition pi bit 38: \wide [36] <-> \wide [36]
+  partition pi bit 39: \wide [37] <-> \wide [37]
+  partition pi bit 40: \wide [38] <-> \wide [38]
+  partition pi bit 41: \wide [39] <-> \wide [39]
+  partition pi bit 42: \wide [40] <-> \wide [40]
+  partition pi bit 43: \wide [41] <-> \wide [41]
+  partition pi bit 44: \wide [42] <-> \wide [42]
+  partition pi bit 45: \wide [43] <-> \wide [43]
+  partition pi bit 46: \wide [44] <-> \wide [44]
+  partition pi bit 47: \wide [45] <-> \wide [45]
+  partition pi bit 48: \wide [46] <-> \wide [46]
+  partition pi bit 49: \wide [47] <-> \wide [47]
+  partition pi bit 50: \wide [48] <-> \wide [48]
+  partition pi bit 51: \wide [49] <-> \wide [49]
+  partition pi bit 52: \wide [50] <-> \wide [50]
+  partition pi bit 53: \wide [51] <-> \wide [51]
+  partition pi bit 54: \wide [52] <-> \wide [52]
+  partition pi bit 55: \wide [53] <-> \wide [53]
+  partition pi bit 56: \wide [54] <-> \wide [54]
+  partition pi bit 57: \wide [55] <-> \wide [55]
+  partition pi bit 58: \wide [56] <-> \wide [56]
+  partition pi bit 59: \wide [57] <-> \wide [57]
+  partition pi bit 60: \wide [58] <-> \wide [58]
+  partition pi bit 61: \wide [59] <-> \wide [59]
+  partition pi bit 62: \wide [60] <-> \wide [60]
+  partition pi bit 63: \wide [61] <-> \wide [61]
+  partition pi bit 64: \wide [62] <-> \wide [62]
+  partition pi bit 65: \wide [63] <-> \wide [63]
+  partition pi bit 66: \wide [64] <-> \wide [64]
+  partition pi bit 67: \wide [65] <-> \wide [65]
+  partition pi bit 68: \wide [66] <-> \wide [66]
+  partition pi bit 69: \wide [67] <-> \wide [67]
+  partition pi bit 70: \wide [68] <-> \wide [68]
+  partition pi bit 71: \wide [69] <-> \wide [69]
+  partition pi bit 72: \wide [70] <-> \wide [70]
+  partition pi bit 73: \wide [71] <-> \wide [71]
+  partition pi bit 74: \wide [72] <-> \wide [72]
+  partition pi bit 75: \wide [73] <-> \wide [73]
+  partition pi bit 76: \wide [74] <-> \wide [74]
+  partition pi bit 77: \wide [75] <-> \wide [75]
+  partition pi bit 78: \wide [76] <-> \wide [76]
+  partition pi bit 79: \wide [77] <-> \wide [77]
+  partition pi bit 80: \wide [78] <-> \wide [78]
+  partition pi bit 81: \wide [79] <-> \wide [79]
+  partition pi bit 82: \wide [80] <-> \wide [80]
+  partition pi bit 83: \wide [81] <-> \wide [81]
+  partition pi bit 84: \wide [82] <-> \wide [82]
+  partition pi bit 85: \wide [83] <-> \wide [83]
+  partition pi bit 86: \wide [84] <-> \wide [84]
+  partition pi bit 87: \wide [85] <-> \wide [85]
+  partition pi bit 88: \wide [86] <-> \wide [86]
+  partition pi bit 89: \wide [87] <-> \wide [87]
+  partition pi bit 90: \wide [88] <-> \wide [88]
+  partition pi bit 91: \wide [89] <-> \wide [89]
+  partition pi bit 92: \wide [90] <-> \wide [90]
+  partition pi bit 93: \wide [91] <-> \wide [91]
+  partition pi bit 94: \wide [92] <-> \wide [92]
+  partition pi bit 95: \wide [93] <-> \wide [93]
+  partition pi bit 96: \wide [94] <-> \wide [94]
+  partition pi bit 97: \wide [95] <-> \wide [95]
+  partition pi bit 98: \wide [96] <-> \wide [96]
+  partition pi bit 99: \wide [97] <-> \wide [97]
+  partition pi bit 100: \wide [98] <-> \wide [98]
+  partition pi bit 101: \wide [99] <-> \wide [99]
+  partition pi bit 102: \wide [100] <-> \wide [100]
+  partition pi bit 103: \wide [101] <-> \wide [101]
+  partition pi bit 104: \wide [102] <-> \wide [102]
+  partition pi bit 105: \wide [103] <-> \wide [103]
+  partition pi bit 106: \wide [104] <-> \wide [104]
+  partition pi bit 107: \wide [105] <-> \wide [105]
+  partition pi bit 108: \wide [106] <-> \wide [106]
+  partition pi bit 109: \wide [107] <-> \wide [107]
+  partition pi bit 110: \wide [108] <-> \wide [108]
+  partition pi bit 111: \wide [109] <-> \wide [109]
+  partition pi bit 112: \wide [110] <-> \wide [110]
+  partition pi bit 113: \wide [111] <-> \wide [111]
+  partition pi bit 114: \wide [112] <-> \wide [112]
+  partition pi bit 115: \wide [113] <-> \wide [113]
+  partition pi bit 116: \wide [114] <-> \wide [114]
+  partition pi bit 117: \wide [115] <-> \wide [115]
+  partition pi bit 118: \wide [116] <-> \wide [116]
+  partition pi bit 119: \wide [117] <-> \wide [117]
+  partition pi bit 120: \wide [118] <-> \wide [118]
+  partition pi bit 121: \wide [119] <-> \wide [119]
+  partition pi bit 122: \wide [120] <-> \wide [120]
+  partition pi bit 123: \wide [121] <-> \wide [121]
+  partition pi bit 124: \wide [122] <-> \wide [122]
+  partition pi bit 125: \wide [123] <-> \wide [123]
+  partition pi bit 126: \wide [124] <-> \wide [124]
+  partition pi bit 127: \wide [125] <-> \wide [125]
+  partition pi bit 128: \wide [126] <-> \wide [126]
+  partition pi bit 129: \wide [127] <-> \wide [127]
+  partition pi bit 130: \a [0] <-> \a [0]
+  partition pi bit 131: \b [0] <-> \b [0]
+  partition pi bit 132: \c [0] <-> \c [0]
+  partition pi bit 133: \d [0] <-> \d [0]
+  partition pi bit 134: \c [1] <-> \c [1]
+  partition pi bit 135: \d [1] <-> \d [1]
+  partition pi bit 136: \a [1] <-> \a [1]
+  partition pi bit 137: \b [1] <-> \b [1]
+  partition pi bit 138: \a [2] <-> \a [2]
+  partition pi bit 139: \b [2] <-> \b [2]
+  partition pi bit 140: \c [2] <-> \c [2]
+  partition pi bit 141: \d [2] <-> \d [2]
+  partition pi bit 142: \a [3] <-> \a [3]
+  partition pi bit 143: \b [3] <-> \b [3]
+  partition pi bit 144: \c [3] <-> \c [3]
+  partition pi bit 145: \d [3] <-> \d [3]
+  partition pi bit 146: \c [4] <-> \c [4]
+  partition pi bit 147: \d [4] <-> \d [4]
+  partition pi bit 148: \a [4] <-> \a [4]
+  partition pi bit 149: \b [4] <-> \b [4]
+  partition pi bit 150: \a [5] <-> \a [5]
+  partition pi bit 151: \b [5] <-> \b [5]
+  partition pi bit 152: \c [5] <-> \c [5]
+  partition pi bit 153: \d [5] <-> \d [5]
+  partition pi bit 154: \a [6] <-> \a [6]
+  partition pi bit 155: \b [6] <-> \b [6]
+  partition pi bit 156: \c [6] <-> \c [6]
+  partition pi bit 157: \d [6] <-> \d [6]
+  partition pi bit 158: \s [0] <-> \s [0]
+  partition pi bit 159: \s [1] <-> \s [1]
+  partition pi bit 160: \a [7] <-> \a [7]
+  partition pi bit 161: \b [7] <-> \b [7]
+  partition pi bit 162: \c [7] <-> \c [7]
+  partition pi bit 163: \d [7] <-> \d [7]
+  partition po bit 0: \untouched [0] <-> \untouched [0]
+  partition po bit 1: \untouched [1] <-> \untouched [1]
+  partition po bit 2: \untouched [2] <-> \untouched [2]
+  partition po bit 3: \untouched [3] <-> \untouched [3]
+  partition po bit 4: \untouched [4] <-> \untouched [4]
+  partition po bit 5: \untouched [5] <-> \untouched [5]
+  partition po bit 6: \untouched [6] <-> \untouched [6]
+  partition po bit 7: \untouched [7] <-> \untouched [7]
+  partition po bit 8: \untouched [8] <-> \untouched [8]
+  partition po bit 9: \untouched [9] <-> \untouched [9]
+  partition po bit 10: \untouched [10] <-> \untouched [10]
+  partition po bit 11: \untouched [11] <-> \untouched [11]
+  partition po bit 12: \untouched [12] <-> \untouched [12]
+  partition po bit 13: \untouched [13] <-> \untouched [13]
+  partition po bit 14: \untouched [14] <-> \untouched [14]
+  partition po bit 15: \untouched [15] <-> \untouched [15]
+  partition po bit 16: \untouched [16] <-> \untouched [16]
+  partition po bit 17: \untouched [17] <-> \untouched [17]
+  partition po bit 18: \untouched [18] <-> \untouched [18]
+  partition po bit 19: \untouched [19] <-> \untouched [19]
+  partition po bit 20: \untouched [20] <-> \untouched [20]
+  partition po bit 21: \untouched [21] <-> \untouched [21]
+  partition po bit 22: \untouched [22] <-> \untouched [22]
+  partition po bit 23: \untouched [23] <-> \untouched [23]
+  partition po bit 24: \untouched [24] <-> \untouched [24]
+  partition po bit 25: \untouched [25] <-> \untouched [25]
+  partition po bit 26: \untouched [26] <-> \untouched [26]
+  partition po bit 27: \untouched [27] <-> \untouched [27]
+  partition po bit 28: \untouched [28] <-> \untouched [28]
+  partition po bit 29: \untouched [29] <-> \untouched [29]
+  partition po bit 30: \untouched [30] <-> \untouched [30]
+  partition po bit 31: \untouched [31] <-> \untouched [31]
+  partition po bit 32: \untouched [32] <-> \untouched [32]
+  partition po bit 33: \untouched [33] <-> \untouched [33]
+  partition po bit 34: \untouched [34] <-> \untouched [34]
+  partition po bit 35: \untouched [35] <-> \untouched [35]
+  partition po bit 36: \untouched [36] <-> \untouched [36]
+  partition po bit 37: \untouched [37] <-> \untouched [37]
+  partition po bit 38: \untouched [38] <-> \untouched [38]
+  partition po bit 39: \untouched [39] <-> \untouched [39]
+  partition po bit 40: \untouched [40] <-> \untouched [40]
+  partition po bit 41: \untouched [41] <-> \untouched [41]
+  partition po bit 42: \untouched [42] <-> \untouched [42]
+  partition po bit 43: \untouched [43] <-> \untouched [43]
+  partition po bit 44: \untouched [44] <-> \untouched [44]
+  partition po bit 45: \untouched [45] <-> \untouched [45]
+  partition po bit 46: \untouched [46] <-> \untouched [46]
+  partition po bit 47: \untouched [47] <-> \untouched [47]
+  partition po bit 48: \untouched [48] <-> \untouched [48]
+  partition po bit 49: \untouched [49] <-> \untouched [49]
+  partition po bit 50: \untouched [50] <-> \untouched [50]
+  partition po bit 51: \untouched [51] <-> \untouched [51]
+  partition po bit 52: \untouched [52] <-> \untouched [52]
+  partition po bit 53: \untouched [53] <-> \untouched [53]
+  partition po bit 54: \untouched [54] <-> \untouched [54]
+  partition po bit 55: \untouched [55] <-> \untouched [55]
+  partition po bit 56: \untouched [56] <-> \untouched [56]
+  partition po bit 57: \untouched [57] <-> \untouched [57]
+  partition po bit 58: \untouched [58] <-> \untouched [58]
+  partition po bit 59: \untouched [59] <-> \untouched [59]
+  partition po bit 60: \untouched [60] <-> \untouched [60]
+  partition po bit 61: \untouched [61] <-> \untouched [61]
+  partition po bit 62: \untouched [62] <-> \untouched [62]
+  partition po bit 63: \untouched [63] <-> \untouched [63]
+  partition po bit 64: \untouched [64] <-> \untouched [64]
+  partition po bit 65: \untouched [65] <-> \untouched [65]
+  partition po bit 66: \untouched [66] <-> \untouched [66]
+  partition po bit 67: \untouched [67] <-> \untouched [67]
+  partition po bit 68: \untouched [68] <-> \untouched [68]
+  partition po bit 69: \untouched [69] <-> \untouched [69]
+  partition po bit 70: \untouched [70] <-> \untouched [70]
+  partition po bit 71: \untouched [71] <-> \untouched [71]
+  partition po bit 72: \untouched [72] <-> \untouched [72]
+  partition po bit 73: \untouched [73] <-> \untouched [73]
+  partition po bit 74: \untouched [74] <-> \untouched [74]
+  partition po bit 75: \untouched [75] <-> \untouched [75]
+  partition po bit 76: \untouched [76] <-> \untouched [76]
+  partition po bit 77: \untouched [77] <-> \untouched [77]
+  partition po bit 78: \untouched [78] <-> \untouched [78]
+  partition po bit 79: \untouched [79] <-> \untouched [79]
+  partition po bit 80: \untouched [80] <-> \untouched [80]
+  partition po bit 81: \untouched [81] <-> \untouched [81]
+  partition po bit 82: \untouched [82] <-> \untouched [82]
+  partition po bit 83: \untouched [83] <-> \untouched [83]
+  partition po bit 84: \untouched [84] <-> \untouched [84]
+  partition po bit 85: \untouched [85] <-> \untouched [85]
+  partition po bit 86: \untouched [86] <-> \untouched [86]
+  partition po bit 87: \untouched [87] <-> \untouched [87]
+  partition po bit 88: \untouched [88] <-> \untouched [88]
+  partition po bit 89: \untouched [89] <-> \untouched [89]
+  partition po bit 90: \untouched [90] <-> \untouched [90]
+  partition po bit 91: \untouched [91] <-> \untouched [91]
+  partition po bit 92: \untouched [92] <-> \untouched [92]
+  partition po bit 93: \untouched [93] <-> \untouched [93]
+  partition po bit 94: \untouched [94] <-> \untouched [94]
+  partition po bit 95: \untouched [95] <-> \untouched [95]
+  partition po bit 96: \untouched [96] <-> \untouched [96]
+  partition po bit 97: \untouched [97] <-> \untouched [97]
+  partition po bit 98: \untouched [98] <-> \untouched [98]
+  partition po bit 99: \untouched [99] <-> \untouched [99]
+  partition po bit 100: \untouched [100] <-> \untouched [100]
+  partition po bit 101: \untouched [101] <-> \untouched [101]
+  partition po bit 102: \untouched [102] <-> \untouched [102]
+  partition po bit 103: \untouched [103] <-> \untouched [103]
+  partition po bit 104: \untouched [104] <-> \untouched [104]
+  partition po bit 105: \untouched [105] <-> \untouched [105]
+  partition po bit 106: \untouched [106] <-> \untouched [106]
+  partition po bit 107: \untouched [107] <-> \untouched [107]
+  partition po bit 108: \untouched [108] <-> \untouched [108]
+  partition po bit 109: \untouched [109] <-> \untouched [109]
+  partition po bit 110: \untouched [110] <-> \untouched [110]
+  partition po bit 111: \untouched [111] <-> \untouched [111]
+  partition po bit 112: \untouched [112] <-> \untouched [112]
+  partition po bit 113: \untouched [113] <-> \untouched [113]
+  partition po bit 114: \untouched [114] <-> \untouched [114]
+  partition po bit 115: \untouched [115] <-> \untouched [115]
+  partition po bit 116: \untouched [116] <-> \untouched [116]
+  partition po bit 117: \untouched [117] <-> \untouched [117]
+  partition po bit 118: \untouched [118] <-> \untouched [118]
+  partition po bit 119: \untouched [119] <-> \untouched [119]
+  partition po bit 120: \untouched [120] <-> \untouched [120]
+  partition po bit 121: \untouched [121] <-> \untouched [121]
+  partition po bit 122: \untouched [122] <-> \untouched [122]
+  partition po bit 123: \untouched [123] <-> \untouched [123]
+  partition po bit 124: \untouched [124] <-> \untouched [124]
+  partition po bit 125: \untouched [125] <-> \untouched [125]
+  partition po bit 126: \untouched [126] <-> \untouched [126]
+  partition po bit 127: \untouched [127] <-> \untouched [127]
+  partition po bit 128: \y [0] <-> \y [0]
+  partition po bit 129: \y [1] <-> \y [1]
+  partition po bit 130: \y [2] <-> \y [2]
+  partition po bit 131: \y [3] <-> \y [3]
+  partition po bit 132: \y [4] <-> \y [4]
+  partition po bit 133: \y [5] <-> \y [5]
+  partition po bit 134: \y [6] <-> \y [6]
+  partition po bit 135: \y [7] <-> \y [7]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/shared_upstream_cones.il
+<suppressed ~1789 debug messages>
+
+End of script. Logfile hash: 5bea008295
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

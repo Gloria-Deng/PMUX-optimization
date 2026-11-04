@@ -1,0 +1,100 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+<suppressed ~1 debug messages>
+
+-- Executing script file `synthesis.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../scripts/generality_cases/decode_wide_counterexample.v
+Parsing SystemVerilog input from `../../../scripts/generality_cases/decode_wide_counterexample.v' to AST representation.
+Generating RTLIL representation for module `\decode_wide_counterexample'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \decode_wide_counterexample
+
+2.2. Analyzing design hierarchy..
+Top module:  \decode_wide_counterexample
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decode_wide_counterexample.
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing PMUX_OPT_RTLIL pass.
+
+7. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decode_wide_counterexample..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decode_wide_counterexample'.
+Computing hashes of 2 cells of `\decode_wide_counterexample'.
+Finding duplicate cells in `\decode_wide_counterexample'.
+Removed a total of 0 cells.
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_wide_counterexample..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+  stage F: factored 1 $eq pair(s) through shared decode prefixes
+  structural mode: decode_wide_counterexample processed once, 1 transformation(s).
+PMUX_OPT_RTLIL: 0 mux cells, 0 with duplicate arms, 1 rewritten (0 paired, 0 priority, 0 arm-folded, 0 counter-compressed, 0 prio-or, 1 decode-shared, 0 hold-extracted, 0 pin-promoted, 0 general-mux), 0 gate-skipped, 0 commit-path rejection event(s), 0 probe-path rejection event(s), 9 new cells.
+PMUX_OPT_RTLIL WARN: no $mux/$pmux cell is visible at this point -- the structure was probably consumed by an earlier pass (already-mapped device cells, or lowered to generic gates). Recommended position: right after `proc`, before `synth_intel`; the measured position grid is in results/flow_span/summary.json.
+PMUX_OPT_RTLIL benefit gate: 0 whole-design synthesis(es) paid (0 base + 0 plans), 0 candidate plan(s) skipped as netlist-identical to one already paid for.
+Run `opt_clean` afterwards to drop the now-dead decoder cells.
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decode_wide_counterexample..
+
+11. Executing RTLIL backend.
+Output filename: after.il
+
+12. Executing CHECK pass (checking for obvious problems).
+Checking module decode_wide_counterexample...
+Found and reported 0 problems.
+
+End of script. Logfile hash: 0c966a173e
+Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+Time spent: 4% 2x write_rtlil (0 sec), 4% 2x setundef (0 sec), ...

@@ -1,0 +1,176 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `proof/gold.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: before.il
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \audit
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \audit
+Removed 0 unused modules.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module audit.
+
+2.3. Executing CHECK pass (checking for obvious problems).
+Checking module audit...
+Found and reported 0 problems.
+
+2.4. Executing FLATTEN pass (flatten design).
+
+2.5. Executing FUTURE pass.
+
+2.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module audit.
+
+2.7. Executing CHECK pass (checking for obvious problems).
+Checking module audit...
+Found and reported 0 problems.
+
+2.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \audit..
+
+2.9. Executing OPT pass (performing simple optimizations).
+
+2.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module audit.
+
+2.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\audit'.
+Computing hashes of 4 cells of `\audit'.
+Finding duplicate cells in `\audit'.
+Removed a total of 0 cells.
+
+2.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \audit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+2.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \audit.
+Performed a total of 0 changes.
+
+2.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\audit'.
+Computing hashes of 4 cells of `\audit'.
+Finding duplicate cells in `\audit'.
+Removed a total of 0 cells.
+
+2.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \audit..
+
+2.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module audit.
+
+2.9.8. Finished fast OPT passes. (There is nothing left to do.)
+
+2.10. Executing WREDUCE pass (reducing word size of cells).
+
+2.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \audit..
+
+2.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.13. Executing OPT pass (performing simple optimizations).
+
+2.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module audit.
+
+2.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\audit'.
+Computing hashes of 4 cells of `\audit'.
+Finding duplicate cells in `\audit'.
+Removed a total of 0 cells.
+
+2.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \audit..
+
+2.13.4. Finished fast OPT passes.
+
+2.14. Executing SORT pass.
+
+2.15. Printing statistics.
+
+=== audit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       10 wires
+       68 wire bits
+        8 public wires
+       52 public wire bits
+        8 ports
+       52 port bits
+        4 cells
+        1   $dff
+        3   $mux
+
+2.16. Executing CHECK pass (checking for obvious problems).
+Checking module audit...
+Found and reported 0 problems.
+
+3. Executing SETUNDEF pass (replace undef values with defined constants).
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \audit..
+
+6. Executing CHECK pass (checking for obvious problems).
+Checking module audit...
+Found and reported 0 problems.
+
+7. Executing SETUNDEF pass (replace undef values with defined constants).
+
+8. Executing RTLIL backend.
+Output filename: proof/gold.il
+
+End of script. Logfile hash: 7658df6b65
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 3% 5x opt_expr (0 sec), 3% 5x opt_clean (0 sec), ...

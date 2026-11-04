@@ -1,0 +1,11 @@
+# [*] gold-match *
+signed_add_narrow a0 a0
+signed_add_narrow a1 a1
+signed_add_narrow a2 a2
+signed_add_narrow a3 a3
+signed_add_narrow b0 b0
+signed_add_narrow b1 b1
+signed_add_narrow b2 b2
+signed_add_narrow b3 b3
+signed_add_narrow s s
+signed_add_narrow y y

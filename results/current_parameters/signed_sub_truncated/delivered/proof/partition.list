@@ -1,0 +1,1 @@
+signed_sub_truncated signed_sub_truncated.y : y[3:0]

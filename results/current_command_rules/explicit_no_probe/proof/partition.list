@@ -1,0 +1,1 @@
+test2 test2.out : temp[4:0] out[4:0]

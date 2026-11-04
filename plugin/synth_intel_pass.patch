@@ -1,0 +1,11 @@
+--- a/techlibs/intel/synth_intel.cc
++++ b/techlibs/intel/synth_intel.cc
+@@ -197,6 +197,8 @@
+ 
+ 		if (check_label("coarse")) {
+ 			run("proc");
++			// PMUX_OPT: add the PMUX pass; keep the official ABC9 mapping command.
++			run("pmux_opt_rtlil -rewrite -sclr-promo-rom-only -no-probe");
+ 			if (flatten || help_mode) {
+ 				run("check");
+ 				run("flatten", "(skip if -noflatten)");

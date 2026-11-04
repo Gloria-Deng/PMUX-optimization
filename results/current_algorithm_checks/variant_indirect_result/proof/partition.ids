@@ -1,0 +1,7 @@
+group variant_indirect_result a b c s x y
+bind variant_indirect_result a
+bind variant_indirect_result b
+bind variant_indirect_result c
+bind variant_indirect_result s
+bind variant_indirect_result x
+bind variant_indirect_result y

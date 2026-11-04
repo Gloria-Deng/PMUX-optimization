@@ -1,0 +1,67 @@
+signed_add_wide . A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:1.1-11.10" A:top=1
+signed_add_wide y_$lut_Y_A_1_$lut_Y_A_1_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_A_1_$lut_Y_A_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_A_1_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_A_$lut_Y_A_1_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_A_$lut_Y_A_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_A_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_5 c=$lut
+signed_add_wide y_$lut_Y_4_A_1_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_4_A_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_4 c=$lut
+signed_add_wide y_$lut_Y_3 c=$lut
+signed_add_wide y_$lut_Y_2_A_1_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_2_A_$lut_Y_A_1_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_2_A_$lut_Y_A_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_2_A_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_2_A_$lut_A c=$lut
+signed_add_wide y_$lut_Y_2 c=$lut
+signed_add_wide y_$lut_Y_1_A_1_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_1_A_$lut_Y_A_1_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_1_A_$lut_Y_A_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_1_A_$lut_Y c=$lut
+signed_add_wide y_$lut_Y_1 c=$lut
+signed_add_wide y_$lut_Y c=$lut
+signed_add_wide b3_$lut_A_Y_$lut_A_A_$lut_Y c=$lut
+signed_add_wide b3_$lut_A_Y_$lut_A c=$lut
+signed_add_wide b3_$lut_A_1 c=$lut
+signed_add_wide b3_$lut_A c=$lut
+signed_add_wide b1_$lut_A_1_Y_$lut_A_A_$lut_Y c=$lut
+signed_add_wide b1_$lut_A_1_Y_$lut_A c=$lut
+signed_add_wide b1_$lut_A_1 c=$lut
+signed_add_wide b1_$lut_A c=$lut
+signed_add_wide y_$lut_Y_A_1_$lut_Y_A_1 w=0:0
+signed_add_wide y_$lut_Y_A_1_$lut_Y_A w=0:0
+signed_add_wide y_$lut_Y_A_1 w=0:0
+signed_add_wide y_$lut_Y_A_$lut_Y_A_1 w=0:0
+signed_add_wide y_$lut_Y_A_$lut_Y_A w=0:0
+signed_add_wide y_$lut_Y_A w=0:0
+signed_add_wide y_$lut_Y_4_A_1 w=0:0
+signed_add_wide y_$lut_Y_4_A w=0:0
+signed_add_wide y_$lut_Y_2_A_1 w=0:0
+signed_add_wide y_$lut_Y_2_A_$lut_Y_A_1 w=0:0
+signed_add_wide y_$lut_Y_2_A_$lut_Y_A w=0:0
+signed_add_wide y_$lut_Y_2_A_$lut_A_Y w=0:0
+signed_add_wide y_$lut_Y_2_A w=0:0
+signed_add_wide y_$lut_Y_1_A_1 w=0:0
+signed_add_wide y_$lut_Y_1_A_$lut_Y_A_1 w=0:0
+signed_add_wide y_$lut_Y_1_A_$lut_Y_A w=0:0
+signed_add_wide y_$lut_Y_1_A w=0:0
+signed_add_wide y w=6:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:4.71-4.72" P=O
+signed_add_wide s w=1:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:1.36-1.37" P=I
+signed_add_wide b3_$lut_A_Y_$lut_A_Y w=0:0
+signed_add_wide b3_$lut_A_Y_$lut_A_A w=0:0
+signed_add_wide b3_$lut_A_Y w=0:0
+signed_add_wide b3_$lut_A_1_Y w=0:0
+signed_add_wide b3 w=2:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:4.43-4.45" P=I
+signed_add_wide b2 w=2:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:3.43-3.45" P=I
+signed_add_wide b1_$lut_A_Y w=0:0
+signed_add_wide b1_$lut_A_1_Y_$lut_A_Y w=0:0
+signed_add_wide b1_$lut_A_1_Y_$lut_A_A w=0:0
+signed_add_wide b1_$lut_A_1_Y w=0:0
+signed_add_wide b1 w=2:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:2.43-2.45" P=I
+signed_add_wide b0 w=2:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:1.81-1.83" P=I
+signed_add_wide a3 w=4:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:4.20-4.22" P=I
+signed_add_wide a2 w=4:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:3.20-3.22" P=I
+signed_add_wide a1 w=4:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:2.20-2.22" P=I
+signed_add_wide a0 w=4:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/signed_add_wide/source.v:1.58-1.60" P=I

@@ -1,0 +1,7 @@
+mean_reduction_pct=21.5908248053
+resource_increase_cases=0
+dff_over_20_percent_cases=0
+io_over_20_percent_cases=0
+require_full_score=True
+score_requirements_skipped=False
+score_requirements_met=True

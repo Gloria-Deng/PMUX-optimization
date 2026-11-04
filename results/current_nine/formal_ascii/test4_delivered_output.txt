@@ -1,0 +1,22 @@
+EQY 19:01:31 [test4_delivered] read_gold: starting process "yosys -ql test4_delivered/gold.log test4_delivered/gold.ys"
+EQY 19:01:31 [test4_delivered] read_gold: finished (returncode=0)
+EQY 19:01:31 [test4_delivered] read_gate: starting process "yosys -ql test4_delivered/gate.log test4_delivered/gate.ys"
+EQY 19:01:31 [test4_delivered] read_gate: finished (returncode=0)
+EQY 19:01:31 [test4_delivered] combine: starting process "yosys -ql test4_delivered/combine.log test4_delivered/combine.ys"
+EQY 19:01:31 [test4_delivered] combine: finished (returncode=0)
+EQY 19:01:31 [test4_delivered] partition: starting process "cd test4_delivered& yosys -ql partition.log partition.ys"
+EQY 19:01:31 [test4_delivered] partition: finished (returncode=0)
+EQY 19:01:31 [test4_delivered] run: starting process "make -C test4_delivered -f strategies.mk"
+EQY 19:01:32 [test4_delivered] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test4_delivered'
+EQY 19:01:32 [test4_delivered] run: Running strategy 'whole' on 'test4.data_dn'..
+EQY 19:01:32 [test4_delivered] run: Proved equivalence of partition 'test4.data_dn' using strategy 'whole'
+EQY 19:01:32 [test4_delivered] run: make -f strategies.mk summary
+EQY 19:01:32 [test4_delivered] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test4_delivered'
+EQY 19:01:32 [test4_delivered] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test4_delivered'
+EQY 19:01:32 [test4_delivered] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test4_delivered'
+EQY 19:01:32 [test4_delivered] run: finished (returncode=0)
+EQY 19:01:32 [test4_delivered] Successfully proved equivalence of partition test4.data_dn
+EQY 19:01:32 [test4_delivered] Successfully proved designs equivalent
+EQY 19:01:32 [test4_delivered] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 19:01:32 [test4_delivered] summary: Elapsed process time unvailable on Windows
+EQY 19:01:32 [test4_delivered] DONE (PASS, rc=0)

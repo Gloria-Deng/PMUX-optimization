@@ -1,0 +1,7 @@
+group audit d0 d1 d2 d3 s y
+bind audit d0
+bind audit d1
+bind audit d2
+bind audit d3
+bind audit s
+bind audit y

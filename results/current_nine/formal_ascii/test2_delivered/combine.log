@@ -1,0 +1,51 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `test2_delivered/combine.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: test2_delivered/gold.il
+
+2. Executing UNIQUIFY pass (creating unique copies of modules).
+Created 0 unique modules.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `test2'. Setting top module to test2.
+
+3.1. Analyzing design hierarchy..
+Top module:  \test2
+
+3.2. Analyzing design hierarchy..
+Top module:  \test2
+Removed 0 unused modules.
+
+4. Executing RTLIL frontend.
+Input filename: test2_delivered/gate_recoded.il
+
+5. Executing UNIQUIFY pass (creating unique copies of modules).
+Created 0 unique modules.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `test2'. Setting top module to test2.
+
+6.1. Analyzing design hierarchy..
+Top module:  \test2
+
+6.2. Analyzing design hierarchy..
+Top module:  \test2
+Removed 0 unused modules.
+
+7. Executing MITER pass (creating miter circuit).
+Creating miter cell "miter" with gold cell "gold.test2" and gate cell "gate.test2".
+
+8. Executing RTLIL backend.
+Output filename: test2_delivered/combined.il
+
+End of script. Logfile hash: 0b5944cc4e
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 10% 4x setattr (0 sec), 10% 4x read_rtlil (0 sec), ...

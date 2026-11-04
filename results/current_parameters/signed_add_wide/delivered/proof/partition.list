@@ -1,0 +1,1 @@
+signed_add_wide signed_add_wide.y : y[6:0]

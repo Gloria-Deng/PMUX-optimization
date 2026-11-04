@@ -1,0 +1,21 @@
+{
+  "scope": "NINE_CASE_ASSESSMENT",
+  "delivery_patch_set": [
+    "pass"
+  ],
+  "mapping_script": "stock",
+  "required_yosys": "0.69; same selected revision for both programs",
+  "require_full_score": true,
+  "manifest_entries": 74,
+  "assessment": {
+    "cases": 9,
+    "equivalence_checks": 18,
+    "mean_reduction_pct": 21.59082480525056,
+    "single_case_resource_increases": 0,
+    "dff_over_20_percent_cases": 0,
+    "io_over_20_percent_cases": 0,
+    "changed_design_rejected": true
+  },
+  "problems": [],
+  "note": "File and source checks alone do not establish synthesis, equivalence, efficiency or full score."
+}

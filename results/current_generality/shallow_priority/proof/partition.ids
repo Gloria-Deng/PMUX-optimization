@@ -1,0 +1,8 @@
+group shallow_priority a b c d q s y
+bind shallow_priority a
+bind shallow_priority b
+bind shallow_priority c
+bind shallow_priority d
+bind shallow_priority q
+bind shallow_priority s
+bind shallow_priority y

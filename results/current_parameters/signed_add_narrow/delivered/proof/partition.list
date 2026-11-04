@@ -1,0 +1,1 @@
+signed_add_narrow signed_add_narrow.y : y[3:0]

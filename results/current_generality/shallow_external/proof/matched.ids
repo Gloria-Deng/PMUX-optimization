@@ -1,0 +1,9 @@
+# [*] gold-match *
+shallow_external a a
+shallow_external b b
+shallow_external c c
+shallow_external d d
+shallow_external exposed exposed
+shallow_external q q
+shallow_external s s
+shallow_external y y

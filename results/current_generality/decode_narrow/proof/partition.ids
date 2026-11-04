@@ -1,0 +1,4 @@
+group decode_counterexample a b x
+bind decode_counterexample a
+bind decode_counterexample b
+bind decode_counterexample x

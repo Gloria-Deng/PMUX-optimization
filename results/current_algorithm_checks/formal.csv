@@ -1,0 +1,12 @@
+﻿case,exit,verdict,sharing,logic,dff,reason
+g_init_mixed,0,PROVEN,False,31,10,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+g_init_alias,0,PROVEN,False,31,10,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_w6,0,PROVEN,True,153,6,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_w9,0,PROVEN,True,214,9,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_w17,0,PROVEN,True,399,17,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_lanes2,0,PROVEN,True,558,24,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_signed,0,PROVEN,True,278,12,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_external_arithmetic,0,PROVEN,True,309,12,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_narrow_signed,0,PROVEN,True,362,12,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_partial_result,0,PROVEN,False,75,0,exit=0 whole_design_sentence=True partition_failure=False done_fail=False
+variant_indirect_result,0,PROVEN,False,90,0,exit=0 whole_design_sentence=True partition_failure=False done_fail=False

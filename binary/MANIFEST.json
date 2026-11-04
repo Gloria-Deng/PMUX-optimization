@@ -1,0 +1,413 @@
+{
+  "what": "Current Windows synthesis programs and dependencies",
+  "date": "2026-11-03",
+  "required_yosys": "0.69; same selected revision for both programs",
+  "source_url": "https://github.com/YosysHQ/yosys/tree/d0e71cfb7bcafe2b437f3edc1789b69e99ecd55a",
+  "abc_source": "1e3d9abd7934ee0376a9fd474655a85780069776",
+  "common_windows_patch": "plugin/windows_binary_output.patch",
+  "delivery_patch_set": [
+    "pass"
+  ],
+  "mapping_script": "stock",
+  "initialization": "zero assigned to unspecified original RTL states before both synthesis flows",
+  "pass_cc_sha256_16": "df168321de04ce75",
+  "synth_intel_patched_sha256_16": "df5c3e233e5923ba",
+  "exe_sha256_16": "a760dbabbf662b00",
+  "files": [
+    {
+      "rel": "baseline/yosys.exe",
+      "bytes": 30277245,
+      "sha256_16": "a2ec7026093b039c"
+    },
+    {
+      "rel": "libffi-8.dll",
+      "bytes": 39826,
+      "sha256_16": "f96cf79b75f33a10"
+    },
+    {
+      "rel": "libgcc_s_seh-1.dll",
+      "bytes": 150537,
+      "sha256_16": "68ca4574b3314028"
+    },
+    {
+      "rel": "libreadline8.dll",
+      "bytes": 289204,
+      "sha256_16": "5279a6c2053327fa"
+    },
+    {
+      "rel": "libstdc++-6.dll",
+      "bytes": 2659194,
+      "sha256_16": "b30dbd914d903992"
+    },
+    {
+      "rel": "libtermcap-0.dll",
+      "bytes": 48292,
+      "sha256_16": "2d385ceed73c784e"
+    },
+    {
+      "rel": "libwinpthread-1.dll",
+      "bytes": 64574,
+      "sha256_16": "d1b3564a65a000a4"
+    },
+    {
+      "rel": "licenses/abc/copyright.txt",
+      "bytes": 1152,
+      "sha256_16": "4b0e3cea338f4e26"
+    },
+    {
+      "rel": "licenses/abc/src/bdd/cudd/license",
+      "bytes": 1543,
+      "sha256_16": "8905863e5b1b60b9"
+    },
+    {
+      "rel": "licenses/abc/src/misc/btor/LICENSE.txt",
+      "bytes": 1260,
+      "sha256_16": "043707e3ed6429ef"
+    },
+    {
+      "rel": "licenses/abc/src/misc/bzlib/LICENSE",
+      "bytes": 1943,
+      "sha256_16": "7638575a2a20f32b"
+    },
+    {
+      "rel": "licenses/abc/src/misc/zlib/license",
+      "bytes": 1562,
+      "sha256_16": "83341adcb1b8269b"
+    },
+    {
+      "rel": "licenses/abc/src/sat/bsat/license",
+      "bytes": 1094,
+      "sha256_16": "711613c3e79940fd"
+    },
+    {
+      "rel": "licenses/abc/src/sat/bsat2/LICENSE",
+      "bytes": 1163,
+      "sha256_16": "f69b5e1d5750e6b0"
+    },
+    {
+      "rel": "licenses/abc/src/sat/cadical/LICENSE",
+      "bytes": 1671,
+      "sha256_16": "d8f846cdd31fab72"
+    },
+    {
+      "rel": "licenses/abc/src/sat/glucose/license",
+      "bytes": 1627,
+      "sha256_16": "a9e80f0aba932a64"
+    },
+    {
+      "rel": "licenses/abc/src/sat/glucose2/license",
+      "bytes": 1627,
+      "sha256_16": "a9e80f0aba932a64"
+    },
+    {
+      "rel": "licenses/abc/src/sat/kissat/LICENSE",
+      "bytes": 1191,
+      "sha256_16": "b75f32432ab6ce53"
+    },
+    {
+      "rel": "licenses/abc/src/sat/satoko/LICENSE",
+      "bytes": 1341,
+      "sha256_16": "487263f6021c7b2e"
+    },
+    {
+      "rel": "licenses/abc/src/sat/xsat/license",
+      "bytes": 1975,
+      "sha256_16": "bf98b2adc9b0aaa4"
+    },
+    {
+      "rel": "licenses/runtime/gcc/COPYING.RUNTIME",
+      "bytes": 3324,
+      "sha256_16": "9d6b43ce4d8de0c8"
+    },
+    {
+      "rel": "licenses/runtime/gcc/COPYING3",
+      "bytes": 35147,
+      "sha256_16": "8ceb4b9ee5adedde"
+    },
+    {
+      "rel": "licenses/runtime/libffi/LICENSE",
+      "bytes": 1132,
+      "sha256_16": "17b64dc60f3b6897"
+    },
+    {
+      "rel": "licenses/runtime/libgcc/COPYING.RUNTIME",
+      "bytes": 3324,
+      "sha256_16": "9d6b43ce4d8de0c8"
+    },
+    {
+      "rel": "licenses/runtime/libgcc/COPYING3",
+      "bytes": 35147,
+      "sha256_16": "8ceb4b9ee5adedde"
+    },
+    {
+      "rel": "licenses/runtime/libwinpthread/COPYING",
+      "bytes": 2883,
+      "sha256_16": "63263614cdd29f2f"
+    },
+    {
+      "rel": "licenses/runtime/readline/COPYING",
+      "bytes": 35147,
+      "sha256_16": "8ceb4b9ee5adedde"
+    },
+    {
+      "rel": "licenses/runtime/winpthreads/COPYING",
+      "bytes": 2883,
+      "sha256_16": "63263614cdd29f2f"
+    },
+    {
+      "rel": "licenses/runtime/zlib/LICENSE",
+      "bytes": 1002,
+      "sha256_16": "e32ff4e00d9d9493"
+    },
+    {
+      "rel": "licenses/yosys/COPYING",
+      "bytes": 792,
+      "sha256_16": "7747e4dfc1780fd5"
+    },
+    {
+      "rel": "licenses/yosys/libs/cxxopts/LICENSE",
+      "bytes": 1074,
+      "sha256_16": "9d42d0185ebc939a"
+    },
+    {
+      "rel": "licenses/yosys/libs/fmt/doc/LICENSE-exception",
+      "bytes": 1458,
+      "sha256_16": "25b5db04aa6070c1"
+    },
+    {
+      "rel": "licenses/yosys/libs/fmt/LICENSE",
+      "bytes": 1114,
+      "sha256_16": "e53b24254a17f6ac"
+    },
+    {
+      "rel": "licenses/yosys/libs/minisat/LICENSE",
+      "bytes": 1163,
+      "sha256_16": "f69b5e1d5750e6b0"
+    },
+    {
+      "rel": "licenses/yosys/libs/symfpu/LICENSE",
+      "bytes": 125,
+      "sha256_16": "c24f465664183bfd"
+    },
+    {
+      "rel": "licenses/yosys/libs/symfpu/LICENSE-BSD",
+      "bytes": 1470,
+      "sha256_16": "d8aace2042a03cbd"
+    },
+    {
+      "rel": "licenses/yosys/libs/symfpu/LICENSE-GPL3",
+      "bytes": 35821,
+      "sha256_16": "0b383d5a63da644f"
+    },
+    {
+      "rel": "licenses/yosys/libs/tomlplusplus/LICENSE",
+      "bytes": 1094,
+      "sha256_16": "529bc3900a9571e4"
+    },
+    {
+      "rel": "share/abc9_map.v",
+      "bytes": 950,
+      "sha256_16": "f611eeeaedaf4f80"
+    },
+    {
+      "rel": "share/abc9_model.v",
+      "bytes": 682,
+      "sha256_16": "38fedb5415db4102"
+    },
+    {
+      "rel": "share/abc9_unmap.v",
+      "bytes": 654,
+      "sha256_16": "346b6d45d416d163"
+    },
+    {
+      "rel": "share/adff2dff.v",
+      "bytes": 605,
+      "sha256_16": "b71f5443956a75ce"
+    },
+    {
+      "rel": "share/choices/han-carlson.v",
+      "bytes": 1247,
+      "sha256_16": "c9442e2e8a77f5de"
+    },
+    {
+      "rel": "share/choices/kogge-stone.v",
+      "bytes": 1637,
+      "sha256_16": "f2601d85ad37cfa8"
+    },
+    {
+      "rel": "share/choices/sklansky.v",
+      "bytes": 818,
+      "sha256_16": "17539d9725ace7a9"
+    },
+    {
+      "rel": "share/cmp2lcu.v",
+      "bytes": 5389,
+      "sha256_16": "a573c2ea45368154"
+    },
+    {
+      "rel": "share/cmp2lut.v",
+      "bytes": 2745,
+      "sha256_16": "b20be58ce2437226"
+    },
+    {
+      "rel": "share/cmp2softlogic.v",
+      "bytes": 2833,
+      "sha256_16": "4bdd76ad92417cbf"
+    },
+    {
+      "rel": "share/dff2ff.v",
+      "bytes": 315,
+      "sha256_16": "fe6b781b109ebf56"
+    },
+    {
+      "rel": "share/gate2lut.v",
+      "bytes": 1534,
+      "sha256_16": "35089c62c6734851"
+    },
+    {
+      "rel": "share/intel/common/altpll_bb.v",
+      "bytes": 14668,
+      "sha256_16": "2a2aebbc0467d2f7"
+    },
+    {
+      "rel": "share/intel/common/brams_m9k.txt",
+      "bytes": 551,
+      "sha256_16": "24e509e1307973d2"
+    },
+    {
+      "rel": "share/intel/common/brams_map_m9k.v",
+      "bytes": 4410,
+      "sha256_16": "179719c46ce1cbed"
+    },
+    {
+      "rel": "share/intel/common/ff_map.v",
+      "bytes": 641,
+      "sha256_16": "b1d533e121c100cf"
+    },
+    {
+      "rel": "share/intel/common/m9k_bb.v",
+      "bytes": 3146,
+      "sha256_16": "a3eb44b87064de45"
+    },
+    {
+      "rel": "share/intel/cyclone10lp/cells_map.v",
+      "bytes": 3513,
+      "sha256_16": "fc1b4bafa8f89bf0"
+    },
+    {
+      "rel": "share/intel/cyclone10lp/cells_sim.v",
+      "bytes": 4510,
+      "sha256_16": "b24b2e88b9a6ad0a"
+    },
+    {
+      "rel": "share/intel/cycloneiv/cells_map.v",
+      "bytes": 2357,
+      "sha256_16": "b8f2da90b1f70358"
+    },
+    {
+      "rel": "share/intel/cycloneiv/cells_sim.v",
+      "bytes": 9985,
+      "sha256_16": "a6014340ce18a73a"
+    },
+    {
+      "rel": "share/intel/cycloneive/cells_map.v",
+      "bytes": 3508,
+      "sha256_16": "083c7d82ff2ce8ff"
+    },
+    {
+      "rel": "share/intel/cycloneive/cells_sim.v",
+      "bytes": 10131,
+      "sha256_16": "cf07682b8ad95035"
+    },
+    {
+      "rel": "share/intel/max10/cells_map.v",
+      "bytes": 2373,
+      "sha256_16": "8584f96f3e29d4c1"
+    },
+    {
+      "rel": "share/intel/max10/cells_sim.v",
+      "bytes": 11157,
+      "sha256_16": "22e536173eb8dd04"
+    },
+    {
+      "rel": "share/intel/max10/dsp_map.v",
+      "bytes": 2142,
+      "sha256_16": "66c3cfce44fef0d1"
+    },
+    {
+      "rel": "share/mul2dsp.v",
+      "bytes": 9521,
+      "sha256_16": "9a9941e96f956fba"
+    },
+    {
+      "rel": "share/pmux2mux.v",
+      "bytes": 363,
+      "sha256_16": "c0d310564fe91beb"
+    },
+    {
+      "rel": "share/simcells.v",
+      "bytes": 95095,
+      "sha256_16": "0156162837d52b32"
+    },
+    {
+      "rel": "share/simlib.v",
+      "bytes": 81868,
+      "sha256_16": "243315bbec98becc"
+    },
+    {
+      "rel": "share/smtmap.v",
+      "bytes": 682,
+      "sha256_16": "020f02b09e2c2cfb"
+    },
+    {
+      "rel": "share/techmap.v",
+      "bytes": 17266,
+      "sha256_16": "8af1bc8ac6566063"
+    },
+    {
+      "rel": "tcl86.dll",
+      "bytes": 1756974,
+      "sha256_16": "b338f73962cefc25"
+    },
+    {
+      "rel": "yosys-abc.exe",
+      "bytes": 33247315,
+      "sha256_16": "1d9f0502d3cc34df"
+    },
+    {
+      "rel": "yosys.exe",
+      "bytes": 30893877,
+      "sha256_16": "a760dbabbf662b00"
+    },
+    {
+      "rel": "zlib1.dll",
+      "bytes": 127291,
+      "sha256_16": "11cd91171765cd65"
+    }
+  ],
+  "total_bytes": 100055582,
+  "current_results": {
+    "assessment": "results/current_nine",
+    "efficiency": "results/current_efficiency",
+    "parameters": "results/current_parameters",
+    "build": "results/current_build",
+    "algorithm_checks": "results/current_algorithm_checks",
+    "generality": "results/current_generality",
+    "mapped": "results/current_mapped",
+    "command_rules": "results/current_command_rules"
+  },
+  "build_record": "results/current_build/inputs.csv",
+  "submission_archive_created": false,
+  "algorithm_changes": [
+    "initialized_register_control_conversion",
+    "mutually_exclusive_nested_add_sub_sharing",
+    "wide_comparison_condition_sharing",
+    "two_level_exclusive_arithmetic_sharing",
+    "priority_chain_bus_order_and_external_reader_checks"
+  ],
+  "selected_yosys": "0.69+24 / d0e71cfb7",
+  "official_clarification": "2026-10-31_to_11-02_items_58_to_65",
+  "additional_abc_calls_in_custom_pass": false,
+  "metadata_updated": "2026-11-04",
+  "submission_video": "演示视频_提交版.mp4 (submitted separately; H.264, 163.96 seconds)"
+}

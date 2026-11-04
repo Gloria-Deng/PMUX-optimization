@@ -1,0 +1,14 @@
+variant_w6 . A:src="../../../scripts/algorithm_cases/variant_w6.v:2.1-66.10" A:top=1 A:dynports=1
+variant_w6 rst w=0:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:7.16-7.19" P=I
+variant_w6 lane[0].s w=15:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:20.21-20.22"
+variant_w6 lane[0].q w=5:0 A:init=0 A:src="../../../scripts/algorithm_cases/variant_w6.v:21.25-21.26"
+variant_w6 lane[0].next_q w=5:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:23.25-23.31"
+variant_w6 lane[0].d w=5:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:19.26-19.27"
+variant_w6 lane[0].c w=5:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:18.26-18.27"
+variant_w6 lane[0].b w=5:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:17.26-17.27"
+variant_w6 lane[0].a w=5:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:16.26-16.27"
+variant_w6 en w=0:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:8.16-8.18" P=I
+variant_w6 data_out w=5:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:11.35-11.43" P=O
+variant_w6 data_in w=23:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:9.36-9.43" P=I
+variant_w6 ctrl_in w=15:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:10.31-10.38" P=I
+variant_w6 clk w=0:0 A:src="../../../scripts/algorithm_cases/variant_w6.v:6.16-6.19" P=I

@@ -1,0 +1,79 @@
+{
+  "partition": {
+    "index": 0,
+    "name": "test2.out",
+    "inbits": {
+      "a": [
+        0
+      ],
+      "b": [
+        0
+      ],
+      "c": [
+        0
+      ],
+      "d": [
+        0
+      ],
+      "dataa": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datab": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datac": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "datad": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "outbits": {
+      "out": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "temp": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.test2.out",
+    "internal": {},
+    "unused": {},
+    "cellcount": 9,
+    "bitcount": 49
+  },
+  "gate_module": {
+    "name": "gold.test2.out",
+    "internal": {},
+    "unused": {},
+    "cellcount": 20,
+    "bitcount": 72
+  }
+}

@@ -1,0 +1,7 @@
+# [*] gold-match *
+variant_w9 clk clk
+variant_w9 ctrl_in ctrl_in
+variant_w9 data_in data_in
+variant_w9 data_out data_out
+variant_w9 en en
+variant_w9 rst rst

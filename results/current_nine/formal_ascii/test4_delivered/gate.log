@@ -1,0 +1,308 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `test4_delivered/gate.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: ../test4/delivered/postabc.il
+
+2. Executing Verilog-2005 frontend: ../../../plugin/dffeas_formal.v
+Parsing Verilog input from `../../../plugin/dffeas_formal.v' to AST representation.
+Replacing existing blackbox module `\dffeas' at ../../../plugin/dffeas_formal.v:3.1-19.10.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \test4
+Used module:     \dffeas
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+
+3.1.2. Executing AST frontend in derive mode using pre-parsed AST for module `\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Generating RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 1751738216
+Parameter \is_wysiwyg = 1414681925
+
+3.1.3. Executing AST frontend in derive mode using pre-parsed AST for module `\dffeas'.
+Parameter \power_up = 1751738216
+Parameter \is_wysiwyg = 1414681925
+Generating RTLIL representation for module `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+Parameter \power_up = 24'011011000110111101110111
+Parameter \is_wysiwyg = 1414681925
+Found cached RTLIL representation for module `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas'.
+
+3.1.4. Analyzing design hierarchy..
+Top module:  \test4
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Used module:     $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas
+
+3.1.5. Analyzing design hierarchy..
+Top module:  \test4
+Used module:     $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas
+Used module:     $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas
+Removing unused module `\dffeas'.
+Removed 1 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1086'.
+Found and cleaned up 2 empty switches in `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1089'.
+Cleaned up 3 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$../../../plugin/dffeas_formal.v:11$1084 in module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Marked 3 switch rules as full_case in process $proc$../../../plugin/dffeas_formal.v:11$1087 in module $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 5 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1086'.
+  Set init value: \q = 1'0
+Found init rule in `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1089'.
+  Set init value: \q = 1'1
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \clrn in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1084'.
+Found async reset \clrn in `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1087'.
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~6 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1086'.
+Creating decoders for process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1084'.
+     1/1: $0\q[0:0]
+Creating decoders for process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1089'.
+Creating decoders for process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1087'.
+     1/1: $0\q[0:0]
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.\q' using process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1084'.
+  created $adff cell `$procdff$1110' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.\q' using process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1087'.
+  created $adff cell `$procdff$1115' with positive edge clock and positive level reset.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1086'.
+Found and cleaned up 3 empty switches in `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1084'.
+Removing empty process `$paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1084'.
+Removing empty process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:7$1089'.
+Found and cleaned up 3 empty switches in `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1087'.
+Removing empty process `$paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.$proc$../../../plugin/dffeas_formal.v:11$1087'.
+Cleaned up 6 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+<suppressed ~2 debug messages>
+Optimizing module $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.
+<suppressed ~2 debug messages>
+Optimizing module test4.
+
+3.3. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas...
+Checking module $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas...
+Checking module test4...
+Found and reported 0 problems.
+
+3.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$72d24ac0d0f8825e0938023f8931b6f1081d5a17\dffeas.
+Deleting now unused module $paramod$73f4c84d1d8685c4801576743f8f0aee20fda43a\dffeas.
+<suppressed ~10 debug messages>
+
+3.5. Executing FUTURE pass.
+
+3.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+<suppressed ~22 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 18 unused cells and 111 unused wires.
+<suppressed ~19 debug messages>
+
+3.9. Executing OPT pass (performing simple optimizations).
+
+3.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+3.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 61 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+3.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~19 debug messages>
+
+3.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+3.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 61 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+3.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+3.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+3.9.8. Finished fast OPT passes. (There is nothing left to do.)
+
+3.10. Executing WREDUCE pass (reducing word size of cells).
+
+3.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+3.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.13. Executing OPT pass (performing simple optimizations).
+
+3.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+3.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 61 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+3.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+3.13.4. Finished fast OPT passes.
+
+3.14. Executing SORT pass.
+
+3.15. Printing statistics.
+
+=== test4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      142 wires
+      160 wire bits
+      132 public wires
+      150 public wire bits
+        9 ports
+       18 port bits
+       61 cells
+       10   $adff
+       31   $lut
+       10   $mux
+       10   $scopeinfo
+
+3.16. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1. Analyzing design hierarchy..
+Top module:  \test4
+
+6.2. Analyzing design hierarchy..
+Top module:  \test4
+Removing unused module `$__ABC9_DELAY'.
+Removing unused module `$__ABC9_SCC_BREAKER'.
+Removing unused module `$__DFF_N__$abc9_flop'.
+Removing unused module `$__DFF_P__$abc9_flop'.
+Removing unused module `\GND'.
+Removing unused module `\VCC'.
+Removing unused module `\altsyncram'.
+Removing unused module `\cycloneiv_io_ibuf'.
+Removing unused module `\cycloneiv_io_obuf'.
+Removing unused module `\cycloneiv_lcell_comb'.
+Removing unused module `\cycloneiv_pll'.
+Removed 11 unused modules.
+
+7. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+8. Executing ASYNC2SYNC pass.
+Replacing test4.$flatten\data_dn_dffeas_q.$procdff$1110 ($adff): ARST=\reset_n, D=$flatten\data_dn_dffeas_q.$0\q[0:0], Q=\data_dn_dffeas_q.q
+Replacing test4.$flatten\data_dp_dffeas_q.$procdff$1110 ($adff): ARST=\reset_n, D=$flatten\data_dp_dffeas_q.$0\q[0:0], Q=\data_dp_dffeas_q.q
+Replacing test4.$flatten\datain_5bis7_dffeas_q.$procdff$1110 ($adff): ARST=1'1, D=$flatten\datain_5bis7_dffeas_q.$0\q[0:0], Q=\datain_5bis7_dffeas_q.q
+Replacing test4.$flatten\dataout_dffeas_q.$procdff$1110 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q.$0\q[0:0], Q=\dataout_dffeas_q.q
+Replacing test4.$flatten\dataout_dffeas_q_1.$procdff$1110 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_1.$0\q[0:0], Q=\dataout_dffeas_q_1.q
+Replacing test4.$flatten\dataout_dffeas_q_2.$procdff$1110 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_2.$0\q[0:0], Q=\dataout_dffeas_q_2.q
+Replacing test4.$flatten\dataout_dffeas_q_3.$procdff$1110 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_3.$0\q[0:0], Q=\dataout_dffeas_q_3.q
+Replacing test4.$flatten\dataout_dffeas_q_4.$procdff$1110 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_4.$0\q[0:0], Q=\dataout_dffeas_q_4.q
+Replacing test4.$flatten\dataout_dffeas_q_5.$procdff$1110 ($adff): ARST=\reset_n, D=$flatten\dataout_dffeas_q_5.$0\q[0:0], Q=\dataout_dffeas_q_5.q
+Replacing test4.$flatten\only_5b_$lut_Y_A_dffeas_q.$procdff$1115 ($adff): ARST=\reset_n, D=\ena_$lut_A_Y, Q=\only_5b_$lut_Y_A_dffeas_q.q
+
+9. Executing SETUNDEF pass (replace undef values with defined constants).
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+12. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+13. Executing SETUNDEF pass (replace undef values with defined constants).
+
+14. Executing RTLIL backend.
+Output filename: test4_delivered/gate.il
+
+End of script. Logfile hash: 4ce8b23950
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 3% 5x setundef (0 sec), 3% 5x opt_expr (0 sec), ...

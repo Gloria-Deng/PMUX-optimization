@@ -1,0 +1,7 @@
+group variant_w6 clk ctrl_in data_in data_out en rst
+bind variant_w6 clk
+bind variant_w6 ctrl_in
+bind variant_w6 data_in
+bind variant_w6 data_out
+bind variant_w6 en
+bind variant_w6 rst

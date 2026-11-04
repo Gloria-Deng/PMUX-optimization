@@ -1,0 +1,18 @@
+read_verilog -sv "../../../../cases/pmux_case04_feedback.v"
+chparam -set WIDTH 5 -set LANES 1 pmux_case04_feedback;
+hierarchy -check -top pmux_case04_feedback
+proc
+setundef -undriven -zero
+setundef -init -zero
+prep -top pmux_case04_feedback -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top pmux_case04_feedback
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil proof/gold.il

@@ -1,0 +1,37 @@
+[options]
+
+[gold]
+read_verilog -sv "../../../../cases/pmux_case02_pipeline.v"
+chparam -set WIDTH 5 -set LANES 1 pmux_case02_pipeline;
+hierarchy -check -top pmux_case02_pipeline
+proc
+setundef -undriven -zero
+setundef -init -zero
+prep -top pmux_case02_pipeline -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top pmux_case02_pipeline
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[gate]
+read_rtlil "postabc.il"
+read_verilog -overwrite "../../../../plugin/dffeas_formal.v"
+prep -top pmux_case02_pipeline -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top pmux_case02_pipeline
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[collect pmux_case02_pipeline]
+group *
+bind *
+
+[strategy whole]
+use sat
+depth 12

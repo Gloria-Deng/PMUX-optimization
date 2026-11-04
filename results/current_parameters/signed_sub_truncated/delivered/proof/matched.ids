@@ -1,0 +1,11 @@
+# [*] gold-match *
+signed_sub_truncated a0 a0
+signed_sub_truncated a1 a1
+signed_sub_truncated a2 a2
+signed_sub_truncated a3 a3
+signed_sub_truncated b0 b0
+signed_sub_truncated b1 b1
+signed_sub_truncated b2 b2
+signed_sub_truncated b3 b3
+signed_sub_truncated s s
+signed_sub_truncated y y

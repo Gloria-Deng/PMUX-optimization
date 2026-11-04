@@ -1,0 +1,62 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+<suppressed ~1 debug messages>
+
+-- Executing script file `synthesis.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: before.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \audit
+
+2.2. Analyzing design hierarchy..
+Top module:  \audit
+Removed 0 unused modules.
+
+3. Executing PMUX_OPT_RTLIL pass.
+  prio-or: m3 chain of 3 $mux -> OR-merged exclusive terms
+
+4. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \audit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\audit'.
+Computing hashes of 14 cells of `\audit'.
+Finding duplicate cells in `\audit'.
+Removed a total of 0 cells.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \audit..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+  structural mode: audit processed once, 1 transformation(s).
+PMUX_OPT_RTLIL: 4 mux cells, 0 with duplicate arms, 1 rewritten (0 paired, 0 priority, 0 arm-folded, 0 counter-compressed, 1 prio-or, 0 decode-shared, 0 hold-extracted, 0 pin-promoted, 0 general-mux), 0 gate-skipped, 0 commit-path rejection event(s), 0 probe-path rejection event(s), 15 new cells.
+PMUX_OPT_RTLIL benefit gate: 0 whole-design synthesis(es) paid (0 base + 0 plans), 0 candidate plan(s) skipped as netlist-identical to one already paid for.
+Run `opt_clean` afterwards to drop the now-dead decoder cells.
+
+7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \audit..
+
+8. Executing RTLIL backend.
+Output filename: after.il
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module audit...
+Found and reported 0 problems.
+
+End of script. Logfile hash: c549674c63
+Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+Time spent: 11% 2x write_rtlil (0 sec), 11% 2x read_rtlil (0 sec), ...

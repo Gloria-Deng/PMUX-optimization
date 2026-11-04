@@ -1,0 +1,550 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4281: \data_out_dffeas_q_4.q -> \data_out [0]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4282: \data_out_dffeas_q_2.q -> \data_out [1]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4283: \data_out_dffeas_q.q -> \data_out [2]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4284: \data_out_dffeas_q_3.q -> \data_out [3]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4285: \data_out_dffeas_q_1.q -> \data_out [4]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4286: 1'0 -> \data_out_dffeas_q.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4287: 1'0 -> \data_out_dffeas_q.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4288: \clk -> \data_out_dffeas_q.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4289: 1'1 -> \data_out_dffeas_q.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4290: \data_out_dffeas_q_d -> \data_out_dffeas_q.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4291: 1'1 -> \data_out_dffeas_q.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4292: 1'1 -> \data_out_dffeas_q.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4293: 1'0 -> \data_out_dffeas_q.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4294: 1'0 -> \data_out_dffeas_q.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4295: 1'0 -> \data_out_dffeas_q_1.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4296: 1'0 -> \data_out_dffeas_q_1.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4297: \data_out_dffeas_q.clk -> \data_out_dffeas_q_1.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4298: 1'1 -> \data_out_dffeas_q_1.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4299: \data_out_dffeas_q_1_d -> \data_out_dffeas_q_1.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4300: 1'1 -> \data_out_dffeas_q_1.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4301: 1'1 -> \data_out_dffeas_q_1.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4302: 1'0 -> \data_out_dffeas_q_1.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4303: 1'0 -> \data_out_dffeas_q_1.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4304: 1'0 -> \data_out_dffeas_q_2.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4305: 1'0 -> \data_out_dffeas_q_2.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4306: \data_out_dffeas_q_1.clk -> \data_out_dffeas_q_2.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4307: 1'1 -> \data_out_dffeas_q_2.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4308: \data_out_dffeas_q_2_d -> \data_out_dffeas_q_2.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4309: 1'1 -> \data_out_dffeas_q_2.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4310: 1'1 -> \data_out_dffeas_q_2.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4311: 1'0 -> \data_out_dffeas_q_2.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4312: 1'0 -> \data_out_dffeas_q_2.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4313: 1'0 -> \data_out_dffeas_q_3.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4314: 1'0 -> \data_out_dffeas_q_3.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4315: \data_out_dffeas_q_2.clk -> \data_out_dffeas_q_3.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4316: 1'1 -> \data_out_dffeas_q_3.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4317: \data_out_dffeas_q_3_d -> \data_out_dffeas_q_3.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4318: 1'1 -> \data_out_dffeas_q_3.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4319: 1'1 -> \data_out_dffeas_q_3.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4320: 1'0 -> \data_out_dffeas_q_3.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4321: 1'0 -> \data_out_dffeas_q_3.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4322: 1'0 -> \data_out_dffeas_q_4.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4323: 1'0 -> \data_out_dffeas_q_4.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4324: \data_out_dffeas_q_3.clk -> \data_out_dffeas_q_4.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4325: 1'1 -> \data_out_dffeas_q_4.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4326: \data_out_dffeas_q_4_d -> \data_out_dffeas_q_4.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4327: 1'1 -> \data_out_dffeas_q_4.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4328: 1'1 -> \data_out_dffeas_q_4.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4329: 1'0 -> \data_out_dffeas_q_4.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4330: 1'0 -> \data_out_dffeas_q_4.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4331: \lane[0].mid_dffeas_q_2.q -> \lane[0].mid [0]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4332: \lane[0].mid_dffeas_q_1.q -> \lane[0].mid [1]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4333: \lane[0].mid_dffeas_q.q -> \lane[0].mid [2]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4334: \lane[0].mid_dffeas_q_4.q -> \lane[0].mid [3]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4335: \lane[0].mid_dffeas_q_3.q -> \lane[0].mid [4]
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4336: 1'0 -> \lane[0].mid_dffeas_q.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4337: 1'0 -> \lane[0].mid_dffeas_q.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4338: \data_out_dffeas_q_4.clk -> \lane[0].mid_dffeas_q.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4339: 1'1 -> \lane[0].mid_dffeas_q.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4340: \lane[0].mid_dffeas_q_d -> \lane[0].mid_dffeas_q.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4341: 1'1 -> \lane[0].mid_dffeas_q.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4342: 1'1 -> \lane[0].mid_dffeas_q.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4343: 1'0 -> \lane[0].mid_dffeas_q.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4344: 1'0 -> \lane[0].mid_dffeas_q.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4345: 1'0 -> \lane[0].mid_dffeas_q_1.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4346: 1'0 -> \lane[0].mid_dffeas_q_1.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4347: \lane[0].mid_dffeas_q.clk -> \lane[0].mid_dffeas_q_1.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4348: 1'1 -> \lane[0].mid_dffeas_q_1.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4349: \lane[0].mid_dffeas_q_1_d -> \lane[0].mid_dffeas_q_1.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4350: 1'1 -> \lane[0].mid_dffeas_q_1.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4351: 1'1 -> \lane[0].mid_dffeas_q_1.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4352: 1'0 -> \lane[0].mid_dffeas_q_1.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4353: 1'0 -> \lane[0].mid_dffeas_q_1.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4354: 1'0 -> \lane[0].mid_dffeas_q_2.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4355: 1'0 -> \lane[0].mid_dffeas_q_2.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4356: \lane[0].mid_dffeas_q_1.clk -> \lane[0].mid_dffeas_q_2.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4357: 1'1 -> \lane[0].mid_dffeas_q_2.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4358: \lane[0].mid_dffeas_q_2_d -> \lane[0].mid_dffeas_q_2.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4359: 1'1 -> \lane[0].mid_dffeas_q_2.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4360: 1'1 -> \lane[0].mid_dffeas_q_2.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4361: 1'0 -> \lane[0].mid_dffeas_q_2.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4362: 1'0 -> \lane[0].mid_dffeas_q_2.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4363: 1'0 -> \lane[0].mid_dffeas_q_3.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4364: 1'0 -> \lane[0].mid_dffeas_q_3.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4365: \lane[0].mid_dffeas_q_2.clk -> \lane[0].mid_dffeas_q_3.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4366: 1'1 -> \lane[0].mid_dffeas_q_3.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4367: \lane[0].mid_dffeas_q_3_d -> \lane[0].mid_dffeas_q_3.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4368: 1'1 -> \lane[0].mid_dffeas_q_3.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4369: 1'1 -> \lane[0].mid_dffeas_q_3.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4370: 1'0 -> \lane[0].mid_dffeas_q_3.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4371: 1'0 -> \lane[0].mid_dffeas_q_3.sload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4372: 1'0 -> \lane[0].mid_dffeas_q_4.aload
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4373: 1'0 -> \lane[0].mid_dffeas_q_4.asdata
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4374: \lane[0].mid_dffeas_q_3.clk -> \lane[0].mid_dffeas_q_4.clk
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4375: 1'1 -> \lane[0].mid_dffeas_q_4.clrn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4376: \lane[0].mid_dffeas_q_4_d -> \lane[0].mid_dffeas_q_4.d
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4377: 1'1 -> \lane[0].mid_dffeas_q_4.ena
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4378: 1'1 -> \lane[0].mid_dffeas_q_4.prn
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4379: 1'0 -> \lane[0].mid_dffeas_q_4.sclr
+Add gate.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4380: 1'0 -> \lane[0].mid_dffeas_q_4.sload
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q_4.$procdff$4236/D: \lane[0].mid_dffeas_q_4_d -> \lane[0].mid_dffeas_q_4.d
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q_4.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q_3.$procdff$4236/D: \lane[0].mid_dffeas_q_3_d -> \lane[0].mid_dffeas_q_3.d
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q_3.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q_2.$procdff$4236/D: \lane[0].mid_dffeas_q_2_d -> \lane[0].mid_dffeas_q_2.d
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q_2.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q_1.$procdff$4236/D: \lane[0].mid_dffeas_q_1_d -> \lane[0].mid_dffeas_q_1.d
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q_1.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q.$procdff$4236/D: \lane[0].mid_dffeas_q_d -> \lane[0].mid_dffeas_q.d
+Rewrite gate.pmux_case02_pipeline/$flatten\lane[0].mid_dffeas_q.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q_4.$procdff$4236/D: \data_out_dffeas_q_4_d -> \data_out_dffeas_q_4.d
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q_4.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q_3.$procdff$4236/D: \data_out_dffeas_q_3_d -> \data_out_dffeas_q_3.d
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q_3.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q_2.$procdff$4236/D: \data_out_dffeas_q_2_d -> \data_out_dffeas_q_2.d
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q_2.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q_1.$procdff$4236/D: \data_out_dffeas_q_1_d -> \data_out_dffeas_q_1.d
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q_1.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q.$procdff$4236/D: \data_out_dffeas_q_d -> \data_out_dffeas_q.d
+Rewrite gate.pmux_case02_pipeline/$flatten\data_out_dffeas_q.$procdff$4236/CLK: \clk -> \lane[0].mid_dffeas_q_4.clk
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_3.q \en \ctrl_in [11] } -> { \lane[0].mid [4] \en \ctrl_in [11] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_3.q \data_in [14] } -> { \lane[0].mid [4] \data_in [14] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_in [13] } -> { \lane[0].mid [3] \data_in [13] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \lane[0].mid_dffeas_q.q \data_in [12] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \lane[0].mid [2] \data_in [12] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_in [13] } -> { \lane[0].mid [3] \data_in [13] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_3.q \data_in [19] } -> { \lane[0].mid [4] \data_in [19] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1 \lane[0].mid_dffeas_q.q \data_out_dffeas_q.q } -> { \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1 \lane[0].mid [2] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_out_dffeas_q_3.q } -> { \lane[0].mid [3] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \lane[0].mid_dffeas_q_1.q \data_out_dffeas_q_4.q \data_out_dffeas_q_2.q } -> { \lane[0].mid [0] \lane[0].mid [1] \data_out [0] \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_out_dffeas_q_3.q } -> { \lane[0].mid [3] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_3.q \data_out_dffeas_q_1.q } -> { \lane[0].mid [4] \data_out [4] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y/A: { \rst \en \data_out_dffeas_q_1.q } -> { \rst \en \data_out [4] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \lane[0].mid_dffeas_q.q \data_in [7] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \lane[0].mid [2] \data_in [7] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_in [8] } -> { \lane[0].mid [3] \data_in [8] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \lane[0].mid_dffeas_q_1.q \data_in [5] \data_in [6] } -> { \lane[0].mid [0] \lane[0].mid [1] \data_in [5] \data_in [6] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_3.q \data_in [9] } -> { \lane[0].mid [4] \data_in [9] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_in [8] } -> { \lane[0].mid [3] \data_in [8] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1 \lane[0].mid_dffeas_q.q \data_in [2] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1 \lane[0].mid [2] \data_in [2] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_in [3] } -> { \lane[0].mid [3] \data_in [3] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \lane[0].mid_dffeas_q_1.q \data_in [0] \data_in [1] } -> { \lane[0].mid [0] \lane[0].mid [1] \data_in [0] \data_in [1] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_3.q \data_in [4] } -> { \lane[0].mid [4] \data_in [4] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_in [3] } -> { \lane[0].mid [3] \data_in [3] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y/A: { \data_out_dffeas_q_2_d_$lut_Y_A \rst \en \data_out_dffeas_q_2.q } -> { \data_out_dffeas_q_2_d_$lut_Y_A \rst \en \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_1.q \en \ctrl_in [11] } -> { \lane[0].mid [1] \en \ctrl_in [11] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_1.q \data_in [16] } -> { \lane[0].mid [1] \data_in [16] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q_1.q \data_in [11] } -> { \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [1] \data_in [11] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \data_in [10] } -> { \lane[0].mid [0] \data_in [10] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q_2.q \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [0] \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_1.q \data_out_dffeas_q_2.q } -> { \lane[0].mid [1] \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \lane[0].mid_dffeas_q_1.q \data_in [0] \data_in [1] } -> { \lane[0].mid [0] \lane[0].mid [1] \data_in [0] \data_in [1] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q_1.q \data_in [6] } -> { \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [1] \data_in [6] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \data_in [5] } -> { \lane[0].mid [0] \data_in [5] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_in [18] } -> { \lane[0].mid [3] \data_in [18] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1 \lane[0].mid_dffeas_q.q \data_out_dffeas_q.q } -> { \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1 \lane[0].mid [2] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_out_dffeas_q_3.q } -> { \lane[0].mid [3] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q_4.q \data_in [13] } -> { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [3] \data_in [13] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \lane[0].mid_dffeas_q.q \data_in [12] } -> { \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \lane[0].mid [2] \data_in [12] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_1_$lut_Y/A: { \rst \en \data_out_dffeas_q_3.q } -> { \rst \en \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \en \ctrl_in [11] } -> { \lane[0].mid [3] \en \ctrl_in [11] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \data_in [3] } -> { \lane[0].mid [3] \data_in [3] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1 \lane[0].mid_dffeas_q.q \data_in [2] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1 \lane[0].mid [2] \data_in [2] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q_4.q \data_in [8] } -> { \data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [3] \data_in [8] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \lane[0].mid_dffeas_q.q \data_in [7] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \lane[0].mid [2] \data_in [7] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_4_d_$lut_Y/A: { \data_out_dffeas_q_4_d_$lut_Y_A \rst \en \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_4_d_$lut_Y_A \rst \en \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \data_in [15] \ctrl_in [8] \ctrl_in [9] } -> { \lane[0].mid [0] \data_in [15] \ctrl_in [8] \ctrl_in [9] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q_2.q \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [0] \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_3_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q_2.q \data_in [10] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [0] \data_in [10] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \data_in [0] \ctrl_in [6] \ctrl_in [7] } -> { \lane[0].mid [0] \data_in [0] \ctrl_in [6] \ctrl_in [7] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \lane[0].mid_dffeas_q_2.q \data_in [5] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \lane[0].mid [0] \data_in [5] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \ctrl_in [6] \ctrl_in [7] \data_out_dffeas_q_4.q } -> { \lane[0].mid [0] \ctrl_in [6] \ctrl_in [7] \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \en \ctrl_in [11] } -> { \lane[0].mid [0] \en \ctrl_in [11] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_d_$lut_Y/A: { \data_out_dffeas_q_d_$lut_Y_A \rst \en \data_out_dffeas_q.q } -> { \data_out_dffeas_q_d_$lut_Y_A \rst \en \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q.q \data_in [17] } -> { \lane[0].mid [2] \data_in [17] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q.q \data_out_dffeas_q.q } -> { \lane[0].mid [2] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q.q \data_in [12] } -> { \data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [2] \data_in [12] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_2.q \lane[0].mid_dffeas_q_1.q \data_in [10] \data_in [11] } -> { \lane[0].mid [0] \lane[0].mid [1] \data_in [10] \data_in [11] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q.q \en \ctrl_in [11] } -> { \lane[0].mid [2] \en \ctrl_in [11] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q.q \data_in [7] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [2] \data_in [7] }
+Rewrite gate.pmux_case02_pipeline/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_2_$lut_Y/A: { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1 \data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \lane[0].mid_dffeas_q.q \data_in [2] } -> { \data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1 \data_out_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_3 \lane[0].mid [2] \data_in [2] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_1_d_$lut_Y/A: { \lane[0].mid_dffeas_q_1_d_$lut_Y_A \lane[0].mid_dffeas_q_1.q \rst \en } -> { \lane[0].mid_dffeas_q_1_d_$lut_Y_A \lane[0].mid [1] \rst \en }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [5] \data_in [6] \data_out_dffeas_q_4.q \data_out_dffeas_q_2.q } -> { \data_in [5] \data_in [6] \data_out [0] \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_in [11] \data_out_dffeas_q_2.q } -> { \lane[0].mid_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A \lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_in [11] \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [10] \data_out_dffeas_q_4.q } -> { \data_in [10] \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_in [1] \data_out_dffeas_q_2.q } -> { \data_in [1] \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_in [1] \ctrl_in [4] \ctrl_in [5] \data_out_dffeas_q_2.q } -> { \data_in [1] \ctrl_in [4] \ctrl_in [5] \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_2_d_$lut_Y/A: { \lane[0].mid_dffeas_q_2_d_$lut_Y_A \lane[0].mid_dffeas_q_2.q \rst \en } -> { \lane[0].mid_dffeas_q_2_d_$lut_Y_A \lane[0].mid [0] \rst \en }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [10] \data_out_dffeas_q_4.q } -> { \data_in [10] \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [0] \ctrl_in [4] \ctrl_in [5] \data_out_dffeas_q_4.q } -> { \data_in [0] \ctrl_in [4] \ctrl_in [5] \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1 \lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_in [5] \data_out_dffeas_q_4.q } -> { \lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1 \lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A \data_in [5] \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_in [0] \ctrl_in [0] \ctrl_in [1] \data_out_dffeas_q_4.q } -> { \data_in [0] \ctrl_in [0] \ctrl_in [1] \data_out [0] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_3.q \rst \en } -> { \lane[0].mid [4] \rst \en }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [4] \ctrl_in [4] \ctrl_in [5] \data_out_dffeas_q_1.q } -> { \data_in [4] \ctrl_in [4] \ctrl_in [5] \data_out [4] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [4] \data_out_dffeas_q_1.q } -> { \data_in [4] \data_out [4] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [13] \data_out_dffeas_q_3.q } -> { \data_in [13] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_in [14] \data_out_dffeas_q_1.q } -> { \data_in [14] \data_out [4] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A \lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_in [12] \data_out_dffeas_q.q } -> { \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A \lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_in [12] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_in [13] \data_out_dffeas_q_3.q } -> { \data_in [13] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_in [9] \data_out_dffeas_q_1.q } -> { \data_in [9] \data_out [4] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1 \data_in [7] \data_out_dffeas_q.q } -> { \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1 \data_in [7] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [8] \data_out_dffeas_q_3.q } -> { \data_in [8] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_in [5] \data_in [6] \data_out_dffeas_q_4.q \data_out_dffeas_q_2.q } -> { \data_in [5] \data_in [6] \data_out [0] \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_2_$lut_Y/A: { \data_in [8] \data_out_dffeas_q_3.q } -> { \data_in [8] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A \lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_in [13] \data_out_dffeas_q_3.q } -> { \lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A \lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_in [13] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_in [12] \data_out_dffeas_q.q } -> { \lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_in [12] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [8] \data_out_dffeas_q_3.q } -> { \data_in [8] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1 \data_in [7] \data_out_dffeas_q.q } -> { \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1 \data_in [7] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_in [3] \data_out_dffeas_q_3.q } -> { \data_in [3] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_4_d_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_in [3] \ctrl_in [4] \ctrl_in [5] \data_out_dffeas_q_3.q } -> { \data_in [3] \ctrl_in [4] \ctrl_in [5] \data_out [3] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_4_d_$lut_Y_A_3_$lut_Y/A: { \lane[0].mid_dffeas_q_4.q \rst \en } -> { \lane[0].mid [3] \rst \en }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_d_$lut_Y/A: { \lane[0].mid_dffeas_q_d_$lut_Y_A \lane[0].mid_dffeas_q.q \en } -> { \lane[0].mid_dffeas_q_d_$lut_Y_A \lane[0].mid [2] \en }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [2] \data_out_dffeas_q.q } -> { \data_in [2] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_in [12] \data_out_dffeas_q.q } -> { \lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \lane[0].mid_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1 \data_in [12] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [10] \data_in [11] \data_out_dffeas_q_4.q \data_out_dffeas_q_2.q } -> { \data_in [10] \data_in [11] \data_out [0] \data_out [1] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1 \lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1 \data_in [7] \data_out_dffeas_q.q } -> { \lane[0].mid_dffeas_q_3_d_$lut_Y_A_3_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_1 \lane[0].mid_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1 \data_in [7] \data_out [2] }
+Rewrite gate.pmux_case02_pipeline/lane[0].mid_dffeas_q_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \data_in [2] \ctrl_in [4] \ctrl_in [5] \data_out_dffeas_q.q } -> { \data_in [2] \ctrl_in [4] \ctrl_in [5] \data_out [2] }
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4381: \lane[0].q [0] -> \data_out [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4382: \lane[0].q [1] -> \data_out [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4383: \lane[0].q [2] -> \data_out [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4384: \lane[0].q [3] -> \data_out [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4385: \lane[0].q [4] -> \data_out [4]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4386: \data_in [0] -> \lane[0].a [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4387: \data_in [1] -> \lane[0].a [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4388: \data_in [2] -> \lane[0].a [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4389: \data_in [3] -> \lane[0].a [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4390: \data_in [4] -> \lane[0].a [4]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4391: \data_in [5] -> \lane[0].b [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4392: \data_in [6] -> \lane[0].b [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4393: \data_in [7] -> \lane[0].b [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4394: \data_in [8] -> \lane[0].b [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4395: \data_in [9] -> \lane[0].b [4]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4396: \data_in [10] -> \lane[0].c [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4397: \data_in [11] -> \lane[0].c [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4398: \data_in [12] -> \lane[0].c [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4399: \data_in [13] -> \lane[0].c [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4400: \data_in [14] -> \lane[0].c [4]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4401: \data_in [15] -> \lane[0].d [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4402: \data_in [16] -> \lane[0].d [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4403: \data_in [17] -> \lane[0].d [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4404: \data_in [18] -> \lane[0].d [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4405: \data_in [19] -> \lane[0].d [4]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4406: \lane[0].mid [0] -> \lane[0].left_mid [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4407: \lane[0].mid [1] -> \lane[0].left_mid [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4408: \lane[0].mid [2] -> \lane[0].left_mid [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4409: \lane[0].mid [3] -> \lane[0].left_mid [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4410: \lane[0].mid [4] -> \lane[0].left_mid [4]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4411: \lane[0].left_mid [0] -> \lane[0].right_mid [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4412: \lane[0].left_mid [1] -> \lane[0].right_mid [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4413: \lane[0].left_mid [2] -> \lane[0].right_mid [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4414: \lane[0].left_mid [3] -> \lane[0].right_mid [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4415: \lane[0].left_mid [4] -> \lane[0].right_mid [4]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4416: \ctrl_in [0] -> \lane[0].s [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4417: \ctrl_in [1] -> \lane[0].s [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4418: \ctrl_in [2] -> \lane[0].s [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4419: \ctrl_in [3] -> \lane[0].s [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4420: \ctrl_in [4] -> \lane[0].s [4]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4421: \ctrl_in [5] -> \lane[0].s [5]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4422: \ctrl_in [6] -> \lane[0].s [6]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4423: \ctrl_in [7] -> \lane[0].s [7]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4424: \ctrl_in [8] -> \lane[0].s [8]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4425: \ctrl_in [9] -> \lane[0].s [9]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4426: \ctrl_in [10] -> \lane[0].s [10]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4427: \ctrl_in [11] -> \lane[0].s [11]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4428: \ctrl_in [12] -> \lane[0].s [12]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4429: \ctrl_in [13] -> \lane[0].s [13]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4430: \ctrl_in [14] -> \lane[0].s [14]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4431: \ctrl_in [15] -> \lane[0].s [15]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4432: \lane[0].right_mid [0] -> \mid_bus [0]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4433: \lane[0].right_mid [1] -> \mid_bus [1]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4434: \lane[0].right_mid [2] -> \mid_bus [2]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4435: \lane[0].right_mid [3] -> \mid_bus [3]
+Add gold.pmux_case02_pipeline/$auto$insbuf.cc:97:execute$4436: \lane[0].right_mid [4] -> \mid_bus [4]
+Rewrite gold.pmux_case02_pipeline/$add$../../../../cases/pmux_case02_pipeline.v:31$79/A: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case02_pipeline/$add$../../../../cases/pmux_case02_pipeline.v:31$79/B: \lane[0].q -> \data_out
+Rewrite gold.pmux_case02_pipeline/$add$../../../../cases/pmux_case02_pipeline.v:39$83/A: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case02_pipeline/$add$../../../../cases/pmux_case02_pipeline.v:39$83/B: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case02_pipeline/$add$../../../../cases/pmux_case02_pipeline.v:55$88/A: \lane[0].mid -> \mid_bus
+Rewrite gold.pmux_case02_pipeline/$add$../../../../cases/pmux_case02_pipeline.v:55$88/B: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case02_pipeline/$add$../../../../cases/pmux_case02_pipeline.v:63$92/A: \lane[0].mid -> \mid_bus
+Rewrite gold.pmux_case02_pipeline/$add$../../../../cases/pmux_case02_pipeline.v:63$92/B: \lane[0].q -> \data_out
+Rewrite gold.pmux_case02_pipeline/$procmux$100_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.pmux_case02_pipeline/$procmux$102/A: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case02_pipeline/$procmux$103_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.pmux_case02_pipeline/$procmux$104_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.pmux_case02_pipeline/$procmux$105_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.pmux_case02_pipeline/$procmux$107/A: \lane[0].q -> \data_out
+Rewrite gold.pmux_case02_pipeline/$procmux$107/B: { \lane[0].x0 \lane[0].x1 \data_in [4:0] } -> { \lane[0].x0 \lane[0].x1 \lane[0].a }
+Rewrite gold.pmux_case02_pipeline/$procmux$108_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.pmux_case02_pipeline/$procmux$109_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.pmux_case02_pipeline/$procmux$110_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.pmux_case02_pipeline/$procmux$112/A: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case02_pipeline/$procmux$113_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.pmux_case02_pipeline/$procmux$114_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.pmux_case02_pipeline/$procmux$115_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.pmux_case02_pipeline/$procmux$117/A: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case02_pipeline/$procmux$118_CMP0/A: \ctrl_in [9:8] -> \lane[0].s [9:8]
+Rewrite gold.pmux_case02_pipeline/$procmux$119_CMP0/A: \ctrl_in [9:8] -> \lane[0].s [9:8]
+Rewrite gold.pmux_case02_pipeline/$procmux$120_CMP0/A: \ctrl_in [9:8] -> \lane[0].s [9:8]
+Rewrite gold.pmux_case02_pipeline/$procmux$123/A: \lane[0].mid -> \mid_bus
+Rewrite gold.pmux_case02_pipeline/$procmux$124_CMP0/A: \ctrl_in [11:10] -> \lane[0].s [11:10]
+Rewrite gold.pmux_case02_pipeline/$procmux$125_CMP0/A: \ctrl_in [11:10] -> \lane[0].s [11:10]
+Rewrite gold.pmux_case02_pipeline/$procmux$126/A: \lane[0].mid -> \mid_bus
+Rewrite gold.pmux_case02_pipeline/$procmux$131/A: \lane[0].q -> \data_out
+Rewrite gold.pmux_case02_pipeline/$procmux$97/A: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case02_pipeline/$procmux$98_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.pmux_case02_pipeline/$procmux$99_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.pmux_case02_pipeline/$sub$../../../../cases/pmux_case02_pipeline.v:32$80/A: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case02_pipeline/$sub$../../../../cases/pmux_case02_pipeline.v:32$80/B: \lane[0].q -> \data_out
+Rewrite gold.pmux_case02_pipeline/$sub$../../../../cases/pmux_case02_pipeline.v:40$84/A: \data_in [19:15] -> \lane[0].d
+Rewrite gold.pmux_case02_pipeline/$sub$../../../../cases/pmux_case02_pipeline.v:40$84/B: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case02_pipeline/$sub$../../../../cases/pmux_case02_pipeline.v:56$89/A: \lane[0].mid -> \mid_bus
+Rewrite gold.pmux_case02_pipeline/$sub$../../../../cases/pmux_case02_pipeline.v:56$89/B: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case02_pipeline/$sub$../../../../cases/pmux_case02_pipeline.v:64$93/A: \lane[0].mid -> \mid_bus
+Rewrite gold.pmux_case02_pipeline/$sub$../../../../cases/pmux_case02_pipeline.v:64$93/B: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case02_pipeline/$xor$../../../../cases/pmux_case02_pipeline.v:30$78/A: \data_in [4:0] -> \lane[0].a
+Rewrite gold.pmux_case02_pipeline/$xor$../../../../cases/pmux_case02_pipeline.v:30$78/B: \lane[0].q -> \data_out
+Rewrite gold.pmux_case02_pipeline/$xor$../../../../cases/pmux_case02_pipeline.v:38$82/A: \data_in [9:5] -> \lane[0].b
+Rewrite gold.pmux_case02_pipeline/$xor$../../../../cases/pmux_case02_pipeline.v:38$82/B: \data_in [14:10] -> \lane[0].c
+Rewrite gold.pmux_case02_pipeline/$xor$../../../../cases/pmux_case02_pipeline.v:54$87/A: \lane[0].mid -> \mid_bus
+Rewrite gold.pmux_case02_pipeline/$xor$../../../../cases/pmux_case02_pipeline.v:54$87/B: \lane[0].q -> \data_out
+Rewrite gold.pmux_case02_pipeline/$xor$../../../../cases/pmux_case02_pipeline.v:62$91/A: \lane[0].mid -> \mid_bus
+Rewrite gold.pmux_case02_pipeline/$xor$../../../../cases/pmux_case02_pipeline.v:62$91/B: \data_in [19:15] -> \lane[0].d
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.pmux_case02_pipeline / gate.pmux_case02_pipeline.
+
+3.1.1. Processing matched IDs for module pmux_case02_pipeline.
+
+3.1.2. Create fragment partitions for module pmux_case02_pipeline.
+Adding output bit \lane[0].mid [4] to partition 0.
+Adding output bit \lane[0].mid [0] to partition 0.
+Adding output bit \data_out [0] to partition 0.
+Adding output bit \data_out [1] to partition 0.
+Adding output bit \data_out [2] to partition 0.
+Adding output bit \data_out [3] to partition 0.
+Adding output bit \data_out [4] to partition 0.
+Adding output bit \lane[0].mid [1] to partition 0.
+Adding output bit \lane[0].mid [2] to partition 0.
+Adding output bit \lane[0].mid [3] to partition 0.
+
+Final list of fragment partitions:
+  0 \lane[0].mid [3] \lane[0].mid [2] \lane[0].mid [1] \data_out [4] \data_out [3] \data_out [2] \data_out [1] \data_out [0] \lane[0].mid [0] \lane[0].mid [4] <= \data_in [4] \data_in [14] \data_in [6] \ctrl_in [6] \ctrl_in [7] \clk \data_in [5] \data_in [7] \ctrl_in [0] \ctrl_in [1] \data_in [0] \data_in [1] \data_in [2] \data_in [10] \data_in [11] \data_in [15] \data_in [16] \data_in [12] \data_in [17] \data_in [8] \ctrl_in [2] \ctrl_in [3] \data_in [13] \data_in [18] \data_in [3] \ctrl_in [4] \ctrl_in [5] \data_in [19] \data_in [9] \ctrl_in [8] \ctrl_in [9] \ctrl_in [10] \ctrl_in [11] \rst \en
+
+3.1.3. Execute partitioning commands for module pmux_case02_pipeline.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'data_out' using a PO name: data_out
+
+Partition Summary:
+  Fragments:
+       0: \data_out, \lane[0].mid
+  Partitions:
+       0: data_out
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  data_out
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module pmux_case02_pipeline.
+Adding non-output bit \rst to partition 1.
+Adding non-output bit \lane[0].mid [4] to partition 1.
+Adding non-output bit \lane[0].mid [3] to partition 1.
+Adding non-output bit \lane[0].mid [2] to partition 1.
+Adding non-output bit \lane[0].mid [1] to partition 1.
+Adding non-output bit \lane[0].mid [0] to partition 1.
+Adding non-output bit \en to partition 1.
+Adding output bit \data_out [4] to partition 1.
+Adding output bit \data_out [3] to partition 1.
+Adding output bit \data_out [2] to partition 1.
+Adding output bit \data_out [1] to partition 1.
+Adding output bit \data_out [0] to partition 1.
+Adding non-output bit \data_in [19] to partition 1.
+Adding non-output bit \data_in [18] to partition 1.
+Adding non-output bit \data_in [17] to partition 1.
+Adding non-output bit \data_in [16] to partition 1.
+Adding non-output bit \data_in [15] to partition 1.
+Adding non-output bit \data_in [14] to partition 1.
+Adding non-output bit \data_in [13] to partition 1.
+Adding non-output bit \data_in [12] to partition 1.
+Adding non-output bit \data_in [11] to partition 1.
+Adding non-output bit \data_in [10] to partition 1.
+Adding non-output bit \data_in [9] to partition 1.
+Adding non-output bit \data_in [8] to partition 1.
+Adding non-output bit \data_in [7] to partition 1.
+Adding non-output bit \data_in [6] to partition 1.
+Adding non-output bit \data_in [5] to partition 1.
+Adding non-output bit \data_in [4] to partition 1.
+Adding non-output bit \data_in [3] to partition 1.
+Adding non-output bit \data_in [2] to partition 1.
+Adding non-output bit \data_in [1] to partition 1.
+Adding non-output bit \data_in [0] to partition 1.
+Adding non-output bit \ctrl_in [15] to partition 1.
+Adding non-output bit \ctrl_in [14] to partition 1.
+Adding non-output bit \ctrl_in [13] to partition 1.
+Adding non-output bit \ctrl_in [12] to partition 1.
+Adding non-output bit \ctrl_in [11] to partition 1.
+Adding non-output bit \ctrl_in [10] to partition 1.
+Adding non-output bit \ctrl_in [9] to partition 1.
+Adding non-output bit \ctrl_in [8] to partition 1.
+Adding non-output bit \ctrl_in [7] to partition 1.
+Adding non-output bit \ctrl_in [6] to partition 1.
+Adding non-output bit \ctrl_in [5] to partition 1.
+Adding non-output bit \ctrl_in [4] to partition 1.
+Adding non-output bit \ctrl_in [3] to partition 1.
+Adding non-output bit \ctrl_in [2] to partition 1.
+Adding non-output bit \ctrl_in [1] to partition 1.
+Adding non-output bit \ctrl_in [0] to partition 1.
+Adding non-output bit \clk to partition 1.
+Writing partition 0 as pmux_case02_pipeline.data_out.
+  partition pi bit 0: \data_in [4] <-> \data_in [4]
+  partition pi bit 1: \data_in [14] <-> \data_in [14]
+  partition pi bit 2: \data_in [6] <-> \data_in [6]
+  partition pi bit 3: \ctrl_in [6] <-> \ctrl_in [6]
+  partition pi bit 4: \ctrl_in [7] <-> \ctrl_in [7]
+  partition pi bit 5: \clk <-> \clk
+  partition pi bit 6: \data_in [5] <-> \data_in [5]
+  partition pi bit 7: \data_in [7] <-> \data_in [7]
+  partition pi bit 8: \ctrl_in [0] <-> \ctrl_in [0]
+  partition pi bit 9: \ctrl_in [1] <-> \ctrl_in [1]
+  partition pi bit 10: \data_in [0] <-> \data_in [0]
+  partition pi bit 11: \data_in [1] <-> \data_in [1]
+  partition pi bit 12: \data_in [2] <-> \data_in [2]
+  partition pi bit 13: \data_in [10] <-> \data_in [10]
+  partition pi bit 14: \data_in [11] <-> \data_in [11]
+  partition pi bit 15: \data_in [15] <-> \data_in [15]
+  partition pi bit 16: \data_in [16] <-> \data_in [16]
+  partition pi bit 17: \data_in [12] <-> \data_in [12]
+  partition pi bit 18: \data_in [17] <-> \data_in [17]
+  partition pi bit 19: \data_in [8] <-> \data_in [8]
+  partition pi bit 20: \ctrl_in [2] <-> \ctrl_in [2]
+  partition pi bit 21: \ctrl_in [3] <-> \ctrl_in [3]
+  partition pi bit 22: \data_in [13] <-> \data_in [13]
+  partition pi bit 23: \data_in [18] <-> \data_in [18]
+  partition pi bit 24: \data_in [3] <-> \data_in [3]
+  partition pi bit 25: \ctrl_in [4] <-> \ctrl_in [4]
+  partition pi bit 26: \ctrl_in [5] <-> \ctrl_in [5]
+  partition pi bit 27: \data_in [19] <-> \data_in [19]
+  partition pi bit 28: \data_in [9] <-> \data_in [9]
+  partition pi bit 29: \ctrl_in [8] <-> \ctrl_in [8]
+  partition pi bit 30: \ctrl_in [9] <-> \ctrl_in [9]
+  partition pi bit 31: \ctrl_in [10] <-> \ctrl_in [10]
+  partition pi bit 32: \ctrl_in [11] <-> \ctrl_in [11]
+  partition pi bit 33: \rst <-> \rst
+  partition pi bit 34: \en <-> \en
+  partition po bit 0: \lane[0].mid [3] <-> \lane[0].mid [3]
+  partition po bit 1: \lane[0].mid [2] <-> \lane[0].mid [2]
+  partition po bit 2: \lane[0].mid [1] <-> \lane[0].mid [1]
+  partition po bit 3: \data_out [4] <-> \data_out [4]
+  partition po bit 4: \data_out [3] <-> \data_out [3]
+  partition po bit 5: \data_out [2] <-> \data_out [2]
+  partition po bit 6: \data_out [1] <-> \data_out [1]
+  partition po bit 7: \data_out [0] <-> \data_out [0]
+  partition po bit 8: \lane[0].mid [0] <-> \lane[0].mid [0]
+  partition po bit 9: \lane[0].mid [4] <-> \lane[0].mid [4]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/pmux_case02_pipeline.data_out.il
+<suppressed ~5282 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.pmux_case02_pipeline.data_out...
+Checking module gold.pmux_case02_pipeline.data_out...
+Found and reported 0 problems.
+
+Writing partition 1 as pmux_case02_pipeline.
+  partition pi bit 0: \ctrl_in [12] <-> \ctrl_in [12]
+  partition pi bit 1: \ctrl_in [13] <-> \ctrl_in [13]
+  partition pi bit 2: \ctrl_in [14] <-> \ctrl_in [14]
+  partition pi bit 3: \ctrl_in [15] <-> \ctrl_in [15]
+  partition pi bit 4: \ctrl_in [5] <-> \ctrl_in [5]
+  partition pi bit 5: \ctrl_in [4] <-> \ctrl_in [4]
+  partition pi bit 6: \ctrl_in [1] <-> \ctrl_in [1]
+  partition pi bit 7: \ctrl_in [0] <-> \ctrl_in [0]
+  partition pi bit 8: \ctrl_in [3] <-> \ctrl_in [3]
+  partition pi bit 9: \ctrl_in [2] <-> \ctrl_in [2]
+  partition pi bit 10: \en <-> \en
+  partition pi bit 11: \ctrl_in [11] <-> \ctrl_in [11]
+  partition pi bit 12: \ctrl_in [10] <-> \ctrl_in [10]
+  partition pi bit 13: \ctrl_in [7] <-> \ctrl_in [7]
+  partition pi bit 14: \ctrl_in [6] <-> \ctrl_in [6]
+  partition pi bit 15: \data_in [4] <-> \data_in [4]
+  partition pi bit 16: \data_in [3] <-> \data_in [3]
+  partition pi bit 17: \data_in [2] <-> \data_in [2]
+  partition pi bit 18: \data_in [1] <-> \data_in [1]
+  partition pi bit 19: \data_in [0] <-> \data_in [0]
+  partition pi bit 20: \ctrl_in [9] <-> \ctrl_in [9]
+  partition pi bit 21: \ctrl_in [8] <-> \ctrl_in [8]
+  partition pi bit 22: \data_in [19] <-> \data_in [19]
+  partition pi bit 23: \data_in [18] <-> \data_in [18]
+  partition pi bit 24: \data_in [17] <-> \data_in [17]
+  partition pi bit 25: \data_in [16] <-> \data_in [16]
+  partition pi bit 26: \data_in [15] <-> \data_in [15]
+  partition pi bit 27: \data_in [14] <-> \data_in [14]
+  partition pi bit 28: \data_in [13] <-> \data_in [13]
+  partition pi bit 29: \data_in [12] <-> \data_in [12]
+  partition pi bit 30: \data_in [11] <-> \data_in [11]
+  partition pi bit 31: \data_in [10] <-> \data_in [10]
+  partition pi bit 32: \data_in [9] <-> \data_in [9]
+  partition pi bit 33: \data_in [8] <-> \data_in [8]
+  partition pi bit 34: \data_in [7] <-> \data_in [7]
+  partition pi bit 35: \data_in [6] <-> \data_in [6]
+  partition pi bit 36: \data_in [5] <-> \data_in [5]
+  partition pi bit 37: \clk <-> \clk
+  partition pi bit 38: \rst <-> \rst
+  partition mp bit 0: \lane[0].mid [3] <-> \lane[0].mid [3]
+  partition mp bit 1: \lane[0].mid [2] <-> \lane[0].mid [2]
+  partition mp bit 2: \lane[0].mid [1] <-> \lane[0].mid [1]
+  partition mp bit 3: \lane[0].mid [0] <-> \lane[0].mid [0]
+  partition mp bit 4: \lane[0].mid [4] <-> \lane[0].mid [4]
+  partition po bit 0: \data_out [0] <-> \data_out [0]
+  partition po bit 1: \data_out [1] <-> \data_out [1]
+  partition po bit 2: \data_out [2] <-> \data_out [2]
+  partition po bit 3: \data_out [3] <-> \data_out [3]
+  partition po bit 4: \data_out [4] <-> \data_out [4]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/pmux_case02_pipeline.il
+<suppressed ~1938 debug messages>
+
+End of script. Logfile hash: 85db8981d6
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

@@ -1,0 +1,1 @@
+ERROR: -counter is unavailable: its area selection requires additional ABC calls.

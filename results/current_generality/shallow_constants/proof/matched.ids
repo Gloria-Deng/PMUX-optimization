@@ -1,0 +1,8 @@
+# [*] gold-match *
+shallow_constants a a
+shallow_constants b b
+shallow_constants c c
+shallow_constants d d
+shallow_constants q q
+shallow_constants s s
+shallow_constants y y

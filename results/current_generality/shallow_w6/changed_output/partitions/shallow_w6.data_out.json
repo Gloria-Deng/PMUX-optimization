@@ -1,0 +1,80 @@
+{
+  "partition": {
+    "index": 0,
+    "name": "shallow_w6.data_out",
+    "inbits": {
+      "clk": [
+        0
+      ],
+      "ctrl_in": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "data_in": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "en": [
+        0
+      ],
+      "rst": [
+        0
+      ]
+    },
+    "outbits": {
+      "data_out": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.shallow_w6.data_out",
+    "internal": {},
+    "unused": {},
+    "cellcount": 34,
+    "bitcount": 166
+  },
+  "gate_module": {
+    "name": "gold.shallow_w6.data_out",
+    "internal": {},
+    "unused": {},
+    "cellcount": 57,
+    "bitcount": 189
+  }
+}

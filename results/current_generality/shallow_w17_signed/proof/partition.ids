@@ -1,0 +1,7 @@
+group shallow_w17_signed clk ctrl_in data_in data_out en rst
+bind shallow_w17_signed clk
+bind shallow_w17_signed ctrl_in
+bind shallow_w17_signed data_in
+bind shallow_w17_signed data_out
+bind shallow_w17_signed en
+bind shallow_w17_signed rst

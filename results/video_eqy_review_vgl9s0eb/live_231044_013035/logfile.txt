@@ -1,0 +1,22 @@
+EQY 23:10:44 [live_231044_013035] read_gold: starting process "yosys -ql live_231044_013035/gold.log live_231044_013035/gold.ys"
+EQY 23:10:44 [live_231044_013035] read_gate: starting process "yosys -ql live_231044_013035/gate.log live_231044_013035/gate.ys"
+EQY 23:10:44 [live_231044_013035] read_gold: finished (returncode=0)
+EQY 23:10:44 [live_231044_013035] read_gate: finished (returncode=0)
+EQY 23:10:44 [live_231044_013035] combine: starting process "yosys -ql live_231044_013035/combine.log live_231044_013035/combine.ys"
+EQY 23:10:44 [live_231044_013035] combine: finished (returncode=0)
+EQY 23:10:44 [live_231044_013035] partition: starting process "cd live_231044_013035& yosys -ql partition.log partition.ys"
+EQY 23:10:44 [live_231044_013035] partition: finished (returncode=0)
+EQY 23:10:44 [live_231044_013035] run: starting process "make -C live_231044_013035 -f strategies.mk"
+EQY 23:10:45 [live_231044_013035] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/live_231044_013035'
+EQY 23:10:45 [live_231044_013035] run: Running strategy 'whole' on 'pmux_case05_nested.data_out'..
+EQY 23:10:45 [live_231044_013035] run: Proved equivalence of partition 'pmux_case05_nested.data_out' using strategy 'whole'
+EQY 23:10:45 [live_231044_013035] run: make -f strategies.mk summary
+EQY 23:10:45 [live_231044_013035] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/live_231044_013035'
+EQY 23:10:45 [live_231044_013035] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/live_231044_013035'
+EQY 23:10:45 [live_231044_013035] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/live_231044_013035'
+EQY 23:10:46 [live_231044_013035] run: finished (returncode=0)
+EQY 23:10:46 [live_231044_013035] Successfully proved equivalence of partition pmux_case05_nested.data_out
+EQY 23:10:46 [live_231044_013035] Successfully proved designs equivalent
+EQY 23:10:46 [live_231044_013035] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 23:10:46 [live_231044_013035] summary: Elapsed process time unvailable on Windows
+EQY 23:10:46 [live_231044_013035] DONE (PASS, rc=0)

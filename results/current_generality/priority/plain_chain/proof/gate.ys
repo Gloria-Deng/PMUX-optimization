@@ -1,0 +1,8 @@
+read_rtlil after.il
+prep -top audit -flatten
+setundef -undriven -zero
+setundef -init -zero
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil proof/gate.il

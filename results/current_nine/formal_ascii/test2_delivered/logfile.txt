@@ -1,0 +1,22 @@
+EQY 19:01:24 [test2_delivered] read_gold: starting process "yosys -ql test2_delivered/gold.log test2_delivered/gold.ys"
+EQY 19:01:24 [test2_delivered] read_gold: finished (returncode=0)
+EQY 19:01:24 [test2_delivered] read_gate: starting process "yosys -ql test2_delivered/gate.log test2_delivered/gate.ys"
+EQY 19:01:25 [test2_delivered] read_gate: finished (returncode=0)
+EQY 19:01:25 [test2_delivered] combine: starting process "yosys -ql test2_delivered/combine.log test2_delivered/combine.ys"
+EQY 19:01:25 [test2_delivered] combine: finished (returncode=0)
+EQY 19:01:25 [test2_delivered] partition: starting process "cd test2_delivered& yosys -ql partition.log partition.ys"
+EQY 19:01:25 [test2_delivered] partition: finished (returncode=0)
+EQY 19:01:25 [test2_delivered] run: starting process "make -C test2_delivered -f strategies.mk"
+EQY 19:01:25 [test2_delivered] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test2_delivered'
+EQY 19:01:25 [test2_delivered] run: Running strategy 'whole' on 'test2.out'..
+EQY 19:01:25 [test2_delivered] run: Proved equivalence of partition 'test2.out' using strategy 'whole'
+EQY 19:01:25 [test2_delivered] run: make -f strategies.mk summary
+EQY 19:01:25 [test2_delivered] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test2_delivered'
+EQY 19:01:25 [test2_delivered] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test2_delivered'
+EQY 19:01:25 [test2_delivered] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test2_delivered'
+EQY 19:01:25 [test2_delivered] run: finished (returncode=0)
+EQY 19:01:25 [test2_delivered] Successfully proved equivalence of partition test2.out
+EQY 19:01:25 [test2_delivered] Successfully proved designs equivalent
+EQY 19:01:25 [test2_delivered] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 19:01:25 [test2_delivered] summary: Elapsed process time unvailable on Windows
+EQY 19:01:25 [test2_delivered] DONE (PASS, rc=0)

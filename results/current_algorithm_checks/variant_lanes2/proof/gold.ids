@@ -1,0 +1,21 @@
+variant_lanes2 . A:src="../../../scripts/algorithm_cases/variant_lanes2.v:2.1-66.10" A:top=1 A:dynports=1
+variant_lanes2 rst w=0:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:7.16-7.19" P=I
+variant_lanes2 lane[1].s w=15:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:20.21-20.22"
+variant_lanes2 lane[1].q w=11:0 A:init=0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:21.25-21.26"
+variant_lanes2 lane[1].next_q w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:23.25-23.31"
+variant_lanes2 lane[1].d w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:19.26-19.27"
+variant_lanes2 lane[1].c w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:18.26-18.27"
+variant_lanes2 lane[1].b w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:17.26-17.27"
+variant_lanes2 lane[1].a w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:16.26-16.27"
+variant_lanes2 lane[0].s w=15:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:20.21-20.22"
+variant_lanes2 lane[0].q w=11:0 A:init=0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:21.25-21.26"
+variant_lanes2 lane[0].next_q w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:23.25-23.31"
+variant_lanes2 lane[0].d w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:19.26-19.27"
+variant_lanes2 lane[0].c w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:18.26-18.27"
+variant_lanes2 lane[0].b w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:17.26-17.27"
+variant_lanes2 lane[0].a w=11:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:16.26-16.27"
+variant_lanes2 en w=0:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:8.16-8.18" P=I
+variant_lanes2 data_out w=23:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:11.35-11.43" P=O
+variant_lanes2 data_in w=95:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:9.36-9.43" P=I
+variant_lanes2 ctrl_in w=31:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:10.31-10.38" P=I
+variant_lanes2 clk w=0:0 A:src="../../../scripts/algorithm_cases/variant_lanes2.v:6.16-6.19" P=I

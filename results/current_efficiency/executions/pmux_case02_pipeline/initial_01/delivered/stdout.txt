@@ -1,0 +1,1287 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+<suppressed ~1 debug messages>
+
+-- Executing script file `synthesis.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../../../../cases/pmux_case02_pipeline.v
+Parsing SystemVerilog input from `../../../../../../cases/pmux_case02_pipeline.v' to AST representation.
+Generating RTLIL representation for module `\pmux_case02_pipeline'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+
+2.2. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:76$76 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:68$75 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:60$71 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:52$67 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:44$66 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:36$62 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:28$58 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:76$57 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:68$56 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:60$52 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:52$48 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:44$47 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:36$43 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:28$39 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:76$38 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:68$37 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:60$33 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:52$29 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:44$28 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:36$24 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:28$20 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:76$19 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:68$18 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:60$14 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:52$10 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:44$9 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:36$5 in module pmux_case02_pipeline.
+Marked 1 switch rules as full_case in process $proc$../../../../../../cases/pmux_case02_pipeline.v:28$1 in module pmux_case02_pipeline.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 24 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~32 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$76'.
+     1/2: $0\lane[3].mid[2:0]
+     2/2: $0\lane[3].q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$75'.
+     1/1: $1\lane[3].next_q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$71'.
+     1/1: $1\lane[3].y1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$67'.
+     1/1: $1\lane[3].y0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$66'.
+     1/1: $1\lane[3].first[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$62'.
+     1/1: $1\lane[3].x1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$58'.
+     1/1: $1\lane[3].x0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$57'.
+     1/2: $0\lane[2].mid[2:0]
+     2/2: $0\lane[2].q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$56'.
+     1/1: $1\lane[2].next_q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$52'.
+     1/1: $1\lane[2].y1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$48'.
+     1/1: $1\lane[2].y0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$47'.
+     1/1: $1\lane[2].first[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$43'.
+     1/1: $1\lane[2].x1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$39'.
+     1/1: $1\lane[2].x0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$38'.
+     1/2: $0\lane[1].mid[2:0]
+     2/2: $0\lane[1].q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$37'.
+     1/1: $1\lane[1].next_q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$33'.
+     1/1: $1\lane[1].y1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$29'.
+     1/1: $1\lane[1].y0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$28'.
+     1/1: $1\lane[1].first[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$24'.
+     1/1: $1\lane[1].x1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$20'.
+     1/1: $1\lane[1].x0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$19'.
+     1/2: $0\lane[0].mid[2:0]
+     2/2: $0\lane[0].q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$18'.
+     1/1: $1\lane[0].next_q[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$14'.
+     1/1: $1\lane[0].y1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$10'.
+     1/1: $1\lane[0].y0[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$9'.
+     1/1: $1\lane[0].first[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$5'.
+     1/1: $1\lane[0].x1[2:0]
+Creating decoders for process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$1'.
+     1/1: $1\lane[0].x0[2:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].next_q' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$75'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].y1' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$71'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].y0' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$67'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].first' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$66'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].x1' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$62'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[3].x0' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$58'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].next_q' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$56'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].y1' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$52'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].y0' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$48'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].first' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$47'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].x1' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$43'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[2].x0' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$39'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].next_q' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$37'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].y1' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$33'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].y0' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$29'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].first' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$28'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].x1' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$24'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[1].x0' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$20'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].next_q' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$18'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].y1' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$14'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].y0' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$10'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].first' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$9'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].x1' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$5'.
+No latch inferred for signal `\pmux_case02_pipeline.\lane[0].x0' from process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$1'.
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pmux_case02_pipeline.\lane[3].q' using process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$76'.
+  created $dff cell `$procdff$237' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[3].mid' using process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$76'.
+  created $dff cell `$procdff$238' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[2].q' using process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$57'.
+  created $dff cell `$procdff$239' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[2].mid' using process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$57'.
+  created $dff cell `$procdff$240' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[1].q' using process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$38'.
+  created $dff cell `$procdff$241' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[1].mid' using process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$38'.
+  created $dff cell `$procdff$242' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[0].q' using process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$19'.
+  created $dff cell `$procdff$243' with positive edge clock.
+Creating register for signal `\pmux_case02_pipeline.\lane[0].mid' using process `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$19'.
+  created $dff cell `$procdff$244' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$76'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$76'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$75'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$75'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$71'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$71'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$67'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$67'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$66'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$66'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$62'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$62'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$58'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$58'.
+Found and cleaned up 2 empty switches in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$57'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$57'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$56'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$56'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$52'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$52'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$48'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$48'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$47'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$47'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$43'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$43'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$39'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$39'.
+Found and cleaned up 2 empty switches in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$38'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$38'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$37'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$37'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$33'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$33'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$29'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$29'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$28'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$28'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$24'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$24'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$20'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$20'.
+Found and cleaned up 2 empty switches in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$19'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:76$19'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$18'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:68$18'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$14'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:60$14'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$10'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:52$10'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$9'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:44$9'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$5'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:36$5'.
+Found and cleaned up 1 empty switch in `\pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$1'.
+Removing empty process `pmux_case02_pipeline.$proc$../../../../../../cases/pmux_case02_pipeline.v:28$1'.
+Cleaned up 32 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+<suppressed ~24 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+Warning: Feature 'synth_intel' is experimental.
+
+6. Executing SYNTH_INTEL pass.
+
+6.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/cycloneiv/cells_sim.v
+Parsing SystemVerilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/cycloneiv/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\cycloneiv_io_ibuf'.
+Generating RTLIL representation for module `\cycloneiv_io_obuf'.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Generating RTLIL representation for module `\cycloneiv_pll'.
+Successfully finished Verilog frontend.
+
+6.2. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/common/m9k_bb.v
+Parsing SystemVerilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/common/m9k_bb.v' to AST representation.
+Generating RTLIL representation for module `\altsyncram'.
+Successfully finished Verilog frontend.
+
+6.3. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/common/altpll_bb.v
+Parsing SystemVerilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/common/altpll_bb.v' to AST representation.
+Successfully finished Verilog frontend.
+
+6.4. Executing HIERARCHY pass (managing design hierarchy).
+
+6.4.1. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+
+6.4.2. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+Removed 0 unused modules.
+
+6.5. Executing PROC pass (convert processes to netlists).
+
+6.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+6.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+6.5.4. Executing PROC_INIT pass (extract init attributes).
+
+6.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+6.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+6.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+6.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+6.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.6. Executing PMUX_OPT_RTLIL pass.
+  general-mux: legacy patterns excluded structurally; clone skipped.
+  general-mux: deep independent selection, 0 arithmetic group(s) shared in pmux_case02_pipeline.
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+Removed 0 unused cells and 96 unused wires.
+<suppressed ~1 debug messages>
+
+6.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+Removed 72 unused cells and 96 unused wires.
+<suppressed ~73 debug messages>
+  general-mux: binary data selection applied in pmux_case02_pipeline.
+PMUX_OPT_RTLIL: 88 mux cells, 0 with duplicate arms, 1 rewritten (0 paired, 0 priority, 0 arm-folded, 0 counter-compressed, 0 prio-or, 0 decode-shared, 0 hold-extracted, 0 pin-promoted, 1 general-mux), 1 gate-skipped, 0 commit-path rejection event(s), 0 probe-path rejection event(s), 72 new cells.
+PMUX_OPT_RTLIL benefit gate: 0 whole-design synthesis(es) paid (0 base + 0 plans), 0 candidate plan(s) skipped as netlist-identical to one already paid for.
+Run `opt_clean` afterwards to drop the now-dead decoder cells.
+
+6.9. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case02_pipeline...
+Found and reported 0 problems.
+
+6.10. Executing FLATTEN pass (flatten design).
+
+6.11. Executing TRIBUF pass.
+
+6.12. Executing DEMINOUT pass (demote inout ports to input or output).
+
+6.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.14. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case02_pipeline...
+Found and reported 0 problems.
+
+6.15. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.16. Executing OPT pass (performing simple optimizations).
+
+6.16.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.16.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 144 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.16.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case02_pipeline..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~96 debug messages>
+
+6.16.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case02_pipeline.
+Performed a total of 0 changes.
+
+6.16.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 144 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.16.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.16.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.16.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.16.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.17. Executing FSM pass (extract and optimize FSM).
+
+6.17.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+6.17.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+6.17.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.17.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.17.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.17.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+6.17.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+6.17.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+6.18. Executing OPT pass (performing simple optimizations).
+
+6.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 144 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.18.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case02_pipeline..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~96 debug messages>
+
+6.18.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case02_pipeline.
+Performed a total of 0 changes.
+
+6.18.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 144 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.18.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$244 ($dff) from module pmux_case02_pipeline (D = $procmux$197_Y, Q = \lane[0].mid, rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$392 ($sdff) from module pmux_case02_pipeline (D = \lane[0].first, Q = \lane[0].mid).
+Adding SRST signal on $procdff$243 ($dff) from module pmux_case02_pipeline (D = $procmux$202_Y, Q = \lane[0].q, rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$394 ($sdff) from module pmux_case02_pipeline (D = \lane[0].next_q, Q = \lane[0].q).
+Adding SRST signal on $procdff$242 ($dff) from module pmux_case02_pipeline (D = $procmux$157_Y, Q = \lane[1].mid, rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$396 ($sdff) from module pmux_case02_pipeline (D = \lane[1].first, Q = \lane[1].mid).
+Adding SRST signal on $procdff$241 ($dff) from module pmux_case02_pipeline (D = $procmux$162_Y, Q = \lane[1].q, rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$398 ($sdff) from module pmux_case02_pipeline (D = \lane[1].next_q, Q = \lane[1].q).
+Adding SRST signal on $procdff$240 ($dff) from module pmux_case02_pipeline (D = $procmux$117_Y, Q = \lane[2].mid, rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$400 ($sdff) from module pmux_case02_pipeline (D = \lane[2].first, Q = \lane[2].mid).
+Adding SRST signal on $procdff$239 ($dff) from module pmux_case02_pipeline (D = $procmux$122_Y, Q = \lane[2].q, rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$402 ($sdff) from module pmux_case02_pipeline (D = \lane[2].next_q, Q = \lane[2].q).
+Adding SRST signal on $procdff$238 ($dff) from module pmux_case02_pipeline (D = $procmux$77_Y, Q = \lane[3].mid, rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$404 ($sdff) from module pmux_case02_pipeline (D = \lane[3].first, Q = \lane[3].mid).
+Adding SRST signal on $procdff$237 ($dff) from module pmux_case02_pipeline (D = $procmux$82_Y, Q = \lane[3].q, rval = 3'000).
+Adding EN signal on $auto$ff.cc:337:slice$406 ($sdff) from module pmux_case02_pipeline (D = \lane[3].next_q, Q = \lane[3].q).
+
+6.18.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+Removed 16 unused cells and 16 unused wires.
+<suppressed ~17 debug messages>
+
+6.18.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.18.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.18.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case02_pipeline..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~80 debug messages>
+
+6.18.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case02_pipeline.
+Performed a total of 0 changes.
+
+6.18.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 128 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.18.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.18.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.18.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.18.16. Finished fast OPT passes. (There is nothing left to do.)
+
+6.19. Executing WREDUCE pass (reducing word size of cells).
+
+6.20. Executing PEEPOPT pass (run peephole optimizers).
+
+6.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.22. Executing TECHMAP pass (map to technology primitives).
+
+6.22.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/cmp2lut.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+6.22.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+6.23. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.25. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module pmux_case02_pipeline:
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:64$74 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:63$73 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:56$70 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:55$69 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:40$65 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:39$64 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:32$61 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:31$60 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:64$55 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:63$54 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:56$51 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:55$50 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:40$46 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:39$45 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:32$42 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:31$41 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:64$36 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:63$35 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:56$32 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:55$31 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:40$27 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:39$26 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:32$23 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:31$22 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:64$17 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:63$16 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:56$13 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:55$12 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:40$8 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:39$7 ($add).
+  creating $macc model for $sub$../../../../../../cases/pmux_case02_pipeline.v:32$4 ($sub).
+  creating $macc model for $add$../../../../../../cases/pmux_case02_pipeline.v:31$3 ($add).
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:31$3.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:32$4.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:39$7.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:40$8.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:55$12.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:56$13.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:63$16.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:64$17.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:31$22.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:32$23.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:39$26.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:40$27.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:55$31.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:56$32.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:63$35.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:64$36.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:31$41.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:32$42.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:39$45.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:40$46.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:55$50.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:56$51.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:63$54.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:64$55.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:31$60.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:32$61.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:39$64.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:40$65.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:55$69.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:56$70.
+  creating $alu model for $macc $add$../../../../../../cases/pmux_case02_pipeline.v:63$73.
+  creating $alu model for $macc $sub$../../../../../../cases/pmux_case02_pipeline.v:64$74.
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:64$74: $auto$alumacc.cc:548:replace_alu$409
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:63$73: $auto$alumacc.cc:548:replace_alu$412
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:56$70: $auto$alumacc.cc:548:replace_alu$415
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:55$69: $auto$alumacc.cc:548:replace_alu$418
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:40$65: $auto$alumacc.cc:548:replace_alu$421
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:39$64: $auto$alumacc.cc:548:replace_alu$424
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:32$61: $auto$alumacc.cc:548:replace_alu$427
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:31$60: $auto$alumacc.cc:548:replace_alu$430
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:64$55: $auto$alumacc.cc:548:replace_alu$433
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:63$54: $auto$alumacc.cc:548:replace_alu$436
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:56$51: $auto$alumacc.cc:548:replace_alu$439
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:55$50: $auto$alumacc.cc:548:replace_alu$442
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:40$46: $auto$alumacc.cc:548:replace_alu$445
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:39$45: $auto$alumacc.cc:548:replace_alu$448
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:32$42: $auto$alumacc.cc:548:replace_alu$451
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:31$41: $auto$alumacc.cc:548:replace_alu$454
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:64$36: $auto$alumacc.cc:548:replace_alu$457
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:63$35: $auto$alumacc.cc:548:replace_alu$460
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:56$32: $auto$alumacc.cc:548:replace_alu$463
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:55$31: $auto$alumacc.cc:548:replace_alu$466
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:40$27: $auto$alumacc.cc:548:replace_alu$469
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:39$26: $auto$alumacc.cc:548:replace_alu$472
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:32$23: $auto$alumacc.cc:548:replace_alu$475
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:31$22: $auto$alumacc.cc:548:replace_alu$478
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:64$17: $auto$alumacc.cc:548:replace_alu$481
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:63$16: $auto$alumacc.cc:548:replace_alu$484
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:56$13: $auto$alumacc.cc:548:replace_alu$487
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:55$12: $auto$alumacc.cc:548:replace_alu$490
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:40$8: $auto$alumacc.cc:548:replace_alu$493
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:39$7: $auto$alumacc.cc:548:replace_alu$496
+  creating $alu cell for $sub$../../../../../../cases/pmux_case02_pipeline.v:32$4: $auto$alumacc.cc:548:replace_alu$499
+  creating $alu cell for $add$../../../../../../cases/pmux_case02_pipeline.v:31$3: $auto$alumacc.cc:548:replace_alu$502
+  created 32 $alu and 0 $macc cells.
+
+6.26. Executing OPT pass (performing simple optimizations).
+
+6.26.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.26.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 128 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.26.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case02_pipeline..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~80 debug messages>
+
+6.26.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case02_pipeline.
+Performed a total of 0 changes.
+
+6.26.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 128 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.26.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.26.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.26.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.26.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.27. Executing MEMORY pass.
+
+6.27.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+6.27.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+6.27.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+6.27.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+6.27.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+6.27.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.27.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+6.27.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+6.27.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.27.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+6.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.29. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+6.30. Executing TECHMAP pass (map to technology primitives).
+
+6.30.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/common/brams_map_m9k.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/common/brams_map_m9k.v' to AST representation.
+Generating RTLIL representation for module `$__M9K_ALTSYNCRAM_SINGLEPORT_FULL'.
+Successfully finished Verilog frontend.
+
+6.30.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+6.31. Executing OPT pass (performing simple optimizations).
+
+6.31.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.31.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 128 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.31.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.31.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.31.5. Finished fast OPT passes.
+
+6.32. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+6.33. Executing OPT pass (performing simple optimizations).
+
+6.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 128 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.33.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case02_pipeline..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~80 debug messages>
+
+6.33.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case02_pipeline.
+Performed a total of 0 changes.
+
+6.33.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 128 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.33.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.33.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.33.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.33.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.34. Executing TECHMAP pass (map to technology primitives).
+
+6.34.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/techmap.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+6.34.2. Continuing TECHMAP pass.
+Using template $paramod$78e969f2586efcf3a5b0b0440bcca0db83d5cca2\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000011 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $and.
+No more expansions possible.
+<suppressed ~896 debug messages>
+
+6.35. Executing OPT pass (performing simple optimizations).
+
+6.35.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+<suppressed ~496 debug messages>
+
+6.35.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 800 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Computing hashes of 776 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+<suppressed ~72 debug messages>
+Removed a total of 24 cells.
+
+6.35.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case02_pipeline..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.35.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case02_pipeline.
+Performed a total of 0 changes.
+
+6.35.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 776 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.35.6. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $_MUX_ $auto$simplemap.cc:298:simplemap_mux$817 in front of them:
+        $auto$simplemap.cc:106:simplemap_bitop$1298
+        $auto$simplemap.cc:106:simplemap_bitop$820
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $auto$simplemap.cc:298:simplemap_mux$808 in front of them:
+        $auto$simplemap.cc:106:simplemap_bitop$1256
+        $auto$simplemap.cc:106:simplemap_bitop$823
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $auto$simplemap.cc:298:simplemap_mux$763 in front of them:
+        $auto$simplemap.cc:106:simplemap_bitop$1382
+        $auto$simplemap.cc:106:simplemap_bitop$832
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $auto$simplemap.cc:298:simplemap_mux$754 in front of them:
+        $auto$simplemap.cc:106:simplemap_bitop$1424
+        $auto$simplemap.cc:106:simplemap_bitop$835
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $auto$simplemap.cc:298:simplemap_mux$709 in front of them:
+        $auto$simplemap.cc:106:simplemap_bitop$1550
+        $auto$simplemap.cc:106:simplemap_bitop$844
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $auto$simplemap.cc:298:simplemap_mux$700 in front of them:
+        $auto$simplemap.cc:106:simplemap_bitop$1592
+        $auto$simplemap.cc:106:simplemap_bitop$847
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $auto$simplemap.cc:298:simplemap_mux$655 in front of them:
+        $auto$simplemap.cc:106:simplemap_bitop$1718
+        $auto$simplemap.cc:106:simplemap_bitop$856
+
+    Found cells that share an operand and can be merged by moving the $_MUX_ $auto$simplemap.cc:298:simplemap_mux$646 in front of them:
+        $auto$simplemap.cc:106:simplemap_bitop$1760
+        $auto$simplemap.cc:106:simplemap_bitop$859
+
+6.35.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.35.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+Removed 120 unused cells and 1280 unused wires.
+<suppressed ~121 debug messages>
+
+6.35.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+<suppressed ~8 debug messages>
+
+6.35.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.35.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pmux_case02_pipeline..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~16 debug messages>
+
+6.35.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pmux_case02_pipeline.
+Performed a total of 0 changes.
+
+6.35.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 648 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.35.14. Executing OPT_SHARE pass.
+
+6.35.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.35.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.35.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.35.18. Finished fast OPT passes. (There is nothing left to do.)
+Removed 0 unused cells and 33 unused wires.
+
+6.36. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6.37. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+6.38. Executing TECHMAP pass (map to technology primitives).
+
+6.38.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/common/ff_map.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/common/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFFE_PN0P_'.
+Successfully finished Verilog frontend.
+
+6.38.2. Continuing TECHMAP pass.
+Using template $paramod$_DFFE_PN0P_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFFE_PN0P_.
+No more expansions possible.
+<suppressed ~36 debug messages>
+
+6.39. Executing ABC9 pass.
+
+6.39.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.39.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.39.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module pmux_case02_pipeline.
+Found 0 SCCs.
+
+6.39.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.39.5. Executing TECHMAP pass (map to technology primitives).
+
+6.39.5.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/techmap.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+6.39.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~86 debug messages>
+
+6.39.6. Executing OPT pass (performing simple optimizations).
+
+6.39.6.1. Executing OPT_EXPR pass (perform const folding).
+
+6.39.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+6.39.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+6.39.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+6.39.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+6.39.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.39.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+6.39.6.8. Executing OPT_EXPR pass (perform const folding).
+
+6.39.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.39.7. Executing TECHMAP pass (map to technology primitives).
+
+6.39.7.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/abc9_map.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+6.39.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~2 debug messages>
+
+6.39.8. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/abc9_model.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+6.39.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.39.10. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+6.39.11. Executing AIGMAP pass (map logic to AIG).
+Module pmux_case02_pipeline: replaced 512 cells with 3440 new cells, skipped 184 cells.
+  replaced 4 cell types:
+     256 $_MUX_
+      48 $_OR_
+     200 $_XOR_
+       8 $mux
+  not replaced 3 cell types:
+      96 $_AND_
+      64 $_NOT_
+      24 dffeas
+
+6.39.11.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.39.11.2. Executing XAIGER backend.
+<suppressed ~5 debug messages>
+Extracted 1536 AND gates and 3765 wires from module `pmux_case02_pipeline' to a netlist network with 139 inputs and 36 outputs.
+
+6.39.11.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+6.39.11.4. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    139/     36  and =    1400  lev =   18 (  10.44)  mem = 0.02 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    139/     36  and =    2252  lev =   14 (   8.25)  mem = 0.03 MB  ch =  296  box = 0  bb = 0
+ABC: cst =       0  cls =    255  lit =     296  unused =    1840  proof =     0
+ABC: + &if -W 300 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =    2252.  Ch =   255.  Total mem =    0.37 MB. Peak cut mem =    0.02 MB.
+ABC: P:  Del = 1505.00.  Ar =     430.0.  Edge =     1456.  Cut =    12788.  T =     0.00 sec
+ABC: P:  Del = 1505.00.  Ar =     410.0.  Edge =     1423.  Cut =    11836.  T =     0.00 sec
+ABC: P:  Del = 1505.00.  Ar =     414.0.  Edge =     1414.  Cut =    11963.  T =     0.00 sec
+ABC: F:  Del = 1505.00.  Ar =     386.0.  Edge =     1351.  Cut =    10531.  T =     0.00 sec
+ABC: A:  Del = 1505.00.  Ar =     386.0.  Edge =     1343.  Cut =    10022.  T =     0.00 sec
+ABC: A:  Del = 1505.00.  Ar =     385.0.  Edge =     1343.  Cut =    10031.  T =     0.00 sec
+ABC: Total time =     0.01 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: Timing manager is given but there is no GIA of boxes.
+ABC: Error: Abc_FrameUpdateGia(): Transformation has failed.
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =    139/     36  and =    1552  lev =   14 (   8.28)  mem = 0.02 MB  box = 0  bb = 0
+ABC: Mapping (K=4)  :  lut =    385  edge =    1343  lev =    5 (3.33)  mem = 0.01 MB
+ABC: LUT = 385 : 2=64 16.6 %  3=69 17.9 %  4=252 65.5 %  Ave = 3.49
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.02 sec
+ABC: + time 
+ABC: elapse: 0.08 seconds, total: 0.08 seconds
+
+6.39.11.5. Executing AIGER frontend.
+<suppressed ~8 debug messages>
+Removed 2541 unused cells and 2704 unused wires.
+
+6.39.11.6. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:              $lut cells:      385
+ABC RESULTS:           input signals:        9
+ABC RESULTS:          output signals:       25
+<suppressed ~350 debug messages>
+Removing temp directory.
+
+6.39.12. Executing TECHMAP pass (map to technology primitives).
+
+6.39.12.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/abc9_unmap.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+6.39.12.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+Removed 0 unused cells and 4070 unused wires.
+
+6.40. Executing OPT pass (performing simple optimizations).
+
+6.40.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pmux_case02_pipeline.
+
+6.40.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pmux_case02_pipeline'.
+Computing hashes of 409 cells of `\pmux_case02_pipeline'.
+Finding duplicate cells in `\pmux_case02_pipeline'.
+Removed a total of 0 cells.
+
+6.40.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.40.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pmux_case02_pipeline..
+
+6.40.5. Finished fast OPT passes.
+
+6.41. Executing AUTONAME pass.
+Renamed 794 objects in module pmux_case02_pipeline.
+<suppressed ~794 debug messages>
+
+6.42. Executing TECHMAP pass (map to technology primitives).
+
+6.42.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/cycloneiv/cells_map.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_assessment_io30bmsl\share/intel/cycloneiv/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$__inpad'.
+Generating RTLIL representation for module `$__outpad'.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+6.42.2. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10100010 for cells of type $lut.
+Using template $paramod$15942ac7be0dd725beac7480dcc74ee28533af66$lut for cells of type $lut.
+Using template $paramod$5e7bd6288e5b7407feff45c6e90557a411d3560a$lut for cells of type $lut.
+Using template $paramod$7c03b26c73478ecb1b7fb0017db3d8ee4c9a9376$lut for cells of type $lut.
+Using template $paramod$8722d7b6fcc1b120cb8ba9bf94b1b3aaa116eac4$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$a7defd4f918862a5b442f9ecbddab049665c36c4$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010010 for cells of type $lut.
+Using template $paramod$d836b0321566de0f94c41f3d3d572c685b81b882$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000001 for cells of type $lut.
+Using template $paramod$8d7e631403a80aa650e318c82a10887417c8ada0$lut for cells of type $lut.
+Using template $paramod$5dff531f8fb77ebfe853eeca615cd074d42d0720$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010110 for cells of type $lut.
+Using template $paramod$c8f16510db975553c8b0be1064e8f5234175f8a8$lut for cells of type $lut.
+Using template $paramod$8eeae6b5737a673a1e57268785899c563b908210$lut for cells of type $lut.
+Using template $paramod$0b3dae0cf9ba4ff0f31b6a740f162807f52296cf$lut for cells of type $lut.
+Using template $paramod$5a9cfef8e3a24e14f83e5f897a385b9c78b81e61$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110100 for cells of type $lut.
+Using template $paramod$0de052767abdccc3aefc818722bdc3c7850d25d6$lut for cells of type $lut.
+Using template $paramod$15985e1eec2e8a42d484ea607f174f01582dc0b6$lut for cells of type $lut.
+Using template $paramod$e1a1a1833f3bbb451e4b91c3d54619f116866ffa$lut for cells of type $lut.
+Using template $paramod$325e90edf97670f9dea57833ae1f51a5e8bcddea$lut for cells of type $lut.
+Using template $paramod$1fed9e1f67af1d146eb882dde0fdb32e9c515f6d$lut for cells of type $lut.
+Using template $paramod$94e8d2a4d6fd5b672124fee293dd5ac51669ca89$lut for cells of type $lut.
+Using template $paramod$19305be8809aa959285cea94bd28a9bcacb54173$lut for cells of type $lut.
+Using template $paramod$a3ae0924cde80889c6e05ae61ecf799facf8ded5$lut for cells of type $lut.
+Using template $paramod$1d249a681c3bd2ce105b9b74f280ffee082c3e51$lut for cells of type $lut.
+Using template $paramod$da6c695ba8aff1d491106702fc5fac9c314e6069$lut for cells of type $lut.
+Using template $paramod$ea50dbdecb23313ea51f5a64c26c1a3ae6c6e7c2$lut for cells of type $lut.
+Using template $paramod$c4c148354f86d2131dbfed31e2e01cbbb5aefda7$lut for cells of type $lut.
+Using template $paramod$a1d323730045824cfc84bb9f4ee8031f1c4dcc9e$lut for cells of type $lut.
+Using template $paramod$c9994e2a733aa21e4bfe57075af37a9c5257c791$lut for cells of type $lut.
+Using template $paramod$1fb7cbea5f6fb3c0ee2c201e038a48f23658ab13$lut for cells of type $lut.
+Using template $paramod$c65acfd61ae70b5ce04c0aafaf2a256ff80af4df$lut for cells of type $lut.
+Using template $paramod$de0cfbf042671e74ccda8afd309cd5db894ca1a6$lut for cells of type $lut.
+Using template $paramod$e96de5e9fcce737e52eacf39c70c8f533dc27d63$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11011000 for cells of type $lut.
+Using template $paramod$84703685dd660e8070a03d91f140d249b7ff21b0$lut for cells of type $lut.
+Using template $paramod$7793af14a1d1a9df09b7264353e3dfaa774cd044$lut for cells of type $lut.
+Using template $paramod$16894c241be5ea1f024e9339dea788b4dbe184ae$lut for cells of type $lut.
+Using template $paramod$3702268f692b8bf258e428f65d3bca4e1f76d98b$lut for cells of type $lut.
+Using template $paramod$dd6d490ff2fda6761e25bd4380c31bddd25e4044$lut for cells of type $lut.
+Using template $paramod$640f0b255c4baeb1d5ed3ee07d5b4acf52609838$lut for cells of type $lut.
+Using template $paramod$58df2c605746858c7e53492c8f57d6f1fafa12d2$lut for cells of type $lut.
+Using template $paramod$7a0b348a7069d0c8f44afe945e212fcf3f3fd64c$lut for cells of type $lut.
+Using template $paramod$edfe6773e2ae95f1f17ad5bea62c0e1b079fa667$lut for cells of type $lut.
+Using template $paramod$62e34d236b5cf9e50e7481784c0097067a15fba4$lut for cells of type $lut.
+Using template $paramod$e8ba44e4a3ee29c32776f6151b0293be3e5fa416$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
+Using template $paramod$f921ab2c451d17e196d1dcad0b6d434881387fe3$lut for cells of type $lut.
+Using template $paramod$ec731ba0b03f9a8c2f9a148aad53e934d7e8d215$lut for cells of type $lut.
+Using template $paramod$7c085cdbf0919cd3ad402d9495d97f0d71e4db93$lut for cells of type $lut.
+Using template $paramod$71039eaa750b63c13b47d102108a4d1b67d00b7c$lut for cells of type $lut.
+Using template $paramod$7e8d331d1e06632d29fbdf6c3afc2de1856d3c67$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000001 for cells of type $lut.
+Using template $paramod$e84e4a245515000cd6930e0f4535753ed485f71e$lut for cells of type $lut.
+Using template $paramod$fcff9a7b1687e357a40264efcefe8443c8b2971a$lut for cells of type $lut.
+Using template $paramod$ba7f31f246a278c41fa0648a6e0512f63185dec0$lut for cells of type $lut.
+Using template $paramod$db08fd84fb3c4d6a41eaec6adfffe445fb7eb17f$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000010 for cells of type $lut.
+Using template $paramod$9dd298ae76fb41ac94779a83c068607fbc09ce4f$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
+Using template $paramod$153c6cdaaddbc43e6ef3facd06aa851de33910ae$lut for cells of type $lut.
+Using template $paramod$e2d96f36ef28053ecd27167cd95b944485ac3146$lut for cells of type $lut.
+Using template $paramod$ea5280fce2698f0f291737e66fca69a1d9d058e1$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00110010 for cells of type $lut.
+Using template $paramod$133ad27679cc12d115c56a20436ffefcefb608a9$lut for cells of type $lut.
+Using template $paramod$18455d4fd1270af2266bf4bb1c44971b2eb6b37a$lut for cells of type $lut.
+Using template $paramod$b1680225cc6a5792caa95f54b8b3218fae21705d$lut for cells of type $lut.
+Using template $paramod$4834046533425f54583d6bd31e49deb63455e1a5$lut for cells of type $lut.
+Using template $paramod$9e394303e290a474880b56f98766417009256d93$lut for cells of type $lut.
+Using template $paramod$19f568890ed784cb1efc3ce1b67eed20a6c54d9a$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001110 for cells of type $lut.
+Using template $paramod$ab8bb87959c5d7cfa27886cee1355b38e054a61a$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01010100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01010001 for cells of type $lut.
+Using template $paramod$8f7210088a40da1859d27e900c288fd298d68bed$lut for cells of type $lut.
+Using template $paramod$fba2e4f6f8ab1bc181fa350d2e7f12d4e9c80f0b$lut for cells of type $lut.
+Using template $paramod$afb8959a93937986ded51b1cddcab9e31c6ea2ed$lut for cells of type $lut.
+Using template $paramod$6f3f060a82077d7722793a80a7f81ffcda8e7f4d$lut for cells of type $lut.
+Using template $paramod$cd6c4b4da6d8737b72fd2dc8f5d83d8967445809$lut for cells of type $lut.
+No more expansions possible.
+<suppressed ~1314 debug messages>
+Removed 0 unused cells and 770 unused wires.
+
+6.43. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pmux_case02_pipeline'. Setting top module to pmux_case02_pipeline.
+
+6.43.1. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+
+6.43.2. Analyzing design hierarchy..
+Top module:  \pmux_case02_pipeline
+Removed 0 unused modules.
+
+6.44. Printing statistics.
+
+=== pmux_case02_pipeline ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      395 wires
+      524 wire bits
+      395 public wires
+      524 public wire bits
+        6 ports
+      127 port bits
+      409 cells
+      385   cycloneiv_lcell_comb
+       24   dffeas
+
+6.45. Executing CHECK pass (checking for obvious problems).
+Checking module pmux_case02_pipeline...
+Found and reported 0 problems.
+
+7. Executing Verilog backend.
+
+7.1. Executing BMUXMAP pass.
+
+7.2. Executing DEMUXMAP pass.
+Dumping module `\pmux_case02_pipeline'.
+
+8. Executing RTLIL backend.
+Output filename: final.il
+
+9. Printing statistics.
+
+=== pmux_case02_pipeline ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      395 wires
+      524 wire bits
+      395 public wires
+      524 public wire bits
+        6 ports
+      127 port bits
+      409 cells
+      385   cycloneiv_lcell_comb
+       24   dffeas
+
+Warnings: 1 unique messages, 1 total
+Warnings: 1 experimental features used (not excluded with -x).
+End of script. Logfile hash: 0047052a56
+Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+Time spent: 1% 22x opt_expr (0 sec), 1% 21x id_gc (0 sec), ...

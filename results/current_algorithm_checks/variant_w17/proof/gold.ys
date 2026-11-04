@@ -1,0 +1,17 @@
+read_verilog -sv "../../../scripts/algorithm_cases/variant_w17.v"
+hierarchy -check -top variant_w17
+proc
+setundef -undriven -zero
+setundef -init -zero
+prep -top variant_w17 -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top variant_w17
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil proof/gold.il

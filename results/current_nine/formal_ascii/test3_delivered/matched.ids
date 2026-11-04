@@ -1,0 +1,8 @@
+# [*] gold-match *
+test3 clk clk
+test3 cs cs
+test3 gpioout gpioout
+test3 rw rw
+test3 sr sr
+test3 sr_in sr_in
+test3 sr_out sr_out

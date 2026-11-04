@@ -1,0 +1,1177 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+<suppressed ~1 debug messages>
+
+-- Executing script file `../synthesis.ys' --
+
+1. Executing Verilog-2005 frontend: ../../../../cases/test4.v
+Parsing SystemVerilog input from `../../../../cases/test4.v' to AST representation.
+Generating RTLIL representation for module `\test4'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \test4
+
+2.2. Analyzing design hierarchy..
+Top module:  \test4
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$../../../../cases/test4.v:30$1 in module test4.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset_n in `\test4.$proc$../../../../cases/test4.v:30$1'.
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 1 switch.
+<suppressed ~1 debug messages>
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\test4.$proc$../../../../cases/test4.v:30$1'.
+     1/3: { $0\dataout[5:0] $0\only_5b[0:0] }
+     2/3: { $0\data_dp[0:0] $0\data_dn[0:0] }
+     3/3: $0\datain_5bis7[0:0]
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\test4.\dataout' using process `\test4.$proc$../../../../cases/test4.v:30$1'.
+  created $adff cell `$procdff$24' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\only_5b' using process `\test4.$proc$../../../../cases/test4.v:30$1'.
+  created $adff cell `$procdff$29' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\datain_5bis7' using process `\test4.$proc$../../../../cases/test4.v:30$1'.
+  created $dff cell `$procdff$36' with positive edge clock.
+Creating register for signal `\test4.\data_dp' using process `\test4.$proc$../../../../cases/test4.v:30$1'.
+  created $adff cell `$procdff$41' with positive edge clock and positive level reset.
+Creating register for signal `\test4.\data_dn' using process `\test4.$proc$../../../../cases/test4.v:30$1'.
+  created $adff cell `$procdff$46' with positive edge clock and positive level reset.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\test4.$proc$../../../../cases/test4.v:30$1'.
+Removing empty process `test4.$proc$../../../../cases/test4.v:30$1'.
+Cleaned up 2 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+<suppressed ~13 debug messages>
+
+4. Executing SETUNDEF pass (replace undef values with defined constants).
+
+5. Executing SETUNDEF pass (replace undef values with defined constants).
+Warning: Feature 'synth_intel' is experimental.
+
+6. Executing SYNTH_INTEL pass.
+
+6.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/cycloneiv/cells_sim.v
+Parsing SystemVerilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/cycloneiv/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\cycloneiv_io_ibuf'.
+Generating RTLIL representation for module `\cycloneiv_io_obuf'.
+Generating RTLIL representation for module `\cycloneiv_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Generating RTLIL representation for module `\cycloneiv_pll'.
+Successfully finished Verilog frontend.
+
+6.2. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/common/m9k_bb.v
+Parsing SystemVerilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/common/m9k_bb.v' to AST representation.
+Generating RTLIL representation for module `\altsyncram'.
+Successfully finished Verilog frontend.
+
+6.3. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/common/altpll_bb.v
+Parsing SystemVerilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/common/altpll_bb.v' to AST representation.
+Successfully finished Verilog frontend.
+
+6.4. Executing HIERARCHY pass (managing design hierarchy).
+
+6.4.1. Analyzing design hierarchy..
+Top module:  \test4
+
+6.4.2. Analyzing design hierarchy..
+Top module:  \test4
+Removed 0 unused modules.
+
+6.5. Executing PROC pass (convert processes to netlists).
+
+6.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+6.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+6.5.4. Executing PROC_INIT pass (extract init attributes).
+
+6.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+6.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+6.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+6.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+6.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.6. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+6.7. Executing FLATTEN pass (flatten design).
+
+6.8. Executing TRIBUF pass.
+
+6.9. Executing DEMINOUT pass (demote inout ports to input or output).
+
+6.10. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.11. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+6.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 7 unused cells and 18 unused wires.
+<suppressed ~8 debug messages>
+
+6.13. Executing OPT pass (performing simple optimizations).
+
+6.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 11 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+6.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+6.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 11 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.13.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.14. Executing FSM pass (extract and optimize FSM).
+
+6.14.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+6.14.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+6.14.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.14.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.14.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.14.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+6.14.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+6.14.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+6.15. Executing OPT pass (performing simple optimizations).
+
+6.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 11 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+6.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+6.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 11 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$36 ($dff) from module test4 (D = $0\datain_5bis7[0:0], Q = \datain_5bis7).
+Adding SRST signal on $auto$ff.cc:337:slice$50 ($dffe) from module test4 (D = $auto$proc_rom.cc:154:do_switch$4 [2], Q = \datain_5bis7, rval = 1'0).
+
+6.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 2 unused cells and 2 unused wires.
+<suppressed ~3 debug messages>
+
+6.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.15.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.15.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+6.15.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+6.15.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 9 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.15.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.15.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.15.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.15.16. Finished fast OPT passes. (There is nothing left to do.)
+
+6.16. Executing WREDUCE pass (reducing word size of cells).
+Removed top 27 address bits (of 32) from memory init port test4.$auto$mem.cc:351:emit$7 ($auto$proc_rom.cc:155:do_switch$5).
+
+6.17. Executing PEEPOPT pass (run peephole optimizers).
+
+6.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.19. Executing TECHMAP pass (map to technology primitives).
+
+6.19.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/cmp2lut.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+6.19.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+6.20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.22. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module test4:
+  created 0 $alu and 0 $macc cells.
+
+6.23. Executing OPT pass (performing simple optimizations).
+
+6.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 9 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+6.23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+6.23.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 9 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.23.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.23.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.23.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.24. Executing MEMORY pass.
+
+6.24.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+6.24.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+6.24.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+6.24.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+6.24.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$auto$proc_rom.cc:155:do_switch$5'[0] in module `\test4': no output FF found.
+Checking read port address `$auto$proc_rom.cc:155:do_switch$5'[0] in module `\test4': no address FF found.
+
+6.24.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.24.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+6.24.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+6.24.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.24.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+6.25. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.26. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+Processing test4.$auto$proc_rom.cc:155:do_switch$5:
+  Properties: ports=1 bits=320 rports=1 wports=0 dbits=10 abits=5 words=32
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 1):
+    Bram geometry: abits=13 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=8160 dwaste=0 bwaste=8160 waste=8160 efficiency=0
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 1) rejected: requirement 'min efficiency 2' not met.
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 2):
+    Bram geometry: abits=12 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=4064 dwaste=0 bwaste=8128 waste=8128 efficiency=0
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 2) rejected: requirement 'min efficiency 2' not met.
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 3):
+    Bram geometry: abits=11 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=2016 dwaste=2 bwaste=8128 waste=8128 efficiency=1
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 3) rejected: requirement 'min efficiency 2' not met.
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 4):
+    Bram geometry: abits=10 dbits=8 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=992 dwaste=6 bwaste=8128 waste=8128 efficiency=1
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 4) rejected: requirement 'min efficiency 2' not met.
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 5):
+    Bram geometry: abits=10 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=992 dwaste=8 bwaste=9184 waste=9184 efficiency=1
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 5) rejected: requirement 'min efficiency 2' not met.
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 6):
+    Bram geometry: abits=9 dbits=16 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=480 dwaste=6 bwaste=7872 waste=7872 efficiency=3
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 6) accepted.
+    Mapping to bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 6):
+      Read port #0 is in clock domain !~async~.
+        Bram port A1.1 has incompatible clock type.
+        Failed to map read port #0.
+    Mapping to bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL failed.
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 7):
+    Bram geometry: abits=9 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=480 dwaste=8 bwaste=8896 waste=8896 efficiency=3
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 7) accepted.
+    Mapping to bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 7):
+      Read port #0 is in clock domain !~async~.
+        Bram port A1.1 has incompatible clock type.
+        Failed to map read port #0.
+    Mapping to bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL failed.
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 8):
+    Bram geometry: abits=8 dbits=32 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=224 dwaste=22 bwaste=7872 waste=7872 efficiency=3
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 8) accepted.
+    Mapping to bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 8):
+      Read port #0 is in clock domain !~async~.
+        Bram port A1.1 has incompatible clock type.
+        Failed to map read port #0.
+    Mapping to bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL failed.
+  Checking rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 9):
+    Bram geometry: abits=8 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__M9K_ALTSYNCRAM_SINGLEPORT_FULL: awaste=224 dwaste=26 bwaste=8896 waste=8896 efficiency=3
+    Rule #1 for bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 9) accepted.
+    Mapping to bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL (variant 9):
+      Read port #0 is in clock domain !~async~.
+        Bram port A1.1 has incompatible clock type.
+        Failed to map read port #0.
+    Mapping to bram type $__M9K_ALTSYNCRAM_SINGLEPORT_FULL failed.
+  No acceptable bram resources found.
+
+6.27. Executing TECHMAP pass (map to technology primitives).
+
+6.27.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/common/brams_map_m9k.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/common/brams_map_m9k.v' to AST representation.
+Generating RTLIL representation for module `$__M9K_ALTSYNCRAM_SINGLEPORT_FULL'.
+Successfully finished Verilog frontend.
+
+6.27.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+6.28. Executing OPT pass (performing simple optimizations).
+
+6.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 8 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.28.5. Finished fast OPT passes.
+
+6.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory $auto$proc_rom.cc:155:do_switch$5 in module \test4:
+  created 32 $dff cells and 0 static cells of width 10.
+  read interface: 0 $dff and 31 $mux cells.
+  write interface: 0 write mux blocks.
+
+6.30. Executing OPT pass (performing simple optimizations).
+
+6.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 38 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~36 debug messages>
+
+6.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][14]$143:
+      Old ports: A=10'0011101000, B=10'1011100000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$99
+      New ports: A=2'01, B=2'10, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$99 [9] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$99 [3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$99 [8:4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$99 [2:0] } = 8'01110000
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][13]$140:
+      Old ports: A=10'0101101000, B=10'1101100000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$97
+      New ports: A=2'01, B=2'10, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$97 [9] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$97 [3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$97 [8:4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$97 [2:0] } = 8'10110000
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][12]$137:
+      Old ports: A=10'1100110000, B=10'1001101000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96
+      New ports: A=2'10, B=2'01, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96 [4:3]
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96 [9:5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96 [2:0] } = { 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96 [4] 1'0 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96 [3] 4'1000 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][11]$134:
+      Old ports: A=10'0110101000, B=10'1110100000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$94
+      New ports: A=2'01, B=2'10, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$94 [9] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$94 [3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$94 [8:4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$94 [2:0] } = 8'11010000
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][10]$131:
+      Old ports: A=10'0010111010, B=10'1010101000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93
+      New ports: A=2'01, B=2'10, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93 [9] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93 [1] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93 [8:2] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93 [0] } = { 4'0101 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93 [1] 3'100 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][9]$128:
+      Old ports: A=10'0100111010, B=10'1100101000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91
+      New ports: A=2'01, B=2'10, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91 [9] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91 [1] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91 [8:2] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91 [0] } = { 4'1001 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91 [1] 3'100 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][8]$125:
+      Old ports: A=10'0110110000, B=10'1000111010, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90
+      New ports: A=2'10, B=2'01, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [1] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [6:2] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [0] } = { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [1] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [7] 3'011 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [1] 2'00 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][7]$122:
+      Old ports: A=10'0111001001, B=10'0101110000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88
+      New ports: A=2'01, B=2'10, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [0] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [9:5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [3:1] } = { 2'01 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [0] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [0] 2'00 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][6]$119:
+      Old ports: A=10'0011011000, B=10'1011001001, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87
+      New ports: A=2'10, B=2'01, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87 [0] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87 [9:5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87 [3:1] } = { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87 [0] 7'0110100 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][5]$116:
+      Old ports: A=10'0101011000, B=10'1101001001, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85
+      New ports: A=2'10, B=2'01, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85 [0] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85 [9:5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85 [3:1] } = { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85 [0] 7'1010100 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][4]$113:
+      Old ports: A=10'1110010000, B=10'1001011000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84
+      New ports: A=2'10, B=2'01, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [6:4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [2:0] } = { 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [3] 5'01000 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][3]$110:
+      Old ports: A=10'0110011000, B=10'1110000100, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82
+      New ports: A=2'10, B=2'01, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82 [3:2]
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82 [9:4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82 [1:0] } = { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82 [2] 4'1100 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82 [3] 2'00 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][2]$107:
+      Old ports: A=10'1101010000, B=10'1010011000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81
+      New ports: A=2'10, B=2'01, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [9:7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [5:4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [2:0] } = { 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [3] 5'01000 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][1]$104:
+      Old ports: A=10'1011010000, B=10'1100011000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79
+      New ports: A=2'10, B=2'01, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [9:7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [5:4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [2:0] } = { 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [6] 5'01000 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][0]$101:
+      Old ports: A=10'1001110000, B=10'0111010000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78
+      New ports: A=2'01, B=2'10, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [5] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [4:0] } = { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [7] 6'110000 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][4][15]$146:
+      Old ports: A=10'0111100000, B=10'1010110000, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100
+      New ports: A=2'10, B=2'01, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [4] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [9:7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [3:0] } = { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [6] 6'110000 }
+  Optimizing cells in module \test4.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$98:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$99, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$99 [9] 3'010 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$a$99 [3] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][7]$b$100 [4] 1'0 }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [4:3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [2:0] } = 5'11000
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$95:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$97, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75
+      New ports: A={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96 [4:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$a$96 [4:3] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$97 [9] 3'110 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][6]$b$97 [3] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [4:3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [2:0] } = 5'01000
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$92:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$94, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93 [9] 2'01 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$a$93 [1] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$94 [9] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$b$94 [3] 1'0 }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [1] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [7:4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [2] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [0] } = { 3'101 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [1] 2'00 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$89:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [1] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [7] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [1] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$a$90 [1] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91 [9] 2'10 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91 [1] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][4]$b$91 [1] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [9:7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [4:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [1] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [6:5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [2] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [0] } = 4'0100
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$86:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87 [0] 2'00 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87 [4] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$a$87 [0] }, B={ 2'01 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [0] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][3]$b$88 [0] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [5:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [0] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [7:6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [2:1] } = { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [3] 3'100 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$83:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69
+      New ports: A={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [7] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$a$84 [3] 1'0 }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85 [0] 2'10 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85 [4] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][2]$b$85 [0] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [9:7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [4:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [0] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [6:5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [2:1] } = { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [3] 3'000 }
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$80:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$67
+      New ports: A={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [6] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$a$81 [3] 1'0 }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82 [2] 3'110 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82 [3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][1]$b$82 [3:2] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$67 [9:6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$67 [4:2] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$67 [5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$67 [1:0] } = 3'000
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$77:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$66
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [7] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [5] 1'0 }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [6] 1'0 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [3] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$66 [9:5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$66 [3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$66 [4] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$66 [2:0] } = 4'1000
+  Optimizing cells in module \test4.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$74:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$64
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [9:8] 1'0 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$a$75 [4:3] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [9:8] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][3]$b$76 [4:3] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$64 [9:6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$64 [4:3] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$64 [5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$64 [2:0] } = 4'1000
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$71:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [9:7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [4:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$a$72 [1] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [9:8] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [1] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [1] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [9:7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [4:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [1] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [6:5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [2] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [0] } = 4'0100
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$68:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$61
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [9:7] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [3] 1'0 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [4:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$a$69 [0] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [3] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [5:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][1]$b$70 [0] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$61 [9:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$61 [0] }
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$61 [2:1] = 2'00
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$65:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$66, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$67, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$60
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$66 [9:5] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$a$66 [3] 1'0 }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$67 [9:6] 1'0 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][0]$b$67 [4:2] }, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$60 [9:2]
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$60 [1:0] = 2'00
+  Optimizing cells in module \test4.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$62:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$64, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$58
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [9:7] 1'0 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [4:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$a$63 [1] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$64 [9:6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][1]$b$64 [4:3] 1'0 }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$58 [9:6] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$58 [4:3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$58 [1] }
+      New connections: { $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$58 [5] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$58 [2] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$b$58 [0] } = 3'100
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$59:
+      Old ports: A=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$60, B=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$61, Y=$memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$a$57
+      New ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$a$60 [9:2] 1'0 }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$61 [9:3] 1'0 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][1][0]$b$61 [0] }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$a$57 [9:2] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$a$57 [0] }
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][0][0]$a$57 [1] = 1'0
+  Optimizing cells in module \test4.
+Performed a total of 30 changes.
+
+6.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 38 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Computing hashes of 24 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+<suppressed ~42 debug messages>
+Removed a total of 14 cells.
+
+6.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 0 unused cells and 46 unused wires.
+<suppressed ~1 debug messages>
+
+6.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.30.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.30.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~40 debug messages>
+
+6.30.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+    Consolidated identical input bits for $mux cell $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][5]$92:
+      Old ports: A={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [7] 2'01 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [5] }, B={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [7] 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [5] 1'0 }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [9:8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [1] }
+      New ports: A={ 2'01 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [5] }, B={ 1'1 $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [5] 1'0 }, Y={ $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [8] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [3] $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [1] }
+      New connections: $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][2][2]$b$73 [9] = $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$a$78 [7]
+  Optimizing cells in module \test4.
+Performed a total of 1 changes.
+
+6.30.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 24 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.30.13. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $auto$ff.cc:337:slice$51 ($sdffce) from module test4 (D = $memory$auto$proc_rom.cc:155:do_switch$5$rdmux[0][3][0]$b$79 [3], Q = \datain_5bis7, rval = 1'0).
+
+6.30.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.30.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.30.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.30.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~72 debug messages>
+
+6.30.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+6.30.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 28 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.30.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.30.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.30.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.30.23. Finished fast OPT passes. (There is nothing left to do.)
+
+6.31. Executing TECHMAP pass (map to technology primitives).
+
+6.31.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/techmap.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+6.31.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $sdffce.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $adff.
+No more expansions possible.
+<suppressed ~105 debug messages>
+
+6.32. Executing OPT pass (performing simple optimizations).
+
+6.32.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+<suppressed ~41 debug messages>
+
+6.32.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 119 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Computing hashes of 93 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Computing hashes of 85 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Computing hashes of 82 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+<suppressed ~111 debug messages>
+Removed a total of 37 cells.
+
+6.32.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.32.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+6.32.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 82 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.32.6. Executing OPT_SHARE pass.
+
+6.32.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.32.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+Removed 2 unused cells and 6 unused wires.
+<suppressed ~3 debug messages>
+
+6.32.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.32.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.32.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \test4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.32.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \test4.
+Performed a total of 0 changes.
+
+6.32.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 80 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.32.14. Executing OPT_SHARE pass.
+
+6.32.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.32.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.32.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.32.18. Finished fast OPT passes. (There is nothing left to do.)
+
+6.33. Executing SETUNDEF pass (replace undef values with defined constants).
+
+6.34. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+6.35. Executing TECHMAP pass (map to technology primitives).
+
+6.35.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/common/ff_map.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/common/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFFE_PN0P_'.
+Successfully finished Verilog frontend.
+
+6.35.2. Continuing TECHMAP pass.
+Using template $paramod$_DFFE_PN0P_\_TECHMAP_WIREINIT_Q_=1'0 for cells of type $_DFFE_PN0P_.
+Using template $paramod$_DFFE_PN0P_\_TECHMAP_WIREINIT_Q_=1'1 for cells of type $_DFFE_PN0P_.
+No more expansions possible.
+<suppressed ~31 debug messages>
+
+6.36. Executing ABC9 pass.
+
+6.36.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.36.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.36.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module test4.
+Found 0 SCCs.
+
+6.36.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.36.5. Executing TECHMAP pass (map to technology primitives).
+
+6.36.5.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/techmap.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+6.36.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~86 debug messages>
+
+6.36.6. Executing OPT pass (performing simple optimizations).
+
+6.36.6.1. Executing OPT_EXPR pass (perform const folding).
+
+6.36.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+6.36.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+6.36.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+6.36.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+6.36.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.36.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+6.36.6.8. Executing OPT_EXPR pass (perform const folding).
+
+6.36.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+6.36.7. Executing TECHMAP pass (map to technology primitives).
+
+6.36.7.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/abc9_map.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+6.36.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~2 debug messages>
+
+6.36.8. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/abc9_model.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+6.36.9. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.36.10. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+6.36.11. Executing AIGMAP pass (map logic to AIG).
+Module test4: replaced 52 cells with 337 new cells, skipped 31 cells.
+  replaced 2 cell types:
+      43 $_MUX_
+       9 $_OR_
+  not replaced 3 cell types:
+      15 $_AND_
+       6 $_NOT_
+      10 dffeas
+
+6.36.11.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+6.36.11.2. Executing XAIGER backend.
+<suppressed ~5 debug messages>
+Extracted 153 AND gates and 379 wires from module `test4' to a netlist network with 18 inputs and 20 outputs.
+
+6.36.11.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+6.36.11.4. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =     18/     20  and =     114  lev =    9 (   3.85)  mem = 0.00 MB  box = 0  bb = 0
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =     18/     20  and =     141  lev =    8 (   3.00)  mem = 0.00 MB  ch =   25  box = 0  bb = 0
+ABC: cst =       0  cls =     23  lit =      25  unused =     111  proof =     0
+ABC: + &if -W 300 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =     141.  Ch =    23.  Total mem =    0.03 MB. Peak cut mem =    0.02 MB.
+ABC: P:  Del =  903.00.  Ar =      43.0.  Edge =      138.  Cut =      838.  T =     0.00 sec
+ABC: P:  Del =  903.00.  Ar =      43.0.  Edge =      149.  Cut =      756.  T =     0.00 sec
+ABC: P:  Del =  903.00.  Ar =      43.0.  Edge =      148.  Cut =      754.  T =     0.00 sec
+ABC: F:  Del =  903.00.  Ar =      35.0.  Edge =      130.  Cut =      609.  T =     0.00 sec
+ABC: A:  Del =  903.00.  Ar =      35.0.  Edge =      129.  Cut =      685.  T =     0.00 sec
+ABC: A:  Del =  903.00.  Ar =      35.0.  Edge =      129.  Cut =      672.  T =     0.00 sec
+ABC: Total time =     0.00 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: Timing manager is given but there is no GIA of boxes.
+ABC: Error: Abc_FrameUpdateGia(): Transformation has failed.
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =     18/     20  and =     142  lev =    8 (   3.00)  mem = 0.00 MB  box = 0  bb = 0
+ABC: Mapping (K=4)  :  lut =     35  edge =     129  lev =    3 (1.30)  mem = 0.00 MB
+ABC: LUT = 35 : 2=1 2.9 %  3=9 25.7 %  4=25 71.4 %  Ave = 3.69
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.01 sec
+ABC: + time 
+ABC: elapse: 0.02 seconds, total: 0.02 seconds
+
+6.36.11.5. Executing AIGER frontend.
+<suppressed ~8 debug messages>
+Removed 194 unused cells and 223 unused wires.
+
+6.36.11.6. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:              $lut cells:       36
+ABC RESULTS:           input signals:        5
+ABC RESULTS:          output signals:       10
+<suppressed ~76 debug messages>
+Removing temp directory.
+
+6.36.12. Executing TECHMAP pass (map to technology primitives).
+
+6.36.12.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/abc9_unmap.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+6.36.12.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+Removed 2 unused cells and 459 unused wires.
+
+6.37. Executing OPT pass (performing simple optimizations).
+
+6.37.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module test4.
+
+6.37.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\test4'.
+Computing hashes of 46 cells of `\test4'.
+Finding duplicate cells in `\test4'.
+Removed a total of 0 cells.
+
+6.37.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.37.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \test4..
+
+6.37.5. Finished fast OPT passes.
+
+6.38. Executing AUTONAME pass.
+Renamed 77 objects in module test4.
+<suppressed ~77 debug messages>
+
+6.39. Executing TECHMAP pass (map to technology primitives).
+
+6.39.1. Executing Verilog-2005 frontend: C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/cycloneiv/cells_map.v
+Parsing Verilog input from `C:\Users\lenovo\AppData\Local\Temp\pmux_shared_runtime_mn7o91g9\share/intel/cycloneiv/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$__inpad'.
+Generating RTLIL representation for module `$__outpad'.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+6.39.2. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000010 for cells of type $lut.
+Using template $paramod$c227f721a44fefdada39f6c9acbbd79680d6e12a$lut for cells of type $lut.
+Using template $paramod$d7f2016a16d14a1e6d9eaffba8bf09c5bfa69a51$lut for cells of type $lut.
+Using template $paramod$b64f67334ae26f46c0a2480c39b1cfb8a26d9038$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101010 for cells of type $lut.
+Using template $paramod$153c6cdaaddbc43e6ef3facd06aa851de33910ae$lut for cells of type $lut.
+Using template $paramod$15efa44280f2a77bf023b68f95d9df5681d9dd99$lut for cells of type $lut.
+Using template $paramod$01c608da0c772a10858492e8ba4f65bc04f42266$lut for cells of type $lut.
+Using template $paramod$aa87f4b44361d4073f55a64babebb83974861eee$lut for cells of type $lut.
+Using template $paramod$7921767ec42b10343b99f255bd2c4bd78b3f40a0$lut for cells of type $lut.
+Using template $paramod$03da3dcc7c75ea9c9148a6fc634f76a9d0cbefef$lut for cells of type $lut.
+Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9$lut for cells of type $lut.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8$lut for cells of type $lut.
+Using template $paramod$a3077fa2cf8e48a37d410abdac8a7cce2583fbf3$lut for cells of type $lut.
+Using template $paramod$3ae9f1cda205b669870c653a21d45eee50078e98$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001011 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10001100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100000 for cells of type $lut.
+Using template $paramod$a5516fc31d1e552de2435200bb732b4d4ad63a9c$lut for cells of type $lut.
+Using template $paramod$77c2a0573790d304ab2299da6d598e8d2e184867$lut for cells of type $lut.
+Using template $paramod$a1d323730045824cfc84bb9f4ee8031f1c4dcc9e$lut for cells of type $lut.
+Using template $paramod$6d6beead1425af15cf78b27fd9b11b41b5d4bce8$lut for cells of type $lut.
+Using template $paramod$688c5790bebb9f9a2f7e4355adcaaeacf5cc25c6$lut for cells of type $lut.
+Using template $paramod$5e9374f44a27c3f8a1c38af244ec43ceb4fb8d4f$lut for cells of type $lut.
+Using template $paramod$c64dec5f9cba92e7fb1a4ba3987a6ac85d9a3898$lut for cells of type $lut.
+Using template $paramod$ddd4e4b9459f44f5aafd59b7cdc5534c63ca7c2a$lut for cells of type $lut.
+Using template $paramod$b1f01d1a6442cce30a958d756be8bbcf976f6dba$lut for cells of type $lut.
+Using template $paramod$8f7210088a40da1859d27e900c288fd298d68bed$lut for cells of type $lut.
+Using template $paramod$15fbfbed764ddca456693afe9dc1f76d66ae3f91$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01001111 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000000 for cells of type $lut.
+Using template $paramod$50f7e15b535aea3b809b98699236d9eaaff81565$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+No more expansions possible.
+<suppressed ~426 debug messages>
+Removed 0 unused cells and 73 unused wires.
+
+6.40. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `test4'. Setting top module to test4.
+
+6.40.1. Analyzing design hierarchy..
+Top module:  \test4
+
+6.40.2. Analyzing design hierarchy..
+Top module:  \test4
+Removed 0 unused modules.
+
+6.41. Printing statistics.
+
+=== test4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+       54 wire bits
+       40 public wires
+       54 public wire bits
+        9 ports
+       18 port bits
+       46 cells
+        1   $not
+       35   cycloneiv_lcell_comb
+       10   dffeas
+
+6.42. Executing CHECK pass (checking for obvious problems).
+Checking module test4...
+Found and reported 0 problems.
+
+7. Executing Verilog backend.
+
+7.1. Executing BMUXMAP pass.
+
+7.2. Executing DEMUXMAP pass.
+Dumping module `\test4'.
+
+8. Executing RTLIL backend.
+Output filename: final.il
+
+9. Printing statistics.
+
+=== test4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+       54 wire bits
+       40 public wires
+       54 public wire bits
+        9 ports
+       18 port bits
+       46 cells
+        1   $not
+       35   cycloneiv_lcell_comb
+       10   dffeas
+
+Warnings: 1 unique messages, 1 total
+Warnings: 1 experimental features used (not excluded with -x).
+End of script. Logfile hash: 67df0ee4a9
+Yosys 0.69+24 (git sha1 d0e71cfb7-dirty, Release, GNU E:/msys64/ucrt64/bin/g++.exe 16.2.0)
+Time spent: 1% 22x opt_expr (0 sec), 1% 19x opt_clean (0 sec), ...

@@ -1,0 +1,7 @@
+group variant_signed clk ctrl_in data_in data_out en rst
+bind variant_signed clk
+bind variant_signed ctrl_in
+bind variant_signed data_in
+bind variant_signed data_out
+bind variant_signed en
+bind variant_signed rst

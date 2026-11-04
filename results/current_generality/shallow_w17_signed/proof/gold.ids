@@ -1,0 +1,7 @@
+shallow_w17_signed . A:src="../../../scripts/generality_cases/shallow_w17_signed.v:2.1-69.10" A:top=1 A:dynports=1
+shallow_w17_signed rst w=0:0 A:src="../../../scripts/generality_cases/shallow_w17_signed.v:7.16-7.19" P=I
+shallow_w17_signed en w=0:0 A:src="../../../scripts/generality_cases/shallow_w17_signed.v:8.16-8.18" P=I
+shallow_w17_signed data_out w=16:0 A:init=0 A:src="../../../scripts/generality_cases/shallow_w17_signed.v:11.35-11.43" P=O
+shallow_w17_signed data_in w=67:0 A:src="../../../scripts/generality_cases/shallow_w17_signed.v:9.36-9.43" P=I
+shallow_w17_signed ctrl_in w=15:0 A:src="../../../scripts/generality_cases/shallow_w17_signed.v:10.31-10.38" P=I
+shallow_w17_signed clk w=0:0 A:src="../../../scripts/generality_cases/shallow_w17_signed.v:6.16-6.19" P=I

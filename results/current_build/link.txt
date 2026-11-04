@@ -1,0 +1,2 @@
+E:\msys64\ucrt64\bin\g++.exe -O3 -Wall -Wextra -Werror=unused-variable -Werror=unused-parameter -Werror=unused-function -municode -Wl,--export-all-symbols @D:\yosys_build\pmux_latest_answers_final_20261103\yosys.link.rsp -o D:\yosys_build\pmux_latest_answers_final_20261103\yosys.exe -Wl,--out-implib,D:\yosys_build\pmux_latest_answers_final_20261103\yosys.exe.a -Wl,--major-image-version,0,--minor-image-version,0
+

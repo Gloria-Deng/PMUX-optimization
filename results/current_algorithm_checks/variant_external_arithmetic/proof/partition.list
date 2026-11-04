@@ -1,0 +1,1 @@
+variant_external_arithmetic variant_external_arithmetic.data_out : shared_out[11:0] data_out[11:0]

@@ -1,0 +1,8 @@
+group shallow_constants a b c d q s y
+bind shallow_constants a
+bind shallow_constants b
+bind shallow_constants c
+bind shallow_constants d
+bind shallow_constants q
+bind shallow_constants s
+bind shallow_constants y

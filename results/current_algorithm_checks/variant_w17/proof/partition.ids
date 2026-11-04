@@ -1,0 +1,7 @@
+group variant_w17 clk ctrl_in data_in data_out en rst
+bind variant_w17 clk
+bind variant_w17 ctrl_in
+bind variant_w17 data_in
+bind variant_w17 data_out
+bind variant_w17 en
+bind variant_w17 rst

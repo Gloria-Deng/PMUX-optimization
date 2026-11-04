@@ -1,0 +1,16 @@
+read_rtlil "D:/Desktop/PMUX_20261028/results/current_nine/pmux_case05_nested/delivered/postabc.il"
+read_verilog -overwrite "D:/Desktop/PMUX_20261028/plugin/dffeas_formal.v"
+rename pmux_case05_nested nested_original
+read_verilog "D:/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/altered_output.v"
+prep -top pmux_case05_nested -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top pmux_case05_nested
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+opt_clean
+check -initdrv
+setundef -undriven -undef
+write_rtlil negative_control/gate.il

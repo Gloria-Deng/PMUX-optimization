@@ -1,0 +1,423 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Executing script file `partition.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: combined.il
+
+2. Executing INSBUF pass (insert buffer cells for connected wires).
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3351: \data_out_dffeas_q_4.q -> \data_out [0]
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3352: \data_out_dffeas_q.q -> \data_out [1]
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3353: \data_out_dffeas_q_2.q -> \data_out [2]
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3354: \data_out_dffeas_q_5.q -> \data_out [3]
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3355: \data_out_dffeas_q_3.q -> \data_out [4]
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3356: \data_out_dffeas_q_1.q -> \data_out [5]
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3357: 1'0 -> \data_out_dffeas_q.aload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3358: 1'0 -> \data_out_dffeas_q.asdata
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3359: \clk -> \data_out_dffeas_q.clk
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3360: 1'1 -> \data_out_dffeas_q.clrn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3361: \data_out_dffeas_q_d -> \data_out_dffeas_q.d
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3362: 1'1 -> \data_out_dffeas_q.ena
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3363: 1'1 -> \data_out_dffeas_q.prn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3364: 1'0 -> \data_out_dffeas_q.sclr
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3365: 1'0 -> \data_out_dffeas_q.sload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3366: 1'0 -> \data_out_dffeas_q_1.aload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3367: 1'0 -> \data_out_dffeas_q_1.asdata
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3368: \data_out_dffeas_q.clk -> \data_out_dffeas_q_1.clk
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3369: 1'1 -> \data_out_dffeas_q_1.clrn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3370: \data_out_dffeas_q_1_d -> \data_out_dffeas_q_1.d
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3371: 1'1 -> \data_out_dffeas_q_1.ena
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3372: 1'1 -> \data_out_dffeas_q_1.prn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3373: 1'0 -> \data_out_dffeas_q_1.sclr
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3374: 1'0 -> \data_out_dffeas_q_1.sload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3375: 1'0 -> \data_out_dffeas_q_2.aload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3376: 1'0 -> \data_out_dffeas_q_2.asdata
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3377: \data_out_dffeas_q_1.clk -> \data_out_dffeas_q_2.clk
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3378: 1'1 -> \data_out_dffeas_q_2.clrn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3379: \data_out_dffeas_q_2_d -> \data_out_dffeas_q_2.d
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3380: 1'1 -> \data_out_dffeas_q_2.ena
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3381: 1'1 -> \data_out_dffeas_q_2.prn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3382: 1'0 -> \data_out_dffeas_q_2.sclr
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3383: 1'0 -> \data_out_dffeas_q_2.sload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3384: 1'0 -> \data_out_dffeas_q_3.aload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3385: 1'0 -> \data_out_dffeas_q_3.asdata
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3386: \data_out_dffeas_q_2.clk -> \data_out_dffeas_q_3.clk
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3387: 1'1 -> \data_out_dffeas_q_3.clrn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3388: \data_out_dffeas_q_3_d -> \data_out_dffeas_q_3.d
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3389: 1'1 -> \data_out_dffeas_q_3.ena
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3390: 1'1 -> \data_out_dffeas_q_3.prn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3391: 1'0 -> \data_out_dffeas_q_3.sclr
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3392: 1'0 -> \data_out_dffeas_q_3.sload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3393: 1'0 -> \data_out_dffeas_q_4.aload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3394: 1'0 -> \data_out_dffeas_q_4.asdata
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3395: \data_out_dffeas_q_3.clk -> \data_out_dffeas_q_4.clk
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3396: 1'1 -> \data_out_dffeas_q_4.clrn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3397: \data_out_dffeas_q_4_d -> \data_out_dffeas_q_4.d
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3398: 1'1 -> \data_out_dffeas_q_4.ena
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3399: 1'1 -> \data_out_dffeas_q_4.prn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3400: 1'0 -> \data_out_dffeas_q_4.sclr
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3401: 1'0 -> \data_out_dffeas_q_4.sload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3402: 1'0 -> \data_out_dffeas_q_5.aload
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3403: 1'0 -> \data_out_dffeas_q_5.asdata
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3404: \data_out_dffeas_q_4.clk -> \data_out_dffeas_q_5.clk
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3405: 1'1 -> \data_out_dffeas_q_5.clrn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3406: \data_out_dffeas_q_5_d -> \data_out_dffeas_q_5.d
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3407: 1'1 -> \data_out_dffeas_q_5.ena
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3408: 1'1 -> \data_out_dffeas_q_5.prn
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3409: 1'0 -> \data_out_dffeas_q_5.sclr
+Add gate.variant_w6/$auto$insbuf.cc:97:execute$3410: 1'0 -> \data_out_dffeas_q_5.sload
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_5.$procdff$3317/D: \data_out_dffeas_q_5_d -> \data_out_dffeas_q_5.d
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_5.$procdff$3317/CLK: \clk -> \data_out_dffeas_q_5.clk
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_4.$procdff$3317/D: \data_out_dffeas_q_4_d -> \data_out_dffeas_q_4.d
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_4.$procdff$3317/CLK: \clk -> \data_out_dffeas_q_5.clk
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_3.$procdff$3317/D: \data_out_dffeas_q_3_d -> \data_out_dffeas_q_3.d
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_3.$procdff$3317/CLK: \clk -> \data_out_dffeas_q_5.clk
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_2.$procdff$3317/D: \data_out_dffeas_q_2_d -> \data_out_dffeas_q_2.d
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_2.$procdff$3317/CLK: \clk -> \data_out_dffeas_q_5.clk
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_1.$procdff$3317/D: \data_out_dffeas_q_1_d -> \data_out_dffeas_q_1.d
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q_1.$procdff$3317/CLK: \clk -> \data_out_dffeas_q_5.clk
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q.$procdff$3317/D: \data_out_dffeas_q_d -> \data_out_dffeas_q.d
+Rewrite gate.variant_w6/$flatten\data_out_dffeas_q.$procdff$3317/CLK: \clk -> \data_out_dffeas_q_5.clk
+Rewrite gate.variant_w6/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_1_Y \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_1.q } -> { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_1_Y \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_out [5] }
+Rewrite gate.variant_w6/data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_1_Y \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_3.q } -> { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_1_Y \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_1_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A \data_out [4] }
+Rewrite gate.variant_w6/data_out_dffeas_q_1_d_$lut_Y_A_1_$lut_Y/A: { \en_$lut_A_Y \rst \data_out_dffeas_q_1.q } -> { \en_$lut_A_Y \rst \data_out [5] }
+Rewrite gate.variant_w6/data_out_dffeas_q_1_d_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [5] \data_out_dffeas_q_1.q } -> { \data_in [5] \data_out [5] }
+Rewrite gate.variant_w6/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_in [17] \ctrl_in [6] \ctrl_in [7] \data_out_dffeas_q_1.q } -> { \data_in [17] \ctrl_in [6] \ctrl_in [7] \data_out [5] }
+Rewrite gate.variant_w6/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [11] \data_out_dffeas_q_1.q } -> { \data_in [11] \data_out [5] }
+Rewrite gate.variant_w6/data_out_dffeas_q_1_d_$lut_Y_A_3_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_in [23] \data_out_dffeas_q_1.q } -> { \data_in [23] \data_out [5] }
+Rewrite gate.variant_w6/data_out_dffeas_q_2_d_$lut_Y/A: { \data_out_dffeas_q_2_d_$lut_Y_A \en_$lut_A_Y \rst \data_out_dffeas_q_2.q } -> { \data_out_dffeas_q_2_d_$lut_Y_A \en_$lut_A_Y \rst \data_out [2] }
+Rewrite gate.variant_w6/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_1_Y \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_out_dffeas_q.q } -> { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_1_Y \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_out [1] }
+Rewrite gate.variant_w6/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [2] \data_out_dffeas_q_2.q } -> { \data_in [2] \data_out [2] }
+Rewrite gate.variant_w6/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [8] \ctrl_in [8] \ctrl_in [9] \data_out_dffeas_q_2.q } -> { \data_in [8] \ctrl_in [8] \ctrl_in [9] \data_out [2] }
+Rewrite gate.variant_w6/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_in [20] \ctrl_in [8] \ctrl_in [9] \data_out_dffeas_q_2.q } -> { \data_in [20] \ctrl_in [8] \ctrl_in [9] \data_out [2] }
+Rewrite gate.variant_w6/data_out_dffeas_q_2_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_in [14] \ctrl_in [6] \ctrl_in [7] \data_out_dffeas_q_2.q } -> { \data_in [14] \ctrl_in [6] \ctrl_in [7] \data_out [2] }
+Rewrite gate.variant_w6/data_out_dffeas_q_3_d_$lut_Y/A: { \data_out_dffeas_q_3_d_$lut_Y_A \en_$lut_A_Y \data_out_dffeas_q_3.q } -> { \data_out_dffeas_q_3_d_$lut_Y_A \en_$lut_A_Y \data_out [4] }
+Rewrite gate.variant_w6/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [4] \data_out_dffeas_q_3.q } -> { \data_in [4] \data_out [4] }
+Rewrite gate.variant_w6/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [22] \ctrl_in [8] \ctrl_in [9] \data_out_dffeas_q_3.q } -> { \data_in [22] \ctrl_in [8] \ctrl_in [9] \data_out [4] }
+Rewrite gate.variant_w6/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_in [10] \ctrl_in [8] \ctrl_in [9] \data_out_dffeas_q_3.q } -> { \data_in [10] \ctrl_in [8] \ctrl_in [9] \data_out [4] }
+Rewrite gate.variant_w6/data_out_dffeas_q_3_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [16] \ctrl_in [6] \ctrl_in [7] \data_out_dffeas_q_3.q } -> { \data_in [16] \ctrl_in [6] \ctrl_in [7] \data_out [4] }
+Rewrite gate.variant_w6/data_out_dffeas_q_4_d_$lut_Y/A: { \data_out_dffeas_q_4_d_$lut_Y_A \en_$lut_A_Y \rst \data_out_dffeas_q_4.q } -> { \data_out_dffeas_q_4_d_$lut_Y_A \en_$lut_A_Y \rst \data_out [0] }
+Rewrite gate.variant_w6/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_in [12] \ctrl_in [6] \ctrl_in [7] \data_out_dffeas_q_4.q } -> { \data_in [12] \ctrl_in [6] \ctrl_in [7] \data_out [0] }
+Rewrite gate.variant_w6/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [18] \data_out_dffeas_q_4.q } -> { \data_in [18] \data_out [0] }
+Rewrite gate.variant_w6/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_in [6] \data_out_dffeas_q_4.q } -> { \data_in [6] \data_out [0] }
+Rewrite gate.variant_w6/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [0] \data_out_dffeas_q_4.q } -> { \data_in [0] \data_out [0] }
+Rewrite gate.variant_w6/data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y/A: { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_4.q } -> { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_4_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_$lut_Y_A \data_out [0] }
+Rewrite gate.variant_w6/data_out_dffeas_q_5_d_$lut_Y/A: { \data_out_dffeas_q_5_d_$lut_Y_A \en_$lut_A_Y \rst \data_out_dffeas_q_5.q } -> { \data_out_dffeas_q_5_d_$lut_Y_A \en_$lut_A_Y \rst \data_out [3] }
+Rewrite gate.variant_w6/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_1_Y \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_out_dffeas_q_5.q } -> { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_1_Y \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A \data_out [3] }
+Rewrite gate.variant_w6/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [3] \data_out_dffeas_q_5.q } -> { \data_in [3] \data_out [3] }
+Rewrite gate.variant_w6/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_$lut_Y/A: { \data_in [9] \ctrl_in [8] \ctrl_in [9] \data_out_dffeas_q_5.q } -> { \data_in [9] \ctrl_in [8] \ctrl_in [9] \data_out [3] }
+Rewrite gate.variant_w6/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_1_$lut_Y/A: { \data_in [21] \ctrl_in [8] \ctrl_in [9] \data_out_dffeas_q_5.q } -> { \data_in [21] \ctrl_in [8] \ctrl_in [9] \data_out [3] }
+Rewrite gate.variant_w6/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_in [15] \ctrl_in [6] \ctrl_in [7] \data_out_dffeas_q_5.q } -> { \data_in [15] \ctrl_in [6] \ctrl_in [7] \data_out [3] }
+Rewrite gate.variant_w6/data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1_$lut_Y/A: { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A \data_out_dffeas_q_2.q } -> { \en_$lut_A_1_Y_$lut_A_1_Y_$lut_A_Y \data_out_dffeas_q_5_d_$lut_Y_A_$lut_Y_A_2_$lut_Y_A_1_$lut_Y_A \data_out [2] }
+Rewrite gate.variant_w6/data_out_dffeas_q_d_$lut_Y/A: { \data_out_dffeas_q_d_$lut_Y_A \en_$lut_A_Y \rst \data_out_dffeas_q.q } -> { \data_out_dffeas_q_d_$lut_Y_A \en_$lut_A_Y \rst \data_out [1] }
+Rewrite gate.variant_w6/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_$lut_Y_A_2_$lut_Y/A: { \data_in [13] \ctrl_in [6] \ctrl_in [7] \data_out_dffeas_q.q } -> { \data_in [13] \ctrl_in [6] \ctrl_in [7] \data_out [1] }
+Rewrite gate.variant_w6/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [19] \data_out_dffeas_q.q } -> { \data_in [19] \data_out [1] }
+Rewrite gate.variant_w6/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y/A: { \data_in [7] \data_out_dffeas_q.q } -> { \data_in [7] \data_out [1] }
+Rewrite gate.variant_w6/data_out_dffeas_q_d_$lut_Y_A_$lut_Y_A_1_$lut_Y_A_1_$lut_Y_A_$lut_Y/A: { \data_in [1] \data_out_dffeas_q.q } -> { \data_in [1] \data_out [1] }
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3411: \lane[0].q [0] -> \data_out [0]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3412: \lane[0].q [1] -> \data_out [1]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3413: \lane[0].q [2] -> \data_out [2]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3414: \lane[0].q [3] -> \data_out [3]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3415: \lane[0].q [4] -> \data_out [4]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3416: \lane[0].q [5] -> \data_out [5]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3417: \data_in [0] -> \lane[0].a [0]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3418: \data_in [1] -> \lane[0].a [1]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3419: \data_in [2] -> \lane[0].a [2]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3420: \data_in [3] -> \lane[0].a [3]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3421: \data_in [4] -> \lane[0].a [4]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3422: \data_in [5] -> \lane[0].a [5]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3423: \data_in [6] -> \lane[0].b [0]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3424: \data_in [7] -> \lane[0].b [1]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3425: \data_in [8] -> \lane[0].b [2]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3426: \data_in [9] -> \lane[0].b [3]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3427: \data_in [10] -> \lane[0].b [4]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3428: \data_in [11] -> \lane[0].b [5]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3429: \data_in [12] -> \lane[0].c [0]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3430: \data_in [13] -> \lane[0].c [1]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3431: \data_in [14] -> \lane[0].c [2]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3432: \data_in [15] -> \lane[0].c [3]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3433: \data_in [16] -> \lane[0].c [4]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3434: \data_in [17] -> \lane[0].c [5]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3435: \data_in [18] -> \lane[0].d [0]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3436: \data_in [19] -> \lane[0].d [1]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3437: \data_in [20] -> \lane[0].d [2]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3438: \data_in [21] -> \lane[0].d [3]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3439: \data_in [22] -> \lane[0].d [4]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3440: \data_in [23] -> \lane[0].d [5]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3441: \ctrl_in [0] -> \lane[0].s [0]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3442: \ctrl_in [1] -> \lane[0].s [1]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3443: \ctrl_in [2] -> \lane[0].s [2]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3444: \ctrl_in [3] -> \lane[0].s [3]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3445: \ctrl_in [4] -> \lane[0].s [4]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3446: \ctrl_in [5] -> \lane[0].s [5]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3447: \ctrl_in [6] -> \lane[0].s [6]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3448: \ctrl_in [7] -> \lane[0].s [7]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3449: \ctrl_in [8] -> \lane[0].s [8]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3450: \ctrl_in [9] -> \lane[0].s [9]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3451: \ctrl_in [10] -> \lane[0].s [10]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3452: \ctrl_in [11] -> \lane[0].s [11]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3453: \ctrl_in [12] -> \lane[0].s [12]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3454: \ctrl_in [13] -> \lane[0].s [13]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3455: \ctrl_in [14] -> \lane[0].s [14]
+Add gold.variant_w6/$auto$insbuf.cc:97:execute$3456: \ctrl_in [15] -> \lane[0].s [15]
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:32$3/A: \data_in [11:6] -> \lane[0].b
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:32$3/B: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:37$5/A: \data_in [5:0] -> \lane[0].a
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:37$5/B: \data_in [11:6] -> \lane[0].b
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:47$10/A: \data_in [23:18] -> \lane[0].d
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:47$10/B: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:54$13/A: \data_in [17:12] -> \lane[0].c
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:54$13/B: \data_in [23:18] -> \lane[0].d
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:58$15/A: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$add$../../../scripts/algorithm_cases/variant_w6.v:58$15/B: \data_in [5:0] -> \lane[0].a
+Rewrite gold.variant_w6/$and$../../../scripts/algorithm_cases/variant_w6.v:45$8/A: \data_in [11:6] -> \lane[0].b
+Rewrite gold.variant_w6/$and$../../../scripts/algorithm_cases/variant_w6.v:45$8/B: \data_in [23:18] -> \lane[0].d
+Rewrite gold.variant_w6/$or$../../../scripts/algorithm_cases/variant_w6.v:44$7/A: \data_in [5:0] -> \lane[0].a
+Rewrite gold.variant_w6/$or$../../../scripts/algorithm_cases/variant_w6.v:44$7/B: \data_in [17:12] -> \lane[0].c
+Rewrite gold.variant_w6/$or$../../../scripts/algorithm_cases/variant_w6.v:53$12/A: \data_in [11:6] -> \lane[0].b
+Rewrite gold.variant_w6/$or$../../../scripts/algorithm_cases/variant_w6.v:53$12/B: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$procmux$17/A: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$procmux$25_CMP0/A: \ctrl_in [9:8] -> \lane[0].s [9:8]
+Rewrite gold.variant_w6/$procmux$26_CMP0/A: \ctrl_in [9:8] -> \lane[0].s [9:8]
+Rewrite gold.variant_w6/$procmux$27_CMP0/A: \ctrl_in [9:8] -> \lane[0].s [9:8]
+Rewrite gold.variant_w6/$procmux$34_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.variant_w6/$procmux$35_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.variant_w6/$procmux$36_CMP0/A: \ctrl_in [7:6] -> \lane[0].s [7:6]
+Rewrite gold.variant_w6/$procmux$46/A: \data_in [23:18] -> \lane[0].d
+Rewrite gold.variant_w6/$procmux$47_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.variant_w6/$procmux$48_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.variant_w6/$procmux$49_CMP0/A: \ctrl_in [5:4] -> \lane[0].s [5:4]
+Rewrite gold.variant_w6/$procmux$58/A: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$procmux$59_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.variant_w6/$procmux$60_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.variant_w6/$procmux$61_CMP0/A: \ctrl_in [3:2] -> \lane[0].s [3:2]
+Rewrite gold.variant_w6/$procmux$66_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.variant_w6/$procmux$67_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.variant_w6/$procmux$68_CMP0/A: \ctrl_in [1:0] -> \lane[0].s [1:0]
+Rewrite gold.variant_w6/$sub$../../../scripts/algorithm_cases/variant_w6.v:33$4/A: \data_in [17:12] -> \lane[0].c
+Rewrite gold.variant_w6/$sub$../../../scripts/algorithm_cases/variant_w6.v:33$4/B: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$sub$../../../scripts/algorithm_cases/variant_w6.v:52$11/A: \data_in [5:0] -> \lane[0].a
+Rewrite gold.variant_w6/$sub$../../../scripts/algorithm_cases/variant_w6.v:52$11/B: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$xor$../../../scripts/algorithm_cases/variant_w6.v:31$2/A: \data_in [5:0] -> \lane[0].a
+Rewrite gold.variant_w6/$xor$../../../scripts/algorithm_cases/variant_w6.v:31$2/B: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$xor$../../../scripts/algorithm_cases/variant_w6.v:38$6/A: \data_in [11:6] -> \lane[0].b
+Rewrite gold.variant_w6/$xor$../../../scripts/algorithm_cases/variant_w6.v:38$6/B: \data_in [17:12] -> \lane[0].c
+Rewrite gold.variant_w6/$xor$../../../scripts/algorithm_cases/variant_w6.v:46$9/A: \data_in [17:12] -> \lane[0].c
+Rewrite gold.variant_w6/$xor$../../../scripts/algorithm_cases/variant_w6.v:46$9/B: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$xor$../../../scripts/algorithm_cases/variant_w6.v:55$14/A: \lane[0].q -> \data_out
+Rewrite gold.variant_w6/$xor$../../../scripts/algorithm_cases/variant_w6.v:55$14/B: \data_in [23:18] -> \lane[0].d
+
+3. Executing EQY PARTITION task.
+
+3.1. Processing module pair gold.variant_w6 / gate.variant_w6.
+
+3.1.1. Processing matched IDs for module variant_w6.
+
+3.1.2. Create fragment partitions for module variant_w6.
+Adding output bit \data_out [5] to partition 0.
+Adding output bit \data_out [0] to partition 0.
+Adding output bit \data_out [1] to partition 0.
+Adding output bit \data_out [2] to partition 0.
+Adding output bit \data_out [3] to partition 0.
+Adding output bit \data_out [4] to partition 0.
+
+Final list of fragment partitions:
+  0 \data_out [4] \data_out [3] \data_out [2] \data_out [1] \data_out [0] \data_out [5] <= \clk \data_in [0] \data_in [12] \data_in [6] \data_in [18] \data_in [1] \data_in [13] \data_in [7] \data_in [19] \data_in [2] \data_in [20] \data_in [8] \data_in [14] \data_in [3] \data_in [21] \data_in [9] \data_in [15] \data_in [4] \data_in [22] \data_in [10] \data_in [16] \ctrl_in [6] \ctrl_in [7] \ctrl_in [8] \ctrl_in [9] \data_in [5] \data_in [23] \ctrl_in [4] \ctrl_in [5] \data_in [11] \data_in [17] \ctrl_in [0] \ctrl_in [1] \en \ctrl_in [2] \ctrl_in [3] \rst
+
+3.1.3. Execute partitioning commands for module variant_w6.
+
+Amending partitions:
+Execute queued amend rules.
+Find automatic amend rules.
+  Checking partition 0:
+    Found 0 po matches and 0 auto/pi matches.
+
+Assigning partition names:
+Automatically naming partition 0 'data_out' using a PO name: data_out
+
+Partition Summary:
+  Fragments:
+       0: \data_out
+  Partitions:
+       0: data_out
+  Fragment-Partition-Matrix:
+           0          
+           0
+       0   #  data_out
+  Legend for Fragment-Partition-Matrix:
+      #  .... partition is this single fragment
+      *  .... fragments merged into single partition
+      +  .... fragments amended to the partition
+      =  .... fragment is driving a partition input
+      -  .... fragment is driving an amended fragment
+      .  .... no relationship between fragment and partition
+      ,  .... unused fragment index (as result of grouping)
+
+3.1.4. Write partitions for module variant_w6.
+Adding non-output bit \rst to partition 1.
+Adding non-output bit \en to partition 1.
+Adding output bit \data_out [5] to partition 1.
+Adding output bit \data_out [4] to partition 1.
+Adding output bit \data_out [3] to partition 1.
+Adding output bit \data_out [2] to partition 1.
+Adding output bit \data_out [1] to partition 1.
+Adding output bit \data_out [0] to partition 1.
+Adding non-output bit \data_in [23] to partition 1.
+Adding non-output bit \data_in [22] to partition 1.
+Adding non-output bit \data_in [21] to partition 1.
+Adding non-output bit \data_in [20] to partition 1.
+Adding non-output bit \data_in [19] to partition 1.
+Adding non-output bit \data_in [18] to partition 1.
+Adding non-output bit \data_in [17] to partition 1.
+Adding non-output bit \data_in [16] to partition 1.
+Adding non-output bit \data_in [15] to partition 1.
+Adding non-output bit \data_in [14] to partition 1.
+Adding non-output bit \data_in [13] to partition 1.
+Adding non-output bit \data_in [12] to partition 1.
+Adding non-output bit \data_in [11] to partition 1.
+Adding non-output bit \data_in [10] to partition 1.
+Adding non-output bit \data_in [9] to partition 1.
+Adding non-output bit \data_in [8] to partition 1.
+Adding non-output bit \data_in [7] to partition 1.
+Adding non-output bit \data_in [6] to partition 1.
+Adding non-output bit \data_in [5] to partition 1.
+Adding non-output bit \data_in [4] to partition 1.
+Adding non-output bit \data_in [3] to partition 1.
+Adding non-output bit \data_in [2] to partition 1.
+Adding non-output bit \data_in [1] to partition 1.
+Adding non-output bit \data_in [0] to partition 1.
+Adding non-output bit \ctrl_in [15] to partition 1.
+Adding non-output bit \ctrl_in [14] to partition 1.
+Adding non-output bit \ctrl_in [13] to partition 1.
+Adding non-output bit \ctrl_in [12] to partition 1.
+Adding non-output bit \ctrl_in [11] to partition 1.
+Adding non-output bit \ctrl_in [10] to partition 1.
+Adding non-output bit \ctrl_in [9] to partition 1.
+Adding non-output bit \ctrl_in [8] to partition 1.
+Adding non-output bit \ctrl_in [7] to partition 1.
+Adding non-output bit \ctrl_in [6] to partition 1.
+Adding non-output bit \ctrl_in [5] to partition 1.
+Adding non-output bit \ctrl_in [4] to partition 1.
+Adding non-output bit \ctrl_in [3] to partition 1.
+Adding non-output bit \ctrl_in [2] to partition 1.
+Adding non-output bit \ctrl_in [1] to partition 1.
+Adding non-output bit \ctrl_in [0] to partition 1.
+Adding non-output bit \clk to partition 1.
+Writing partition 0 as variant_w6.data_out.
+  partition pi bit 0: \clk <-> \clk
+  partition pi bit 1: \data_in [0] <-> \data_in [0]
+  partition pi bit 2: \data_in [12] <-> \data_in [12]
+  partition pi bit 3: \data_in [6] <-> \data_in [6]
+  partition pi bit 4: \data_in [18] <-> \data_in [18]
+  partition pi bit 5: \data_in [1] <-> \data_in [1]
+  partition pi bit 6: \data_in [13] <-> \data_in [13]
+  partition pi bit 7: \data_in [7] <-> \data_in [7]
+  partition pi bit 8: \data_in [19] <-> \data_in [19]
+  partition pi bit 9: \data_in [2] <-> \data_in [2]
+  partition pi bit 10: \data_in [20] <-> \data_in [20]
+  partition pi bit 11: \data_in [8] <-> \data_in [8]
+  partition pi bit 12: \data_in [14] <-> \data_in [14]
+  partition pi bit 13: \data_in [3] <-> \data_in [3]
+  partition pi bit 14: \data_in [21] <-> \data_in [21]
+  partition pi bit 15: \data_in [9] <-> \data_in [9]
+  partition pi bit 16: \data_in [15] <-> \data_in [15]
+  partition pi bit 17: \data_in [4] <-> \data_in [4]
+  partition pi bit 18: \data_in [22] <-> \data_in [22]
+  partition pi bit 19: \data_in [10] <-> \data_in [10]
+  partition pi bit 20: \data_in [16] <-> \data_in [16]
+  partition pi bit 21: \ctrl_in [6] <-> \ctrl_in [6]
+  partition pi bit 22: \ctrl_in [7] <-> \ctrl_in [7]
+  partition pi bit 23: \ctrl_in [8] <-> \ctrl_in [8]
+  partition pi bit 24: \ctrl_in [9] <-> \ctrl_in [9]
+  partition pi bit 25: \data_in [5] <-> \data_in [5]
+  partition pi bit 26: \data_in [23] <-> \data_in [23]
+  partition pi bit 27: \ctrl_in [4] <-> \ctrl_in [4]
+  partition pi bit 28: \ctrl_in [5] <-> \ctrl_in [5]
+  partition pi bit 29: \data_in [11] <-> \data_in [11]
+  partition pi bit 30: \data_in [17] <-> \data_in [17]
+  partition pi bit 31: \ctrl_in [0] <-> \ctrl_in [0]
+  partition pi bit 32: \ctrl_in [1] <-> \ctrl_in [1]
+  partition pi bit 33: \en <-> \en
+  partition pi bit 34: \ctrl_in [2] <-> \ctrl_in [2]
+  partition pi bit 35: \ctrl_in [3] <-> \ctrl_in [3]
+  partition pi bit 36: \rst <-> \rst
+  partition po bit 0: \data_out [4] <-> \data_out [4]
+  partition po bit 1: \data_out [3] <-> \data_out [3]
+  partition po bit 2: \data_out [2] <-> \data_out [2]
+  partition po bit 3: \data_out [1] <-> \data_out [1]
+  partition po bit 4: \data_out [0] <-> \data_out [0]
+  partition po bit 5: \data_out [5] <-> \data_out [5]
+
+3.1.5. Executing RTLIL backend.
+Output filename: partitions/variant_w6.data_out.il
+<suppressed ~4450 debug messages>
+
+3.1.6. Executing CHECK pass (checking for obvious problems).
+Checking module gate.variant_w6.data_out...
+Checking module gold.variant_w6.data_out...
+Found and reported 0 problems.
+
+Writing partition 1 as variant_w6.
+  partition pi bit 0: \ctrl_in [10] <-> \ctrl_in [10]
+  partition pi bit 1: \ctrl_in [11] <-> \ctrl_in [11]
+  partition pi bit 2: \ctrl_in [12] <-> \ctrl_in [12]
+  partition pi bit 3: \ctrl_in [13] <-> \ctrl_in [13]
+  partition pi bit 4: \ctrl_in [14] <-> \ctrl_in [14]
+  partition pi bit 5: \ctrl_in [15] <-> \ctrl_in [15]
+  partition pi bit 6: \clk <-> \clk
+  partition pi bit 7: \data_in [0] <-> \data_in [0]
+  partition pi bit 8: \data_in [12] <-> \data_in [12]
+  partition pi bit 9: \data_in [6] <-> \data_in [6]
+  partition pi bit 10: \data_in [18] <-> \data_in [18]
+  partition pi bit 11: \data_in [1] <-> \data_in [1]
+  partition pi bit 12: \data_in [13] <-> \data_in [13]
+  partition pi bit 13: \data_in [7] <-> \data_in [7]
+  partition pi bit 14: \data_in [19] <-> \data_in [19]
+  partition pi bit 15: \data_in [2] <-> \data_in [2]
+  partition pi bit 16: \data_in [20] <-> \data_in [20]
+  partition pi bit 17: \data_in [8] <-> \data_in [8]
+  partition pi bit 18: \data_in [14] <-> \data_in [14]
+  partition pi bit 19: \data_in [3] <-> \data_in [3]
+  partition pi bit 20: \data_in [21] <-> \data_in [21]
+  partition pi bit 21: \data_in [9] <-> \data_in [9]
+  partition pi bit 22: \data_in [15] <-> \data_in [15]
+  partition pi bit 23: \data_in [4] <-> \data_in [4]
+  partition pi bit 24: \data_in [22] <-> \data_in [22]
+  partition pi bit 25: \data_in [10] <-> \data_in [10]
+  partition pi bit 26: \data_in [16] <-> \data_in [16]
+  partition pi bit 27: \ctrl_in [6] <-> \ctrl_in [6]
+  partition pi bit 28: \ctrl_in [7] <-> \ctrl_in [7]
+  partition pi bit 29: \ctrl_in [8] <-> \ctrl_in [8]
+  partition pi bit 30: \ctrl_in [9] <-> \ctrl_in [9]
+  partition pi bit 31: \data_in [5] <-> \data_in [5]
+  partition pi bit 32: \data_in [23] <-> \data_in [23]
+  partition pi bit 33: \ctrl_in [4] <-> \ctrl_in [4]
+  partition pi bit 34: \ctrl_in [5] <-> \ctrl_in [5]
+  partition pi bit 35: \data_in [11] <-> \data_in [11]
+  partition pi bit 36: \data_in [17] <-> \data_in [17]
+  partition pi bit 37: \ctrl_in [0] <-> \ctrl_in [0]
+  partition pi bit 38: \ctrl_in [1] <-> \ctrl_in [1]
+  partition pi bit 39: \ctrl_in [2] <-> \ctrl_in [2]
+  partition pi bit 40: \ctrl_in [3] <-> \ctrl_in [3]
+  partition pi bit 41: \en <-> \en
+  partition pi bit 42: \rst <-> \rst
+  partition po bit 0: \data_out [0] <-> \data_out [0]
+  partition po bit 1: \data_out [1] <-> \data_out [1]
+  partition po bit 2: \data_out [2] <-> \data_out [2]
+  partition po bit 3: \data_out [3] <-> \data_out [3]
+  partition po bit 4: \data_out [4] <-> \data_out [4]
+  partition po bit 5: \data_out [5] <-> \data_out [5]
+
+3.1.7. Executing RTLIL backend.
+Output filename: modules/variant_w6.il
+<suppressed ~1530 debug messages>
+
+End of script. Logfile hash: b105040796
+Yosys 0.69+71 (git sha1 150c32b03-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 14% 2x write_rtlil (0 sec), 14% 2x read_rtlil (0 sec), ...

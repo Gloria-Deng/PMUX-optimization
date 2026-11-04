@@ -1,0 +1,22 @@
+EQY 19:01:58 [changed_luts] read_gold: starting process "yosys -ql changed_luts/gold.log changed_luts/gold.ys"
+EQY 19:01:58 [changed_luts] read_gold: finished (returncode=0)
+EQY 19:01:58 [changed_luts] read_gate: starting process "yosys -ql changed_luts/gate.log changed_luts/gate.ys"
+EQY 19:01:58 [changed_luts] read_gate: finished (returncode=0)
+EQY 19:01:58 [changed_luts] combine: starting process "yosys -ql changed_luts/combine.log changed_luts/combine.ys"
+EQY 19:01:58 [changed_luts] combine: finished (returncode=0)
+EQY 19:01:58 [changed_luts] partition: starting process "cd changed_luts& yosys -ql partition.log partition.ys"
+EQY 19:01:59 [changed_luts] partition: finished (returncode=0)
+EQY 19:01:59 [changed_luts] run: starting process "make -C changed_luts -f strategies.mk"
+EQY 19:01:59 [changed_luts] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/changed_luts'
+EQY 19:01:59 [changed_luts] run: Running strategy 'whole' on 'pmux_case01_balanced.data_out'..
+EQY 19:01:59 [changed_luts] run: Could not prove equivalence of partition 'pmux_case01_balanced.data_out' using strategy 'whole': partitions not equivalent
+EQY 19:01:59 [changed_luts] run: make -f strategies.mk summary
+EQY 19:01:59 [changed_luts] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/changed_luts'
+EQY 19:01:59 [changed_luts] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/changed_luts'
+EQY 19:01:59 [changed_luts] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/changed_luts'
+EQY 19:01:59 [changed_luts] run: finished (returncode=0)
+EQY 19:01:59 [changed_luts] Warning: Failed to prove equivalence for 1/1 partitions:
+EQY 19:01:59 [changed_luts] Failed to prove equivalence of partition pmux_case01_balanced.data_out
+EQY 19:01:59 [changed_luts] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 19:01:59 [changed_luts] summary: Elapsed process time unvailable on Windows
+EQY 19:01:59 [changed_luts] DONE (FAIL, rc=2)

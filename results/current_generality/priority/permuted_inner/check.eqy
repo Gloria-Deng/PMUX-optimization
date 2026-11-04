@@ -1,0 +1,17 @@
+[options]
+[gold]
+read_rtlil before.il
+prep -top audit -flatten
+setundef -undriven -zero
+setundef -init -zero
+[gate]
+read_rtlil after.il
+prep -top audit -flatten
+setundef -undriven -zero
+setundef -init -zero
+[collect audit]
+group *
+bind *
+[strategy whole]
+use sat
+depth 12

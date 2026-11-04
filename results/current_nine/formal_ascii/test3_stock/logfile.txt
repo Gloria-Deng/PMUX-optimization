@@ -1,0 +1,22 @@
+EQY 19:01:26 [test3_stock] read_gold: starting process "yosys -ql test3_stock/gold.log test3_stock/gold.ys"
+EQY 19:01:26 [test3_stock] read_gold: finished (returncode=0)
+EQY 19:01:26 [test3_stock] read_gate: starting process "yosys -ql test3_stock/gate.log test3_stock/gate.ys"
+EQY 19:01:26 [test3_stock] read_gate: finished (returncode=0)
+EQY 19:01:26 [test3_stock] combine: starting process "yosys -ql test3_stock/combine.log test3_stock/combine.ys"
+EQY 19:01:26 [test3_stock] combine: finished (returncode=0)
+EQY 19:01:26 [test3_stock] partition: starting process "cd test3_stock& yosys -ql partition.log partition.ys"
+EQY 19:01:26 [test3_stock] partition: finished (returncode=0)
+EQY 19:01:26 [test3_stock] run: starting process "make -C test3_stock -f strategies.mk"
+EQY 19:01:26 [test3_stock] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test3_stock'
+EQY 19:01:26 [test3_stock] run: Running strategy 'whole' on 'test3.gpioout'..
+EQY 19:01:27 [test3_stock] run: Proved equivalence of partition 'test3.gpioout' using strategy 'whole'
+EQY 19:01:27 [test3_stock] run: make -f strategies.mk summary
+EQY 19:01:27 [test3_stock] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test3_stock'
+EQY 19:01:27 [test3_stock] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test3_stock'
+EQY 19:01:27 [test3_stock] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/test3_stock'
+EQY 19:01:27 [test3_stock] run: finished (returncode=0)
+EQY 19:01:27 [test3_stock] Successfully proved equivalence of partition test3.gpioout
+EQY 19:01:27 [test3_stock] Successfully proved designs equivalent
+EQY 19:01:27 [test3_stock] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 19:01:27 [test3_stock] summary: Elapsed process time unvailable on Windows
+EQY 19:01:27 [test3_stock] DONE (PASS, rc=0)

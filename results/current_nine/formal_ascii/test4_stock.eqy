@@ -1,0 +1,36 @@
+[options]
+
+[gold]
+read_verilog -sv "../../../cases/test4.v"
+hierarchy -check -top test4
+proc
+setundef -undriven -zero
+setundef -init -zero
+prep -top test4 -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top test4
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[gate]
+read_rtlil "../test4/stock/postabc.il"
+read_verilog -overwrite "../../../plugin/dffeas_formal.v"
+prep -top test4 -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top test4
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[collect test4]
+group *
+bind *
+
+[strategy whole]
+use sat
+depth 12

@@ -1,0 +1,3 @@
+changed=12
+exit=2
+('FAIL_OR_UNPROVEN', 'exit=2 whole_design_sentence=False partition_failure=True done_fail=True')

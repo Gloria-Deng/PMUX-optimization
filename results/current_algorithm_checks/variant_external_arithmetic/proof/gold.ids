@@ -1,0 +1,16 @@
+variant_external_arithmetic . A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:2.1-69.10" A:top=1 A:dynports=1
+variant_external_arithmetic shared_out w=11:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:11.35-11.45" P=O
+variant_external_arithmetic rst w=0:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:7.16-7.19" P=I
+variant_external_arithmetic lane[0].sum_bq w=11:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:25.26-25.32"
+variant_external_arithmetic lane[0].s w=15:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:21.21-21.22"
+variant_external_arithmetic lane[0].q w=11:0 A:init=0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:22.25-22.26"
+variant_external_arithmetic lane[0].next_q w=11:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:24.25-24.31"
+variant_external_arithmetic lane[0].d w=11:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:20.26-20.27"
+variant_external_arithmetic lane[0].c w=11:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:19.26-19.27"
+variant_external_arithmetic lane[0].b w=11:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:18.26-18.27"
+variant_external_arithmetic lane[0].a w=11:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:17.26-17.27"
+variant_external_arithmetic en w=0:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:8.16-8.18" P=I
+variant_external_arithmetic data_out w=11:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:12.35-12.43" P=O
+variant_external_arithmetic data_in w=47:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:9.36-9.43" P=I
+variant_external_arithmetic ctrl_in w=15:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:10.31-10.38" P=I
+variant_external_arithmetic clk w=0:0 A:src="../../../scripts/algorithm_cases/variant_external_arithmetic.v:6.16-6.19" P=I

@@ -1,0 +1,8 @@
+group pmux_case02_pipeline clk ctrl_in data_in data_out en lane[0].mid rst
+bind pmux_case02_pipeline clk
+bind pmux_case02_pipeline ctrl_in
+bind pmux_case02_pipeline data_in
+bind pmux_case02_pipeline data_out
+bind pmux_case02_pipeline en
+bind pmux_case02_pipeline lane[0].mid
+bind pmux_case02_pipeline rst

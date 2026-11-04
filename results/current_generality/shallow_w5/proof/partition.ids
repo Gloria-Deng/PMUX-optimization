@@ -1,0 +1,7 @@
+group shallow_w5 clk ctrl_in data_in data_out en rst
+bind shallow_w5 clk
+bind shallow_w5 ctrl_in
+bind shallow_w5 data_in
+bind shallow_w5 data_out
+bind shallow_w5 en
+bind shallow_w5 rst

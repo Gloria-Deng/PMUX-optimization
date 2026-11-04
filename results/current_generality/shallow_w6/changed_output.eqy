@@ -1,0 +1,38 @@
+[options]
+
+[gold]
+read_verilog -sv "../../../scripts/generality_cases/shallow_w6.v"
+hierarchy -check -top shallow_w6
+proc
+setundef -undriven -zero
+setundef -init -zero
+rename -hide
+prep -top shallow_w6 -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top shallow_w6
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[gate]
+read_rtlil "changed_output.il"
+read_verilog -overwrite "../../../plugin/dffeas_formal.v"
+rename -hide
+prep -top shallow_w6 -flatten
+setundef -undriven -zero
+setundef -init -zero
+hierarchy -purge_lib -top shallow_w6
+memory_map
+async2sync
+setundef -undriven -zero
+setundef -init -zero
+
+[collect shallow_w6]
+group *
+bind *
+
+[strategy whole]
+use sat
+depth 12

@@ -1,0 +1,11 @@
+# [*] gold-match *
+signed_add_wide a0 a0
+signed_add_wide a1 a1
+signed_add_wide a2 a2
+signed_add_wide a3 a3
+signed_add_wide b0 b0
+signed_add_wide b1 b1
+signed_add_wide b2 b2
+signed_add_wide b3 b3
+signed_add_wide s s
+signed_add_wide y y

@@ -1,0 +1,22 @@
+EQY 23:05:38 [negative_control] read_gold: starting process "yosys -ql negative_control/gold.log negative_control/gold.ys"
+EQY 23:05:38 [negative_control] read_gate: starting process "yosys -ql negative_control/gate.log negative_control/gate.ys"
+EQY 23:05:38 [negative_control] read_gold: finished (returncode=0)
+EQY 23:05:38 [negative_control] read_gate: finished (returncode=0)
+EQY 23:05:38 [negative_control] combine: starting process "yosys -ql negative_control/combine.log negative_control/combine.ys"
+EQY 23:05:38 [negative_control] combine: finished (returncode=0)
+EQY 23:05:38 [negative_control] partition: starting process "cd negative_control& yosys -ql partition.log partition.ys"
+EQY 23:05:38 [negative_control] partition: finished (returncode=0)
+EQY 23:05:38 [negative_control] run: starting process "make -C negative_control -f strategies.mk"
+EQY 23:05:39 [negative_control] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/negative_control'
+EQY 23:05:39 [negative_control] run: Running strategy 'whole' on 'pmux_case05_nested.data_out'..
+EQY 23:05:39 [negative_control] run: Could not prove equivalence of partition 'pmux_case05_nested.data_out' using strategy 'whole': partitions not equivalent
+EQY 23:05:39 [negative_control] run: make -f strategies.mk summary
+EQY 23:05:39 [negative_control] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/negative_control'
+EQY 23:05:40 [negative_control] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/negative_control'
+EQY 23:05:40 [negative_control] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/video_eqy_review_vgl9s0eb/negative_control'
+EQY 23:05:40 [negative_control] run: finished (returncode=0)
+EQY 23:05:40 [negative_control] Warning: Failed to prove equivalence for 1/1 partitions:
+EQY 23:05:40 [negative_control] Failed to prove equivalence of partition pmux_case05_nested.data_out
+EQY 23:05:40 [negative_control] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+EQY 23:05:40 [negative_control] summary: Elapsed process time unvailable on Windows
+EQY 23:05:40 [negative_control] DONE (FAIL, rc=2)

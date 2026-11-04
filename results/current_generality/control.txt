@@ -1,0 +1,4 @@
+changed_real_output=True
+exit=2
+verdict=FAIL_OR_UNPROVEN
+exit=2 whole_design_sentence=False partition_failure=True done_fail=True

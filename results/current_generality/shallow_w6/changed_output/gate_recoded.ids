@@ -1,0 +1,7 @@
+shallow_w6 . A:src="../../../scripts/generality_cases/shallow_w6.v:2.1-69.10" A:top=1 A:dynports=1
+shallow_w6 rst w=0:0 A:src="../../../scripts/generality_cases/shallow_w6.v:7.16-7.19" P=I
+shallow_w6 en w=0:0 A:src="../../../scripts/generality_cases/shallow_w6.v:8.16-8.18" P=I
+shallow_w6 data_out w=5:0 P=O
+shallow_w6 data_in w=23:0 A:src="../../../scripts/generality_cases/shallow_w6.v:9.36-9.43" P=I
+shallow_w6 ctrl_in w=15:0 A:src="../../../scripts/generality_cases/shallow_w6.v:10.31-10.38" P=I
+shallow_w6 clk w=0:0 A:src="../../../scripts/generality_cases/shallow_w6.v:6.16-6.19" P=I

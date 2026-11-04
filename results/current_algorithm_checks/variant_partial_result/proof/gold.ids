@@ -1,0 +1,10 @@
+variant_partial_result . A:src="../../../scripts/algorithm_cases/variant_partial_result.v:1.1-14.10" A:top=1
+variant_partial_result y w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:1.82-1.83" P=O
+variant_partial_result x w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:1.43-1.44" P=I
+variant_partial_result s w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:1.63-1.64" P=I
+variant_partial_result oc w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:2.26-2.28"
+variant_partial_result ob w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:2.19-2.21"
+variant_partial_result oa w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:2.12-2.14"
+variant_partial_result c w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:1.49-1.50" P=I
+variant_partial_result b w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:1.47-1.48" P=I
+variant_partial_result a w=5:0 A:src="../../../scripts/algorithm_cases/variant_partial_result.v:1.45-1.46" P=I

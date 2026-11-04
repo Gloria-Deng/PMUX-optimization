@@ -1,0 +1,10 @@
+# [*] gold-match *
+shared_upstream_cones a a
+shared_upstream_cones b b
+shared_upstream_cones c c
+shared_upstream_cones d d
+shared_upstream_cones s s
+shared_upstream_cones t t
+shared_upstream_cones untouched untouched
+shared_upstream_cones wide wide
+shared_upstream_cones y y

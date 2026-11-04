@@ -1,0 +1,8 @@
+shallow_priority . A:src="../../../scripts/generality_cases/shallow_priority.v:1.1-26.10" A:top=1
+shallow_priority y w=7:0 A:src="../../../scripts/generality_cases/shallow_priority.v:1.80-1.81" P=O
+shallow_priority s w=7:0 A:src="../../../scripts/generality_cases/shallow_priority.v:1.60-1.61" P=I
+shallow_priority q w=7:0 A:src="../../../scripts/generality_cases/shallow_priority.v:1.45-1.46" P=I
+shallow_priority d w=7:0 A:src="../../../scripts/generality_cases/shallow_priority.v:1.43-1.44" P=I
+shallow_priority c w=7:0 A:src="../../../scripts/generality_cases/shallow_priority.v:1.41-1.42" P=I
+shallow_priority b w=7:0 A:src="../../../scripts/generality_cases/shallow_priority.v:1.39-1.40" P=I
+shallow_priority a w=7:0 A:src="../../../scripts/generality_cases/shallow_priority.v:1.37-1.38" P=I

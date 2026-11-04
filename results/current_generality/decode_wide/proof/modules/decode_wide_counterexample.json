@@ -1,0 +1,41 @@
+{
+  "partition": {
+    "index": 1,
+    "name": "decode_wide_counterexample",
+    "inbits": {
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "outbits": {
+      "a": [
+        0
+      ],
+      "b": [
+        0
+      ]
+    },
+    "crossbits": {}
+  },
+  "gold_module": {
+    "name": "gold.decode_wide_counterexample",
+    "internal": {},
+    "unused": {},
+    "cellcount": 2,
+    "bitcount": 10
+  },
+  "gate_module": {
+    "name": "gold.decode_wide_counterexample",
+    "internal": {},
+    "unused": {},
+    "cellcount": 9,
+    "bitcount": 17
+  }
+}

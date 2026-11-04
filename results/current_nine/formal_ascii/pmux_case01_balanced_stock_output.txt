@@ -1,0 +1,22 @@
+EQY 19:01:33 [pmux_case01_balanced_stock] read_gold: starting process "yosys -ql pmux_case01_balanced_stock/gold.log pmux_case01_balanced_stock/gold.ys"
+EQY 19:01:33 [pmux_case01_balanced_stock] read_gold: finished (returncode=0)
+EQY 19:01:33 [pmux_case01_balanced_stock] read_gate: starting process "yosys -ql pmux_case01_balanced_stock/gate.log pmux_case01_balanced_stock/gate.ys"
+EQY 19:01:33 [pmux_case01_balanced_stock] read_gate: finished (returncode=0)
+EQY 19:01:33 [pmux_case01_balanced_stock] combine: starting process "yosys -ql pmux_case01_balanced_stock/combine.log pmux_case01_balanced_stock/combine.ys"
+EQY 19:01:34 [pmux_case01_balanced_stock] combine: finished (returncode=0)
+EQY 19:01:34 [pmux_case01_balanced_stock] partition: starting process "cd pmux_case01_balanced_stock& yosys -ql partition.log partition.ys"
+EQY 19:01:34 [pmux_case01_balanced_stock] partition: finished (returncode=0)
+EQY 19:01:34 [pmux_case01_balanced_stock] run: starting process "make -C pmux_case01_balanced_stock -f strategies.mk"
+EQY 19:01:34 [pmux_case01_balanced_stock] run: make: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/pmux_case01_balanced_stock'
+EQY 19:01:34 [pmux_case01_balanced_stock] run: Running strategy 'whole' on 'pmux_case01_balanced.data_out'..
+EQY 19:01:35 [pmux_case01_balanced_stock] run: Proved equivalence of partition 'pmux_case01_balanced.data_out' using strategy 'whole'
+EQY 19:01:35 [pmux_case01_balanced_stock] run: make -f strategies.mk summary
+EQY 19:01:35 [pmux_case01_balanced_stock] run: make[1]: Entering directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/pmux_case01_balanced_stock'
+EQY 19:01:35 [pmux_case01_balanced_stock] run: make[1]: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/pmux_case01_balanced_stock'
+EQY 19:01:35 [pmux_case01_balanced_stock] run: make: Leaving directory '/d/Desktop/PMUX_20261028/results/current_nine/formal_ascii/pmux_case01_balanced_stock'
+EQY 19:01:35 [pmux_case01_balanced_stock] run: finished (returncode=0)
+EQY 19:01:35 [pmux_case01_balanced_stock] Successfully proved equivalence of partition pmux_case01_balanced.data_out
+EQY 19:01:35 [pmux_case01_balanced_stock] Successfully proved designs equivalent
+EQY 19:01:35 [pmux_case01_balanced_stock] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+EQY 19:01:35 [pmux_case01_balanced_stock] summary: Elapsed process time unvailable on Windows
+EQY 19:01:35 [pmux_case01_balanced_stock] DONE (PASS, rc=0)

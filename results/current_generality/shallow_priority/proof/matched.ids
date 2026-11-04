@@ -1,0 +1,8 @@
+# [*] gold-match *
+shallow_priority a a
+shallow_priority b b
+shallow_priority c c
+shallow_priority d d
+shallow_priority q q
+shallow_priority s s
+shallow_priority y y

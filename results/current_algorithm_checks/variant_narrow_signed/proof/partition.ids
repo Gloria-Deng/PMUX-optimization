@@ -1,0 +1,7 @@
+group variant_narrow_signed clk ctrl_in data_in data_out en rst
+bind variant_narrow_signed clk
+bind variant_narrow_signed ctrl_in
+bind variant_narrow_signed data_in
+bind variant_narrow_signed data_out
+bind variant_narrow_signed en
+bind variant_narrow_signed rst

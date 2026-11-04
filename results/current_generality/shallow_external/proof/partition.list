@@ -1,0 +1,1 @@
+shallow_external shallow_external.exposed : y[7:0] exposed[7:0]

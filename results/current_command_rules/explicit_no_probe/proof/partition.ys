@@ -1,0 +1,4 @@
+plugin -i "D:/Desktop/PMUX_20261028/binary/formal/bin/../share/yosys/plugins/eqy_partition.so"
+read_rtlil combined.il
+insbuf -chain
+eqy_partition -matched_ids matched.ids -partition_ids partition.ids

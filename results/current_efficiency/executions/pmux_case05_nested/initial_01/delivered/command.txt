@@ -1,0 +1,1 @@
+"C:/Users/lenovo/AppData/Local/Temp/pmux_assessment_io30bmsl/yosys.exe" -s synthesis.ys

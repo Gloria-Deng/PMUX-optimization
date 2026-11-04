@@ -1,0 +1,7 @@
+group dependent_selections a b c s t y
+bind dependent_selections a
+bind dependent_selections b
+bind dependent_selections c
+bind dependent_selections s
+bind dependent_selections t
+bind dependent_selections y

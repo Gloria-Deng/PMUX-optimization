@@ -1,0 +1,7 @@
+# [*] gold-match *
+shallow_w5 clk clk
+shallow_w5 ctrl_in ctrl_in
+shallow_w5 data_in data_in
+shallow_w5 data_out data_out
+shallow_w5 en en
+shallow_w5 rst rst

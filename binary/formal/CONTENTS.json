@@ -1,0 +1,602 @@
+{
+  "python_url": "https://www.python.org/ftp/python/3.11.9/python-3.11.9-embed-amd64.zip",
+  "python_archive_md5": "6d9aa08531d48fcc261ba667e2df17c4",
+  "eqy": "EQY v0.69-1-g7a92d84",
+  "sources": [
+    {
+      "package": "bash",
+      "version": "5.3.015-1",
+      "url": "https://repo.msys2.org/msys/sources/bash-5.3.015-1.src.tar.zst",
+      "filename": "bash-5.3.015-1.src.tar.zst"
+    },
+    {
+      "package": "grep",
+      "version": "1~3.0-7",
+      "url": "https://repo.msys2.org/msys/sources/grep-1~3.0-7.src.tar.zst",
+      "filename": "grep-1~3.0-7.src.tar.zst"
+    },
+    {
+      "package": "libiconv",
+      "version": "1.19-1",
+      "url": "https://repo.msys2.org/msys/sources/libiconv-1.19-1.src.tar.zst",
+      "filename": "libiconv-1.19-1.src.tar.zst"
+    },
+    {
+      "package": "gettext",
+      "version": "0.22.5-1",
+      "url": "https://repo.msys2.org/msys/sources/gettext-0.22.5-1.src.tar.zst",
+      "filename": "gettext-0.22.5-1.src.tar.zst"
+    },
+    {
+      "package": "pcre",
+      "version": "8.45-5",
+      "url": "https://repo.msys2.org/msys/sources/pcre-8.45-5.src.tar.zst",
+      "filename": "pcre-8.45-5.src.tar.zst"
+    },
+    {
+      "package": "make",
+      "version": "4.4.1-3",
+      "url": "https://repo.msys2.org/msys/sources/make-4.4.1-3.src.tar.zst",
+      "filename": "make-4.4.1-3.src.tar.zst"
+    },
+    {
+      "package": "msys2-runtime",
+      "version": "3.6.10-4",
+      "url": "https://repo.msys2.org/msys/sources/msys2-runtime-3.6.10-4.src.tar.zst",
+      "filename": "msys2-runtime-3.6.10-4.src.tar.zst"
+    }
+  ],
+  "source_download_failures": [],
+  "files": [
+    {
+      "path": "bin/eqy-script.py",
+      "bytes": 57727,
+      "sha256": "37fb71c78e5a68080385f94bad2f22d6a21e04939c120d7370d4a6eafcaec6fd"
+    },
+    {
+      "path": "bin/eqy.exe",
+      "bytes": 47616,
+      "sha256": "10b4b2df89688fc2b44aa771db030cb43ca929761b7397f8519ed256884075a3"
+    },
+    {
+      "path": "bin/libffi-8.dll",
+      "bytes": 36999,
+      "sha256": "00eb744d7ede0b6b274627207af248024d2601203182df185b490ab625c2b326"
+    },
+    {
+      "path": "bin/libgcc_s_seh-1.dll",
+      "bytes": 977681,
+      "sha256": "8601abde8bcffd435233865553ea9f4175e6b07cc0e8c9d08f50ecebab98b019"
+    },
+    {
+      "path": "bin/libreadline8.dll",
+      "bytes": 316921,
+      "sha256": "9a8b0f17791a91aa419d35d26d4bfea668b1163492fd65a98ae8431eac16bae9"
+    },
+    {
+      "path": "bin/libstdc++-6.dll",
+      "bytes": 26405150,
+      "sha256": "29e4a7219d914fcdf296c07951280dd77bc284f0ad3eae052da32ac05264858e"
+    },
+    {
+      "path": "bin/libtermcap-0.dll",
+      "bytes": 23173,
+      "sha256": "400a4452231d5de692fa8c1a4000eb013f6cf99a836764f5b37eefc503e9671c"
+    },
+    {
+      "path": "bin/libwinpthread-1.dll",
+      "bytes": 71906,
+      "sha256": "ccbd0ad81d6fed75e076670710643ad02d3c390179866ad3e1fe6b9ef7bc92c2"
+    },
+    {
+      "path": "bin/tcl86.dll",
+      "bytes": 1795159,
+      "sha256": "069d9af252fda401134f830dea0d7af49bb31cca0b91a34d4d9f67e7f627da16"
+    },
+    {
+      "path": "bin/yosys.exe",
+      "bytes": 36397568,
+      "sha256": "72db78f80960b4c795fb435072130b69502eadfe1f9d87c15669278c2c2a2526"
+    },
+    {
+      "path": "bin/zlib1.dll",
+      "bytes": 137390,
+      "sha256": "84e998099a945872750d326f4a86a4fc275bbf1434e2de88d7d87973465ed491"
+    },
+    {
+      "path": "eqy_windows_paths.patch",
+      "bytes": 2284,
+      "sha256": "c0dd37905b9f508489a8b22249fee58997ea2246f1978384d2d53fae38e031ee"
+    },
+    {
+      "path": "lib/_asyncio.pyd",
+      "bytes": 65304,
+      "sha256": "746bc8fa88282afe19dc60e426cc0a75bea3bd137cca06a0b57a30bd31459403"
+    },
+    {
+      "path": "lib/_bz2.pyd",
+      "bytes": 84760,
+      "sha256": "00b8ca9a338d2b47285c9e56d6d893db2a999b47216756f18439997fb80a56e3"
+    },
+    {
+      "path": "lib/_ctypes.pyd",
+      "bytes": 124696,
+      "sha256": "c148292328f0aab7863af82f54f613961e7cb95b7215f7a81cafaf45bd4c42b7"
+    },
+    {
+      "path": "lib/_decimal.pyd",
+      "bytes": 255768,
+      "sha256": "980a63f2b39cf16910f44384398e25f24482346a482addb00de42555b17d4278"
+    },
+    {
+      "path": "lib/_elementtree.pyd",
+      "bytes": 128792,
+      "sha256": "02e30b6a2bee5be5336e40a9c89575603051bde86f9c9cdc78b7fa7d9b7bd1f0"
+    },
+    {
+      "path": "lib/_hashlib.pyd",
+      "bytes": 65304,
+      "sha256": "87dd0c858620287454fd6d31d52b6a48eddbb2a08e09e8b2d9fdb0b92200d766"
+    },
+    {
+      "path": "lib/_lzma.pyd",
+      "bytes": 159512,
+      "sha256": "f5e01b516c2c23035f7703e23569dec26c5616c05a929b2580ae474a5c6722c5"
+    },
+    {
+      "path": "lib/_msi.pyd",
+      "bytes": 44824,
+      "sha256": "0f876c25188d1dde26eb852251439a6ec8edc1bc921be026f819eeb8686db2af"
+    },
+    {
+      "path": "lib/_multiprocessing.pyd",
+      "bytes": 34584,
+      "sha256": "975c1947798e3c39898c86675ca1eb68249f77361f41f172f9800275227213b9"
+    },
+    {
+      "path": "lib/_overlapped.pyd",
+      "bytes": 51480,
+      "sha256": "ca106e4dfdeafeabf9e98956d3d8d0cb73e109f1a96f1a7e35bc47dbd7c7e164"
+    },
+    {
+      "path": "lib/_queue.pyd",
+      "bytes": 32024,
+      "sha256": "3f8e7e6aa13b417acc78b63434fb1144e6319a010a9fc376c54d6e69b638fe4c"
+    },
+    {
+      "path": "lib/_socket.pyd",
+      "bytes": 79640,
+      "sha256": "a19e3c7c03ef1b5625790b1c9c42594909311ab6df540fbf43c6aa93300ab166"
+    },
+    {
+      "path": "lib/_sqlite3.pyd",
+      "bytes": 120600,
+      "sha256": "ff6a2a2f38b21b7784f97d604c99961d8c07ef455f7908110a4e893835d42b76"
+    },
+    {
+      "path": "lib/_ssl.pyd",
+      "bytes": 178456,
+      "sha256": "ba5388d6a6557d431e086734a3323621dc447f63ba299b0a815e5837cf869678"
+    },
+    {
+      "path": "lib/_uuid.pyd",
+      "bytes": 25368,
+      "sha256": "e6aa7f1637e211251c9d6f467203b2b6d85e5bc2d901699f2a55af637fa89250"
+    },
+    {
+      "path": "lib/_zoneinfo.pyd",
+      "bytes": 45848,
+      "sha256": "7e7b4157e401f8281fd85b68f2e21c828bf739c91416b2824dd22cb385eef819"
+    },
+    {
+      "path": "lib/click/__init__.py",
+      "bytes": 5145,
+      "sha256": "5abfc54d37d47cc788b7e7a05e9514787f8c5a0b7db429d0f24d748ac89964ca"
+    },
+    {
+      "path": "lib/click/_compat.py",
+      "bytes": 17939,
+      "sha256": "8db1da2965cf3e5dc66c6c53833cbc613ea1cd2440b9d0eb6aa8360eb46d4913"
+    },
+    {
+      "path": "lib/click/_termui_impl.py",
+      "bytes": 32805,
+      "sha256": "88b97d9b7a5b947b10a16d8ab269837bc84c7e55c28ba72ea5f2fb339112336a"
+    },
+    {
+      "path": "lib/click/_textwrap.py",
+      "bytes": 6270,
+      "sha256": "ed9d0ded59a7fbae933524d4c29e8e5c96dc5174666044fd87d736b9c0fca104"
+    },
+    {
+      "path": "lib/click/_utils.py",
+      "bytes": 996,
+      "sha256": "782642b7026db180f941892435627c318ffc001223cbc31cce030cc95637dab4"
+    },
+    {
+      "path": "lib/click/_winconsole.py",
+      "bytes": 8543,
+      "sha256": "292c5f35b3256116ba18e26e08b82c8363dbddd56480934fa8b24f69ef8f6b5d"
+    },
+    {
+      "path": "lib/click/core.py",
+      "bytes": 147845,
+      "sha256": "4c65a613c1c407dce907a4e123b12cec5fe0f62088a8b9f86fabd4b60c4b6d78"
+    },
+    {
+      "path": "lib/click/decorators.py",
+      "bytes": 21680,
+      "sha256": "16069357615691fcdfc9c794bb515f6009eb35aad6f7a76c017bdce06dae8d55"
+    },
+    {
+      "path": "lib/click/exceptions.py",
+      "bytes": 11862,
+      "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849"
+    },
+    {
+      "path": "lib/click/formatting.py",
+      "bytes": 10444,
+      "sha256": "f125b628692f8dfcfd43535b7a88cc1ee64137471f9d0243b389aa0cfea85e6b"
+    },
+    {
+      "path": "lib/click/globals.py",
+      "bytes": 1923,
+      "sha256": "80cf8d87a0383341c1fd2824685e4ce2770618c0c773f7e51d7bbdfe88781845"
+    },
+    {
+      "path": "lib/click/parser.py",
+      "bytes": 19052,
+      "sha256": "a09f9f53fde6bf1ba022e36d1da0804d9e7a9601261d18208c9892a84818ae30"
+    },
+    {
+      "path": "lib/click/shell_completion.py",
+      "bytes": 26172,
+      "sha256": "18522f75ddffe655e943978d1953255c447842867d3fd67fbdc1543d3df7da09"
+    },
+    {
+      "path": "lib/click/termui.py",
+      "bytes": 35370,
+      "sha256": "8ec8022b8e4528f873ec413194a5d1614e96da50b6c4a71f6260b326762a7e9c"
+    },
+    {
+      "path": "lib/click/types.py",
+      "bytes": 46842,
+      "sha256": "1e988904a7a7f68abad630c7fb9c038a4345fa2e6701c976a6e51f10bdfb52dd"
+    },
+    {
+      "path": "lib/click/utils.py",
+      "bytes": 21483,
+      "sha256": "f43d5743dc07240e612feefa0a69d2b1697b6900149f8f809ffcd97ecb482dbf"
+    },
+    {
+      "path": "lib/libcrypto-3.dll",
+      "bytes": 5191960,
+      "sha256": "05fe080eab7fc535c51e10c1bd76a2f3e6217f9c91a25034774588881c3f99de"
+    },
+    {
+      "path": "lib/libffi-8.dll",
+      "bytes": 39696,
+      "sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a"
+    },
+    {
+      "path": "lib/libssl-3.dll",
+      "bytes": 787224,
+      "sha256": "2e9fbcd8f7fdc13a5179533239811456554f2b3aa2fb10e1b17be0df81c79006"
+    },
+    {
+      "path": "lib/LICENSE.txt",
+      "bytes": 36874,
+      "sha256": "e502c6b880ff58d614901495a9009c136539cd0b1e2a2abb8fc00b934c203419"
+    },
+    {
+      "path": "lib/pyexpat.pyd",
+      "bytes": 199448,
+      "sha256": "c7c7564f7f874fb660a46384980a2cf28bc3e245ca83628a197ccf861eab5560"
+    },
+    {
+      "path": "lib/python3.dll",
+      "bytes": 67352,
+      "sha256": "db84bc052cfb121fe4db36242ba5f1d2c031b600ef5d8d752cf25b7c02b6bac6"
+    },
+    {
+      "path": "lib/python3.exe",
+      "bytes": 103192,
+      "sha256": "5f7b89a612c9b8af1d6456cdfcd1dbe5ca630849e79aebced9bee9a6694952ec"
+    },
+    {
+      "path": "lib/python311._pth",
+      "bytes": 36,
+      "sha256": "9c2e797ab0b584b17479e74e79862df1ea782b03f38e686ee5400f319d2ec368"
+    },
+    {
+      "path": "lib/python311.dll",
+      "bytes": 5800216,
+      "sha256": "0817a2a657a24c0d5fbb60df56960f42fc66b3039d522ec952dab83e2d869364"
+    },
+    {
+      "path": "lib/python311.zip",
+      "bytes": 4285636,
+      "sha256": "7d0f59c930e7d3d9352399ea3c95c0272489b3c09a8e95faaedfa8a23e20e5b1"
+    },
+    {
+      "path": "lib/select.pyd",
+      "bytes": 30488,
+      "sha256": "bae0974390945520eb99ab32486c6a964691f8f4a028ac408d98fa8fb0db7d90"
+    },
+    {
+      "path": "lib/sqlite3.dll",
+      "bytes": 1540888,
+      "sha256": "314bba62f4a1628b986afc94c09dc29cdaf08210eae469440fbf46bcdb86d3fd"
+    },
+    {
+      "path": "lib/unicodedata.pyd",
+      "bytes": 1140504,
+      "sha256": "37c68617fa02a2cadced17ef724e2d450ef12a8a37215da789a4679fde1c5c02"
+    },
+    {
+      "path": "lib/vcruntime140.dll",
+      "bytes": 119192,
+      "sha256": "4d292623516f65c80482081e62d5dadb759dc16e851de5db24c3cbb57b87db83"
+    },
+    {
+      "path": "lib/vcruntime140_1.dll",
+      "bytes": 49528,
+      "sha256": "a113f192195f245f17389e6ecbed8005990bcb2476ddad33f7c4c6c86327afe5"
+    },
+    {
+      "path": "lib/winsound.pyd",
+      "bytes": 31512,
+      "sha256": "b79c9bd9114b7f243f5a80ffd2de5c5942fc64ceec4a52a048bb4a07848b9239"
+    },
+    {
+      "path": "licenses/bash-5.3.015-1.txt",
+      "bytes": 415,
+      "sha256": "b5bca6783c92007b058f04b6b3e76df9145782cee327084ed4f8f218b87a4c44"
+    },
+    {
+      "path": "licenses/click.txt",
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    {
+      "path": "licenses/eqy.txt",
+      "bytes": 1389,
+      "sha256": "a2cb3c75461dfc54a198d8e4883dc08087f0bbeb54216e8cd61f7c2c180edfe8"
+    },
+    {
+      "path": "licenses/grep-1~3.0-7.txt",
+      "bytes": 365,
+      "sha256": "572d6cb201a53a1af9acafb8fd43b81b3161074b7ef7246e98732150a4f35418"
+    },
+    {
+      "path": "licenses/libiconv-1.19-1.txt",
+      "bytes": 389,
+      "sha256": "7abadf60644454df8b076804e877389bfe179cb3540bbe86fabb09ae4d5f66f2"
+    },
+    {
+      "path": "licenses/libintl-0.22.5-1.txt",
+      "bytes": 403,
+      "sha256": "1ab80ee716e034d18b965005d2d9033602201efabbe6589a2a41ebdec3479b0d"
+    },
+    {
+      "path": "licenses/libpcre-8.45-5.txt",
+      "bytes": 391,
+      "sha256": "1ea0484091a2d59c0fd192c972fab4e1301b1a0933b39dbba67f4d79e77652c9"
+    },
+    {
+      "path": "licenses/make-4.4.1-3.txt",
+      "bytes": 399,
+      "sha256": "25d5bfa659ad2df80fe3c32d46c158d508b24b804e6c8fb4115197c96e586337"
+    },
+    {
+      "path": "licenses/msys2-runtime-3.6.10-4.txt",
+      "bytes": 492,
+      "sha256": "51da41df9c287333dc623e3b8967c17a84739224c9f66bb2102a21d2a4dfc32a"
+    },
+    {
+      "path": "licenses/python3.txt",
+      "bytes": 14406,
+      "sha256": "c64f5f24abbcc82e0e7182290d4136404f972f642404648eeb8a2e62423eca8e"
+    },
+    {
+      "path": "licenses/yosys.txt",
+      "bytes": 1290,
+      "sha256": "e8a07d4446fab74d45e2440f624db15efbcabee37fd349ffcf977df7bc9767dd"
+    },
+    {
+      "path": "msys/tmp/.keep",
+      "bytes": 40,
+      "sha256": "4a552520309d9c9a94bc20b5e8053ab8e14f8b92481b95908343540fb60bafea"
+    },
+    {
+      "path": "msys/usr/bin/bash.exe",
+      "bytes": 2452446,
+      "sha256": "41b09f0a9c1c68fd65253a7e8087b3775f0af245b729ade74ca4425d14392c2d"
+    },
+    {
+      "path": "msys/usr/bin/grep.exe",
+      "bytes": 213710,
+      "sha256": "497202418334f8a48d9f34cd2e1b2c03c4f957e02304b613e10931c0457e8d4a"
+    },
+    {
+      "path": "msys/usr/bin/make.exe",
+      "bytes": 236000,
+      "sha256": "91b7e155590d59db22e5eb0a3ffeec6350149f70f9ed2c242d133e584eb72fee"
+    },
+    {
+      "path": "msys/usr/bin/msys-2.0.dll",
+      "bytes": 3367041,
+      "sha256": "cfe7bd8e8b36b851bdf788b95dd2b2a0beec5ebf83b579fdec480445f5919545"
+    },
+    {
+      "path": "msys/usr/bin/msys-iconv-2.dll",
+      "bytes": 1103690,
+      "sha256": "50012969ed96a5232220185d2fc1ac1e3abe5790f6b3027f4fc3c4cad3fd38f0"
+    },
+    {
+      "path": "msys/usr/bin/msys-intl-8.dll",
+      "bytes": 111181,
+      "sha256": "50f7de0c712d867ddca2c9eb8562ca6ee2d69e120e798ec6126ad29dd1ed5402"
+    },
+    {
+      "path": "msys/usr/bin/msys-pcre-1.dll",
+      "bytes": 289270,
+      "sha256": "a94b1a5ba095ac7ff81e138a1231e42e3a07391e85eeb86c3bb5c9245244597a"
+    },
+    {
+      "path": "msys/usr/bin/sh.exe",
+      "bytes": 2452446,
+      "sha256": "41b09f0a9c1c68fd65253a7e8087b3775f0af245b729ade74ca4425d14392c2d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1607,
+      "sha256": "802cc212ab2f306ac3fa443ac1840bd612de698c8077f970ca5035453363c229"
+    },
+    {
+      "path": "share/yosys/abc9_map.v",
+      "bytes": 923,
+      "sha256": "b960ea3290504de79a747d41947570902cb64ad285f3ddb16e006030a2cae7ec"
+    },
+    {
+      "path": "share/yosys/abc9_model.v",
+      "bytes": 653,
+      "sha256": "21f332106384501759ca256e95ed30321ad5615610a66488731ca06e0b4722d2"
+    },
+    {
+      "path": "share/yosys/abc9_unmap.v",
+      "bytes": 638,
+      "sha256": "c35d3b6378898cc53a0ffebf6982dfd8dce25d39c08696b9fc2140c1a60ed625"
+    },
+    {
+      "path": "share/yosys/adff2dff.v",
+      "bytes": 575,
+      "sha256": "beb053280dc959be7be1e88592b2be5cc68f0d6ea5c577691e4fd17eea7ceaf2"
+    },
+    {
+      "path": "share/yosys/choices/han-carlson.v",
+      "bytes": 1188,
+      "sha256": "3e1ed57559ba9e0dbae55ba949e7074d22c11f1db05bfc03df34d3d9d5ac11ec"
+    },
+    {
+      "path": "share/yosys/choices/kogge-stone.v",
+      "bytes": 1583,
+      "sha256": "d1768604cf263a5937323b66f7d29b88ee7fea51d2e36b13131b9e6f9289e8da"
+    },
+    {
+      "path": "share/yosys/choices/sklansky.v",
+      "bytes": 781,
+      "sha256": "699bac38d6cecca9c63e9136f3a6ec1625ce44819a2d653e2867d6728d398c25"
+    },
+    {
+      "path": "share/yosys/cmp2lcu.v",
+      "bytes": 5260,
+      "sha256": "dd41396c59636a27af5634276f826242644e0466c06ef91b309d33b956b3fdf2"
+    },
+    {
+      "path": "share/yosys/cmp2lut.v",
+      "bytes": 2644,
+      "sha256": "f1abb22f2a305b98c6a1cd63f3ac53361d2307bd19c8f318275eb4e6d140fb4e"
+    },
+    {
+      "path": "share/yosys/cmp2softlogic.v",
+      "bytes": 2716,
+      "sha256": "2230f0f7ef11b7c76ace1a68171da61d15fc13929b15ec09612048813b5a256b"
+    },
+    {
+      "path": "share/yosys/dff2ff.v",
+      "bytes": 299,
+      "sha256": "cda7e5ad24b83525310e822d5dbc6dffe792a4b211a0fed9931cbb93460aa63c"
+    },
+    {
+      "path": "share/yosys/gate2lut.v",
+      "bytes": 1447,
+      "sha256": "8f910902e06758dc35e63d2c8caf927aad814e095e79b0c5dda00dd2973ef0bd"
+    },
+    {
+      "path": "share/yosys/mul2dsp.v",
+      "bytes": 9201,
+      "sha256": "81a976a44f2141267dc91b95837d8bd753f4274bef7a456328d39568a24c99bd"
+    },
+    {
+      "path": "share/yosys/plugins/eqy_combine.so",
+      "bytes": 877457,
+      "sha256": "4822cdfb42c882a69a0e8100d0069a8bff25124ed6384bff1be6abaa91660168"
+    },
+    {
+      "path": "share/yosys/plugins/eqy_partition.so",
+      "bytes": 3338202,
+      "sha256": "6df31b031a879c1468ce3f3ad16b657b6a9c01aecb006605eb80abfd0b018a96"
+    },
+    {
+      "path": "share/yosys/plugins/eqy_recode.so",
+      "bytes": 884709,
+      "sha256": "9318f7728fefb1256ea5832054ba97059a050d3f9988ebf6cbb706393159cc1a"
+    },
+    {
+      "path": "share/yosys/pmux2mux.v",
+      "bytes": 342,
+      "sha256": "3fb31c0ed479d45648b97e674a57a35e4b76133ec8d67398d8907179a4f92fbf"
+    },
+    {
+      "path": "share/yosys/python3/eqy_job.py",
+      "bytes": 28307,
+      "sha256": "7ad8857fa170ba804a086e91bd200487545f01006a705cad22a861c757fddcc0"
+    },
+    {
+      "path": "share/yosys/simcells.v",
+      "bytes": 91313,
+      "sha256": "63918d5fd356ffcda0780eccfa4304a9888603a5266bbc1c812bf5a9bdd65b3c"
+    },
+    {
+      "path": "share/yosys/simlib.v",
+      "bytes": 78616,
+      "sha256": "e79c08085225bdc6f52ce99f128328158009a33b8ea0c8c273011dfde370561d"
+    },
+    {
+      "path": "share/yosys/smtmap.v",
+      "bytes": 654,
+      "sha256": "0eaab0c3a5324dcc30d0503cc3a571f5d4fb13fea6fbc18151efb294ff799cac"
+    },
+    {
+      "path": "share/yosys/techmap.v",
+      "bytes": 16627,
+      "sha256": "9cae09999a99182452bd7a2b384bdf7508e0e8a745df7044a95dd0174665d847"
+    },
+    {
+      "path": "sources/bash-5.3.015-1.src.tar.zst",
+      "bytes": 11341001,
+      "sha256": "513f485881c94d0bab3ebcb2d1d3b98c19078d4abe26796bc52220db3e65b7af"
+    },
+    {
+      "path": "sources/gettext-0.22.5-1.src.tar.zst",
+      "bytes": 21732949,
+      "sha256": "e07a0b3e6716aae86dc0edd2dcdc8864731d56051345592b53659a3840ccfbd8"
+    },
+    {
+      "path": "sources/grep-1~3.0-7.src.tar.zst",
+      "bytes": 1378706,
+      "sha256": "acba43b9b2c3eb393f9a75d02a1eca34fa23d959541150a7ac4ffbafce3cae4e"
+    },
+    {
+      "path": "sources/libiconv-1.19-1.src.tar.zst",
+      "bytes": 5133707,
+      "sha256": "5a8bcd3242e2be94fffd9f03fadcda8d9fd64047430050c5cbd214cd3bf7f0a7"
+    },
+    {
+      "path": "sources/make-4.4.1-3.src.tar.zst",
+      "bytes": 2348028,
+      "sha256": "b4ca441780273aba4ac44437ea1606dc058a6c0924e16296783c2b3107d32de1"
+    },
+    {
+      "path": "sources/msys2-runtime-3.6.10-4.src.tar.zst",
+      "bytes": 128761620,
+      "sha256": "47e6e49710116d1bb57adaa24530306ee5841b58b8abca66ffcc107736393cec"
+    },
+    {
+      "path": "sources/pcre-8.45-5.src.tar.zst",
+      "bytes": 1577595,
+      "sha256": "f7104aa31f29655689b404ead9923332e2fa6aadfe97c060d0dfc02f4661d6b5"
+    }
+  ]
+}

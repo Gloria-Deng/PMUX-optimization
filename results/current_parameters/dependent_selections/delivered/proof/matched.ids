@@ -1,0 +1,7 @@
+# [*] gold-match *
+dependent_selections a a
+dependent_selections b b
+dependent_selections c c
+dependent_selections s s
+dependent_selections t t
+dependent_selections y y

@@ -1,0 +1,8 @@
+# [*] gold-match *
+variant_external_arithmetic clk clk
+variant_external_arithmetic ctrl_in ctrl_in
+variant_external_arithmetic data_in data_in
+variant_external_arithmetic data_out data_out
+variant_external_arithmetic en en
+variant_external_arithmetic rst rst
+variant_external_arithmetic shared_out shared_out

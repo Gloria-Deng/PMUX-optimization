@@ -1,0 +1,69 @@
+unsigned_add_extended . A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:1.1-11.10" A:top=1
+unsigned_add_extended y_$lut_Y_A_1_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_A_1_$lut_A c=$lut
+unsigned_add_extended y_$lut_Y_A_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_5 c=$lut
+unsigned_add_extended y_$lut_Y_4_A_1_$lut_Y_A_1_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_4_A_1_$lut_Y_A_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_4_A_1_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_4_A_$lut_Y_A_1_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_4_A_$lut_Y_A_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_4_A_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_4_A_$lut_A c=$lut
+unsigned_add_extended y_$lut_Y_4 c=$lut
+unsigned_add_extended y_$lut_Y_3 c=$lut
+unsigned_add_extended y_$lut_Y_2_A_$lut_Y_A_1_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_2_A_$lut_Y_A_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_2_A_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_2 c=$lut
+unsigned_add_extended y_$lut_Y_1_A_$lut_Y_A_1_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_1_A_$lut_Y_A_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_1_A_$lut_Y c=$lut
+unsigned_add_extended y_$lut_Y_1 c=$lut
+unsigned_add_extended y_$lut_Y c=$lut
+unsigned_add_extended b3_$lut_A_2 c=$lut
+unsigned_add_extended b3_$lut_A_1_Y_$lut_A_A_$lut_Y c=$lut
+unsigned_add_extended b3_$lut_A_1_Y_$lut_A c=$lut
+unsigned_add_extended b3_$lut_A_1 c=$lut
+unsigned_add_extended b3_$lut_A c=$lut
+unsigned_add_extended b1_$lut_A_1_Y_$lut_A_Y_$lut_A_A_$lut_Y c=$lut
+unsigned_add_extended b1_$lut_A_1_Y_$lut_A_Y_$lut_A c=$lut
+unsigned_add_extended b1_$lut_A_1_Y_$lut_A c=$lut
+unsigned_add_extended b1_$lut_A_1 c=$lut
+unsigned_add_extended b1_$lut_A c=$lut
+unsigned_add_extended y_$lut_Y_A_1_$lut_A_Y w=0:0
+unsigned_add_extended y_$lut_Y_A_1 w=0:0
+unsigned_add_extended y_$lut_Y_A w=0:0
+unsigned_add_extended y_$lut_Y_4_A_1_$lut_Y_A_1 w=0:0
+unsigned_add_extended y_$lut_Y_4_A_1_$lut_Y_A w=0:0
+unsigned_add_extended y_$lut_Y_4_A_1 w=0:0
+unsigned_add_extended y_$lut_Y_4_A_$lut_Y_A_1 w=0:0
+unsigned_add_extended y_$lut_Y_4_A_$lut_Y_A w=0:0
+unsigned_add_extended y_$lut_Y_4_A_$lut_A_Y w=0:0
+unsigned_add_extended y_$lut_Y_4_A w=0:0
+unsigned_add_extended y_$lut_Y_2_A_$lut_Y_A_1 w=0:0
+unsigned_add_extended y_$lut_Y_2_A_$lut_Y_A w=0:0
+unsigned_add_extended y_$lut_Y_2_A w=0:0
+unsigned_add_extended y_$lut_Y_1_A_$lut_Y_A_1 w=0:0
+unsigned_add_extended y_$lut_Y_1_A_$lut_Y_A w=0:0
+unsigned_add_extended y_$lut_Y_1_A w=0:0
+unsigned_add_extended y w=6:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:4.50-4.51" P=O
+unsigned_add_extended s w=1:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:1.42-1.43" P=I
+unsigned_add_extended b3_$lut_A_Y w=0:0
+unsigned_add_extended b3_$lut_A_2_Y w=0:0
+unsigned_add_extended b3_$lut_A_1_Y_$lut_A_Y w=0:0
+unsigned_add_extended b3_$lut_A_1_Y_$lut_A_A w=0:0
+unsigned_add_extended b3_$lut_A_1_Y w=0:0
+unsigned_add_extended b3 w=2:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:4.29-4.31" P=I
+unsigned_add_extended b2 w=2:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:3.29-3.31" P=I
+unsigned_add_extended b1_$lut_A_Y w=0:0
+unsigned_add_extended b1_$lut_A_1_Y_$lut_A_Y_$lut_A_Y w=0:0
+unsigned_add_extended b1_$lut_A_1_Y_$lut_A_Y_$lut_A_A w=0:0
+unsigned_add_extended b1_$lut_A_1_Y_$lut_A_Y w=0:0
+unsigned_add_extended b1_$lut_A_1_Y w=0:0
+unsigned_add_extended b1 w=2:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:2.29-2.31" P=I
+unsigned_add_extended b0 w=2:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:1.73-1.75" P=I
+unsigned_add_extended a3 w=4:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:4.13-4.15" P=I
+unsigned_add_extended a2 w=4:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:3.13-3.15" P=I
+unsigned_add_extended a1 w=4:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:2.13-2.15" P=I
+unsigned_add_extended a0 w=4:0 A:src="D:/Desktop/PMUX_20261028/results/current_parameters/unsigned_add_extended/source.v:1.57-1.59" P=I
