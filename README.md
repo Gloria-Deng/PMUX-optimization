@@ -74,6 +74,5 @@ git clone <仓库地址>
 | [results/](results/README.md) | 子目录；点击查看其全部文件位置 |
 | [scripts/](scripts/README.md) | 子目录；点击查看其全部文件位置 |
 | [README.md](README.md) | 本目录文件索引 |
-| `参赛作品承诺及使用授权书_扫描件.pdf` | PDF 文档；含个人信息，未随公开仓库发布 |
 | [技术文档 .pdf](%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%20.pdf) | PDF 文档 |
 | [演示视频_提交版.mp4](%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91_%E6%8F%90%E4%BA%A4%E7%89%88.mp4) | 演示视频或素材 |
