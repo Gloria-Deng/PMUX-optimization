@@ -1,76 +1,21 @@
-# PMUX 结构优化工程
+# Yosys PMUX 结构优化
 
-本目录包含 PMUX 优化源码、原版与优化版 Windows 程序、九个测试电路、已有测试结果，以及技术报告和演示视频。所用 Yosys 版本为 0.69+24，公开源码版本为 d0e71cfb7，ABC 对应 1e3d9ab。
+我给 Yosys 加了一个综合步骤，在技术映射前整理多路选择逻辑。比如，两条路径选的是同一组数据，就可以合并重复的选择；几个互斥分支分别做同样的加减法时，可以先选操作数，再共用运算单元。改写在 `proc` 之后执行，原有的 ABC9 调用保持一致。 [C++ 实现](plugin/pmux_opt_rtlil.cc) · [接入补丁](plugin/synth_intel_pass.patch)
 
-## 主要材料
+## 结果
 
-技术文档和视频位于工程根目录，文件名按实际保存名称列出。
+用同版本 Yosys 0.69+24 综合 9 个电路，优化版的逻辑单元数平均减少 **21.59%**。例如 `crossbar` 从 408 降到 313，`nested` 从 413 降到 278。9 个电路的触发器数量和顶层端口位数均相同。原版、优化版分别与原始 RTL 比较，**18 项 EQY 等价检查全部通过**。 [逐例数据与检查配置](results/current_nine/report.md)
 
-| 文件位置 | 内容 |
-|---|---|
-| [技术文档 .pdf](%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%20.pdf) | 作品说明、优化算法与结果 |
-| [演示视频_提交版.mp4](%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91_%E6%8F%90%E4%BA%A4%E7%89%88.mp4) | 作品运行演示 |
+同一 Windows 环境的记录中，完整综合时间最多增加 **0.67%**，主程序峰值内存最多增加 **1.83%**。 [测量条件与逐次结果](results/current_efficiency/report.md)
 
-## 目录用途
+## 运行比较
 
-| 目录位置 | 内容 |
-|---|---|
-| [plugin/](plugin/README.md) | PMUX 源码、综合调用修改、Windows 输出修正和寄存器模型 |
-| [binary/](binary/README.md) | 优化版程序、原版程序、运行依赖和原作者许可 |
-| [cases/](cases/README.md) | 四个原始电路和五个新增电路 |
-| [scripts/](scripts/README.md) | 综合、EQY、效率测量、补充检查和打包入口 |
-| [results/](results/README.md) | 已保存的资源、功能、效率和视频比较结果 |
-
-## 已有结果
-
-已有九例结果记录的平均逻辑单元缩减率为 **21.590824805%**，逐例均减少，DFF 和顶层 IO 位数逐例相同。正式九例共 **18 项 EQY 通过**，加补充项目共 **69 项 EQY 通过**；两个禁止选项的拒绝检查另计。
-
-已有 48 次效率测量包含 10 次预热、18 次初测和 20 次追加测量。完整经过时间最高增加 **0.669041949%**，主程序峰值工作集最高增加 **1.825690067%**。这些数据取得时 Defender 实时保护开启；具体运行条件和逐次读数见 [效率结果目录](results/current_efficiency/README.md)。
-
-## 获取仓库
-
-`binary/formal/sources/` 下的第三方源码包使用 Git LFS 存储，克隆前请先安装 git-lfs：
-
-```bash
-git lfs install
-git clone <仓库地址>
-```
-
-未安装 git-lfs 时，这些 `.src.tar.zst` 只会检出指向 LFS 对象的指针文本，而不是源码包本身。
-
-## 运行入口
-
-在本目录打开 PowerShell：
+安装 Git LFS 后克隆仓库。在 Windows PowerShell 中从仓库根目录执行：
 
 ```powershell
-.\binary\yosys.exe -V
-.\binary\baseline\yosys.exe -V
+.\scripts\run_python.cmd scripts/evaluate_official_nine.py --out results/new_nine --phase synthesis
 ```
 
-需要重新执行时，为输出选择新的目录：
+脚本为两版程序准备所需的 DLL 和器件模型，并把 9 个电路的资源对比写入 `results/new_nine`。把 `--phase synthesis` 改成 `--phase all` 可加跑 EQY，重新执行时请选择新的输出目录。 [脚本与依赖](scripts/README.md)
 
-```powershell
-.\scripts\run_python.cmd scripts/evaluate_official_nine.py --out results/new_nine --phase all
-.\scripts\run_python.cmd scripts/measure_official_efficiency.py --assessment results/new_nine --out results/new_efficiency
-```
-
-本地 `binary/formal/` 保存 EQY、Python 和辅助程序；使用外部 OSS CAD Suite 时按实际位置设置 `OSS_CAD_SUITE`，必要时设置 `PMUX_MAKE_DIRS`。正式九例入口是 `evaluate_official_nine.py`，其他脚本的用途见 [scripts/README.md](scripts/README.md)。
-
-## 文件导航
-
-本工程按当前实际目录逐层编写 README。每层索引列出本层全部文件，并通过子目录 README 继续查找。材料文件保留实际名称，包括文件名中已有的空格。
-
-## 文件位置索引（2026-11-04）
-
-相对工程位置：`./`。下表列出本层全部文件和子目录。
-
-| 名称与位置 | 类型及内容 |
-|---|---|
-| [binary/](binary/README.md) | 子目录；点击查看其全部文件位置 |
-| [cases/](cases/README.md) | 子目录；点击查看其全部文件位置 |
-| [plugin/](plugin/README.md) | 子目录；点击查看其全部文件位置 |
-| [results/](results/README.md) | 子目录；点击查看其全部文件位置 |
-| [scripts/](scripts/README.md) | 子目录；点击查看其全部文件位置 |
-| [README.md](README.md) | 本目录文件索引 |
-| [技术文档 .pdf](%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%20.pdf) | PDF 文档 |
-| [演示视频_提交版.mp4](%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91_%E6%8F%90%E4%BA%A4%E7%89%88.mp4) | 演示视频或素材 |
+[`plugin/`](plugin/) 放实现和补丁，[`cases/`](cases/) 放测试电路，[`binary/`](binary/) 提供两版 Windows 程序和依赖。完整原理和运行演示见 [技术说明 PDF](%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%20.pdf) 和 [演示视频](%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91_%E6%8F%90%E4%BA%A4%E7%89%88.mp4)。
