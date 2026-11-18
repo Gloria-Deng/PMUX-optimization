@@ -18,4 +18,4 @@
 
 脚本为两版程序准备所需的 DLL 和器件模型，并把 9 个电路的资源对比写入 `results/new_nine`。把 `--phase synthesis` 改成 `--phase all` 可加跑 EQY，重新执行时请选择新的输出目录。 [脚本与依赖](scripts/README.md)
 
-[`plugin/`](plugin/) 放实现和补丁，[`cases/`](cases/) 放测试电路，[`binary/`](binary/) 提供两版 Windows 程序和依赖。完整原理和运行演示见 [技术说明 PDF](%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%20.pdf) 和 [演示视频](%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91_%E6%8F%90%E4%BA%A4%E7%89%88.mp4)。
+[`plugin/`](plugin/) 放实现和补丁，[`cases/`](cases/) 放测试电路，[`binary/`](binary/) 提供两版 Windows 程序和依赖。完整原理见 [技术说明 PDF](%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%20.pdf)。
